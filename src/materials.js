@@ -19,7 +19,7 @@ export function makeMaterials(){
  skin:P('#efc4ac',.53,{sheen:.15,sheenColor:'#ffcfc0',bumpMap:bump,bumpScale:.00012}),face:P('#ffffff',.49,{vertexColors:true,sheen:.14,sheenColor:'#f6c8af',bumpMap:bump,bumpScale:.00008}),
  skinShadow:S('#bf8878',.67),lip:P('#c97975',.44,{clearcoat:.15}),mouth:S('#663333',.9),tooth:P('#fff8e7',.3),
  eyeWhite:P('#f9f5ec',.2,{clearcoat:.8}),iris:P('#443229',.3,{clearcoat:1}),irisLight:S('#795442',.35),pupil:P('#101416',.18,{clearcoat:1}),glint:new THREE.MeshBasicMaterial({color:'#fffaf0'}),lash:S('#322529',.7),brow:S('#3a3030',.9),
- hair:P('#19191e',.36,{metalness:.03,clearcoat:.2,clearcoatRoughness:.45}),hairLight:P('#343139',.39,{metalness:.03}),hairMid:P('#25242b',.37,{metalness:.02}),hairDark:S('#141319',.54),
+ hair:P('#19191e',.48,{metalness:0,clearcoat:.07,clearcoatRoughness:.6}),hairLight:P('#302d33',.51,{metalness:0}),hairMid:P('#242228',.48,{metalness:0}),hairDark:S('#141319',.54),
  shirt:P('#ffffff',.84,{map:cloth,sheen:.22,sheenColor:'#eee9e4',side:THREE.DoubleSide}),seam:S('#d7dce2',.9),button:P('#f4f2ed',.32),
  skirt:P('#ffffff',.89,{map:plaid,sheen:.2,sheenColor:'#8d99ae',side:THREE.DoubleSide}),lining:S('#252c3a',1,{side:THREE.DoubleSide}),tie:P('#ffffff',.65,{map:tieMap,sheen:.4,sheenColor:'#8092b7',side:THREE.DoubleSide}),socks:S('#ffffff',.95,{map:rib}),
  leather:P('#141920',.26,{metalness:.07,clearcoat:.55,clearcoatRoughness:.27}),sole:S('#151820',.76),stitch:S('#545b66',.76),backpack:P('#293d57',.85,{sheen:.3,sheenColor:'#6e8299'}),webbing:S('#263747',.93),buckle:S('#161c23',.44),metal:P('#a4a8ae',.26,{metalness:.83}),embroidery:S('#abc5e3',.8)

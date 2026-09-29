@@ -41,17 +41,19 @@ export function createHead(parent,m){
  for(let k=0;k<10;k++){const u=.05+k*.09,x=s*(.02+.043*u),y=.043+.0035*Math.sin(u*Math.PI)-.005*u;tube(head,'Brow fiber',[[x,y,faceZ(x,y)+.0027],[x-s*.0015,y+.0018,faceZ(x,y)+.0026]],.00016,m.brow,2,4);}
  const nx=s*.0107,ny=-.0285;sphere(head,'Nostril recess',[nx,ny,faceZ(nx,ny)+.0007],[.0033,.0015,.001],m.skinShadow,24);
  }
- const top=u=>-.049+.007*u*u+.0007*gauss(Math.abs(u),.28,.17),bottom=u=>-.068+.026*u*u;
+ const top=u=>-.047+.003*u*u+.0007*gauss(Math.abs(u),.28,.17),bottom=u=>-.061+.017*u*u;
  surface(head,'Recessed smiling mouth',60,18,(u,v)=>{const a=u*2-1,x=.029*a,y=lerp(bottom(a),top(a),v);return {p:[x,y,faceZ(x,y)+.0013]};},m.mouth);
  for(const upper of [true,false]){const pts=[];for(let i=0;i<=36;i++){const u=i/18-1,x=.029*u,y=upper?top(u):bottom(u);pts.push([x,y,faceZ(x,y)+.002]);}tube(head,upper?'Upper lip vermilion':'Lower lip vermilion',pts,upper?.00125:.0018,m.lip,48,8);}
- for(let i=-3;i<=3;i++){const x=i*.00675,u=x/.029,y=top(u)-.0041;const tooth=mesh(head,'Individual upper incisor',new RoundedBoxGeometry(i===0?.0068:.0064,.0071,.003,2,.001),m.tooth);tooth.position.set(x,y,faceZ(x,y)+.0023);tooth.rotation.y=-x*3.5;tooth.rotation.z=x*1.5;}
- tube(head,'Lower lip soft highlight',[[-.012,-.065,.001+faceZ(-.012,-.065)],[0,-.067,faceZ(0,-.067)+.0028],[.012,-.065,.001+faceZ(.012,-.065)]],.00048,m.skin,20,5);
+ for(let i=-3;i<=3;i++){const x=i*.00675,u=x/.029,y=top(u)-.0032;const tooth=mesh(head,'Individual upper incisor',new RoundedBoxGeometry(i===0?.0068:.0064,.0056,.003,2,.0008),m.tooth);tooth.position.set(x,y,faceZ(x,y)+.0023);tooth.rotation.y=-x*3.5;tooth.rotation.z=x*1.5;}
+
  batch(head,'Iris fiber');batch(head,'Brow fiber');
  createHair(head,m);return head;
 }
 function createHair(head,m){
  const hair=new THREE.Group();hair.name='Hair / swept fringe and twin ponytails';head.add(hair);
- const cp=(u,v)=>{const a=-u*TAU,front=Math.cos(a),boundY=front>0?.005+.062*front:-.050+.016*front,limit=Math.acos(clamp((boundY-.018)/.145,-1,1)),p=v*limit;return [Math.sin(a)*.100*Math.sin(p),.018+.145*Math.cos(p),-.013+.089*Math.cos(a)*Math.sin(p)];};
+ const cp=(u,v)=>{const a=-u*TAU,front=Math.max(0,Math.cos(a)),boundY=.065*front-.056*(1-front),y=lerp(.152,boundY,v);let rx,rz;
+ if(y>.143){const t=(.152-y)/.009;rx=.008*t;rz=.008*t;}else{[rx,rz]=smoothProfile(profile,y);rx+=.006;rz+=.006;}
+ const x=rx*Math.sin(a),z=rz*Math.cos(a)+delta(x,Math.min(y,.143))*Math.pow(front,3);return [x,y,z];};
  surface(hair,'Closed sculpted scalp cap',96,44,(u,v)=>({p:cp(u,v)}),m.hair);
  for(let k=0;k<115;k++){const u=k/115,pts=[];for(let i=0;i<=21;i++){const v=.05+i/21*.95,p=cp(u+.004*Math.sin(v*4+k),v);p[0]*=1.007;p[2]+=.00035*Math.cos(-u*TAU);p[1]+=.00035;pts.push(p);}tube(hair,'Fiber cap',pts,k%9===0?.00022:.00011,k%9===0?m.hairLight:k%3?m.hairMid:m.hairDark,22,4);}
  const ends=[[-.088,.015,.047],[-.078,.031,.065],[-.065,.041,.080],[-.051,.043,.088],[-.036,.046,.094],[-.022,.049,.095],[-.008,.054,.095],[.006,.062,.093],[.021,.069,.089],[.040,.057,.080],[.065,.024,.055]];

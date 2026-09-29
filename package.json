@@ -1,1 +1,20 @@
-{"name":"campus-portrait-gpt6-astra-pro-mcp-colabdev","version":"0.1.0","private":true,"type":"module","scripts":{"dev":"vite --host 0.0.0.0 --port 4186 --strictPort","build":"vite build --outDir build","preview":"vite preview --host 0.0.0.0 --port 4186 --strictPort","qa":"node tools/qa.mjs"},"dependencies":{"three":"^0.186.1","vite":"^8.3.1"},"devDependencies":{"gltf-validator":"^2.0.0-dev.3.10","playwright":"^1.63.0"}}
+{
+  "name": "campus-portrait-gpt6-astra-pro-mcp-colabdev",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 4186 --strictPort",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 4186 --strictPort",
+    "qa": "node tools/qa.mjs"
+  },
+  "dependencies": {
+    "three": "^0.186.1",
+    "vite": "^8.3.1"
+  },
+  "devDependencies": {
+    "gltf-validator": "^2.0.0-dev.3.10",
+    "playwright": "^1.63.0"
+  }
+}

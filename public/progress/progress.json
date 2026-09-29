@@ -1,0 +1,54 @@
+{
+  "revision": 2,
+  "updatedAt": "2026-09-29T16:18:43.949Z",
+  "score": 57,
+  "status": "Terraced body contours and scalp holes are corrected. The neckline is open and shading is cleaner. Shoulder width, wide-eyed expression, hair shape and detached-looking straps still need refinement.",
+  "iterations": [
+    {
+      "id": 1,
+      "score": 43,
+      "title": "First complete model and five-view review",
+      "notes": "Recognizable clothing and stance, but scalp intersections, terraced contours, covered neckline and overbright skin prevent a credible likeness. Target not reached.",
+      "reviewedAt": "2026-09-29T16:14:07.822Z"
+    },
+    {
+      "id": 2,
+      "score": 57,
+      "title": "Continuous contours and clean scalp coverage",
+      "notes": "Terraced body contours and scalp holes are corrected. The neckline is open and shading is cleaner. Shoulder width, wide-eyed expression, hair shape and detached-looking straps still need refinement.",
+      "reviewedAt": "2026-09-29T16:18:43.949Z"
+    }
+  ],
+  "files": [
+    {
+      "title": "Front view",
+      "url": "/progress/front-gpt6-astra-pro-mcp-colabdev.png",
+      "image": "/progress/front-gpt6-astra-pro-mcp-colabdev.png",
+      "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/front-gpt6-astra-pro-mcp-colabdev.png"
+    },
+    {
+      "title": "Three-quarter view",
+      "url": "/progress/three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+      "image": "/progress/three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+      "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/three-quarter-gpt6-astra-pro-mcp-colabdev.png"
+    },
+    {
+      "title": "Side view",
+      "url": "/progress/side-gpt6-astra-pro-mcp-colabdev.png",
+      "image": "/progress/side-gpt6-astra-pro-mcp-colabdev.png",
+      "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/side-gpt6-astra-pro-mcp-colabdev.png"
+    },
+    {
+      "title": "Back view",
+      "url": "/progress/back-gpt6-astra-pro-mcp-colabdev.png",
+      "image": "/progress/back-gpt6-astra-pro-mcp-colabdev.png",
+      "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/back-gpt6-astra-pro-mcp-colabdev.png"
+    },
+    {
+      "title": "Face view",
+      "url": "/progress/face-gpt6-astra-pro-mcp-colabdev.png",
+      "image": "/progress/face-gpt6-astra-pro-mcp-colabdev.png",
+      "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/face-gpt6-astra-pro-mcp-colabdev.png"
+    }
+  ]
+}

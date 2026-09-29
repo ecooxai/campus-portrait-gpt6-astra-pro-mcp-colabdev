@@ -1,0 +1,2 @@
+import {defineConfig} from 'vite';
+export default defineConfig({server:{host:'0.0.0.0',port:4186,strictPort:true,allowedHosts:['.trycloudflare.com','.alima.freeddns.org']},build:{outDir:'/build/campus-portrait-gpt6-astra-pro-mcp-colabdev',emptyOutDir:true,chunkSizeWarningLimit:900,rollupOptions:{output:{manualChunks:(id)=>id.includes('node_modules/three')?'three':undefined}}}});

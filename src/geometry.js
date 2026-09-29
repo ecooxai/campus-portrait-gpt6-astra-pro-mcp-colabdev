@@ -3,11 +3,13 @@ export const V=(x=0,y=0,z=0)=>new THREE.Vector3(x,y,z);
 export const clamp=THREE.MathUtils.clamp,lerp=THREE.MathUtils.lerp,TAU=Math.PI*2;
 export const gauss=(x,c,s)=>Math.exp(-Math.pow((x-c)/s,2));
 export function smoothProfile(rows,t){
- if(t<=rows[0][0])return rows[0].slice(1);
- if(t>=rows.at(-1)[0])return rows.at(-1).slice(1);
- let i=0;while(rows[i+1][0]<t)i++;
- const p=rows[i],q=rows[i+1],a=(t-p[0])/(q[0]-p[0]),v=a*a*(3-2*a);
- return p.slice(1).map((n,k)=>lerp(n,q[k+1],v));
+ if(t<=rows[0][0])return rows[0].slice(1);if(t>=rows.at(-1)[0])return rows.at(-1).slice(1);
+ let i=0;while(rows[i+1][0]<t)i++;const p=rows[i],q=rows[i+1],h=q[0]-p[0],u=(t-p[0])/h;
+ return p.slice(1).map((value,k)=>{const c=k+1,d=(q[c]-p[c])/h;let m0=d,m1=d;
+ if(i>0){const hp=p[0]-rows[i-1][0],dp=(p[c]-rows[i-1][c])/hp;m0=dp*d<=0?0:(2*h+hp+h+2*hp)/((2*h+hp)/dp+(h+2*hp)/d);}
+ if(i+2<rows.length){const hn=rows[i+2][0]-q[0],dn=(rows[i+2][c]-q[c])/hn;m1=dn*d<=0?0:(2*hn+h+hn+2*h)/((2*hn+h)/d+(hn+2*h)/dn);}
+ return (2*u*u*u-3*u*u+1)*p[c]+(u*u*u-2*u*u+u)*h*m0+(-2*u*u*u+3*u*u)*q[c]+(u*u*u-u*u)*h*m1;
+ });
 }
 export function mesh(parent,name,geometry,material){const m=new THREE.Mesh(geometry,material);m.name=name;m.castShadow=true;m.receiveShadow=true;parent.add(m);return m;}
 export function sphere(parent,name,pos,scale,mat,segments=40){const m=mesh(parent,name,new THREE.SphereGeometry(1,segments,28),mat);m.position.set(...pos);m.scale.set(...scale);return m;}
