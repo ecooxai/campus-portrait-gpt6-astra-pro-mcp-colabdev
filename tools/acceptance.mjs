@@ -1,7 +1,7 @@
 import {chromium} from 'playwright';
 import fs from 'node:fs/promises';
 const suffix='gpt6-astra-pro-mcp-colabdev';
-const base=process.env.PREVIEW_URL||'http://127.0.0.1:4196';
+const base=(process.env.PREVIEW_URL||'http://127.0.0.1:4196').replace(/\/$/,'');
 const report={timestamp:new Date().toISOString(),url:base,checks:{},errors:[],warnings:[],notes:['Browser tests use headless Chromium and SwiftShader software WebGL; they are not measurements of real phone GPU performance.']};
 const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/home/dev/.local/bin/chromium',headless:true,args:['--no-sandbox','--disable-dev-shm-usage','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
 try{
@@ -20,8 +20,8 @@ try{
  for(const v of ['front','three-quarter','side','back','face']){await page.locator(`[data-view="${v}"]`).click();report.checks['view-'+v]=await page.locator('#view-name').textContent()===v.toUpperCase();}
  await page.selectOption('#quality','1');report.checks.resolutionSelector=await page.evaluate(()=>window.studio.renderer.getPixelRatio()===1);
  for(const route of ['/progress/front-'+suffix+'.png','/exports/campus-portrait-'+suffix+'.glb']){const response=await context.request.head(base+route);report.checks['http-'+route]=response.status()===200;}
- report.artifactDownloads=[];for(const href of await page.locator('.download-card').evaluateAll(xs=>xs.map(x=>x.getAttribute('href')))){const response=await context.request.head(base+href);report.artifactDownloads.push({href,status:response.status()});}report.checks.publishedArtifactCards=report.artifactDownloads.length>=3&&report.artifactDownloads.every(r=>r.status===200);
- const deny=await context.request.get(base+'/.git/config');report.checks.privatePathsBlocked=deny.status()===403;
+ report.artifactDownloads=[];for(const href of await page.locator('.download-card').evaluateAll(xs=>xs.map(x=>x.getAttribute('href')))){const response=await context.request.head(new URL(href,base+'/').href);report.artifactDownloads.push({href,status:response.status()});}report.checks.publishedArtifactCards=report.artifactDownloads.length>=3&&report.artifactDownloads.every(r=>r.status===200);
+ const deny=await context.request.get(base+'/.git/config');report.checks.privatePathsBlocked=[403,404].includes(deny.status());
  const mobile=await browser.newContext({viewport:{width:390,height:844},deviceScaleFactor:1,isMobile:true,hasTouch:true});const phone=await mobile.newPage();phone.on('pageerror',e=>report.errors.push('mobile: '+e.message));await phone.goto(base+'/',{waitUntil:'networkidle',timeout:120000});await phone.waitForFunction(()=>window.studio?.ready);
  const cdp=await mobile.newCDPSession(phone),before=await phone.evaluate(()=>window.studio.camera.position.toArray());
  await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:245,y:420,id:1}]});for(let k=1;k<=5;k++)await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:245-k*15,y:420+k*2,id:1}]});await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await phone.waitForTimeout(350);
