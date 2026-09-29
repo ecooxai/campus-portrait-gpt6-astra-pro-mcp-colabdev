@@ -7,3 +7,7 @@ public/exports/*.glb
 public/progress/*.png
 public/progress/*.webm
 public/progress/*.mp4
+
+.output/
+dist/
+public/exports/*.tar.gz

@@ -1,8 +1,8 @@
 {
-  "revision": 5,
-  "updatedAt": "2026-09-29T16:37:27.973Z",
-  "score": 66,
-  "status": "Forearms now retain round cross-sections and the collar no longer forms large tie-band loops. Fine fringe fibers create shadow speckling and the tooth row projects too far forward. Photographic likeness remains approximate.",
+  "revision": 10,
+  "updatedAt": "2026-09-29T17:04:56.051Z",
+  "score": 70,
+  "status": "The independent GLB now matches geometry, material factors and cloth appearance. Degenerate triangles and unsupported material extensions are removed. The model remains a 70/100 stylized study: facial likeness, fine hair and garment realism still fall short of the requested 95+ target.",
   "iterations": [
     {
       "id": 1,
@@ -38,6 +38,41 @@
       "title": "Round forearms and continuous swept fringe",
       "notes": "Forearms now retain round cross-sections and the collar no longer forms large tie-band loops. Fine fringe fibers create shadow speckling and the tooth row projects too far forward. Photographic likeness remains approximate.",
       "reviewedAt": "2026-09-29T16:37:27.973Z"
+    },
+    {
+      "id": 6,
+      "score": 67,
+      "title": "Static mesh batching and first GLB validation",
+      "notes": "Geometry was reduced to 39 meshes and 77 measured draw calls; the GLB validates with zero errors or warnings. Fringe artifacts remain despite shadow changes, and the unsupported bump extension must be replaced for portability. Likeness is still approximate.",
+      "reviewedAt": "2026-09-29T16:42:31.768Z"
+    },
+    {
+      "id": 7,
+      "score": 66,
+      "title": "Portable materials and artifact cleanup",
+      "notes": "Fringe speckling is removed and the unsupported bump extension is gone. Export validation and viewer controls pass, but visual inspection caught an inward-facing dental surface; this regression lowers the score and must be fixed before publication.",
+      "reviewedAt": "2026-09-29T16:44:23.691Z"
+    },
+    {
+      "id": 8,
+      "score": 69,
+      "title": "Clean fringe and repaired smile",
+      "notes": "The inverted tooth surface is fixed and the fringe no longer has intersecting fibers. Front, side, back, face and mobile views are coherent. The face is still a stylized approximation rather than a close photographic likeness; fine hair and garment realism remain below target.",
+      "reviewedAt": "2026-09-29T16:47:00.167Z"
+    },
+    {
+      "id": 9,
+      "score": 70,
+      "title": "Lower-face proportions and exported-model inspection",
+      "notes": "The face has less exaggerated eye width and a shorter chin; the clothes and silhouette are coherent from the reviewed angles. This remains a 70/100 stylized study, not a 95+ photographic likeness. Remaining priorities are facial anatomy, hair realism, garment drape and measured real-device performance.",
+      "reviewedAt": "2026-09-29T16:51:25.136Z"
+    },
+    {
+      "id": 10,
+      "score": 70,
+      "title": "Material-faithful GLB and final checkpoint review",
+      "notes": "The independent GLB now matches geometry, material factors and cloth appearance. Degenerate triangles and unsupported material extensions are removed. The model remains a 70/100 stylized study: facial likeness, fine hair and garment realism still fall short of the requested 95+ target.",
+      "reviewedAt": "2026-09-29T17:04:56.051Z"
     }
   ],
   "files": [
@@ -70,6 +105,15 @@
       "url": "/progress/face-gpt6-astra-pro-mcp-colabdev.png",
       "image": "/progress/face-gpt6-astra-pro-mcp-colabdev.png",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/face-gpt6-astra-pro-mcp-colabdev.png"
+    }
+  ],
+  "downloads": [
+    {
+      "kind": "GLB",
+      "title": "3D character model",
+      "description": "Static geometry with embedded textures · about 7 MB",
+      "url": "/exports/campus-portrait-gpt6-astra-pro-mcp-colabdev.glb",
+      "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/campus-portrait-gpt6-astra-pro-mcp-colabdev.glb"
     }
   ]
 }

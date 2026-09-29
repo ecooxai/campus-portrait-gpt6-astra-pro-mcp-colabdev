@@ -7,7 +7,10 @@
     "dev": "vite --host 0.0.0.0 --port 4186 --strictPort",
     "build": "vite build",
     "preview": "vite preview --host 0.0.0.0 --port 4186 --strictPort",
-    "qa": "node tools/qa.mjs"
+    "qa": "node tools/qa.mjs",
+    "build:portable": "vite build --outDir dist",
+    "serve": "node tools/serve.mjs",
+    "acceptance": "node tools/acceptance.mjs"
   },
   "dependencies": {
     "three": "^0.186.1",

@@ -3,6 +3,7 @@ import {RoundedBoxGeometry} from 'three/addons/geometries/RoundedBoxGeometry.js'
 import {V,lerp,TAU,gauss,smoothProfile,mesh,sphere,surface,tube,loft,ribbon,patch} from './geometry.js';
 import {createHead} from './head.js';
 import {makeMaterials} from './materials.js';
+import {optimizeGroup} from './optimize.js';
 
 function box(p,name,pos,size,r,mat){const b=mesh(p,name,new RoundedBoxGeometry(...size,3,r),mat);b.position.set(...pos);return b;}
 function seamEllipse(p,name,y,rx,rz,cx,cz,mat,r=.0008){const pts=[];for(let k=0;k<=100;k++){const a=k/100*TAU;pts.push([cx+rx*Math.sin(a),y,cz+rz*Math.cos(a)]);}return tube(p,name,pts,r,mat,100,5);}
@@ -95,17 +96,17 @@ function makeBackpack(p,m){
  box(g,'Silver zip pull',[.064,1.214,-.272],[.007,.020,.003],.001,m.metal);
  tube(g,'Backpack top handle',[[-.043,1.407,-.163],[-.030,1.440,-.164],[.030,1.440,-.164],[.043,1.407,-.163]],.005,m.webbing,28,8);
  for(const s of [-1,1]){
- ribbon(g,'Padded shoulder strap '+s,[[s*.080,1.396,-.162],[s*.114,1.384,-.058],[s*.135,1.348,shirtZ(s*.135,1.348)+.006],[s*.139,1.280,shirtZ(s*.139,1.280)+.006],[s*.142,1.213,shirtZ(s*.142,1.213)+.006]],.017,.004,m.backpack,{segments:46,radial:12});
+ ribbon(g,'Padded shoulder strap '+s,[[s*.085,1.347,-.129],[s*.116,1.352,-.063],[s*.136,1.334,shirtZ(s*.136,1.334)+.006],[s*.139,1.280,shirtZ(s*.139,1.280)+.006],[s*.142,1.213,shirtZ(s*.142,1.213)+.006]],.017,.004,m.backpack,{segments:46,radial:12});
  ribbon(g,'Adjustable webbing strap '+s,[[s*.142,1.235,shirtZ(s*.142,1.235)+.010],[s*.146,1.185,shirtZ(s*.146,1.185)+.006],[s*.145,1.109,.036],[s*.140,1.064,.021],[s*.118,1.083,-.140]],.009,.002,m.webbing,{segments:40,radial:8});
  const bz=shirtZ(s*.142,1.236)+.014;
  box(g,'Strap ladder buckle '+s,[s*.142,1.236,bz],[.028,.036,.008],.005,m.buckle);
  for(let y of [1.225,1.237,1.247])box(g,'Buckle rail '+s,[s*.142,y,bz+.006],[.025,.0035,.004],.001,m.webbing);
- tube(g,'Backpack side seam '+s,[[s*.131,1.111,-.204],[s*.137,1.234,-.205],[s*.121,1.381,-.201]],.0009,m.stitch,32,5);
+ tube(g,'Backpack side seam '+s,[[s*.131,1.111,-.204],[s*.137,1.234,-.205],[s*.103,1.360,-.216]],.0009,m.stitch,32,5);
  }
 }
 export function createCharacter(){
  const root=new THREE.Group();root.name='Campus portrait | GPT-6 Astra Pro | mcp-colabdev';const m=makeMaterials();
  makeLegs(root,m);makeSkirt(root,m);makeShirt(root,m);makeBackpack(root,m);const head=createHead(root,m);
  root.userData={description:'Original hand-authored procedural three-dimensional interpretation of the supplied clothing and stance. Unseen views are inferred.',author:'GPT-6 Astra Pro / mcp-colabdev',units:'meters',rigged:false};
- return {root,head,materials:m};
+ root.updateMatrixWorld(true);optimizeGroup(head);optimizeGroup(root,head);return {root,head,materials:m};
 }

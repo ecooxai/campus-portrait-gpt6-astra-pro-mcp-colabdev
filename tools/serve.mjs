@@ -2,7 +2,7 @@ import http from 'node:http';
 import fs from 'node:fs';
 import fsp from 'node:fs/promises';
 import path from 'node:path';
-const root=path.resolve('/build/campus-portrait-gpt6-astra-pro-mcp-colabdev'),port=4196;
+const root=path.resolve(process.env.PREVIEW_ROOT||'/build/campus-portrait-gpt6-astra-pro-mcp-colabdev'),port=Number(process.env.PORT||4196);
 const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.png':'image/png','.glb':'model/gltf-binary','.zip':'application/zip','.gz':'application/gzip','.md':'text/plain; charset=utf-8'};
 const server=http.createServer(async(req,res)=>{try{
  if(!['GET','HEAD'].includes(req.method)){res.writeHead(405,{'Allow':'GET, HEAD'});return res.end('Method not allowed');}
