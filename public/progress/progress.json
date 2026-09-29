@@ -1,8 +1,8 @@
 {
-  "revision": 2,
-  "updatedAt": "2026-09-29T16:18:43.949Z",
-  "score": 57,
-  "status": "Terraced body contours and scalp holes are corrected. The neckline is open and shading is cleaner. Shoulder width, wide-eyed expression, hair shape and detached-looking straps still need refinement.",
+  "revision": 5,
+  "updatedAt": "2026-09-29T16:37:27.973Z",
+  "score": 66,
+  "status": "Forearms now retain round cross-sections and the collar no longer forms large tie-band loops. Fine fringe fibers create shadow speckling and the tooth row projects too far forward. Photographic likeness remains approximate.",
   "iterations": [
     {
       "id": 1,
@@ -17,6 +17,27 @@
       "title": "Continuous contours and clean scalp coverage",
       "notes": "Terraced body contours and scalp holes are corrected. The neckline is open and shading is cleaner. Shoulder width, wide-eyed expression, hair shape and detached-looking straps still need refinement.",
       "reviewedAt": "2026-09-29T16:18:43.949Z"
+    },
+    {
+      "id": 3,
+      "score": 61,
+      "title": "Proportion and expression correction",
+      "notes": "Shoulders are narrower, hands no longer protrude in front, the scalp is rounded and irises are bounded by eyelids. The face remains stylized; hair clumps, rigid backpack and floating strap hardware still need work.",
+      "reviewedAt": "2026-09-29T16:25:40.523Z"
+    },
+    {
+      "id": 4,
+      "score": 63,
+      "title": "Hair, bag, hand pose and shoe refinement",
+      "notes": "The backpack and clasped-hand composition are better, but the forearm loft flattened under the new pose. Collar-band intersections and the lower lip need correction. These regressions are explicitly retained in the review record.",
+      "reviewedAt": "2026-09-29T16:32:42.295Z"
+    },
+    {
+      "id": 5,
+      "score": 66,
+      "title": "Round forearms and continuous swept fringe",
+      "notes": "Forearms now retain round cross-sections and the collar no longer forms large tie-band loops. Fine fringe fibers create shadow speckling and the tooth row projects too far forward. Photographic likeness remains approximate.",
+      "reviewedAt": "2026-09-29T16:37:27.973Z"
     }
   ],
   "files": [
