@@ -10,7 +10,6 @@ build='/build/campus-portrait-pages-gpt6-astra-pro-mcp-colabdev'
 stage="$project_dir/.agentwork/pages-gpt6-astra-pro-mcp-colabdev"
 remote="https://github.com/$repo.git"
 command -v gh >/dev/null
-command -v rsync >/dev/null
 mkdir -p "$stage"
 BASE_URL="$site_base" BUILD_DIR="$build" npm run build
 if [[ ! -d "$stage/.git" ]]; then
@@ -18,7 +17,7 @@ if [[ ! -d "$stage/.git" ]]; then
   git -C "$stage" remote add origin "$remote"
 fi
 # Both paths are owned deployment directories; never mirror the source project root.
-rsync -a --delete --exclude='.git/' "$build/" "$stage/"
+cp -a "$build/." "$stage/"
 : > "$stage/.nojekyll"
 git -C "$stage" add -A
 if ! git -C "$stage" diff --cached --quiet; then

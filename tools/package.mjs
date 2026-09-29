@@ -19,12 +19,14 @@ await fs.mkdir(exportsDir,{recursive:true});
 const implementationCommit=execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim();
 const branch=execFileSync('git',['branch','--show-current'],{encoding:'utf8'}).trim();
 const preview=(await fs.readFile('.agentwork/PREVIEW_URL.txt','utf8')).trim();
+const pages=await fs.readFile('.agentwork/PAGES_URL.txt','utf8').then(t=>t.trim()).catch(()=>'');
+const repository='https://github.com/ecooxai/campus-portrait-gpt6-astra-pro-mcp-colabdev';
 const modelName=`campus-portrait-${suffix}.glb`;
 const sourceName=`campus-portrait-source-${suffix}.tar.gz`;
 const reportName=`verification-${suffix}.json`;
 const handoffName=`HANDOFF-${suffix}.md`;
 const modelBytes=(await fs.stat(path.join(out,modelName))).size;
-const report={project:projectName,revision:progress.revision,visualScore:progress.score,requestedVisualScore:'greater than 95/100',requestedIterations:20000,completedReviewedRevisions:progress.iterations.length,implementationCommit,branch,renderTests:qa,productionAcceptance:acceptance,gltfValidation:validation};
+const report={project:projectName,revision:progress.revision,visualScore:progress.score,requestedVisualScore:'greater than 95/100',requestedIterations:20000,completedReviewedRevisions:progress.iterations.length,implementationCommit,branch,hosting:{repository,pages,temporaryTunnel:preview},renderTests:qa,productionAcceptance:acceptance,gltfValidation:validation};
 await fs.writeFile(path.join(out,reportName),JSON.stringify(report,null,2));
 await fs.copyFile(path.join(out,reportName),path.join(exportsDir,reportName));
 
@@ -37,6 +39,14 @@ A JavaScript / Three.js reconstruction of the clothing, hair and relaxed stance 
 Revision **${progress.revision}**, **${progress.score}/100** subjective visual score, **${progress.iterations.length} reviewed model revisions**. The requested 20,000 iterations and greater-than-95 score are **not completed**. Passing automated tests is not a claim that the likeness or artistic target is achieved. The model is static: no skeleton, skinning, facial blendshapes or locomotion animations.
 
 The main remaining limitations are photographic facial likeness, fine hair structure, natural garment drape, hand refinement and unmeasured real-device frame rate. Unseen views are an authored interpretation, not facts recovered from the photograph.
+
+## Hosting
+
+Hosted studio: ${pages||'Not deployed'}
+
+Editable source repository: ${repository}
+
+The hosted studio is published from the dedicated gpt6-astra-pro-mcp-colabdev/site branch. It does not depend on the live Colab runtime. The temporary live-instance tunnel remains ${preview}.
 
 ## Run the editable project
 
@@ -115,8 +125,11 @@ Build: /build/${projectName}
 Branch: ${branch}
 Implementation commit at packaging: ${implementationCommit}
 Public quick tunnel: ${preview}
+GitHub Pages preview: ${pages||'not deployed'}
+Editable source repository: ${repository}
+Pages branch: gpt6-astra-pro-mcp-colabdev/site
 
-The quick tunnel is temporary and depends on the live instance. It is not a permanent Cloudflare Pages deployment. The supplied photograph remains in the conversation, not in this public project. Use vision, not image-pixel extraction, when continuing its likeness.
+The quick tunnel is temporary and depends on the live instance. The separate GitHub Pages deployment serves its dedicated static site branch independently of Colab. Do not confuse the two URLs. A Colab runtime backup completed successfully before the final GitHub publishing work; later code and static artifacts are persisted in the repository. The supplied photograph remains in the conversation, not in this public project. Use vision, not image-pixel extraction, when continuing its likeness.
 
 ## Live services — do not duplicate or stop unrelated work
 
@@ -157,6 +170,10 @@ GLB validator: ${validation.issues.numErrors} errors, ${validation.issues.numWar
 Bounds in model meters: ${qa.stats.bounds.map(n=>n.toFixed(4)).join(' × ')}. This is authored scale, not an inferred measurement of the photographed person.
 No rig, skinning or animation is present. The generator modules remain the editable source; the GLB is a static optimized export with embedded textures.
 
+## GitHub Pages deployment
+
+Vite supports BASE_URL. For Pages use BASE_URL=/campus-portrait-gpt6-astra-pro-mcp-colabdev/ and BUILD_DIR=/build/campus-portrait-pages-gpt6-astra-pro-mcp-colabdev. Do not overwrite the root-hosted build with the Pages subpath build. Runtime file URLs are resolved through import.meta.env.BASE_URL. The isolated site repository is .agentwork/pages-gpt6-astra-pro-mcp-colabdev; copy only generated files into it and push its site branch. The authenticated GitHub CLI is used through a per-command credential helper, not a printed token or changed global Git configuration. Run production acceptance with PREVIEW_URL set to the Pages URL after deployment. The tools/deploy-pages.sh file documents these scoped steps; it does not delete other workspace files.
+
 ## Continue / publish
 
 Make an actual owned change, run tools/qa.mjs with the next revision number, inspect rendered evidence, and append a justified score with tools/review.mjs. Run the production acceptance after rebuilding, then package only when it passes. Keep binaries in .output and scratch work in .agentwork. Rebuild with npm run build to update the project-only public server; do not expose the development project root. Commit important changes on the existing model/tool-named branch. Do not claim unattended continuation or completed target counts.
@@ -179,7 +196,7 @@ execFileSync('tar',['--exclude=*.tar.gz','--transform',`s,^,${projectName}/,`,'-
 execFileSync('gzip',['-t',path.join(out,sourceName)]);
 await fs.copyFile(path.join(out,sourceName),path.join(exportsDir,sourceName));
 const names=[modelName,sourceName,reportName,handoffName,...['front','three-quarter','side','back','face'].map(v=>`${v}-${suffix}.png`)];
-const manifest={project,buildDirectory:`/build/${projectName}`,revision:progress.revision,visualScore:progress.score,reviewedRevisions:progress.iterations.length,implementationCommit,branch,preview,files:[]};
+const manifest={project,buildDirectory:`/build/${projectName}`,revision:progress.revision,visualScore:progress.score,reviewedRevisions:progress.iterations.length,implementationCommit,branch,preview,pages,repository,files:[]};
 for(const filename of names){const data=await fs.readFile(path.join(out,filename));manifest.files.push({filename,path:path.join(out,filename),bytes:data.length,sha256:createHash('sha256').update(data).digest('hex')});}
 await fs.writeFile(path.join(out,`manifest-${suffix}.json`),JSON.stringify(manifest,null,2));
 await fs.writeFile(path.join(out,`SHA256SUMS-${suffix}.txt`),manifest.files.map(f=>`${f.sha256}  ${f.filename}`).join('\n')+'\n');
