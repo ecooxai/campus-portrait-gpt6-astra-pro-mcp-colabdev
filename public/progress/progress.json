@@ -1,6 +1,6 @@
 {
   "revision": 10,
-  "updatedAt": "2026-09-29T17:04:56.051Z",
+  "updatedAt": "2026-09-29T17:10:02.870Z",
   "score": 70,
   "status": "The independent GLB now matches geometry, material factors and cloth appearance. Degenerate triangles and unsupported material extensions are removed. The model remains a 70/100 stylized study: facial likeness, fine hair and garment realism still fall short of the requested 95+ target.",
   "iterations": [
@@ -111,9 +111,23 @@
     {
       "kind": "GLB",
       "title": "3D character model",
-      "description": "Static geometry with embedded textures · about 7 MB",
+      "description": "Static geometry and embedded textures · 6.96 MB",
       "url": "/exports/campus-portrait-gpt6-astra-pro-mcp-colabdev.glb",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/campus-portrait-gpt6-astra-pro-mcp-colabdev.glb"
+    },
+    {
+      "kind": "SRC",
+      "title": "Editable source archive",
+      "description": "JavaScript, model, renders, tests and handoff",
+      "url": "/exports/campus-portrait-source-gpt6-astra-pro-mcp-colabdev.tar.gz",
+      "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/campus-portrait-source-gpt6-astra-pro-mcp-colabdev.tar.gz"
+    },
+    {
+      "kind": "QA",
+      "title": "Verification report",
+      "description": "25 acceptance checks · validator 0 errors / 0 warnings",
+      "url": "/exports/verification-gpt6-astra-pro-mcp-colabdev.json",
+      "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/verification-gpt6-astra-pro-mcp-colabdev.json"
     }
   ]
 }
