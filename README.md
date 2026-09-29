@@ -8,6 +8,14 @@ Revision **10**, **70/100** subjective visual score, **10 reviewed model revisio
 
 The main remaining limitations are photographic facial likeness, fine hair structure, natural garment drape, hand refinement and unmeasured real-device frame rate. Unseen views are an authored interpretation, not facts recovered from the photograph.
 
+## Hosting
+
+Hosted studio: https://ecooxai.github.io/campus-portrait-gpt6-astra-pro-mcp-colabdev/
+
+Editable source repository: https://github.com/ecooxai/campus-portrait-gpt6-astra-pro-mcp-colabdev
+
+The hosted studio is published from the dedicated gpt6-astra-pro-mcp-colabdev/site branch. It does not depend on the live Colab runtime. The temporary live-instance tunnel remains https://contrary-commands-usual-earn.trycloudflare.com.
+
 ## Run the editable project
 
 Tested with Node 22.23.3, Three.js 0.186.1, Vite 8.3.1 and Playwright 1.63.0. Dependency versions are preserved in package-lock.json.
