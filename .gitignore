@@ -1,0 +1,9 @@
+node_modules/
+build/
+.agentwork/
+.output/*.zip
+.output/*.tar.gz
+public/exports/*.glb
+public/progress/*.png
+public/progress/*.webm
+public/progress/*.mp4
