@@ -1,6 +1,6 @@
 {
   "revision": 10,
-  "updatedAt": "2026-09-29T17:10:02.870Z",
+  "updatedAt": "2026-09-29T17:28:55.867Z",
   "score": 70,
   "status": "The independent GLB now matches geometry, material factors and cloth appearance. Degenerate triangles and unsupported material extensions are removed. The model remains a 70/100 stylized study: facial likeness, fine hair and garment realism still fall short of the requested 95+ target.",
   "iterations": [

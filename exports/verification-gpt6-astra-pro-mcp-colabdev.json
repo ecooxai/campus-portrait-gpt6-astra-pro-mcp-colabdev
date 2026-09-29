@@ -5,8 +5,13 @@
   "requestedVisualScore": "greater than 95/100",
   "requestedIterations": 20000,
   "completedReviewedRevisions": 10,
-  "implementationCommit": "fcb170f2a628ec8f8d8877aba4943e7c5c8facbf",
+  "implementationCommit": "15dd7eeebe6c5096baff4857caf2711ff7cb5242",
   "branch": "gpt6-astra-pro-mcp-colabdev/recovery-body-viewer",
+  "hosting": {
+    "repository": "https://github.com/ecooxai/campus-portrait-gpt6-astra-pro-mcp-colabdev",
+    "pages": "https://ecooxai.github.io/campus-portrait-gpt6-astra-pro-mcp-colabdev/",
+    "temporaryTunnel": "https://contrary-commands-usual-earn.trycloudflare.com"
+  },
   "renderTests": {
     "revision": 10,
     "timestamp": "2026-09-29T16:59:01.609Z",
@@ -76,8 +81,8 @@
     ]
   },
   "productionAcceptance": {
-    "timestamp": "2026-09-29T17:04:57.765Z",
-    "url": "http://127.0.0.1:4196",
+    "timestamp": "2026-09-29T17:26:43.134Z",
+    "url": "https://ecooxai.github.io/campus-portrait-gpt6-astra-pro-mcp-colabdev",
     "checks": {
       "materialFactorsMatch": true,
       "exportedTriangleCountMatches": true,
@@ -1249,15 +1254,15 @@
     },
     "artifactDownloads": [
       {
-        "href": "/exports/campus-portrait-gpt6-astra-pro-mcp-colabdev.glb",
+        "href": "/campus-portrait-gpt6-astra-pro-mcp-colabdev/exports/campus-portrait-gpt6-astra-pro-mcp-colabdev.glb",
         "status": 200
       },
       {
-        "href": "/exports/campus-portrait-source-gpt6-astra-pro-mcp-colabdev.tar.gz",
+        "href": "/campus-portrait-gpt6-astra-pro-mcp-colabdev/exports/campus-portrait-source-gpt6-astra-pro-mcp-colabdev.tar.gz",
         "status": 200
       },
       {
-        "href": "/exports/verification-gpt6-astra-pro-mcp-colabdev.json",
+        "href": "/campus-portrait-gpt6-astra-pro-mcp-colabdev/exports/verification-gpt6-astra-pro-mcp-colabdev.json",
         "status": 200
       }
     ],

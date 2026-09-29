@@ -7,10 +7,13 @@ Build a JS/WebGL 3D model of the supplied uniform photograph. Work in Colab dev,
 Project: /home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev
 Build: /build/campus-portrait-gpt6-astra-pro-mcp-colabdev
 Branch: gpt6-astra-pro-mcp-colabdev/recovery-body-viewer
-Implementation commit at packaging: fcb170f2a628ec8f8d8877aba4943e7c5c8facbf
+Implementation commit at packaging: 15dd7eeebe6c5096baff4857caf2711ff7cb5242
 Public quick tunnel: https://contrary-commands-usual-earn.trycloudflare.com
+GitHub Pages preview: https://ecooxai.github.io/campus-portrait-gpt6-astra-pro-mcp-colabdev/
+Editable source repository: https://github.com/ecooxai/campus-portrait-gpt6-astra-pro-mcp-colabdev
+Pages branch: gpt6-astra-pro-mcp-colabdev/site
 
-The quick tunnel is temporary and depends on the live instance. It is not a permanent Cloudflare Pages deployment. The supplied photograph remains in the conversation, not in this public project. Use vision, not image-pixel extraction, when continuing its likeness.
+The quick tunnel is temporary and depends on the live instance. The separate GitHub Pages deployment serves its dedicated static site branch independently of Colab. Do not confuse the two URLs. A Colab runtime backup completed successfully before the final GitHub publishing work; later code and static artifacts are persisted in the repository. The supplied photograph remains in the conversation, not in this public project. Use vision, not image-pixel extraction, when continuing its likeness.
 
 ## Live services — do not duplicate or stop unrelated work
 
@@ -50,6 +53,10 @@ Combined report: /home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabde
 GLB validator: 0 errors, 0 warnings, 0 informational messages.
 Bounds in model meters: 0.4973 × 1.7007 × 0.4683. This is authored scale, not an inferred measurement of the photographed person.
 No rig, skinning or animation is present. The generator modules remain the editable source; the GLB is a static optimized export with embedded textures.
+
+## GitHub Pages deployment
+
+Vite supports BASE_URL. For Pages use BASE_URL=/campus-portrait-gpt6-astra-pro-mcp-colabdev/ and BUILD_DIR=/build/campus-portrait-pages-gpt6-astra-pro-mcp-colabdev. Do not overwrite the root-hosted build with the Pages subpath build. Runtime file URLs are resolved through import.meta.env.BASE_URL. The isolated site repository is .agentwork/pages-gpt6-astra-pro-mcp-colabdev; copy only generated files into it and push its site branch. The authenticated GitHub CLI is used through a per-command credential helper, not a printed token or changed global Git configuration. Run production acceptance with PREVIEW_URL set to the Pages URL after deployment. The tools/deploy-pages.sh file documents these scoped steps; it does not delete other workspace files.
 
 ## Continue / publish
 
