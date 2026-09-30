@@ -1,8 +1,8 @@
 {
-  "revision": 25,
-  "updatedAt": "2026-09-30T00:22:31.773Z",
-  "score": 80,
-  "status": "The intended hair and eye reflections now use standard exported material factors, and the directional normal strength is baked into the texture. The GLB validates cleanly. The model remains at 80/100; the requested 85 target is not claimed.",
+  "revision": 29,
+  "updatedAt": "2026-09-30T15:22:18.929Z",
+  "score": 88.5,
+  "status": "The campaign has 100 individually reviewed edit-and-render candidates with 216 distinct evidence images. C100 retains the improved face proportions, clothing, closed wrists, low loafers and reduced-density geometry. Its subjective visual score is 88.5/100; the requested 95-point target remains unmet.",
   "iterations": [
     {
       "id": 1,
@@ -178,6 +178,34 @@
       "title": "Portable reflections and normal-map export",
       "notes": "The intended hair and eye reflections now use standard exported material factors, and the directional normal strength is baked into the texture. The GLB validates cleanly. The model remains at 80/100; the requested 85 target is not claimed.",
       "reviewedAt": "2026-09-30T00:12:53.669Z"
+    },
+    {
+      "id": 26,
+      "score": 82,
+      "title": "Selected head, eye and lip proportion refinement",
+      "notes": "Eight distinct new design candidates were rendered and individually reviewed. C8 combines the better neck exposure, softer nasal bridge, calmer eye whites and lip transition. The new campaign target is at least 100 visual candidates and 95/100; it has not been reached.",
+      "reviewedAt": "2026-09-30T08:34:48.260Z"
+    },
+    {
+      "id": 27,
+      "score": 85,
+      "title": "Forty reviewed candidates and repaired layered hair",
+      "notes": "The selected C40 restores physical hair shading, adds restrained strand breakup, curves the nape and keeps the improved head, smile and ear geometry. Forty distinct new candidates have been rendered and individually reviewed; the current 100-candidate and 95/100 targets are still unmet.",
+      "reviewedAt": "2026-09-30T09:15:13.428Z"
+    },
+    {
+      "id": 28,
+      "score": 87,
+      "title": "Sixty-four reviewed candidates and validated garment checkpoint",
+      "notes": "The selected C64 combines the revised eye and nose anatomy, restrained skin treatment, slimmer sleeves, tapered tie knot and more natural collar lay. Sixty-four distinct campaign candidates have been individually reviewed. The current 95/100 visual target has not been achieved.",
+      "reviewedAt": "2026-09-30T14:18:39.226Z"
+    },
+    {
+      "id": 29,
+      "score": 88.5,
+      "title": "One hundred reviewed candidates and validated C100 checkpoint",
+      "notes": "The campaign has 100 individually reviewed edit-and-render candidates with 216 distinct evidence images. C100 retains the improved face proportions, clothing, closed wrists, low loafers and reduced-density geometry. Its subjective visual score is 88.5/100; the requested 95-point target remains unmet.",
+      "reviewedAt": "2026-09-30T15:08:49.965Z"
     }
   ],
   "files": [
@@ -215,24 +243,32 @@
   "downloads": [
     {
       "kind": "GLB",
-      "title": "3D character model",
-      "description": "Static geometry and embedded textures · 10.88 MB",
+      "title": "Current 3D character model",
+      "description": "Static geometry and embedded textures · 14.61 MB",
       "url": "/exports/campus-portrait-gpt6-astra-pro-mcp-colabdev.glb",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/campus-portrait-gpt6-astra-pro-mcp-colabdev.glb"
     },
     {
       "kind": "SRC",
-      "title": "Editable source archive",
-      "description": "JavaScript, model, renders, tests and handoff",
+      "title": "Editable project archive",
+      "description": "JavaScript, current model, 100 reviewed states and rendered evidence",
       "url": "/exports/campus-portrait-source-gpt6-astra-pro-mcp-colabdev.tar.gz",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/campus-portrait-source-gpt6-astra-pro-mcp-colabdev.tar.gz"
     },
     {
       "kind": "QA",
-      "title": "Verification report",
-      "description": "28 acceptance checks · validator 0 errors / 0 warnings",
+      "title": "Verification and review audit",
+      "description": "33 acceptance checks · 100 reviewed candidates · visual target still unmet",
       "url": "/exports/verification-gpt6-astra-pro-mcp-colabdev.json",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/verification-gpt6-astra-pro-mcp-colabdev.json"
     }
-  ]
+  ],
+  "campaign": {
+    "reviewed": 100,
+    "selected": 100,
+    "score": 88.5,
+    "goalComplete": false,
+    "evidenceURL": "/exports/campaign-evidence-gpt6-astra-pro-mcp-colabdev.tar.gz",
+    "auditURL": "/exports/campaign-audit-gpt6-astra-pro-mcp-colabdev.json"
+  }
 }
