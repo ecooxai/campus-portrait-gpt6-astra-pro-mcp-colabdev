@@ -1,6 +1,6 @@
 {
-  "candidate": 28,
-  "label": "Balanced brow coverage and lifted hair volume",
+  "candidate": 32,
+  "label": "Softer directional sheen and reduced coating",
   "headWidth": 1.015,
   "headHeight": 0.96,
   "headDepth": 1,
@@ -56,8 +56,8 @@
   "ponytailForward": 0,
   "ponytailSpread": 0,
   "templeWidth": 1,
-  "hairRoughness": 1,
-  "hairHighlight": 1,
+  "hairRoughness": 1.16,
+  "hairHighlight": 0.75,
   "skinBlush": 1,
   "skinWarmth": 0,
   "skinVariation": 0,
@@ -69,5 +69,8 @@
   "earTilt": -0.035,
   "earWarmth": 0.65,
   "earOutset": 0.002,
-  "earNotch": 0
+  "earNotch": 0,
+  "hairAnisotropy": 0.45,
+  "hairAnisotropyRotation": 1.5707963268,
+  "hairCoating": 0.015
 }

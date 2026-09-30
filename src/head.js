@@ -1,3 +1,4 @@
+import {addPonytailGroom} from './hair-groom.js';
 import {buildSculptedEar} from './ear-sculpt.js';
 import {D} from './design.js';
 import {profile,faceDelta as delta,faceZ,faceSkinColor,sculptedHeadPoint,mouthTop,mouthBottom} from './anatomy.js';
@@ -50,6 +51,7 @@ function createHair(head,m){
  for(const s of [-1,1]){
  const base=[[s*.092,-.025,-.056],[s*.115,-.075,-.006],[s*.126,-.14,.062],[s*.117,-.207,.117],[s*.090,s<0?-.230:-.248,.119]].map((p,i)=>[p[0]+s*D.ponytailSpread*i/4,-.025+(p[1]+.025)*D.ponytailLength,p[2]+D.ponytailForward*i/4]);
  const baseCurve=new THREE.CatmullRomCurve3(base.map(p=>V(...p)));
+ addPonytailGroom(hair,m,baseCurve,s);
  ribbon(hair,'Ponytail interior '+s,base,t=>.021*Math.pow(Math.sin(Math.PI*(.13+.87*t)),.58),t=>.018*Math.pow(Math.sin(Math.PI*(.13+.87*t)),.60),m.hairDark,{segments:42,radial:18});
  sphere(hair,'Navy elastic tie',[s*.093,-.034,-.055],[.022,.009,.022],m.webbing,22);
  for(let k=0;k<36;k++){

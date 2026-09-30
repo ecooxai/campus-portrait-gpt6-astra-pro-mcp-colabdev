@@ -2044,6 +2044,402 @@
       "completedAt": "2026-09-30T08:57:49.659Z",
       "decision": "selected checkpoint",
       "reviewedAt": "2026-09-30T09:00:18.720Z"
+    },
+    {
+      "id": 29,
+      "group": "08-directional-hair-reflections",
+      "label": "Across-strand anisotropic reflection",
+      "changes": {
+        "hairAnisotropy": 0.65,
+        "hairAnisotropyRotation": 0,
+        "hairRoughness": 1,
+        "hairCoating": 0.025,
+        "hairHighlight": 0.7
+      },
+      "basedOn": 28,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c029-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "b3dc62b547c158dd09914268bc4023a37d79bcbb58c00bec3bd925e2cf41b3c5",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "design.js",
+        "ear-sculpt.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js"
+      ],
+      "sourceCommit": "e3254862f05870913d242be187de3dc66b9aa119",
+      "designHash": "a34539774ff4b0154bd62aad7cbfb62991c824aa5a72e81417ff0ff71af0f780",
+      "startedAt": "2026-09-30T09:01:06.264Z",
+      "score": 83.5,
+      "review": "The reflection is more directional, but the across-strand highlight creates a broad band along the fringe edge and emphasizes the separate ponytail ribbons.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c029-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c029-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c029-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "8f784373e04a6392300a77f05989643b27bf2a93227651adc1ca445cb06fc730",
+          "bytes": 363242
+        },
+        {
+          "view": "face-three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c029-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c029-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c029-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "43c31485910c1993dc304c11d30c09a9031c49d066a45a458383d0c7f8aa064d",
+          "bytes": 354694
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 217996,
+        "triangles": 390529,
+        "meshes": 47,
+        "drawCalls": 85,
+        "revision": 26,
+        "designCandidate": 29,
+        "designLabel": "Across-strand anisotropic reflection",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 3706.6999999997206,
+        "totalMs": 3751.7999999998137
+      },
+      "stats": {
+        "vertices": 217996,
+        "triangles": 390529,
+        "meshes": 47,
+        "drawCalls": 85,
+        "revision": 26,
+        "designCandidate": 29,
+        "designLabel": "Across-strand anisotropic reflection",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "634acab5",
+        "positionComponents": 653988
+      },
+      "completedAt": "2026-09-30T09:01:23.182Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T09:03:20.382Z"
+    },
+    {
+      "id": 30,
+      "group": "08-directional-hair-reflections",
+      "label": "Along-strand anisotropic reflection",
+      "changes": {
+        "hairAnisotropy": 0.65,
+        "hairAnisotropyRotation": 1.5707963268,
+        "hairRoughness": 1,
+        "hairCoating": 0.025,
+        "hairHighlight": 0.7
+      },
+      "basedOn": 28,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c030-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "b3dc62b547c158dd09914268bc4023a37d79bcbb58c00bec3bd925e2cf41b3c5",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "design.js",
+        "ear-sculpt.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js"
+      ],
+      "sourceCommit": "e3254862f05870913d242be187de3dc66b9aa119",
+      "designHash": "c96dc4f0ab1f0e15be8183e5ce6aae649cd8607f753df535f449415b04b44064",
+      "startedAt": "2026-09-30T09:01:23.189Z",
+      "score": 83.5,
+      "review": "The along-strand direction is more plausible, but the stronger highlight exposes the change in tangent direction at the fringe root. The surface still looks too glossy.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c030-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c030-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c030-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "c895b4d7a751b3b81c8b65b92b22042ab9d087b1424990f26cbc576892656406",
+          "bytes": 363526
+        },
+        {
+          "view": "face-three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c030-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c030-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c030-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "09a8538109a7b53a3819334e9775ee37cb3405f5dd729b1500a8c8eb45350412",
+          "bytes": 361899
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 217996,
+        "triangles": 390529,
+        "meshes": 47,
+        "drawCalls": 85,
+        "revision": 26,
+        "designCandidate": 30,
+        "designLabel": "Along-strand anisotropic reflection",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 3144.6999999997206,
+        "totalMs": 3169.7999999998137
+      },
+      "stats": {
+        "vertices": 217996,
+        "triangles": 390529,
+        "meshes": 47,
+        "drawCalls": 85,
+        "revision": 26,
+        "designCandidate": 30,
+        "designLabel": "Along-strand anisotropic reflection",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "634acab5",
+        "positionComponents": 653988
+      },
+      "completedAt": "2026-09-30T09:01:37.714Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T09:03:20.382Z"
+    },
+    {
+      "id": 31,
+      "group": "08-directional-hair-reflections",
+      "label": "Fine directional sheen with tighter highlights",
+      "changes": {
+        "hairAnisotropy": 0.8,
+        "hairAnisotropyRotation": 1.5707963268,
+        "hairRoughness": 0.88,
+        "hairCoating": 0.02,
+        "hairHighlight": 0.75
+      },
+      "basedOn": 28,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c031-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "b3dc62b547c158dd09914268bc4023a37d79bcbb58c00bec3bd925e2cf41b3c5",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "design.js",
+        "ear-sculpt.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js"
+      ],
+      "sourceCommit": "e3254862f05870913d242be187de3dc66b9aa119",
+      "designHash": "8cb1ddff496a3cca58dc566c94d142e6bb269961354f5b687830194711ba1d3e",
+      "startedAt": "2026-09-30T09:01:37.720Z",
+      "score": 83,
+      "review": "The tighter high-anisotropy reflection makes the ponytail tresses look like shiny cords. Reject the more aggressive sheen.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c031-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c031-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c031-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "13fffc39a758e78bfe38e6be31f12aac8e4465594128a937c81aba79ac1bcdf9",
+          "bytes": 365540
+        },
+        {
+          "view": "face-three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c031-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c031-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c031-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "aca2394872ef5686b89cab7eb79d54d3e1f02fd777a72dc9f503ded3c7acfbd6",
+          "bytes": 366928
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 217996,
+        "triangles": 390529,
+        "meshes": 47,
+        "drawCalls": 85,
+        "revision": 26,
+        "designCandidate": 31,
+        "designLabel": "Fine directional sheen with tighter highlights",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 2966.6999999997206,
+        "totalMs": 2987.5
+      },
+      "stats": {
+        "vertices": 217996,
+        "triangles": 390529,
+        "meshes": 47,
+        "drawCalls": 85,
+        "revision": 26,
+        "designCandidate": 31,
+        "designLabel": "Fine directional sheen with tighter highlights",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "634acab5",
+        "positionComponents": 653988
+      },
+      "completedAt": "2026-09-30T09:01:52.028Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T09:03:20.382Z"
+    },
+    {
+      "id": 32,
+      "group": "08-directional-hair-reflections",
+      "label": "Softer directional sheen and reduced coating",
+      "changes": {
+        "hairAnisotropy": 0.45,
+        "hairAnisotropyRotation": 1.5707963268,
+        "hairRoughness": 1.16,
+        "hairCoating": 0.015,
+        "hairHighlight": 0.75
+      },
+      "basedOn": 28,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c032-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "b3dc62b547c158dd09914268bc4023a37d79bcbb58c00bec3bd925e2cf41b3c5",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "design.js",
+        "ear-sculpt.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js"
+      ],
+      "sourceCommit": "e3254862f05870913d242be187de3dc66b9aa119",
+      "designHash": "72230852684480ed99332add81fb06a763b45b3578872704fc82aa45b578f3e6",
+      "startedAt": "2026-09-30T09:01:52.034Z",
+      "score": 84.5,
+      "review": "The softer directional sheen and low clear coating reduce the plastic appearance while retaining readable strands. Select the restrained material; hair volume and tip breakup remain the next priorities.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c032-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c032-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c032-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "bca74c7b7d37408c51ee13ea0436fe65df465419b4ba8f621cb8f8ea63860195",
+          "bytes": 359786
+        },
+        {
+          "view": "face-three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c032-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c032-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c032-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "545fd0b7d993f248076419ab0f9347e37ab985b8fe68f201885a91c8a9c13855",
+          "bytes": 355850
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 217996,
+        "triangles": 390529,
+        "meshes": 47,
+        "drawCalls": 85,
+        "revision": 26,
+        "designCandidate": 32,
+        "designLabel": "Softer directional sheen and reduced coating",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 3025.899999999907,
+        "totalMs": 3043.899999999907
+      },
+      "stats": {
+        "vertices": 217996,
+        "triangles": 390529,
+        "meshes": 47,
+        "drawCalls": 85,
+        "revision": 26,
+        "designCandidate": 32,
+        "designLabel": "Softer directional sheen and reduced coating",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "634acab5",
+        "positionComponents": 653988
+      },
+      "completedAt": "2026-09-30T09:02:06.780Z",
+      "decision": "selected checkpoint",
+      "reviewedAt": "2026-09-30T09:03:20.382Z"
     }
   ],
   "sheets": [
@@ -2130,12 +2526,24 @@
       "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-07-swept-fringe-fit-gpt6-astra-pro-mcp-colabdev.jpg",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-07-swept-fringe-fit-gpt6-astra-pro-mcp-colabdev.jpg",
       "createdAt": "2026-09-30T08:57:50.309Z"
+    },
+    {
+      "group": "08-directional-hair-reflections",
+      "ids": [
+        29,
+        30,
+        31,
+        32
+      ],
+      "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-08-directional-hair-reflections-gpt6-astra-pro-mcp-colabdev.jpg",
+      "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-08-directional-hair-reflections-gpt6-astra-pro-mcp-colabdev.jpg",
+      "createdAt": "2026-09-30T09:02:07.345Z"
     }
   ],
-  "selected": 28,
+  "selected": 32,
   "description": "Distinct source/parameter edits followed by browser renders and individual human-agent visual review. Numerical solver steps are not counted.",
-  "updatedAt": "2026-09-30T09:00:19.381Z",
-  "rendered": 28,
-  "reviewed": 28,
-  "currentScore": 84
+  "updatedAt": "2026-09-30T09:03:21.041Z",
+  "rendered": 32,
+  "reviewed": 32,
+  "currentScore": 84.5
 }
