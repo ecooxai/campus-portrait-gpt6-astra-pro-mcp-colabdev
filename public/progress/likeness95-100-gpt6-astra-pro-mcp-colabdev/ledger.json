@@ -3240,6 +3240,405 @@
       "completedAt": "2026-09-30T09:09:26.908Z",
       "decision": "selected checkpoint",
       "reviewedAt": "2026-09-30T09:11:22.644Z"
+    },
+    {
+      "id": 41,
+      "group": "11-ponytail-trajectory-and-scale",
+      "label": "Slimmer tail with a softer forward bend",
+      "changes": {
+        "ponytailBulk": 0.9,
+        "ponytailBend": 0.045,
+        "ponytailLength": 0.98,
+        "ponytailWave": 1.15
+      },
+      "basedOn": 40,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c041-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "90223ef3d2d99bcb8785980ddce49e7c8aea71449bb177772946e2025018e80f",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "design.js",
+        "ear-sculpt.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js"
+      ],
+      "sourceCommit": "9adb72b749e43ebceb037200c67e873d7b4eebb6",
+      "designHash": "cd13008c84967a4e5112157cf78e6df03ac7ff22fd99afefbcc1a23d1805efe4",
+      "startedAt": "2026-09-30T09:15:59.612Z",
+      "score": 85,
+      "review": "The slimmer tail and moderate bend are a conservative improvement to the side fall. The small dark elastics are less distracting. Select this restrained shape without increasing the overall score.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face-bust",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c041-gpt6-astra-pro-mcp-colabdev/face-bust-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c041-gpt6-astra-pro-mcp-colabdev/face-bust-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c041-gpt6-astra-pro-mcp-colabdev/face-bust-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "9d3cb650dd8970822bff669165d0f30e726a643e05e3f941a0379bc898bc4e0e",
+          "bytes": 383751
+        },
+        {
+          "view": "face-bust-side",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c041-gpt6-astra-pro-mcp-colabdev/face-bust-side-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c041-gpt6-astra-pro-mcp-colabdev/face-bust-side-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c041-gpt6-astra-pro-mcp-colabdev/face-bust-side-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "d6464d770f063ab18768683c992fcc62fa62e53469661377214c525db30b026c",
+          "bytes": 280933
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 225118,
+        "triangles": 401929,
+        "meshes": 48,
+        "drawCalls": 87,
+        "revision": 27,
+        "designCandidate": 41,
+        "designLabel": "Slimmer tail with a softer forward bend",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 12142.80000000028,
+        "totalMs": 12213.5
+      },
+      "stats": {
+        "vertices": 225118,
+        "triangles": 401929,
+        "meshes": 48,
+        "drawCalls": 87,
+        "revision": 27,
+        "designCandidate": 41,
+        "designLabel": "Slimmer tail with a softer forward bend",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "d4a13bdf",
+        "positionComponents": 675354
+      },
+      "completedAt": "2026-09-30T09:16:35.850Z",
+      "decision": "selected checkpoint",
+      "reviewedAt": "2026-09-30T09:19:24.821Z"
+    },
+    {
+      "id": 42,
+      "group": "11-ponytail-trajectory-and-scale",
+      "label": "Full tail with a more vertical upper section",
+      "changes": {
+        "ponytailBulk": 1,
+        "ponytailBend": 0.075,
+        "ponytailLength": 1,
+        "ponytailWave": 1.1
+      },
+      "basedOn": 40,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c042-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "90223ef3d2d99bcb8785980ddce49e7c8aea71449bb177772946e2025018e80f",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "design.js",
+        "ear-sculpt.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js"
+      ],
+      "sourceCommit": "9adb72b749e43ebceb037200c67e873d7b4eebb6",
+      "designHash": "6a71b9e5b32b35f9d2417595a2f65d9e6587cc6df807c6f65b95f26d34aa64c0",
+      "startedAt": "2026-09-30T09:16:35.860Z",
+      "score": 84.5,
+      "review": "The stronger backward bend and full bulk create a heavier hooked shape in profile. It is less relaxed than the moderate option.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face-bust",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c042-gpt6-astra-pro-mcp-colabdev/face-bust-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c042-gpt6-astra-pro-mcp-colabdev/face-bust-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c042-gpt6-astra-pro-mcp-colabdev/face-bust-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "12e725b692de929eb08404996ce8dcaedce4ed3796bb8bd436629efb33ab5d65",
+          "bytes": 385578
+        },
+        {
+          "view": "face-bust-side",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c042-gpt6-astra-pro-mcp-colabdev/face-bust-side-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c042-gpt6-astra-pro-mcp-colabdev/face-bust-side-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c042-gpt6-astra-pro-mcp-colabdev/face-bust-side-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "230a54cb1e48c716cf4565239530120662a3bff2a54eaf266c2636766f291580",
+          "bytes": 276989
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 225174,
+        "triangles": 401929,
+        "meshes": 48,
+        "drawCalls": 92,
+        "revision": 27,
+        "designCandidate": 42,
+        "designLabel": "Full tail with a more vertical upper section",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 3644,
+        "totalMs": 3680.100000000093
+      },
+      "stats": {
+        "vertices": 225174,
+        "triangles": 401929,
+        "meshes": 48,
+        "drawCalls": 92,
+        "revision": 27,
+        "designCandidate": 42,
+        "designLabel": "Full tail with a more vertical upper section",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "8fac7d64",
+        "positionComponents": 675522
+      },
+      "completedAt": "2026-09-30T09:16:54.859Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T09:19:24.821Z"
+    },
+    {
+      "id": 43,
+      "group": "11-ponytail-trajectory-and-scale",
+      "label": "Slender irregular wave and separated tips",
+      "changes": {
+        "ponytailBulk": 0.85,
+        "ponytailBend": 0.055,
+        "ponytailSpread": 0.004,
+        "ponytailWave": 1.45,
+        "hairTipLength": 1.55
+      },
+      "basedOn": 40,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c043-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "90223ef3d2d99bcb8785980ddce49e7c8aea71449bb177772946e2025018e80f",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "design.js",
+        "ear-sculpt.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js"
+      ],
+      "sourceCommit": "9adb72b749e43ebceb037200c67e873d7b4eebb6",
+      "designHash": "ed1287418ee0074edbcac76a4d0670fe5f3e6051d3262ce359e68adee3816ad3",
+      "startedAt": "2026-09-30T09:16:54.865Z",
+      "score": 84.5,
+      "review": "The stronger wave separates the ends but also makes the outer fibers look frayed. The reference does not need this much irregularity.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face-bust",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c043-gpt6-astra-pro-mcp-colabdev/face-bust-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c043-gpt6-astra-pro-mcp-colabdev/face-bust-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c043-gpt6-astra-pro-mcp-colabdev/face-bust-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "ebee1a82e83bbad4a4e1658f872c0baadbb6ca5b799b561d64a90e164aec591d",
+          "bytes": 383654
+        },
+        {
+          "view": "face-bust-side",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c043-gpt6-astra-pro-mcp-colabdev/face-bust-side-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c043-gpt6-astra-pro-mcp-colabdev/face-bust-side-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c043-gpt6-astra-pro-mcp-colabdev/face-bust-side-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "087b873b19c8f126376e2e8827c67bc60a3bdaa09ff45f2a09f7174b7abfb16f",
+          "bytes": 279843
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 225150,
+        "triangles": 401929,
+        "meshes": 48,
+        "drawCalls": 92,
+        "revision": 27,
+        "designCandidate": 43,
+        "designLabel": "Slender irregular wave and separated tips",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 3235.6999999997206,
+        "totalMs": 3260.6999999997206
+      },
+      "stats": {
+        "vertices": 225150,
+        "triangles": 401929,
+        "meshes": 48,
+        "drawCalls": 92,
+        "revision": 27,
+        "designCandidate": 43,
+        "designLabel": "Slender irregular wave and separated tips",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "f4e4ef07",
+        "positionComponents": 675450
+      },
+      "completedAt": "2026-09-30T09:17:13.198Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T09:19:24.821Z"
+    },
+    {
+      "id": 44,
+      "group": "11-ponytail-trajectory-and-scale",
+      "label": "Balanced tail volume and curved shoulder fall",
+      "changes": {
+        "ponytailBulk": 0.92,
+        "ponytailBend": 0.055,
+        "ponytailWave": 1.25,
+        "ponytailLength": 0.98,
+        "ponytailSpread": 0.002,
+        "hairCards": 0.65
+      },
+      "basedOn": 40,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c044-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "90223ef3d2d99bcb8785980ddce49e7c8aea71449bb177772946e2025018e80f",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "design.js",
+        "ear-sculpt.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js"
+      ],
+      "sourceCommit": "9adb72b749e43ebceb037200c67e873d7b4eebb6",
+      "designHash": "0992f6cc1af7e3f27c6ae57631f9d98dd0e49e644d47c41f769c656e1f9db900",
+      "startedAt": "2026-09-30T09:17:13.206Z",
+      "score": 85,
+      "review": "The balanced volume is acceptable, but the extra card coverage and stronger bend do not clearly improve on C41. Preserve the lighter construction.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face-bust",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c044-gpt6-astra-pro-mcp-colabdev/face-bust-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c044-gpt6-astra-pro-mcp-colabdev/face-bust-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c044-gpt6-astra-pro-mcp-colabdev/face-bust-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "b1a1328eb576861d7bd6241c98769beb3039aa37073c049019bbba7baf3ea01f",
+          "bytes": 383387
+        },
+        {
+          "view": "face-bust-side",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c044-gpt6-astra-pro-mcp-colabdev/face-bust-side-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c044-gpt6-astra-pro-mcp-colabdev/face-bust-side-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c044-gpt6-astra-pro-mcp-colabdev/face-bust-side-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "66991361aae4c1699f8511ab9c73a74551aec21a0f638a11440c02642ef93f93",
+          "bytes": 280367
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 225896,
+        "triangles": 403129,
+        "meshes": 48,
+        "drawCalls": 92,
+        "revision": 27,
+        "designCandidate": 44,
+        "designLabel": "Balanced tail volume and curved shoulder fall",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 3371.399999999907,
+        "totalMs": 3399.5
+      },
+      "stats": {
+        "vertices": 225896,
+        "triangles": 403129,
+        "meshes": 48,
+        "drawCalls": 92,
+        "revision": 27,
+        "designCandidate": 44,
+        "designLabel": "Balanced tail volume and curved shoulder fall",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "76a1b46b",
+        "positionComponents": 677688
+      },
+      "completedAt": "2026-09-30T09:17:31.757Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T09:19:24.821Z"
     }
   ],
   "sheets": [
@@ -3362,12 +3761,24 @@
       "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-10-rear-hair-material-and-nape-gpt6-astra-pro-mcp-colabdev.jpg",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-10-rear-hair-material-and-nape-gpt6-astra-pro-mcp-colabdev.jpg",
       "createdAt": "2026-09-30T09:09:27.432Z"
+    },
+    {
+      "group": "11-ponytail-trajectory-and-scale",
+      "ids": [
+        41,
+        42,
+        43,
+        44
+      ],
+      "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-11-ponytail-trajectory-and-scale-gpt6-astra-pro-mcp-colabdev.jpg",
+      "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-11-ponytail-trajectory-and-scale-gpt6-astra-pro-mcp-colabdev.jpg",
+      "createdAt": "2026-09-30T09:17:32.311Z"
     }
   ],
-  "selected": 40,
+  "selected": 41,
   "description": "Distinct source/parameter edits followed by browser renders and individual human-agent visual review. Numerical solver steps are not counted.",
-  "updatedAt": "2026-09-30T09:11:23.312Z",
-  "rendered": 40,
-  "reviewed": 40,
+  "updatedAt": "2026-09-30T09:19:25.518Z",
+  "rendered": 44,
+  "reviewed": 44,
   "currentScore": 85
 }

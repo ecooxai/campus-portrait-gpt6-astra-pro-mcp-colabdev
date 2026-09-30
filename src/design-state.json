@@ -1,6 +1,6 @@
 {
-  "candidate": 40,
-  "label": "Fine outer strands with restrained nape length",
+  "candidate": 41,
+  "label": "Slimmer tail with a softer forward bend",
   "headWidth": 1.015,
   "headHeight": 0.96,
   "headDepth": 1,
@@ -50,9 +50,9 @@
   "fringeSplit": -0.005,
   "fringeEdge": 0.0008,
   "fringeLift": 0.001,
-  "ponytailBulk": 0.95,
-  "ponytailWave": 1,
-  "ponytailLength": 1,
+  "ponytailBulk": 0.9,
+  "ponytailWave": 1.15,
+  "ponytailLength": 0.98,
   "ponytailForward": 0,
   "ponytailSpread": 0,
   "templeWidth": 1,
@@ -79,5 +79,6 @@
   "hairCardSpecular": 0.07,
   "hairTipLength": 1.45,
   "napeDepth": 0.02,
-  "hairFlow": 0.75
+  "hairFlow": 0.75,
+  "ponytailBend": 0.045
 }

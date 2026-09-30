@@ -1,3 +1,4 @@
+import {refineEyeVolume} from './eye-volume.js';
 import {addPonytailGroom} from './hair-groom.js';
 import {buildSculptedEar} from './ear-sculpt.js';
 import {D} from './design.js';
@@ -23,7 +24,7 @@ export function createHead(parent,m){
  const ep=[];for(let i=0;i<28;i++){const a=TAU*i/27;ep.push([s*(.101+.009*Math.sin(a)),-.012+.022*Math.cos(a),.005+.003*Math.cos(a)]);}tube(head,'Helix',ep,.0023,m.skin,30,7);
  tube(head,'Antihelix',[[s*.102,-.029,.011],[s*.101,-.009,.010],[s*.106,.003,.009]],.0018,m.skin,18,7);
  }
- buildEye(head,m,s);buildBrow(head,m,s);
+ buildEye(head,m,s);refineEyeVolume(head,m,s);buildBrow(head,m,s);
  const nostril=[];for(let j=0;j<=12;j++){const t=j/12,x=s*(.0080+.0054*t)*D.noseWidth,y=-.0283+D.noseY-.00045*Math.sin(t*Math.PI);nostril.push([x,y,faceZ(x,y)+.00022]);}tube(head,'Curved nostril detail',nostril,.00032,m.nostril,16,6);
  }
  const top=mouthTop,bottom=mouthBottom;
