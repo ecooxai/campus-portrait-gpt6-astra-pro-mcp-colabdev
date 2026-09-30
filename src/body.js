@@ -1,3 +1,4 @@
+import {refineStandingPose} from './pose-refine.js';
 import {addHandDetails} from './hand-details.js';
 import {refineAccessories} from './accessory-fit.js';
 import {D} from './design.js';
@@ -80,6 +81,7 @@ function makeShirt(p,m){
  loft(sleeve,'Double-rolled sleeve cuff',[[1.061,.037,.047,s*.193,-.024],[1.069,.042,.050,s*.194,-.024],[1.086,.043,.051,s*.196,-.024],[1.091,.040,.048,s*.197,-.024]],m.shirt,{segments:80,rings:18,fold:(a)=>.0013*Math.sin(a*5)});
  seamEllipse(sleeve,'Cuff pressed edge',1.065,.042,.050,s*.194,-.024,m.seam,.0007);
  ribbon(p,'Rounded anatomical forearm behind waist '+s,[[s*.198,1.083,-.026],[s*.190,1.057,-.043],[s*.131,1.021,-.112],[s*.046,.989,-.146]],t=>.0315-.010*t,t=>.030-.008*t,m.skin,{segments:44,radial:24});
+ if(D.wristCap)sphere(p,'Rounded anatomical forearm closed wrist '+s,[s*.046,.989,-.146],[.022,.017,.0225],m.skin,40);
  makeHand(p,m,s);
  const ep=[[s*.086,1.262,shirtZ(s*.086,1.262)+.004],[s*.085,1.267,shirtZ(s*.085,1.267)+.004],[s*.091,1.271,shirtZ(s*.091,1.271)+.004],[s*.090,1.277,shirtZ(s*.090,1.277)+.004]];
  if(s>0){tube(p,'Small blue stitched shirt emblem',ep,.0012,m.embroidery,12,5);tube(p,'Emblem cross stitch',[[.083,1.269,shirtZ(.083,1.269)+.004],[.094,1.269,shirtZ(.094,1.269)+.004]],.0008,m.embroidery,4,5);}
@@ -119,7 +121,7 @@ function makeBackpack(p,m){
 export function createCharacter(options={}){
  refreshAnatomy();
  const root=new THREE.Group();root.name='Campus portrait | GPT-6 Astra Pro | mcp-colabdev';const m=makeMaterials();
- makeLegs(root,m);makeSkirt(root,m);makeShirt(root,m);makeBackpack(root,m);if(!options.clothLab){applyReviewedCloth(root);refineGarmentFit(root);adjustClothing(root);refineAccessories(root);}const head=createHead(root,m);
+ makeLegs(root,m);makeSkirt(root,m);makeShirt(root,m);makeBackpack(root,m);if(!options.clothLab){applyReviewedCloth(root);refineGarmentFit(root);adjustClothing(root);refineAccessories(root);}const head=createHead(root,m);refineStandingPose(root);
  root.userData={...root.userData,description:'Original hand-authored procedural three-dimensional interpretation of the supplied clothing and stance. Unseen views are inferred.',author:'GPT-6 Astra Pro / mcp-colabdev',units:'meters',rigged:false};
  root.updateMatrixWorld(true);optimizeGroup(head);if(options.clothLab){const shirt=root.getObjectByName('Draped white cotton shirt with open neckline');root.remove(shirt);optimizeGroup(root,head);root.add(shirt);}else optimizeGroup(root,head);return {root,head,materials:m};
 }
