@@ -27,5 +27,5 @@ export function refineSkinSurface(m){
  }
  nc.putImageData(normal,0,0);rc.putImageData(rough,0,0);
  const n=texture(normalCanvas),r=texture(roughCanvas);n.repeat.set(3,3);r.repeat.set(2,2);
- for(const mat of [m.skin,m.face]){mat.normalMap=n;mat.normalScale.set(1,1);mat.roughnessMap=r;mat.needsUpdate=true;}
+ for(const mat of [m.skin,m.face]){mat.normalMap=n;mat.normalScale.set(1,1);mat.roughnessMap=r;mat.metalnessMap=r;mat.needsUpdate=true;}
 }

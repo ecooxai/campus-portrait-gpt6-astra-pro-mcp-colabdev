@@ -1,3 +1,4 @@
+import {D} from './design.js';
 import {refineSkinSurface} from './skin-surface.js';
 import * as THREE from 'three';
 function tex(size,draw){const c=document.createElement('canvas');c.width=c.height=size;draw(c.getContext('2d'),size);const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;t.wrapS=t.wrapT=THREE.RepeatWrapping;t.anisotropy=8;return t;}
@@ -6,11 +7,11 @@ export function makeMaterials(){
  // Original procedural cloth patterns only. The photograph is never read by this code.
  const cloth=tex(512,(c,s)=>{c.fillStyle='#f2f1ef';c.fillRect(0,0,s,s);for(let x=0;x<s;x+=3){c.strokeStyle=x%2?'#e5e5e4':'#fcfcfc';c.lineWidth=.65;c.beginPath();c.moveTo(x,0);c.lineTo(x,s);c.stroke();}for(let y=0;y<s;y+=4){c.fillStyle='rgba(130,130,142,.055)';c.fillRect(0,y,s,1);}});cloth.repeat.set(2,2);
  const plaid=tex(1024,(c,s)=>{
- c.fillStyle='#202733';c.fillRect(0,0,s,s);
+ c.fillStyle='#202733';c.fillRect(0,0,s,s);c.globalAlpha=D.plaidContrast??1;
  for(let x=0;x<s;x+=256){c.fillStyle='rgba(151,166,184,.18)';c.fillRect(x+33,0,46,s);c.fillRect(x+103,0,20,s);c.fillStyle='rgba(6,10,20,.36)';c.fillRect(x+170,0,47,s);c.fillStyle='rgba(163,176,192,.28)';c.fillRect(x+24,0,3,s);c.fillRect(x+87,0,3,s);c.fillRect(x+132,0,2,s);}
  for(let y=0;y<s;y+=256){c.fillStyle='rgba(157,173,193,.17)';c.fillRect(0,y+33,s,46);c.fillRect(0,y+103,s,20);c.fillStyle='rgba(4,8,17,.34)';c.fillRect(0,y+173,s,41);c.fillStyle='rgba(173,185,199,.18)';c.fillRect(0,y+24,s,3);c.fillRect(0,y+87,s,3);c.fillRect(0,y+132,s,2);}
  for(let i=0;i<s;i+=3){c.fillStyle='rgba(216,222,229,.065)';c.fillRect(i,0,1,s);}for(let i=0;i<s;i+=4){c.fillStyle='rgba(0,0,0,.10)';c.fillRect(0,i,s,1);}
- });plaid.repeat.set(3,1);
+ });plaid.repeat.set(3*(D.plaidScale??1),1);
  const tieMap=tex(512,(c,s)=>{c.fillStyle='#17253d';c.fillRect(0,0,s,s);for(let y=-s;y<2*s;y+=104){c.strokeStyle='#edc46b';c.lineWidth=5;c.beginPath();c.moveTo(0,y);c.lineTo(s,y-192);c.stroke();c.strokeStyle='rgba(4,9,22,.4)';c.lineWidth=1;c.beginPath();c.moveTo(0,y+6);c.lineTo(s,y-186);c.stroke();}for(let i=0;i<s;i+=3){c.strokeStyle='rgba(144,171,209,.055)';c.beginPath();c.moveTo(i,0);c.lineTo(0,i);c.stroke();}});
  const rib=tex(256,(c,s)=>{c.fillStyle='#202639';c.fillRect(0,0,s,s);for(let i=0;i<s;i+=8){c.fillStyle='#282e41';c.fillRect(i,0,2,s);c.fillStyle='#1c2231';c.fillRect(i+3,0,2,s);}for(let i=0;i<s;i+=3){c.fillStyle='rgba(130,139,155,.04)';c.fillRect(0,i,s,1);}});rib.repeat.set(2,2);
  const bump=tex(128,(c,s)=>{const rand=rng(54);c.fillStyle='#888';c.fillRect(0,0,s,s);for(let n=0;n<6000;n++){const g=110+Math.floor(rand()*40);c.fillStyle=`rgb(${g},${g},${g})`;c.fillRect(rand()*s,rand()*s,1,1);}});bump.colorSpace=THREE.NoColorSpace;bump.repeat.set(3,3);
@@ -26,5 +27,5 @@ export function makeMaterials(){
  shirt:P('#ffffff',.84,{map:cloth,sheen:.22,sheenColor:'#eee9e4',side:THREE.DoubleSide}),seam:S('#d7dce2',.9),button:P('#f4f2ed',.32),
  skirt:P('#ffffff',.89,{map:plaid,sheen:.2,sheenColor:'#8d99ae',side:THREE.DoubleSide}),lining:S('#252c3a',1,{side:THREE.DoubleSide}),tie:P('#ffffff',.65,{map:tieMap,sheen:.4,sheenColor:'#8092b7',side:THREE.DoubleSide}),socks:S('#ffffff',.95,{map:rib}),
  leather:P('#141920',.26,{metalness:.07,clearcoat:.55,clearcoatRoughness:.27}),sole:S('#151820',.76),stitch:S('#545b66',.76),backpack:P('#293d57',.95,{sheen:.18,sheenColor:'#6e8299'}),webbing:S('#263747',.93),buckle:S('#161c23',.44),metal:P('#a4a8ae',.26,{metalness:.83}),embroidery:S('#abc5e3',.8)
- };m.tieKnot=m.tie.clone();m.tieKnot.map=m.tie.map.clone();m.tieKnot.map.repeat.set(.38,.13);m.tieKnot.map.needsUpdate=true;m.backpack.normalMap=microNormal;m.backpack.normalScale=new THREE.Vector2(.35,.35);Object.entries(m).forEach(([name,mat])=>{mat.name=name;if(mat.isMeshPhysicalMaterial&&mat.sheen>0){mat.sheenColor.multiplyScalar(mat.sheen);mat.sheen=1;}});refineSkinSurface(m);return m;
+ };m.tieKnot=m.tie.clone();m.tieKnot.map=m.tie.map.clone();m.tieKnot.map.repeat.set(.38,.13);m.tieKnot.map.needsUpdate=true;m.backpack.normalMap=microNormal;m.backpack.normalScale=new THREE.Vector2(.35,.35);Object.entries(m).forEach(([name,mat])=>{mat.name=name;if(mat.isMeshPhysicalMaterial&&mat.sheen>0){mat.sheenColor.multiplyScalar(mat.sheen);mat.sheen=1;}});if(D.fabricDetail){for(const mat of [m.shirt,m.skirt]){mat.normalMap=microNormal;mat.normalScale.set(D.fabricDetail,D.fabricDetail);}}refineSkinSurface(m);return m;
 }

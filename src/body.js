@@ -1,3 +1,4 @@
+import {refineAccessories} from './accessory-fit.js';
 import {D} from './design.js';
 import {sculptTieKnot} from './tie-knot.js';
 import {adjustClothing} from './clothing-fit.js';
@@ -47,7 +48,7 @@ function makeLegs(p,m){for(const s of [-1,1]){
  }}
 function makeSkirt(p,m){
  const rows=[[.713,.232,.169,0,.0],[.733,.231,.166,0,0],[.79,.216,.158,0,0],[.885,.183,.133,-.002,-.003],[.967,.149,.110,-.005,-.004],[1.015,.132,.092,-.005,-.005],[1.035,.130,.090,-.005,-.005]];
- const fold=(a,y)=>{let amp=lerp(.013,.003,Math.pow((y-.713)/(.322),1.6));let t=((a/TAU*22)%1+1)%1;let z=t<.15?lerp(-1,1,t/.15):t<.66?lerp(1,.45,(t-.15)/.51):lerp(.45,-1,(t-.66)/.34);return amp*z+.0014*Math.sin(3*a+.6)*gauss(y,.82,.12);};
+ const fold=(a,y)=>{let amp=lerp(.013,.003,Math.pow((y-.713)/(.322),1.6));let t=((a/TAU*22)%1+1)%1;let z=t<.15?lerp(-1,1,t/.15):t<.66?lerp(1,.45,(t-.15)/.51):lerp(.45,-1,(t-.66)/.34);return (amp*z+.0014*Math.sin(3*a+.6)*gauss(y,.82,.12))*(D.pleatDepth??1);};
  loft(p,'Continuous twenty-two knife-pleat tartan skirt',rows,m.skirt,{segments:440,rings:65,fold});
  loft(p,'Covered inner skirt lining',[[.72,.220,.153,0,0],[.94,.150,.102,-.005,-.004],[1.025,.129,.089,-.005,-.005]],m.lining,{rings:24,segments:96});
  loft(p,'Fitted fabric waistband',[[1.016,.137,.098,-.005,-.005],[1.035,.136,.097,-.005,-.005],[1.044,.134,.096,-.005,-.005]],m.skirt,{rings:8,segments:100});
@@ -116,7 +117,7 @@ function makeBackpack(p,m){
 export function createCharacter(options={}){
  refreshAnatomy();
  const root=new THREE.Group();root.name='Campus portrait | GPT-6 Astra Pro | mcp-colabdev';const m=makeMaterials();
- makeLegs(root,m);makeSkirt(root,m);makeShirt(root,m);makeBackpack(root,m);if(!options.clothLab){applyReviewedCloth(root);refineGarmentFit(root);adjustClothing(root);}const head=createHead(root,m);
+ makeLegs(root,m);makeSkirt(root,m);makeShirt(root,m);makeBackpack(root,m);if(!options.clothLab){applyReviewedCloth(root);refineGarmentFit(root);adjustClothing(root);refineAccessories(root);}const head=createHead(root,m);
  root.userData={...root.userData,description:'Original hand-authored procedural three-dimensional interpretation of the supplied clothing and stance. Unseen views are inferred.',author:'GPT-6 Astra Pro / mcp-colabdev',units:'meters',rigged:false};
  root.updateMatrixWorld(true);optimizeGroup(head);if(options.clothLab){const shirt=root.getObjectByName('Draped white cotton shirt with open neckline');root.remove(shirt);optimizeGroup(root,head);root.add(shirt);}else optimizeGroup(root,head);return {root,head,materials:m};
 }

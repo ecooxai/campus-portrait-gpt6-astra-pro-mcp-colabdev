@@ -1,6 +1,6 @@
 {
-  "candidate": 64,
-  "label": "Balanced collar points and hanging tie",
+  "candidate": 63,
+  "label": "Wider tie and closer collar drape",
   "headWidth": 1.015,
   "headHeight": 0.96,
   "headDepth": 1,
@@ -98,12 +98,11 @@
   "sleeveInset": 0.005,
   "shirtWidth": 0.985,
   "sculptedTie": 1,
-  "knotScale": 0.84,
-  "knotWidth": 0.97,
-  "collarLay": 0.48,
-  "collarLength": 0.94,
-  "collarWidth": 1.02,
-  "tieWidth": 1.06,
-  "tieLay": 0.48,
-  "tieLength": 1
+  "knotScale": 0.85,
+  "knotWidth": 1,
+  "collarLay": 0.65,
+  "collarLength": 0.88,
+  "tieWidth": 1.1,
+  "tieLay": 0.65,
+  "tieLength": 0.98
 }

@@ -1,6 +1,6 @@
 {
-  "candidate": 64,
-  "label": "Balanced collar points and hanging tie",
+  "candidate": 61,
+  "label": "Tapered cloth knot at the original collar position",
   "headWidth": 1.015,
   "headHeight": 0.96,
   "headDepth": 1,
@@ -98,12 +98,7 @@
   "sleeveInset": 0.005,
   "shirtWidth": 0.985,
   "sculptedTie": 1,
-  "knotScale": 0.84,
-  "knotWidth": 0.97,
-  "collarLay": 0.48,
-  "collarLength": 0.94,
-  "collarWidth": 1.02,
-  "tieWidth": 1.06,
-  "tieLay": 0.48,
-  "tieLength": 1
+  "knotScale": 0.82,
+  "knotWidth": 0.95,
+  "knotCrease": 1
 }

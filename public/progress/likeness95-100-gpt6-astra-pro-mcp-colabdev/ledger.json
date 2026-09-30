@@ -5306,6 +5306,436 @@
       "completedAt": "2026-09-30T14:03:54.632Z",
       "decision": "selected checkpoint",
       "reviewedAt": "2026-09-30T14:05:56.688Z"
+    },
+    {
+      "id": 61,
+      "group": "16-collar-and-tie-construction",
+      "label": "Tapered cloth knot at the original collar position",
+      "changes": {
+        "sculptedTie": 1,
+        "knotScale": 0.82,
+        "knotWidth": 0.95,
+        "knotCrease": 1
+      },
+      "basedOn": 60,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c061-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "e33278b0e41ce745bc0c1a62e89b7d567e2bcd61ce837e55cf67bc9f792c59ae",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "clothing-fit.js",
+        "design.js",
+        "ear-sculpt.js",
+        "eye-volume.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "nose-anatomy.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js",
+        "skin-surface.js",
+        "tie-knot.js"
+      ],
+      "sourceCommit": "af5aae5f6ffb525b78a90a24c213773f472431d9",
+      "designHash": "6c845e4fb02890c0cfd02fb93dd77ef38c5b8f41f86b092e1a985680be0da531",
+      "startedAt": "2026-09-30T14:07:42.208Z",
+      "priorAttempts": [],
+      "score": 86.5,
+      "review": "The tapered knot is more plausible than the rectangular block. The original collar still sits rather far forward, particularly in the side view.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face-torso",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c061-gpt6-astra-pro-mcp-colabdev/face-torso-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c061-gpt6-astra-pro-mcp-colabdev/face-torso-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c061-gpt6-astra-pro-mcp-colabdev/face-torso-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "5f690456b0097c581de5e9015981628e02c3f875bf773ec5bb049ec9d20d682b",
+          "bytes": 404540
+        },
+        {
+          "view": "face-bust-side",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c061-gpt6-astra-pro-mcp-colabdev/face-bust-side-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c061-gpt6-astra-pro-mcp-colabdev/face-bust-side-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c061-gpt6-astra-pro-mcp-colabdev/face-bust-side-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "fdff44b968f0b03e3b17d5cace1d1a81a2ba2cf3155f1f64c2e68281da861a20",
+          "bytes": 280095
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 226557,
+        "triangles": 407021,
+        "meshes": 50,
+        "drawCalls": 91,
+        "revision": 27,
+        "designCandidate": 61,
+        "designLabel": "Tapered cloth knot at the original collar position",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4897095710039139,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 6807.5,
+        "totalMs": 6851.299999999814
+      },
+      "stats": {
+        "vertices": 226557,
+        "triangles": 407021,
+        "meshes": 50,
+        "drawCalls": 91,
+        "revision": 27,
+        "designCandidate": 61,
+        "designLabel": "Tapered cloth knot at the original collar position",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4897095710039139,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "74673424",
+        "positionComponents": 679671
+      },
+      "completedAt": "2026-09-30T14:08:13.540Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T14:12:33.570Z"
+    },
+    {
+      "id": 62,
+      "group": "16-collar-and-tie-construction",
+      "label": "Flatter collar with the tapered tie knot",
+      "changes": {
+        "sculptedTie": 1,
+        "knotScale": 0.85,
+        "knotWidth": 0.95,
+        "collarLay": 0.55,
+        "collarLength": 0.9
+      },
+      "basedOn": 60,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c062-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "e33278b0e41ce745bc0c1a62e89b7d567e2bcd61ce837e55cf67bc9f792c59ae",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "clothing-fit.js",
+        "design.js",
+        "ear-sculpt.js",
+        "eye-volume.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "nose-anatomy.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js",
+        "skin-surface.js",
+        "tie-knot.js"
+      ],
+      "sourceCommit": "af5aae5f6ffb525b78a90a24c213773f472431d9",
+      "designHash": "ab63e5620c3f7935e4fdfaf6e6a5193f9feea93ffd763e887e6c69d635495494",
+      "startedAt": "2026-09-30T14:08:13.554Z",
+      "priorAttempts": [],
+      "score": 86.5,
+      "review": "The flatter collar reduces its floating appearance, but the shortened points make it slightly too compact against the relaxed neckline.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face-torso",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c062-gpt6-astra-pro-mcp-colabdev/face-torso-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c062-gpt6-astra-pro-mcp-colabdev/face-torso-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c062-gpt6-astra-pro-mcp-colabdev/face-torso-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "f780e445ddcdb6561ff5ae0f92198a63c94b4bb8766ced760d65eec8de713630",
+          "bytes": 404716
+        },
+        {
+          "view": "face-bust-side",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c062-gpt6-astra-pro-mcp-colabdev/face-bust-side-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c062-gpt6-astra-pro-mcp-colabdev/face-bust-side-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c062-gpt6-astra-pro-mcp-colabdev/face-bust-side-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "da805326b18ba75dab535ec127c2d60e38d62abd8c355a4d7f4cfe7f0246188f",
+          "bytes": 279737
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 226551,
+        "triangles": 407021,
+        "meshes": 50,
+        "drawCalls": 96,
+        "revision": 27,
+        "designCandidate": 62,
+        "designLabel": "Flatter collar with the tapered tie knot",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4897095710039139,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 5202,
+        "totalMs": 5243.200000000186
+      },
+      "stats": {
+        "vertices": 226551,
+        "triangles": 407021,
+        "meshes": 50,
+        "drawCalls": 96,
+        "revision": 27,
+        "designCandidate": 62,
+        "designLabel": "Flatter collar with the tapered tie knot",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4897095710039139,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "438aab51",
+        "positionComponents": 679653
+      },
+      "completedAt": "2026-09-30T14:08:37.342Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T14:12:33.570Z"
+    },
+    {
+      "id": 63,
+      "group": "16-collar-and-tie-construction",
+      "label": "Wider tie and closer collar drape",
+      "changes": {
+        "sculptedTie": 1,
+        "knotScale": 0.85,
+        "knotWidth": 1,
+        "collarLay": 0.65,
+        "collarLength": 0.88,
+        "tieWidth": 1.1,
+        "tieLay": 0.65,
+        "tieLength": 0.98
+      },
+      "basedOn": 60,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c063-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "e33278b0e41ce745bc0c1a62e89b7d567e2bcd61ce837e55cf67bc9f792c59ae",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "clothing-fit.js",
+        "design.js",
+        "ear-sculpt.js",
+        "eye-volume.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "nose-anatomy.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js",
+        "skin-surface.js",
+        "tie-knot.js"
+      ],
+      "sourceCommit": "af5aae5f6ffb525b78a90a24c213773f472431d9",
+      "designHash": "7c0fb2989e2a9c4c982f5deda1a6266af30080bd06c7bf3dfda407a527600a0a",
+      "startedAt": "2026-09-30T14:08:37.355Z",
+      "priorAttempts": [],
+      "score": 86.5,
+      "review": "The wider tie and closer drape work, but the strongest collar flattening and shortening lose some of the folded-cloth character.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face-torso",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c063-gpt6-astra-pro-mcp-colabdev/face-torso-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c063-gpt6-astra-pro-mcp-colabdev/face-torso-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c063-gpt6-astra-pro-mcp-colabdev/face-torso-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "e39f3ea6f2a271a5569032651e38736b61543372d54156868fd16a9a89b1ba54",
+          "bytes": 406464
+        },
+        {
+          "view": "face-bust-side",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c063-gpt6-astra-pro-mcp-colabdev/face-bust-side-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c063-gpt6-astra-pro-mcp-colabdev/face-bust-side-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c063-gpt6-astra-pro-mcp-colabdev/face-bust-side-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "a16d072bf0c765380f4d06f3f35e3ac08de87e468e4a780ae2ea1f32f6798d25",
+          "bytes": 280625
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 226550,
+        "triangles": 407021,
+        "meshes": 50,
+        "drawCalls": 96,
+        "revision": 27,
+        "designCandidate": 63,
+        "designLabel": "Wider tie and closer collar drape",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4897095710039139,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 6220.300000000279,
+        "totalMs": 6264.200000000186
+      },
+      "stats": {
+        "vertices": 226550,
+        "triangles": 407021,
+        "meshes": 50,
+        "drawCalls": 96,
+        "revision": 27,
+        "designCandidate": 63,
+        "designLabel": "Wider tie and closer collar drape",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4897095710039139,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "a7d1fd07",
+        "positionComponents": 679650
+      },
+      "completedAt": "2026-09-30T14:09:03.951Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T14:12:33.570Z"
+    },
+    {
+      "id": 64,
+      "group": "16-collar-and-tie-construction",
+      "label": "Balanced collar points and hanging tie",
+      "changes": {
+        "sculptedTie": 1,
+        "knotScale": 0.84,
+        "knotWidth": 0.97,
+        "collarLay": 0.48,
+        "collarLength": 0.94,
+        "collarWidth": 1.02,
+        "tieWidth": 1.06,
+        "tieLay": 0.48,
+        "tieLength": 1
+      },
+      "basedOn": 60,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c064-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "e33278b0e41ce745bc0c1a62e89b7d567e2bcd61ce837e55cf67bc9f792c59ae",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "clothing-fit.js",
+        "design.js",
+        "ear-sculpt.js",
+        "eye-volume.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "nose-anatomy.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js",
+        "skin-surface.js",
+        "tie-knot.js"
+      ],
+      "sourceCommit": "af5aae5f6ffb525b78a90a24c213773f472431d9",
+      "designHash": "0ec67f0ba52ee26279b17189914e170ca622e07a1dfc086bf760da5a80799085",
+      "startedAt": "2026-09-30T14:09:03.969Z",
+      "priorAttempts": [],
+      "score": 87,
+      "review": "The moderate collar lay, slightly wider tie and tapered knot are the best combined garment treatment. The side view remains coherent and the collar points retain their folded shape. Select this checkpoint.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face-torso",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c064-gpt6-astra-pro-mcp-colabdev/face-torso-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c064-gpt6-astra-pro-mcp-colabdev/face-torso-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c064-gpt6-astra-pro-mcp-colabdev/face-torso-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "4b43781f3e897ad8f50c72b5209a5292a9e2d1720029f9bfdca8720f0ed9bf44",
+          "bytes": 405983
+        },
+        {
+          "view": "face-bust-side",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c064-gpt6-astra-pro-mcp-colabdev/face-bust-side-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c064-gpt6-astra-pro-mcp-colabdev/face-bust-side-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c064-gpt6-astra-pro-mcp-colabdev/face-bust-side-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "be57f8458f50efa93ba944380c53617269f651f081fd35849ba584372fb59879",
+          "bytes": 280188
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 226552,
+        "triangles": 407021,
+        "meshes": 50,
+        "drawCalls": 96,
+        "revision": 27,
+        "designCandidate": 64,
+        "designLabel": "Balanced collar points and hanging tie",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4897095710039139,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 6093.800000000279,
+        "totalMs": 6121.700000000186
+      },
+      "stats": {
+        "vertices": 226552,
+        "triangles": 407021,
+        "meshes": 50,
+        "drawCalls": 96,
+        "revision": 27,
+        "designCandidate": 64,
+        "designLabel": "Balanced collar points and hanging tie",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4897095710039139,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "8a0bcbfb",
+        "positionComponents": 679656
+      },
+      "completedAt": "2026-09-30T14:09:47.229Z",
+      "decision": "selected checkpoint",
+      "reviewedAt": "2026-09-30T14:12:33.570Z"
     }
   ],
   "sheets": [
@@ -5488,12 +5918,24 @@
       "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-15-shirt-and-sleeve-proportions-gpt6-astra-pro-mcp-colabdev.jpg",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-15-shirt-and-sleeve-proportions-gpt6-astra-pro-mcp-colabdev.jpg",
       "createdAt": "2026-09-30T14:03:55.722Z"
+    },
+    {
+      "group": "16-collar-and-tie-construction",
+      "ids": [
+        61,
+        62,
+        63,
+        64
+      ],
+      "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-16-collar-and-tie-construction-gpt6-astra-pro-mcp-colabdev.jpg",
+      "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-16-collar-and-tie-construction-gpt6-astra-pro-mcp-colabdev.jpg",
+      "createdAt": "2026-09-30T14:09:48.936Z"
     }
   ],
-  "selected": 60,
+  "selected": 64,
   "description": "Distinct source/parameter edits followed by browser renders and individual human-agent visual review. Numerical solver steps are not counted.",
-  "updatedAt": "2026-09-30T14:05:57.414Z",
-  "rendered": 60,
-  "reviewed": 60,
-  "currentScore": 86.5
+  "updatedAt": "2026-09-30T14:12:34.283Z",
+  "rendered": 64,
+  "reviewed": 64,
+  "currentScore": 87
 }

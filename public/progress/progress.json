@@ -1,8 +1,8 @@
 {
-  "revision": 27,
-  "updatedAt": "2026-09-30T09:15:13.428Z",
-  "score": 85,
-  "status": "The selected C40 restores physical hair shading, adds restrained strand breakup, curves the nape and keeps the improved head, smile and ear geometry. Forty distinct new candidates have been rendered and individually reviewed; the current 100-candidate and 95/100 targets are still unmet.",
+  "revision": 28,
+  "updatedAt": "2026-09-30T14:18:39.226Z",
+  "score": 87,
+  "status": "The selected C64 combines the revised eye and nose anatomy, restrained skin treatment, slimmer sleeves, tapered tie knot and more natural collar lay. Sixty-four distinct campaign candidates have been individually reviewed. The current 95/100 visual target has not been achieved.",
   "iterations": [
     {
       "id": 1,
@@ -192,6 +192,13 @@
       "title": "Forty reviewed candidates and repaired layered hair",
       "notes": "The selected C40 restores physical hair shading, adds restrained strand breakup, curves the nape and keeps the improved head, smile and ear geometry. Forty distinct new candidates have been rendered and individually reviewed; the current 100-candidate and 95/100 targets are still unmet.",
       "reviewedAt": "2026-09-30T09:15:13.428Z"
+    },
+    {
+      "id": 28,
+      "score": 87,
+      "title": "Sixty-four reviewed candidates and validated garment checkpoint",
+      "notes": "The selected C64 combines the revised eye and nose anatomy, restrained skin treatment, slimmer sleeves, tapered tie knot and more natural collar lay. Sixty-four distinct campaign candidates have been individually reviewed. The current 95/100 visual target has not been achieved.",
+      "reviewedAt": "2026-09-30T14:18:39.226Z"
     }
   ],
   "files": [

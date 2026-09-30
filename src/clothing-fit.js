@@ -10,7 +10,8 @@ export function adjustClothing(root){
   if(!o.isMesh)return;
   const sleeve=/Soft elbow-length cotton sleeve|Double-rolled sleeve cuff|Cuff pressed edge/.test(o.name);
   const shirt=o.name==='Draped white cotton shirt with open neckline';
-  if(!sleeve&&!shirt)return;
+  const skirt=/knife-pleat tartan skirt|inner skirt lining|tailored hem|Pleat edge topstitch/.test(o.name);
+  if(!sleeve&&!shirt&&!skirt)return;
   const pos=o.geometry.getAttribute('position'),matrix=o.matrixWorld.clone(),inverse=matrix.clone().invert(),p=new THREE.Vector3();
   for(let i=0;i<pos.count;i++){
    p.fromBufferAttribute(pos,i).applyMatrix4(matrix);
@@ -20,6 +21,7 @@ export function adjustClothing(root){
     p.z=-.02+(p.z+.02)*(D.sleeveScale??1);
    }
    if(shirt){const t=clamp((p.y-1.04)/.11,0,1),w=t*t*(3-2*t);p.x=-.006+(p.x+.006)*(1+((D.shirtWidth??1)-1)*w);}
+   if(skirt){const f=1+((D.skirtFlare??1)-1)*clamp((1.025-p.y)/.31,0,1);p.x*=f;p.z*=f;}
    p.applyMatrix4(inverse);pos.setXYZ(i,p.x,p.y,p.z);
   }
   pos.needsUpdate=true;o.geometry.computeVertexNormals();const grid=o.geometry.userData.grid;

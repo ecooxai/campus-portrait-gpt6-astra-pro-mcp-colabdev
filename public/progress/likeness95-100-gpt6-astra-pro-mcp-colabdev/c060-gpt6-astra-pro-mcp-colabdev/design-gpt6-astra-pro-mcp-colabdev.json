@@ -1,6 +1,6 @@
 {
-  "candidate": 64,
-  "label": "Balanced collar points and hanging tie",
+  "candidate": 60,
+  "label": "Balanced cotton-shirt and sleeve silhouette",
   "headWidth": 1.015,
   "headHeight": 0.96,
   "headDepth": 1,
@@ -96,14 +96,5 @@
   "clothingFit": 1,
   "sleeveScale": 0.9,
   "sleeveInset": 0.005,
-  "shirtWidth": 0.985,
-  "sculptedTie": 1,
-  "knotScale": 0.84,
-  "knotWidth": 0.97,
-  "collarLay": 0.48,
-  "collarLength": 0.94,
-  "collarWidth": 1.02,
-  "tieWidth": 1.06,
-  "tieLay": 0.48,
-  "tieLength": 1
+  "shirtWidth": 0.985
 }
