@@ -1,0 +1,13 @@
+9c994ac02cbe1fe2ef4375d066360d09dfa3bf0e9b001086f2d2b530eba2a1ca  campus-portrait-gpt6-astra-pro-mcp-colabdev.glb
+cea610b0fa189fd40dc7c9f748c737eb812734b45a51af5135d7dccff4a88f0d  campus-portrait-source-gpt6-astra-pro-mcp-colabdev.tar.gz
+6d347713f9dab31721b0f7861ddfdc49e3cdc2bdaaae06a0deb27faae1e3f4de  campaign-evidence-gpt6-astra-pro-mcp-colabdev.tar.gz
+74efdc0e8576eedc4969c241906a66ae6e0970ea4a753740d0ce9fc6f5cbee2f  verification-gpt6-astra-pro-mcp-colabdev.json
+748d374a2cce3a00c01af8bea3c76dc3057200c04c2585f3e690fbf2df8aedc1  HANDOFF-gpt6-astra-pro-mcp-colabdev.md
+bcbf82cc553093a7ad696ae35fb43dc25bfc868870c8712a5685a055b20c6179  campaign-audit-gpt6-astra-pro-mcp-colabdev.json
+243ae5cddf33a01459bb336c690102c9bc230f9f458e049136dc0232591755d0  front-gpt6-astra-pro-mcp-colabdev.png
+db3d25984b221cc5ec13874df638894ae2725e59d12fef640c6892cd9f3314d0  three-quarter-gpt6-astra-pro-mcp-colabdev.png
+973fc8ca5fe325f16a0132ad72f2c2fa992bcba66cc390ff59b5aa43b92c6425  side-gpt6-astra-pro-mcp-colabdev.png
+ea50412d4e8447af54e44bcf1f38c9c1e7a3d4f658a0d5a9304a95ad8b3be248  back-gpt6-astra-pro-mcp-colabdev.png
+34bfded54c598484cfcc33aabd68ce48e7667a1a7e5b8b1f207b9233e7557160  face-gpt6-astra-pro-mcp-colabdev.png
+c4af18ebad435ac28bd2225af75307bc6bda3d59505646b83658e61eed9ca2c3  detail-hands-gpt6-astra-pro-mcp-colabdev.png
+0a1bf79e271ac8b3e6a30175b40fce760a4594d15c6f57ae2430fda9715b4690  detail-shoes-gpt6-astra-pro-mcp-colabdev.png
