@@ -1,17 +1,21 @@
+import {applyReviewedCloth} from './cloth-bake.js';
+import {refineGarmentFit} from './garment-fit.js';
 import * as THREE from 'three';
 import {RoundedBoxGeometry} from 'three/addons/geometries/RoundedBoxGeometry.js';
-import {V,lerp,TAU,gauss,smoothProfile,mesh,sphere,surface,tube,loft,ribbon,patch} from './geometry.js';
+import {V,lerp,TAU,gauss,smoothProfile,mesh,sphere,surface,tube,loft,ribbon,patch,curvedClothPatch} from './geometry.js';
 import {createHead} from './head.js';
 import {makeMaterials} from './materials.js';
 import {optimizeGroup} from './optimize.js';
 
 function box(p,name,pos,size,r,mat){const b=mesh(p,name,new RoundedBoxGeometry(...size,3,r),mat);b.position.set(...pos);return b;}
 function seamEllipse(p,name,y,rx,rz,cx,cz,mat,r=.0008){const pts=[];for(let k=0;k<=100;k++){const a=k/100*TAU;pts.push([cx+rx*Math.sin(a),y,cz+rz*Math.cos(a)]);}return tube(p,name,pts,r,mat,100,5);}
-function legRows(s){return s<0?[
+function legRows(s){const rows=s<0?[
  [.075,.029,.033,-.101,.042],[.16,.031,.034,-.096,.034],[.28,.043,.045,-.070,.016],[.365,.050,.049,-.042,.022],[.445,.046,.046,-.009,.050],[.49,.048,.051,.002,.057],[.545,.053,.057,-.001,.042],[.66,.066,.070,-.030,.009],[.79,.074,.077,-.071,-.012],[.91,.071,.074,-.075,-.012]
  ]:[
  [.075,.028,.034,.053,-.012],[.17,.031,.035,.066,-.006],[.28,.045,.046,.075,-.019],[.37,.050,.048,.079,-.024],[.445,.045,.045,.080,-.020],[.49,.047,.048,.079,-.014],[.565,.057,.060,.075,-.016],[.67,.070,.074,.072,-.024],[.80,.075,.079,.067,-.020],[.91,.070,.073,.068,-.015]
- ];}
+ ];
+ return rows.map(row=>{const [y,rx,rz,cx,cz]=row;const ankle=Math.pow(Math.max(0,1-(y-.075)/.58),1.30);return [y,rx,rz,cx+(s>0?-.035*ankle:0),cz+(s<0?-.080*ankle+.024*gauss(y,.49,.12):.050*ankle)];});
+}
 function makeLegs(p,m){for(const s of [-1,1]){
  const rows=legRows(s),skinRows=rows.filter(a=>a[0]>=.37);
  loft(p,(s<0?'Left':'Right')+' continuous knee and thigh',skinRows,m.skin,{segments:64,rings:64,fold:(a,y)=>.0014*Math.sin(a*2)*gauss(y,.51,.04)});
@@ -19,7 +23,7 @@ function makeLegs(p,m){for(const s of [-1,1]){
  const sockRows=rows.filter(a=>a[0]<top).map(a=>[a[0],a[1]+.0014,a[2]+.0014,...a.slice(3)]);let r=smoothProfile(rows,top);sockRows.push([top,r[0]+.0022,r[1]+.0022,r[2],r[3]]);
  loft(p,'Ribbed knee sock '+s,sockRows,m.socks,{segments:80,rings:64,fold:(a,y)=>.00055*Math.cos(a*84)+.0008*Math.cos(y*240)*gauss(y,.12,.045)});
  seamEllipse(p,'Sock elastic welt '+s,top,r[0]+.0024,r[1]+.0024,r[2],r[3],m.socks,.0018);
- const shoe=new THREE.Group();shoe.name='Penny loafer '+s;shoe.position.set(s<0?-.102:.053,0,s<0?.045:-.012);shoe.rotation.y=s<0?-.13:.075;p.add(shoe);
+ const shoe=new THREE.Group();shoe.name='Penny loafer '+s;shoe.position.set(s<0?-.102:.018,0,s<0?-.035:.038);shoe.rotation.y=s<0?-.10:.035;p.add(shoe);
  const shoeRows=[[.011,.040,.095,0,.038],[.018,.046,.111,0,.039],[.030,.047,.113,0,.038],[.035,.045,.110,0,.038],[.050,.043,.106,0,.037],[.072,.041,.095,0,.031],[.092,.038,.074,0,.016],[.112,.031,.042,0,-.003],[.123,.029,.033,0,-.012]];
  loft(shoe,'Layered stitched rubber sole',shoeRows.slice(0,4),m.sole,{rings:12,segments:64});
  box(shoe,'Stacked low heel',[0,.014,-.027],[.070,.027,.063],.008,m.sole);
@@ -57,7 +61,7 @@ function makeShirt(p,m){
  // Open neckline and crisply folded collar points.
  const left=[[-.030,1.413,.044],[-.062,1.379,.062],[-.049,1.326,.126],[-.007,1.357,.090],[-.009,1.383,.055]];
  const right=[[.034,1.416,.044],[.066,1.382,.062],[.053,1.329,.126],[.011,1.360,.090],[.013,1.386,.055]];patch(p,'Upper chest within open collar',[[-.055,1.399,.038],[-.045,1.352,.068],[0,1.330,.087],[.045,1.352,.068],[.055,1.399,.038]],m.skin);
- patch(p,'Left folded open collar',left,m.shirt);patch(p,'Right folded open collar',right,m.shirt);
+ curvedClothPatch(p,'Left folded open collar',left,m.shirt,.0016);curvedClothPatch(p,'Right folded open collar',right,m.shirt,.0016);
  for(const pts of [left,right])tube(p,'Collar edge seam',[...pts,pts[0]],.0008,m.seam,45,5);
  const placket=[];for(let j=0;j<=26;j++){const y=lerp(1.034,1.34,j/26);placket.push([-.005,y,shirtZ(-.005,y)+.003]);}
  ribbon(p,'Front shirt placket',placket,.0064,.0015,m.shirt,{segments:38,radial:8});
@@ -104,9 +108,9 @@ function makeBackpack(p,m){
  tube(g,'Backpack side seam '+s,[[s*.131,1.111,-.204],[s*.137,1.234,-.205],[s*.103,1.360,-.216]],.0009,m.stitch,32,5);
  }
 }
-export function createCharacter(){
+export function createCharacter(options={}){
  const root=new THREE.Group();root.name='Campus portrait | GPT-6 Astra Pro | mcp-colabdev';const m=makeMaterials();
- makeLegs(root,m);makeSkirt(root,m);makeShirt(root,m);makeBackpack(root,m);const head=createHead(root,m);
- root.userData={description:'Original hand-authored procedural three-dimensional interpretation of the supplied clothing and stance. Unseen views are inferred.',author:'GPT-6 Astra Pro / mcp-colabdev',units:'meters',rigged:false};
- root.updateMatrixWorld(true);optimizeGroup(head);optimizeGroup(root,head);return {root,head,materials:m};
+ makeLegs(root,m);makeSkirt(root,m);makeShirt(root,m);makeBackpack(root,m);if(!options.clothLab){applyReviewedCloth(root);refineGarmentFit(root);}const head=createHead(root,m);
+ root.userData={...root.userData,description:'Original hand-authored procedural three-dimensional interpretation of the supplied clothing and stance. Unseen views are inferred.',author:'GPT-6 Astra Pro / mcp-colabdev',units:'meters',rigged:false};
+ root.updateMatrixWorld(true);optimizeGroup(head);if(options.clothLab){const shirt=root.getObjectByName('Draped white cotton shirt with open neckline');root.remove(shirt);optimizeGroup(root,head);root.add(shirt);}else optimizeGroup(root,head);return {root,head,materials:m};
 }

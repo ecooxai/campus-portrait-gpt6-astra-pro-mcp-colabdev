@@ -1,8 +1,8 @@
 {
-  "revision": 10,
-  "updatedAt": "2026-09-29T17:28:55.867Z",
-  "score": 70,
-  "status": "The independent GLB now matches geometry, material factors and cloth appearance. Degenerate triangles and unsupported material extensions are removed. The model remains a 70/100 stylized study: facial likeness, fine hair and garment realism still fall short of the requested 95+ target.",
+  "revision": 24,
+  "updatedAt": "2026-09-30T00:02:10.655Z",
+  "score": 80,
+  "status": "The excessive iris glare is reduced, the smile is more balanced, and the garment, stance and hair corrections remain coherent across the reviewed views. This is an 80/100 stylized model checkpoint, not the requested 85/100 likeness target.",
   "iterations": [
     {
       "id": 1,
@@ -73,6 +73,104 @@
       "title": "Material-faithful GLB and final checkpoint review",
       "notes": "The independent GLB now matches geometry, material factors and cloth appearance. Degenerate triangles and unsupported material extensions are removed. The model remains a 70/100 stylized study: facial likeness, fine hair and garment realism still fall short of the requested 95+ target.",
       "reviewedAt": "2026-09-29T17:04:56.051Z"
+    },
+    {
+      "id": 11,
+      "score": 70,
+      "title": "Shared facial surface evaluator",
+      "notes": "Eyes and lip attachments now use the same curved surface evaluator as the head. The correction is technically important but does not justify raising the visual score; the eye outlines, smooth cheeks and hair still look too stylized.",
+      "reviewedAt": "2026-09-29T23:01:17.177Z"
+    },
+    {
+      "id": 12,
+      "score": 70,
+      "title": "Integrated eye detail and portrait lighting",
+      "notes": "The new eye surfaces remove the earlier detached outline rings, but the upper eyelid is too raised and the brows are too sparse. This revision does not yet improve the overall visual score.",
+      "reviewedAt": "2026-09-29T23:05:34.218Z"
+    },
+    {
+      "id": 13,
+      "score": 70,
+      "title": "Face proportion and eyelid corrections",
+      "notes": "The face is less compressed and the eyebrow density is improved. A color mismatch between the eyelid patches and the head remains visible, so the visual score stays at 70 while that seam is corrected.",
+      "reviewedAt": "2026-09-29T23:08:57.847Z"
+    },
+    {
+      "id": 14,
+      "score": 72,
+      "title": "Directional hair materials and fuller layers",
+      "notes": "The hair has clearer strand direction, fuller ponytails and slightly asymmetric lengths. Full-body readability improves. Closeups still reveal a hard center seam on the face and a faint eyelid boundary, so the model remains well below the 85 target.",
+      "reviewedAt": "2026-09-29T23:30:01.748Z"
+    },
+    {
+      "id": 15,
+      "score": 74,
+      "title": "Continuous facial shading and blended eyelids",
+      "notes": "The hard vertical facial seam is removed, and the eyelid patches now meet the surrounding skin without the earlier visible rim. The smile and nose detail remain too schematic, and the stance still needs closer matching.",
+      "reviewedAt": "2026-09-29T23:34:47.239Z"
+    },
+    {
+      "id": 16,
+      "score": 74,
+      "title": "Smile proportions and nostril contours",
+      "notes": "The wider smile and crescent nostril contours read more clearly, but the continuous dental band still looks artificial. The score is unchanged until tooth separation and the relaxed stance are improved.",
+      "reviewedAt": "2026-09-29T23:43:06.867Z"
+    },
+    {
+      "id": 17,
+      "score": 76,
+      "title": "Relaxed stance and individual teeth",
+      "notes": "The closer, offset feet and bent-knee stance are more faithful to the reference. Individual teeth replace the white band, although the gaps need softer shading. The neck and collar remain too compressed, and the fringe root still needs blending.",
+      "reviewedAt": "2026-09-29T23:45:23.705Z"
+    },
+    {
+      "id": 18,
+      "score": 77,
+      "title": "Open neckline and softer dental shading",
+      "notes": "The lowered collar and shoulder construction reveals the neck more naturally, and the dark tooth gaps are reduced. The overall shape is clearer, but face and garment realism still fall short of 85.",
+      "reviewedAt": "2026-09-29T23:48:32.715Z"
+    },
+    {
+      "id": 19,
+      "score": 78,
+      "title": "Relaxed garment drape with attached trim",
+      "notes": "The accepted cloth deformation removes the jagged waistband and gives the shirt a more natural fall. Front and profile views remain coherent, and the attached shirt trim follows the cloth. Facial likeness and the swept fringe are still the largest gaps.",
+      "reviewedAt": "2026-09-29T23:50:59.246Z"
+    },
+    {
+      "id": 20,
+      "score": 77,
+      "title": "Swept fringe and smile-fold experiment",
+      "notes": "The asymmetric fringe is closer in direction, but it overlaps the outer eye and exposes an unwanted cap boundary. This is a visual regression and the score is reduced while the hairline is corrected.",
+      "reviewedAt": "2026-09-29T23:52:57.372Z"
+    },
+    {
+      "id": 21,
+      "score": 79,
+      "title": "Corrected asymmetric hairline",
+      "notes": "The eye overlap and intrusive cap boundary are corrected. The swept fringe now frames the face more coherently, while the accepted cloth and stance remain intact. The face is still a stylized interpretation rather than a close photographic likeness.",
+      "reviewedAt": "2026-09-29T23:54:54.138Z"
+    },
+    {
+      "id": 22,
+      "score": 79,
+      "title": "Curved collar construction and export audit",
+      "notes": "The collar surfaces are smoother and the nose detail is less flat. The visual score is unchanged. The export audit caught three invalid tangent vertices, which must be corrected before this model is published.",
+      "reviewedAt": "2026-09-29T23:57:30.081Z"
+    },
+    {
+      "id": 23,
+      "score": 79,
+      "title": "Recessed eye surfaces and valid tangent bases",
+      "notes": "The eyes now sit in recessed sockets instead of simply following the face curvature. The GLB validates cleanly, but the iris highlights are too broad, so the visual score is unchanged until the glare is reduced.",
+      "reviewedAt": "2026-09-29T23:59:37.220Z"
+    },
+    {
+      "id": 24,
+      "score": 80,
+      "title": "Balanced eye reflections and reviewed cloth checkpoint",
+      "notes": "The excessive iris glare is reduced, the smile is more balanced, and the garment, stance and hair corrections remain coherent across the reviewed views. This is an 80/100 stylized model checkpoint, not the requested 85/100 likeness target.",
+      "reviewedAt": "2026-09-30T00:02:10.655Z"
     }
   ],
   "files": [

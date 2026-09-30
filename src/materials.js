@@ -18,8 +18,8 @@ export function makeMaterials(){
  const S=(color,roughness=.6,extra={})=>new THREE.MeshStandardMaterial({color,roughness,...extra});
  const P=(color,roughness=.5,extra={})=>new THREE.MeshPhysicalMaterial({color,roughness,...extra});
  const m={
- skin:P('#efc4ac',.62,{sheen:.15,sheenColor:'#ffcfc0',normalMap:microNormal,normalScale:new THREE.Vector2(.12,.12)}),face:P('#ffffff',.60,{vertexColors:true,sheen:.14,sheenColor:'#f6c8af',normalMap:microNormal,normalScale:new THREE.Vector2(.08,.08)}),
- lidShadow:S('#c9a48f',.9),nostril:S('#855a4d',.9),skinShadow:S('#bf8878',.67),upperLip:P('#b88177',.57,{clearcoat:.05}),lip:P('#c58d81',.50,{clearcoat:.10,side:THREE.DoubleSide}),mouth:S('#663333',.9),toothSeam:S('#bcad9e',.8),tooth:P('#f4ecdc',.39),
+ skin:P('#efc0a6',.56,{sheen:.15,sheenColor:'#ffcfc0',normalMap:microNormal,normalScale:new THREE.Vector2(.12,.12)}),face:P('#ffffff',.56,{vertexColors:true,sheen:.14,sheenColor:'#f6c8af',normalMap:microNormal,normalScale:new THREE.Vector2(.08,.08)}),
+ lidShadow:S('#c9a48f',.9),nostril:S('#855a4d',.9),skinShadow:S('#bf8878',.67),upperLip:P('#b88177',.57,{clearcoat:.05}),lip:P('#c58d81',.50,{clearcoat:.10,side:THREE.DoubleSide}),mouth:S('#3e2328',.94),toothSeam:S('#bcad9e',.8),tooth:P('#f4ecdc',.39),
  eyeWhite:P('#e6e0d8',.38,{clearcoat:.35}),iris:P('#443229',.3,{clearcoat:1}),irisLight:S('#795442',.35),pupil:P('#101416',.18,{clearcoat:1}),glint:new THREE.MeshBasicMaterial({color:'#fffaf0'}),lash:S('#322529',.7),brow:S('#3a3030',.9),
  hairCap:P('#ffffff',.47,{map:hairTex,clearcoat:.06,clearcoatRoughness:.65}),hair:P('#19191e',.48,{metalness:0,clearcoat:.07,clearcoatRoughness:.6}),hairLight:P('#302d33',.51,{metalness:0}),hairMid:P('#242228',.48,{metalness:0}),hairDark:S('#141319',.54),
  shirt:P('#ffffff',.84,{map:cloth,sheen:.22,sheenColor:'#eee9e4',side:THREE.DoubleSide}),seam:S('#d7dce2',.9),button:P('#f4f2ed',.32),

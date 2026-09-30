@@ -18,7 +18,7 @@ export function surface(parent,name,nu,nv,fn,material){
  const p=[],uv=[],idx=[],cols=[];
  for(let j=0;j<=nv;j++)for(let i=0;i<=nu;i++){const a=fn(i/nu,j/nv);p.push(...a.p);uv.push(...(a.uv||[i/nu,j/nv]));if(a.c)cols.push(...a.c);}
  for(let j=0;j<nv;j++)for(let i=0;i<nu;i++){const a=j*(nu+1)+i,b=a+1,c=a+nu+1,d=c+1;idx.push(a,b,c,b,d,c);}
- const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(p,3));g.setAttribute('uv',new THREE.Float32BufferAttribute(uv,2));if(cols.length)g.setAttribute('color',new THREE.Float32BufferAttribute(cols,3));g.setIndex(idx);g.computeVertexNormals();return mesh(parent,name,g,material);
+ const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(p,3));g.setAttribute('uv',new THREE.Float32BufferAttribute(uv,2));if(cols.length)g.setAttribute('color',new THREE.Float32BufferAttribute(cols,3));g.setIndex(idx);g.userData.grid={nu,nv};g.computeVertexNormals();smoothGridSeamNormals(g,nu,nv);return mesh(parent,name,g,material);
 }
 export function tube(parent,name,points,r,mat,segments=40,radial=8){const curve=new THREE.CatmullRomCurve3(points.map(p=>Array.isArray(p)?V(...p):p));return mesh(parent,name,new THREE.TubeGeometry(curve,segments,r,radial,false),mat);}
 export function loft(parent,name,rows,mat,opts={}){
@@ -31,3 +31,26 @@ export function ribbon(parent,name,points,width,depth,mat,opts={}){
  return surface(parent,name,radial,seg,(u,t)=>{const p=curve.getPoint(t),tang=curve.getTangent(t).normalize();let side=new THREE.Vector3().crossVectors(tang,V(0,0,1)).normalize();if(side.lengthSq()<.1)side=V(1,0,0);const normal=new THREE.Vector3().crossVectors(side,tang).normalize(),a=-u*TAU;p.addScaledVector(side,Math.cos(a)*w(t)).addScaledVector(normal,Math.sin(a)*d(t));return {p:p.toArray(),uv:[u,t]};},mat);
 }
 export function patch(parent,name,outline,mat){const center=outline.reduce((a,p)=>a.add(V(...p)),V()).multiplyScalar(1/outline.length),vertices=[...center.toArray(),...outline.flat()],indices=[];for(let i=0;i<outline.length;i++)indices.push(0,i+1,(i+1)%outline.length+1);const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(vertices,3));g.setAttribute('uv',new THREE.Float32BufferAttribute([.5,.5,...outline.flatMap(p=>[p[0]*5+.5,p[1]*5])],2));g.setIndex(indices);g.computeVertexNormals();return mesh(parent,name,g,mat);}
+
+export function smoothGridSeamNormals(geometry,columns,rows){
+ const p=geometry.getAttribute('position'),n=geometry.getAttribute('normal');
+ if(!p||!n)return;
+ for(let j=0;j<=rows;j++){
+  const a=j*(columns+1),b=a+columns;
+  const distance=(p.getX(a)-p.getX(b))**2+(p.getY(a)-p.getY(b))**2+(p.getZ(a)-p.getZ(b))**2;
+  if(distance>1e-12)continue;
+  const x=n.getX(a)+n.getX(b),y=n.getY(a)+n.getY(b),z=n.getZ(a)+n.getZ(b),length=Math.hypot(x,y,z);
+  if(length<1e-10)continue;
+  n.setXYZ(a,x/length,y/length,z/length);n.setXYZ(b,x/length,y/length,z/length);
+ }
+ n.needsUpdate=true;
+}
+
+export function curvedClothPatch(parent,name,outline,material,bow=.0015){
+ const center=outline.reduce((sum,p)=>sum.add(V(...p)),V()).multiplyScalar(1/outline.length);
+ return surface(parent,name,outline.length*12,12,(u,v)=>{
+  const edge=u*outline.length,i=Math.min(outline.length-1,Math.floor(edge)),t=edge-i,a=outline[i],b=outline[(i+1)%outline.length];
+  const point=V(lerp(a[0],b[0],t),lerp(a[1],b[1],t),lerp(a[2],b[2],t));point.lerp(center,1-v);point.z+=bow*(1-v*v);
+  return {p:point.toArray(),uv:[point.x*5+.5,point.y*5]};
+ },material);
+}
