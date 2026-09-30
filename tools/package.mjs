@@ -145,7 +145,7 @@ The quick tunnel is temporary and depends on the live instance. The separate Git
 ## Live services — do not duplicate or stop unrelated work
 
 - Vite developer preview: port 4186, Webterm terminal 729.
-- Project-only static production preview: port 4197, terminal 771.
+- Project-only static production preview: port 4197, terminal 788.
 - cloudflared HTTP/2 quick tunnel to port 4197: terminal 785.
 
 Use the mcp_colabdev Webterm proxy, not mcp_aliwebterm's separate /home/admin host. A running command should be read by terminal ID, not restarted. Colab was healthy throughout development except that the 32 native-session limit was reached. Only this task's finished command terminals were stopped to reclaim slots; the three services above were retained. A webterm run can finish its command while its native shell remains running. Clean up only owned completed terminals.
@@ -195,7 +195,7 @@ No rig, skinning or animation is present. The generator modules remain the edita
 
 ## GitHub Pages deployment
 
-Vite supports BASE_URL. For Pages use BASE_URL=/campus-portrait-gpt6-astra-pro-mcp-colabdev/ and BUILD_DIR=/build/campus-portrait-pages-gpt6-astra-pro-mcp-colabdev. Do not overwrite the root-hosted build with the Pages subpath build. Runtime file URLs are resolved through import.meta.env.BASE_URL. The isolated site repository is .agentwork/pages-gpt6-astra-pro-mcp-colabdev; copy only generated files into it and push its site branch. The authenticated GitHub CLI is used through a per-command credential helper, not a printed token or changed global Git configuration. Run production acceptance with PREVIEW_URL set to the Pages URL after deployment. The tools/deploy-pages.sh file documents these scoped steps; it does not delete other workspace files.
+Vite supports BASE_URL. For Pages use BASE_URL=/campus-portrait-gpt6-astra-pro-mcp-colabdev/ and BUILD_DIR=/build/campus-portrait-pages-gpt6-astra-pro-mcp-colabdev. Do not overwrite the root-hosted build with the Pages subpath build. Runtime file URLs are resolved through import.meta.env.BASE_URL. The isolated site repository is .agentwork/pages-likeness85-gpt6-astra-pro-mcp-colabdev; copy only generated files into it and push its site branch. The authenticated GitHub CLI is used through a per-command credential helper, not a printed token or changed global Git configuration. Run production acceptance with PREVIEW_URL set to the Pages URL after deployment. The tools/deploy-pages.sh file documents these scoped steps; it does not delete other workspace files.
 
 ## Continue / publish
 

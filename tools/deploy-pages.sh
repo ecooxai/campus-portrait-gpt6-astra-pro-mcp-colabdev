@@ -7,14 +7,13 @@ repo='ecooxai/campus-portrait-gpt6-astra-pro-mcp-colabdev'
 branch='gpt6-astra-pro-mcp-colabdev/site'
 site_base='/campus-portrait-gpt6-astra-pro-mcp-colabdev/'
 build='/build/campus-portrait-pages-gpt6-astra-pro-mcp-colabdev'
-stage="$project_dir/.agentwork/pages-gpt6-astra-pro-mcp-colabdev"
+stage="$project_dir/.agentwork/pages-likeness85-gpt6-astra-pro-mcp-colabdev"
 remote="https://github.com/$repo.git"
 command -v gh >/dev/null
 mkdir -p "$stage"
 BASE_URL="$site_base" BUILD_DIR="$build" npm run build
 if [[ ! -d "$stage/.git" ]]; then
-  git -C "$stage" init -b "$branch"
-  git -C "$stage" remote add origin "$remote"
+  git -c credential.helper= -c 'credential.helper=!gh auth git-credential' clone --depth 1 --single-branch --branch "$branch" "$remote" "$stage"
 fi
 # Both paths are owned deployment directories; never mirror the source project root.
 cp -a "$build/." "$stage/"
