@@ -1322,6 +1322,338 @@
       "completedAt": "2026-09-30T08:43:55.604Z",
       "decision": "not selected",
       "reviewedAt": "2026-09-30T08:46:11.850Z"
+    },
+    {
+      "id": 21,
+      "group": "06-ear-scalp-integration",
+      "label": "Raised scalp boundary and exposed concha",
+      "changes": {
+        "earSculpt": 1,
+        "earSize": 0.94,
+        "earTilt": -0.035,
+        "earWarmth": 0.65,
+        "earOutset": 0.002,
+        "earNotch": 0
+      },
+      "basedOn": 16,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c021-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "42dff6bbee77ebcc3988dc43fa56bc806a616e42b357935da5b624ce048367d7",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "design.js",
+        "ear-sculpt.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js"
+      ],
+      "sourceCommit": "032efa000d95fa5847019538b39f327407d51cfd",
+      "designHash": "c025ff5cd9fa5d385a2858295e73842f7ab01983acf5c43d7c7fa573e54ffdf9",
+      "startedAt": "2026-09-30T08:46:13.087Z",
+      "score": 83.5,
+      "review": "The conchal bowl is now visible and the ear has actual cartilage structure instead of a ring. This is the best of the set, although the attachment still needs a small connective skin volume.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face-three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c021-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c021-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c021-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "bdaac36640c3a25883f5cc1e60c69858cb6ff13ca3070b712393601322295b63",
+          "bytes": 360703
+        },
+        {
+          "view": "face-profile",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c021-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c021-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c021-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "7a9b2877d5613f67a780aeaa62c9de4cfb3c6fcc9fc440f7f62e65fe1b58b966",
+          "bytes": 277186
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "stats": {
+        "vertices": 216446,
+        "triangles": 387793,
+        "meshes": 45,
+        "drawCalls": 81,
+        "revision": 26,
+        "designCandidate": 21,
+        "designLabel": "Raised scalp boundary and exposed concha",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "3dcb87c4",
+        "positionComponents": 649338
+      },
+      "completedAt": "2026-09-30T08:46:39.652Z",
+      "decision": "selected checkpoint",
+      "reviewedAt": "2026-09-30T08:50:40.938Z"
+    },
+    {
+      "id": 22,
+      "group": "06-ear-scalp-integration",
+      "label": "Shallower hair notch and outward ear fit",
+      "changes": {
+        "earSculpt": 1,
+        "earSize": 0.92,
+        "earTilt": -0.045,
+        "earWarmth": 0.65,
+        "earOutset": 0.005,
+        "earNotch": -0.012
+      },
+      "basedOn": 16,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c022-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "42dff6bbee77ebcc3988dc43fa56bc806a616e42b357935da5b624ce048367d7",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "design.js",
+        "ear-sculpt.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js"
+      ],
+      "sourceCommit": "032efa000d95fa5847019538b39f327407d51cfd",
+      "designHash": "4118b292ba3b1093ddf190d08eb9dd55c861d74d853c2afef2b100e1128e2e47",
+      "startedAt": "2026-09-30T08:46:39.671Z",
+      "score": 83,
+      "review": "The shallower hair notch works, but the greater outward offset makes the ear look more detached in three-quarter view. Do not use the larger outset.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face-three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c022-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c022-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c022-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "1ca975d97044c72cbb99e857ec9c8210ae4f57927fe4cd01af9295e08cb2d7b5",
+          "bytes": 361124
+        },
+        {
+          "view": "face-profile",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c022-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c022-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c022-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "e71b4004acc47f1bf7fde04a960641f39fbc779891ed7209ba71d32f0c51bdf1",
+          "bytes": 275996
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "stats": {
+        "vertices": 216446,
+        "triangles": 387793,
+        "meshes": 45,
+        "drawCalls": 81,
+        "revision": 26,
+        "designCandidate": 22,
+        "designLabel": "Shallower hair notch and outward ear fit",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960158982403593,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "e754eb65",
+        "positionComponents": 649338
+      },
+      "completedAt": "2026-09-30T08:47:06.848Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T08:50:40.938Z"
+    },
+    {
+      "id": 23,
+      "group": "06-ear-scalp-integration",
+      "label": "Compact ear with wider scalp clearance",
+      "changes": {
+        "earSculpt": 1,
+        "earSize": 0.88,
+        "earTilt": -0.03,
+        "earWarmth": 0.7,
+        "earOutset": 0.001,
+        "earNotch": 0.009
+      },
+      "basedOn": 16,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c023-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "42dff6bbee77ebcc3988dc43fa56bc806a616e42b357935da5b624ce048367d7",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "design.js",
+        "ear-sculpt.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js"
+      ],
+      "sourceCommit": "032efa000d95fa5847019538b39f327407d51cfd",
+      "designHash": "cc4a4c283da870878ae828187e577d7f26021de3d4b51f8a0e318ddb15ccd4a2",
+      "startedAt": "2026-09-30T08:47:06.862Z",
+      "score": 82.5,
+      "review": "The compact ear is acceptable, but the larger hair clearance makes the side hairline too sharply notched. It reduces the natural swept-back silhouette.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face-three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c023-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c023-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c023-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "83ccc2df8494802dbde6614d7587d139d71a5e21fc1dd17019a00e467a719d8c",
+          "bytes": 359660
+        },
+        {
+          "view": "face-profile",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c023-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c023-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c023-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "2e2ea64b650d97a48713ed90c426a607551ffe9d14ba55a376be38f349df1f7d",
+          "bytes": 277946
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "stats": {
+        "vertices": 216446,
+        "triangles": 387793,
+        "meshes": 45,
+        "drawCalls": 81,
+        "revision": 26,
+        "designCandidate": 23,
+        "designLabel": "Compact ear with wider scalp clearance",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960152575127274,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "4e6c0cb0",
+        "positionComponents": 649338
+      },
+      "completedAt": "2026-09-30T08:47:34.201Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T08:50:40.938Z"
+    },
+    {
+      "id": 24,
+      "group": "06-ear-scalp-integration",
+      "label": "Balanced auricle and swept-back hairline",
+      "changes": {
+        "earSculpt": 1,
+        "earSize": 0.92,
+        "earTilt": -0.04,
+        "earWarmth": 0.7,
+        "earOutset": 0.003,
+        "earNotch": 0.004
+      },
+      "basedOn": 16,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c024-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "42dff6bbee77ebcc3988dc43fa56bc806a616e42b357935da5b624ce048367d7",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "design.js",
+        "ear-sculpt.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js"
+      ],
+      "sourceCommit": "032efa000d95fa5847019538b39f327407d51cfd",
+      "designHash": "ad8e996f602f7762410b8a063bf824dd23c0e0e7f807e9f53618f5b67f6065d1",
+      "startedAt": "2026-09-30T08:47:34.217Z",
+      "score": 83,
+      "review": "The cartilage is coherent, but the combination of outward offset and extra notch is slightly less natural than C21. Retain the more conservative fit.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face-three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c024-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c024-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c024-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "8b22ed6aa100ff11e07cb0e974183f1d61f6ea95d924b0e521f29939527b6f90",
+          "bytes": 360687
+        },
+        {
+          "view": "face-profile",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c024-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c024-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c024-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "d63a90a82948b990a6ef19f35a27a6782cc59238f1eea497ce0256ed3f2770e9",
+          "bytes": 277699
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "stats": {
+        "vertices": 216446,
+        "triangles": 387793,
+        "meshes": 45,
+        "drawCalls": 81,
+        "revision": 26,
+        "designCandidate": 24,
+        "designLabel": "Balanced auricle and swept-back hairline",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960161010238386,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "8a2b6af4",
+        "positionComponents": 649338
+      },
+      "completedAt": "2026-09-30T08:48:01.944Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T08:50:40.938Z"
     }
   ],
   "sheets": [
@@ -1384,12 +1716,24 @@
       "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-05-curved-ear-anatomy-gpt6-astra-pro-mcp-colabdev.jpg",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-05-curved-ear-anatomy-gpt6-astra-pro-mcp-colabdev.jpg",
       "createdAt": "2026-09-30T08:43:56.124Z"
+    },
+    {
+      "group": "06-ear-scalp-integration",
+      "ids": [
+        21,
+        22,
+        23,
+        24
+      ],
+      "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-06-ear-scalp-integration-gpt6-astra-pro-mcp-colabdev.jpg",
+      "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-06-ear-scalp-integration-gpt6-astra-pro-mcp-colabdev.jpg",
+      "createdAt": "2026-09-30T08:48:02.477Z"
     }
   ],
-  "selected": 16,
+  "selected": 21,
   "description": "Distinct source/parameter edits followed by browser renders and individual human-agent visual review. Numerical solver steps are not counted.",
-  "updatedAt": "2026-09-30T08:46:11.851Z",
-  "rendered": 20,
-  "reviewed": 20,
-  "currentScore": 83
+  "updatedAt": "2026-09-30T08:50:41.962Z",
+  "rendered": 24,
+  "reviewed": 24,
+  "currentScore": 83.5
 }

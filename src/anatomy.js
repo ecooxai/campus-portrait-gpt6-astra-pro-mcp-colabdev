@@ -3,10 +3,12 @@ import {D} from './design.js';
 import {clamp,gauss,lerp,smoothProfile} from './geometry.js';
 
 const baseProfile=[[-.108,.002,.012],[-.102,.025,.034],[-.091,.044,.049],[-.075,.063,.061],[-.053,.078,.070],[-.029,.087,.073],[0,.092,.073],[.024,.092,.072],[.051,.09,.072],[.080,.084,.069],[.107,.072,.060],[.128,.050,.043],[.143,.002,.002]];
-export const profile=baseProfile.map(([y,rx,rz])=>[
+export const profile=[];
+export function refreshAnatomy(){profile.splice(0,profile.length,...baseProfile.map(([y,rx,rz])=>[
  y-D.chinLength*clamp((-.035-y)/.073,0,1),
  rx*(1+(D.jawWidth-1)*gauss(y,-.063,.027)+(D.chinWidth-1)*gauss(y,-.099,.013)+(D.cheekWidth-1)*gauss(y,-.019,.035)),rz
-]);
+]));}
+refreshAnatomy();
 export function eyeLayout(s){return {cx:s*.035*D.eyeSpacing,cy:.019+D.eyeY,hw:.018*D.eyeWidth,top:.0066*D.eyeUpper,bottom:.0041*D.eyeLower};}
 export function eyeEdgeY(a,upper,s){const l=eyeLayout(s),arch=Math.pow(Math.max(0,1-a*a),.63);return l.cy+(upper?l.top:-l.bottom)*arch+D.eyeSlope*(s*a*.0011+.0008*Math.max(0,s*a)**2);}
 export function mouthTop(a){return -.047+D.mouthY+.003*a*a+.0007*gauss(Math.abs(a),.28,.17)+(D.mouthSmile-1)*.004*a*a;}

@@ -1,3 +1,4 @@
+import {refreshAnatomy} from './anatomy.js';
 import {applyReviewedCloth} from './cloth-bake.js';
 import {refineGarmentFit} from './garment-fit.js';
 import * as THREE from 'three';
@@ -109,6 +110,7 @@ function makeBackpack(p,m){
  }
 }
 export function createCharacter(options={}){
+ refreshAnatomy();
  const root=new THREE.Group();root.name='Campus portrait | GPT-6 Astra Pro | mcp-colabdev';const m=makeMaterials();
  makeLegs(root,m);makeSkirt(root,m);makeShirt(root,m);makeBackpack(root,m);if(!options.clothLab){applyReviewedCloth(root);refineGarmentFit(root);}const head=createHead(root,m);
  root.userData={...root.userData,description:'Original hand-authored procedural three-dimensional interpretation of the supplied clothing and stance. Unseen views are inferred.',author:'GPT-6 Astra Pro / mcp-colabdev',units:'meters',rigged:false};
