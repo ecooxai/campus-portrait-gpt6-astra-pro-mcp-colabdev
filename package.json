@@ -10,7 +10,10 @@
     "qa": "node tools/qa.mjs",
     "build:portable": "vite build --outDir dist",
     "serve": "node tools/serve.mjs",
-    "acceptance": "node tools/acceptance.mjs"
+    "acceptance": "node tools/acceptance.mjs",
+    "campaign": "node tools/campaign.mjs",
+    "audit:campaign": "node tools/audit-campaign.mjs",
+    "package:checkpoint": "node tools/package-checkpoint.mjs"
   },
   "dependencies": {
     "three": "^0.186.1",
