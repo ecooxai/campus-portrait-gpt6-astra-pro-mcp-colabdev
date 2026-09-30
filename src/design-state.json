@@ -1,6 +1,6 @@
 {
-  "candidate": 72,
-  "label": "Balanced loafer width and rounded vamp",
+  "candidate": 83,
+  "label": "Relaxed forward posture and subtle shoulder angle",
   "headWidth": 1.015,
   "headHeight": 0.96,
   "headDepth": 1,
@@ -114,5 +114,13 @@
   "shoeFit": 1,
   "toeExponent": 0.68,
   "shoeWidth": 1.02,
-  "shoeUpperHeight": 0.72
+  "shoeUpperHeight": 0.72,
+  "handDetail": 0.4,
+  "wristBridge": 1,
+  "wristCap": 1,
+  "handClearance": 0.028,
+  "palmLength": 0.87,
+  "palmWidth": 0.96,
+  "poseLean": 0.055,
+  "poseRoll": -0.008
 }
