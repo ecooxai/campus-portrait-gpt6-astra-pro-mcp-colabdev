@@ -1654,6 +1654,396 @@
       "completedAt": "2026-09-30T08:48:01.944Z",
       "decision": "not selected",
       "reviewedAt": "2026-09-30T08:50:40.938Z"
+    },
+    {
+      "id": 25,
+      "group": "07-swept-fringe-fit",
+      "label": "Lower swept fringe over the left brow",
+      "changes": {
+        "fringeDrop": 0.01,
+        "fringeSplit": -0.003,
+        "fringeEdge": 0.0005
+      },
+      "basedOn": 21,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c025-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "93a2cbd9c1e9e697299fcbb9117678808e0f62a5f39d00c539e95b48c10c0896",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "design.js",
+        "ear-sculpt.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js"
+      ],
+      "sourceCommit": "0fc335d07013a0eba0980d5306d74885c20c8c84",
+      "designHash": "76526cd5be23a679e46256c216beea19a649b7a275cef6daea242ed8fe1f3c5c",
+      "startedAt": "2026-09-30T08:56:50.223Z",
+      "score": 83.5,
+      "review": "Lower fringe coverage is closer to the reference and the attached ears are less disconnected. The sweep remains rather flat across the brow.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c025-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c025-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c025-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "94f7fd9201660797252b7c6d71666bfa11fb0e90f32105e17933538b4b79a357",
+          "bytes": 367614
+        },
+        {
+          "view": "face-three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c025-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c025-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c025-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "2392c9d4f6054c7b50fdd636108866175a35b66910bc1a5daaa31cca2a0668d9",
+          "bytes": 365358
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 217996,
+        "triangles": 390529,
+        "meshes": 47,
+        "drawCalls": 85,
+        "revision": 26,
+        "designCandidate": 25,
+        "designLabel": "Lower swept fringe over the left brow",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 4013.2000000001863,
+        "totalMs": 4035.7000000001863
+      },
+      "stats": {
+        "vertices": 217996,
+        "triangles": 390529,
+        "meshes": 47,
+        "drawCalls": 85,
+        "revision": 26,
+        "designCandidate": 25,
+        "designLabel": "Lower swept fringe over the left brow",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "661c7da5",
+        "positionComponents": 653988
+      },
+      "completedAt": "2026-09-30T08:57:06.506Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T09:00:18.720Z"
+    },
+    {
+      "id": 26,
+      "group": "07-swept-fringe-fit",
+      "label": "Deeper sweep with a narrower part opening",
+      "changes": {
+        "fringeDrop": 0.015,
+        "fringeSplit": -0.008,
+        "fringeEdge": 0.0007
+      },
+      "basedOn": 21,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c026-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "93a2cbd9c1e9e697299fcbb9117678808e0f62a5f39d00c539e95b48c10c0896",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "design.js",
+        "ear-sculpt.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js"
+      ],
+      "sourceCommit": "0fc335d07013a0eba0980d5306d74885c20c8c84",
+      "designHash": "9efe5203fc31b334ae45e814f8cc62d48906012e96ab9ad579c67b7ae7aa76b4",
+      "startedAt": "2026-09-30T08:57:06.512Z",
+      "score": 83,
+      "review": "The deeper sweep approaches the upper eyelid and compresses the forehead too much. Keep more clearance above the left eye.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c026-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c026-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c026-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "5d907fb37913bc6c18652b4ec62d27c4e82db854fca909d7acb105472b24903b",
+          "bytes": 370491
+        },
+        {
+          "view": "face-three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c026-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c026-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c026-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "c41e82c844fd9d4f5b1e41bb46d444a42d98c5817faa3c073461a13508e9ebe8",
+          "bytes": 367463
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 217996,
+        "triangles": 390529,
+        "meshes": 47,
+        "drawCalls": 85,
+        "revision": 26,
+        "designCandidate": 26,
+        "designLabel": "Deeper sweep with a narrower part opening",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 3150.2999999998137,
+        "totalMs": 3173.5
+      },
+      "stats": {
+        "vertices": 217996,
+        "triangles": 390529,
+        "meshes": 47,
+        "drawCalls": 85,
+        "revision": 26,
+        "designCandidate": 26,
+        "designLabel": "Deeper sweep with a narrower part opening",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "12ccaf25",
+        "positionComponents": 653988
+      },
+      "completedAt": "2026-09-30T08:57:21.752Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T09:00:18.720Z"
+    },
+    {
+      "id": 27,
+      "group": "07-swept-fringe-fit",
+      "label": "Shallow fringe with individual edge breakup",
+      "changes": {
+        "fringeDrop": 0.007,
+        "fringeSplit": -0.006,
+        "fringeEdge": 0.0016,
+        "fringeLift": 0.0004
+      },
+      "basedOn": 21,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c027-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "93a2cbd9c1e9e697299fcbb9117678808e0f62a5f39d00c539e95b48c10c0896",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "design.js",
+        "ear-sculpt.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js"
+      ],
+      "sourceCommit": "0fc335d07013a0eba0980d5306d74885c20c8c84",
+      "designHash": "ecd4e677df122e29b4d44243b5d867360a58f9be16f9e6b90d4363d837a3b7a9",
+      "startedAt": "2026-09-30T08:57:21.757Z",
+      "score": 82.5,
+      "review": "The larger periodic edge variation creates visible scallops rather than natural wispy tips. Reject the stronger sinusoidal edge breakup.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c027-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c027-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c027-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "e9d2b0a53bfe5e76ffc575a46bc693ee13f3cdbdddb522c7c213d896220b16ba",
+          "bytes": 367097
+        },
+        {
+          "view": "face-three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c027-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c027-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c027-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "29d98a4f225eaf4e69c564ffd033f5388c0a083f28f9aa77c99b6a0f7601fc20",
+          "bytes": 364922
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 217996,
+        "triangles": 390529,
+        "meshes": 47,
+        "drawCalls": 85,
+        "revision": 26,
+        "designCandidate": 27,
+        "designLabel": "Shallow fringe with individual edge breakup",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 2867.9000000003725,
+        "totalMs": 2886.600000000093
+      },
+      "stats": {
+        "vertices": 217996,
+        "triangles": 390529,
+        "meshes": 47,
+        "drawCalls": 85,
+        "revision": 26,
+        "designCandidate": 27,
+        "designLabel": "Shallow fringe with individual edge breakup",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "6ef8ddf6",
+        "positionComponents": 653988
+      },
+      "completedAt": "2026-09-30T08:57:36.071Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T09:00:18.720Z"
+    },
+    {
+      "id": 28,
+      "group": "07-swept-fringe-fit",
+      "label": "Balanced brow coverage and lifted hair volume",
+      "changes": {
+        "fringeDrop": 0.011,
+        "fringeSplit": -0.005,
+        "fringeEdge": 0.0008,
+        "fringeLift": 0.001
+      },
+      "basedOn": 21,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c028-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "93a2cbd9c1e9e697299fcbb9117678808e0f62a5f39d00c539e95b48c10c0896",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "design.js",
+        "ear-sculpt.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js"
+      ],
+      "sourceCommit": "0fc335d07013a0eba0980d5306d74885c20c8c84",
+      "designHash": "0e52d65cc9a4586c6b790222b9cf7cc769095dae46f647eb47e253c1ce2c795f",
+      "startedAt": "2026-09-30T08:57:36.076Z",
+      "score": 84,
+      "review": "Moderate coverage and slight lifted volume create the best swept silhouette in this set. Select it; the next major issue is the broad plastic-looking hair reflection rather than the outline.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c028-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c028-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c028-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "2d9950450de90267f0015acb91e27f500cff5a7f35e5b60a434ec4f7a8241e5f",
+          "bytes": 368348
+        },
+        {
+          "view": "face-three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c028-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c028-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c028-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "e346275e34b6096dd0ed091066d8fc58ff9130aaf1c6ac09606746831c1ae276",
+          "bytes": 366344
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 217996,
+        "triangles": 390529,
+        "meshes": 47,
+        "drawCalls": 85,
+        "revision": 26,
+        "designCandidate": 28,
+        "designLabel": "Balanced brow coverage and lifted hair volume",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 3135.5,
+        "totalMs": 3152.6999999997206
+      },
+      "stats": {
+        "vertices": 217996,
+        "triangles": 390529,
+        "meshes": 47,
+        "drawCalls": 85,
+        "revision": 26,
+        "designCandidate": 28,
+        "designLabel": "Balanced brow coverage and lifted hair volume",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "634acab5",
+        "positionComponents": 653988
+      },
+      "completedAt": "2026-09-30T08:57:49.659Z",
+      "decision": "selected checkpoint",
+      "reviewedAt": "2026-09-30T09:00:18.720Z"
     }
   ],
   "sheets": [
@@ -1728,12 +2118,24 @@
       "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-06-ear-scalp-integration-gpt6-astra-pro-mcp-colabdev.jpg",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-06-ear-scalp-integration-gpt6-astra-pro-mcp-colabdev.jpg",
       "createdAt": "2026-09-30T08:48:02.477Z"
+    },
+    {
+      "group": "07-swept-fringe-fit",
+      "ids": [
+        25,
+        26,
+        27,
+        28
+      ],
+      "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-07-swept-fringe-fit-gpt6-astra-pro-mcp-colabdev.jpg",
+      "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-07-swept-fringe-fit-gpt6-astra-pro-mcp-colabdev.jpg",
+      "createdAt": "2026-09-30T08:57:50.309Z"
     }
   ],
-  "selected": 21,
+  "selected": 28,
   "description": "Distinct source/parameter edits followed by browser renders and individual human-agent visual review. Numerical solver steps are not counted.",
-  "updatedAt": "2026-09-30T08:50:41.962Z",
-  "rendered": 24,
-  "reviewed": 24,
-  "currentScore": 83.5
+  "updatedAt": "2026-09-30T09:00:19.381Z",
+  "rendered": 28,
+  "reviewed": 28,
+  "currentScore": 84
 }

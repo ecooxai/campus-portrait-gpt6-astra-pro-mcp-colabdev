@@ -10,6 +10,6 @@ export function refineHairMaterials(m){
  for(let y=0;y<256;y++)for(let x=0;x<256;x++){const nx=.24*Math.sin(x*2.13)+.11*Math.sin(x*.77),ny=.00436*Math.cos(y*.05+x*.08),nz=Math.sqrt(1-nx*nx-ny*ny),i=(y*256+x)*4;data.data[i]=(nx+1)*127.5;data.data[i+1]=(ny+1)*127.5;data.data[i+2]=(nz+1)*127.5;data.data[i+3]=255;}
  ctx.putImageData(data,0,0);const normal=new THREE.CanvasTexture(nc);normal.colorSpace=THREE.NoColorSpace;normal.wrapS=normal.wrapT=THREE.RepeatWrapping;normal.anisotropy=8;
  for(const [name,value] of [['hairCap',1],['hair',.94],['hairMid',1.12],['hairLight',1.28],['hairDark',.70]]){
-  const mat=m[name];mat.color.setRGB(Math.min(1,value),Math.min(1,value),Math.min(1,value));mat.map=map;mat.normalMap=normal;mat.normalScale=new THREE.Vector2(.11,.11);mat.roughness=Math.min(.95,(name==='hairDark'?.62:.44)*D.hairRoughness);mat.metalness=0;mat.envMapIntensity=1;if(mat.isMeshPhysicalMaterial){mat.specularIntensity=.60*D.hairHighlight;mat.clearcoat=.09;mat.clearcoatRoughness=.5;}mat.needsUpdate=true;
+  const mat=m[name];mat.color.setRGB(Math.min(1,value),Math.min(1,value),Math.min(1,value));mat.map=map;mat.normalMap=normal;mat.normalScale=new THREE.Vector2(.11,.11);mat.roughness=Math.min(.95,(name==='hairDark'?.62:.44)*D.hairRoughness);mat.metalness=0;mat.envMapIntensity=1;if(mat.isMeshPhysicalMaterial){mat.specularIntensity=.60*D.hairHighlight;mat.clearcoat=D.hairCoating??.09;mat.clearcoatRoughness=.5;mat.anisotropy=D.hairAnisotropy||0;mat.anisotropyRotation=D.hairAnisotropyRotation??Math.PI/2;}mat.needsUpdate=true;
  }
 }
