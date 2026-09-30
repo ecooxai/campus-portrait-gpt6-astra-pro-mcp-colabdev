@@ -9272,6 +9272,541 @@
       "completedAt": "2026-09-30T14:53:59.172Z",
       "decision": "not selected",
       "reviewedAt": "2026-09-30T14:56:08.669Z"
+    },
+    {
+      "id": 97,
+      "group": "25-integrated-all-view-reconciliation",
+      "label": "Conservative integrated pose and portrait framing",
+      "changes": {
+        "poseLean": 0.04,
+        "portraitElevation": 0.15,
+        "geometryScale": 0.72
+      },
+      "basedOn": 95,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c097-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "10da7fb615d6fe2e3ee02a2f938afe53ac9dc303abac6cc6b49b7f90dd53e7ca",
+      "sourceNames": [
+        "accessory-fit.js",
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "clothing-fit.js",
+        "design.js",
+        "ear-sculpt.js",
+        "eye-volume.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "hand-details.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "nose-anatomy.js",
+        "optimize.js",
+        "pose-refine.js",
+        "refinement-status.js",
+        "revision.js",
+        "skin-surface.js",
+        "tie-knot.js"
+      ],
+      "sourceCommit": "1b57f368733e2b4be8375896fde3d479c0108ce1",
+      "designHash": "6b72fd5fc9f8d3de514ac9935536730507921c4c68c1a1bba44ddd546bb5cd2b",
+      "startedAt": "2026-09-30T14:57:15.333Z",
+      "priorAttempts": [],
+      "score": 88.5,
+      "review": "The conservative integrated pose and higher portrait viewpoint remain coherent, but they do not materially improve the face beyond the previous accepted silhouette.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "front",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c097-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c097-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c097-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "c0da81b95ca0085b5cca55a2f763fb84f4201469ee835148822c6cfd05a3c37f",
+          "bytes": 141648
+        },
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c097-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c097-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c097-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "de130e32b83d79224825cef8f1a3d34e94e993d8defdcd78fb0f04a0580469d7",
+          "bytes": 390004
+        },
+        {
+          "view": "side",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c097-gpt6-astra-pro-mcp-colabdev/side-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c097-gpt6-astra-pro-mcp-colabdev/side-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c097-gpt6-astra-pro-mcp-colabdev/side-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "74ad505027e18f7152f0bea2af2ef1c20e38c574d2d3d3aa1ecb812764b59f60",
+          "bytes": 108526
+        },
+        {
+          "view": "back",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c097-gpt6-astra-pro-mcp-colabdev/back-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c097-gpt6-astra-pro-mcp-colabdev/back-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c097-gpt6-astra-pro-mcp-colabdev/back-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "098d56168accbc35f348fed5e61262abd916e539424a6439d64bec9f9e28de79",
+          "bytes": 117845
+        },
+        {
+          "view": "three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c097-gpt6-astra-pro-mcp-colabdev/three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c097-gpt6-astra-pro-mcp-colabdev/three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c097-gpt6-astra-pro-mcp-colabdev/three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "88e55b38db1c294b92416539b3f5a20f33d763b29edea505a9e1b1816005eb48",
+          "bytes": 140100
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 263056,
+        "triangles": 270499,
+        "meshes": 51,
+        "drawCalls": 92,
+        "revision": 28,
+        "designCandidate": 97,
+        "designLabel": "Conservative integrated pose and portrait framing",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.47681038081645966,
+          1.6947320809572999,
+          0.4556233137845993
+        ],
+        "constructionMs": 3544.600000000559,
+        "totalMs": 3583.9000000003725
+      },
+      "stats": {
+        "vertices": 263056,
+        "triangles": 270499,
+        "meshes": 51,
+        "drawCalls": 92,
+        "revision": 28,
+        "designCandidate": 97,
+        "designLabel": "Conservative integrated pose and portrait framing",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.47681038081645966,
+          1.6947320809572999,
+          0.4556233137845993
+        ],
+        "finite": true,
+        "geometryFingerprint": "33abf987",
+        "positionComponents": 789168
+      },
+      "completedAt": "2026-09-30T14:57:41.760Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T15:01:32.170Z"
+    },
+    {
+      "id": 98,
+      "group": "25-integrated-all-view-reconciliation",
+      "label": "Darker eye balance with elevated portrait framing",
+      "changes": {
+        "poseLean": 0.05,
+        "portraitElevation": 0.18,
+        "irisRadius": 1.14,
+        "pupilRadius": 1.07,
+        "irisShade": 0.76,
+        "eyeWhite": 0.84,
+        "mouthWidth": 0.99
+      },
+      "basedOn": 95,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c098-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "10da7fb615d6fe2e3ee02a2f938afe53ac9dc303abac6cc6b49b7f90dd53e7ca",
+      "sourceNames": [
+        "accessory-fit.js",
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "clothing-fit.js",
+        "design.js",
+        "ear-sculpt.js",
+        "eye-volume.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "hand-details.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "nose-anatomy.js",
+        "optimize.js",
+        "pose-refine.js",
+        "refinement-status.js",
+        "revision.js",
+        "skin-surface.js",
+        "tie-knot.js"
+      ],
+      "sourceCommit": "1b57f368733e2b4be8375896fde3d479c0108ce1",
+      "designHash": "0738efe4617c098979780e7c3f2599281a66f46de04707bbec54f06985b43733",
+      "startedAt": "2026-09-30T14:57:41.774Z",
+      "priorAttempts": [],
+      "score": 88.5,
+      "review": "The darker eyes improve the expression balance and the elevated framing works at full-body scale. This is a strong alternative, with the same remaining stylized facial and hair limitations.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "front",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c098-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c098-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c098-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "ff3b4db22fa6cbfe92728489a7ecefcee29d12bb257d6e3c680d7c006ec76261",
+          "bytes": 143115
+        },
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c098-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c098-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c098-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "a21d8ea4da01391222c3c2c692254dc9fac377de5399c8efe2ea16828e5c49ac",
+          "bytes": 391849
+        },
+        {
+          "view": "side",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c098-gpt6-astra-pro-mcp-colabdev/side-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c098-gpt6-astra-pro-mcp-colabdev/side-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c098-gpt6-astra-pro-mcp-colabdev/side-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "3e020d0cb2393543e0eec9e856025cced9c36597b0f4bf1d04a93e0df5ec1b09",
+          "bytes": 109824
+        },
+        {
+          "view": "back",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c098-gpt6-astra-pro-mcp-colabdev/back-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c098-gpt6-astra-pro-mcp-colabdev/back-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c098-gpt6-astra-pro-mcp-colabdev/back-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "0c0510816cd134711e185de7ae04356b26122687f459ada07d3464d1e14275f9",
+          "bytes": 115877
+        },
+        {
+          "view": "three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c098-gpt6-astra-pro-mcp-colabdev/three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c098-gpt6-astra-pro-mcp-colabdev/three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c098-gpt6-astra-pro-mcp-colabdev/three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "be7275870357a7f615478ee4b51babb1b8cd3c26fe63bfb640190d34f10ea024",
+          "bytes": 140765
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 263107,
+        "triangles": 270499,
+        "meshes": 51,
+        "drawCalls": 102,
+        "revision": 28,
+        "designCandidate": 98,
+        "designLabel": "Darker eye balance with elevated portrait framing",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4768100529909134,
+          1.6943322990362555,
+          0.45385195314884186
+        ],
+        "constructionMs": 2759,
+        "totalMs": 2785.9000000003725
+      },
+      "stats": {
+        "vertices": 263107,
+        "triangles": 270499,
+        "meshes": 51,
+        "drawCalls": 102,
+        "revision": 28,
+        "designCandidate": 98,
+        "designLabel": "Darker eye balance with elevated portrait framing",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4768100529909134,
+          1.6943322990362555,
+          0.45385195314884186
+        ],
+        "finite": true,
+        "geometryFingerprint": "87931eae",
+        "positionComponents": 789321
+      },
+      "completedAt": "2026-09-30T14:58:02.978Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T15:01:32.170Z"
+    },
+    {
+      "id": 99,
+      "group": "25-integrated-all-view-reconciliation",
+      "label": "Warmer, more pronounced forward portrait pose",
+      "changes": {
+        "poseLean": 0.07,
+        "portraitElevation": 0.2,
+        "headRoll": -0.005,
+        "skinWarmth": 0.06,
+        "geometryScale": 0.72
+      },
+      "basedOn": 95,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c099-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "10da7fb615d6fe2e3ee02a2f938afe53ac9dc303abac6cc6b49b7f90dd53e7ca",
+      "sourceNames": [
+        "accessory-fit.js",
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "clothing-fit.js",
+        "design.js",
+        "ear-sculpt.js",
+        "eye-volume.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "hand-details.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "nose-anatomy.js",
+        "optimize.js",
+        "pose-refine.js",
+        "refinement-status.js",
+        "revision.js",
+        "skin-surface.js",
+        "tie-knot.js"
+      ],
+      "sourceCommit": "1b57f368733e2b4be8375896fde3d479c0108ce1",
+      "designHash": "d96ae698d0eb2f143c7aed72b02c5b3a8cbce6b58d07f50288b76e9181ecd44e",
+      "startedAt": "2026-09-30T14:58:02.991Z",
+      "priorAttempts": [],
+      "score": 88,
+      "review": "The warmer skin and more pronounced lean are less restrained. The figure feels more deliberately posed and the extra warmth does not improve likeness enough to retain it.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "front",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c099-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c099-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c099-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "a96018f224ec6039acbffcd9cb1e441d204b0b2ac50e29ec96f1a39d22c26a91",
+          "bytes": 143789
+        },
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c099-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c099-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c099-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "db7516abece31f7cb906821512f2573f60ebf6669c6838fee8abc62ee1cdfd5f",
+          "bytes": 398247
+        },
+        {
+          "view": "side",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c099-gpt6-astra-pro-mcp-colabdev/side-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c099-gpt6-astra-pro-mcp-colabdev/side-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c099-gpt6-astra-pro-mcp-colabdev/side-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "cc76b316ac83cf6d927df3f114c83918b06eb551f84242f9de199ad074937b20",
+          "bytes": 111126
+        },
+        {
+          "view": "back",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c099-gpt6-astra-pro-mcp-colabdev/back-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c099-gpt6-astra-pro-mcp-colabdev/back-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c099-gpt6-astra-pro-mcp-colabdev/back-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "a7c4c1eea1c85a546bebc8f065ff9e741a6a670a13da55fb2d84ad5234592820",
+          "bytes": 117670
+        },
+        {
+          "view": "three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c099-gpt6-astra-pro-mcp-colabdev/three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c099-gpt6-astra-pro-mcp-colabdev/three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c099-gpt6-astra-pro-mcp-colabdev/three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "726d5c9a7c3e7c846108b5916656ce00b39247f731eff1edc6b0ad974f7ffe92",
+          "bytes": 141491
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 263237,
+        "triangles": 270499,
+        "meshes": 51,
+        "drawCalls": 102,
+        "revision": 28,
+        "designCandidate": 99,
+        "designLabel": "Warmer, more pronounced forward portrait pose",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4768093675374985,
+          1.6918810925931462,
+          0.4512825757265091
+        ],
+        "constructionMs": 2829.600000000559,
+        "totalMs": 2852.2000000001863
+      },
+      "stats": {
+        "vertices": 263237,
+        "triangles": 270499,
+        "meshes": 51,
+        "drawCalls": 102,
+        "revision": 28,
+        "designCandidate": 99,
+        "designLabel": "Warmer, more pronounced forward portrait pose",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4768093675374985,
+          1.6918810925931462,
+          0.4512825757265091
+        ],
+        "finite": true,
+        "geometryFingerprint": "9a75ad1",
+        "positionComponents": 789711
+      },
+      "completedAt": "2026-09-30T14:58:23.379Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T15:01:32.170Z"
+    },
+    {
+      "id": 100,
+      "group": "25-integrated-all-view-reconciliation",
+      "label": "Balanced final pose, eyes and face framing",
+      "changes": {
+        "poseLean": 0.05,
+        "portraitElevation": 0.17,
+        "irisRadius": 1.13,
+        "pupilRadius": 1.06,
+        "irisShade": 0.78,
+        "eyeWhite": 0.84,
+        "earSize": 0.84,
+        "geometryScale": 0.75
+      },
+      "basedOn": 95,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c100-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "10da7fb615d6fe2e3ee02a2f938afe53ac9dc303abac6cc6b49b7f90dd53e7ca",
+      "sourceNames": [
+        "accessory-fit.js",
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "clothing-fit.js",
+        "design.js",
+        "ear-sculpt.js",
+        "eye-volume.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "hand-details.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "nose-anatomy.js",
+        "optimize.js",
+        "pose-refine.js",
+        "refinement-status.js",
+        "revision.js",
+        "skin-surface.js",
+        "tie-knot.js"
+      ],
+      "sourceCommit": "1b57f368733e2b4be8375896fde3d479c0108ce1",
+      "designHash": "21b1a202201c85319602ca588997d5e5cb4bfb3a797698020c8d82fac9de87fe",
+      "startedAt": "2026-09-30T14:58:23.391Z",
+      "priorAttempts": [],
+      "score": 88.5,
+      "review": "The balanced framing and eye treatment are coherent in front, face, side, rear and three-quarter inspection. The wrists remain closed and the lighter geometry preserves the silhouette. Select this checkpoint, but do not claim the 95/100 target: facial likeness, hair realism and fine hand anatomy remain below that level.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "front",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c100-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c100-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c100-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "126279116edca5bea345b53add544fc96d64801914c690420f273598cf151d54",
+          "bytes": 142916
+        },
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c100-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c100-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c100-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "5a8b6d1ffe0381c8a0c4bc617d981ed6386511659ab3b71eae6a5ad940934d08",
+          "bytes": 391854
+        },
+        {
+          "view": "side",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c100-gpt6-astra-pro-mcp-colabdev/side-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c100-gpt6-astra-pro-mcp-colabdev/side-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c100-gpt6-astra-pro-mcp-colabdev/side-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "49fea12f1a3f6cefbfaa230fe53d1137659c2411bf8b310da345768351c5c558",
+          "bytes": 109432
+        },
+        {
+          "view": "back",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c100-gpt6-astra-pro-mcp-colabdev/back-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c100-gpt6-astra-pro-mcp-colabdev/back-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c100-gpt6-astra-pro-mcp-colabdev/back-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "7069c4f0c3abe35f2dedd31cfc2a4fdf00a0a30b306632be0664f3fdcfd00b13",
+          "bytes": 115735
+        },
+        {
+          "view": "three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c100-gpt6-astra-pro-mcp-colabdev/three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c100-gpt6-astra-pro-mcp-colabdev/three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c100-gpt6-astra-pro-mcp-colabdev/three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "480499f951ca3b79cc7300a43e3c1934513f16c2f9916deb1dd3ebd6cdf2e6dc",
+          "bytes": 140862
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 276506,
+        "triangles": 286601,
+        "meshes": 51,
+        "drawCalls": 102,
+        "revision": 28,
+        "designCandidate": 100,
+        "designLabel": "Balanced final pose, eyes and face framing",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4769474267959595,
+          1.694318685278142,
+          0.45385195314884186
+        ],
+        "constructionMs": 3082.5999999996275,
+        "totalMs": 3113.7999999998137
+      },
+      "stats": {
+        "vertices": 276506,
+        "triangles": 286601,
+        "meshes": 51,
+        "drawCalls": 102,
+        "revision": 28,
+        "designCandidate": 100,
+        "designLabel": "Balanced final pose, eyes and face framing",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4769474267959595,
+          1.694318685278142,
+          0.45385195314884186
+        ],
+        "finite": true,
+        "geometryFingerprint": "2a5c98d9",
+        "positionComponents": 829518
+      },
+      "completedAt": "2026-09-30T14:58:44.826Z",
+      "decision": "selected checkpoint",
+      "reviewedAt": "2026-09-30T15:01:32.170Z"
     }
   ],
   "sheets": [
@@ -9562,12 +10097,24 @@
       "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-24-mesh-density-and-visual-fidelity-gpt6-astra-pro-mcp-colabdev.jpg",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-24-mesh-density-and-visual-fidelity-gpt6-astra-pro-mcp-colabdev.jpg",
       "createdAt": "2026-09-30T14:53:59.677Z"
+    },
+    {
+      "group": "25-integrated-all-view-reconciliation",
+      "ids": [
+        97,
+        98,
+        99,
+        100
+      ],
+      "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-25-integrated-all-view-reconciliation-gpt6-astra-pro-mcp-colabdev.jpg",
+      "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-25-integrated-all-view-reconciliation-gpt6-astra-pro-mcp-colabdev.jpg",
+      "createdAt": "2026-09-30T14:58:45.402Z"
     }
   ],
-  "selected": 95,
+  "selected": 100,
   "description": "Distinct source/parameter edits followed by browser renders and individual human-agent visual review. Numerical solver steps are not counted.",
-  "updatedAt": "2026-09-30T14:56:09.327Z",
-  "rendered": 96,
-  "reviewed": 96,
+  "updatedAt": "2026-09-30T15:01:32.854Z",
+  "rendered": 100,
+  "reviewed": 100,
   "currentScore": 88.5
 }
