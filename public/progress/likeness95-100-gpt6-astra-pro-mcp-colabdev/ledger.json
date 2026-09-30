@@ -4890,6 +4890,422 @@
       "completedAt": "2026-09-30T13:54:56.130Z",
       "decision": "selected checkpoint",
       "reviewedAt": "2026-09-30T13:57:36.320Z"
+    },
+    {
+      "id": 57,
+      "group": "15-shirt-and-sleeve-proportions",
+      "label": "Moderately slimmer rolled sleeves",
+      "changes": {
+        "clothingFit": 1,
+        "sleeveScale": 0.9,
+        "sleeveInset": 0.004,
+        "shirtWidth": 1
+      },
+      "basedOn": 56,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c057-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "0b3230a3b411f576d29dbdc5a9ae791187471674e069a7dcfa6cf46488c77021",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "clothing-fit.js",
+        "design.js",
+        "ear-sculpt.js",
+        "eye-volume.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "nose-anatomy.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js",
+        "skin-surface.js"
+      ],
+      "sourceCommit": "77aa311a558b56689f3703719ff5a9aebdf23bcc",
+      "designHash": "18adf3c26a7ce08c02b6ab6eb87060f4a1134e1652426ae3f4f26338cd98dd35",
+      "startedAt": "2026-09-30T14:00:49.841Z",
+      "priorAttempts": [],
+      "score": 86.5,
+      "review": "The moderate sleeve reduction improves the full-body outline while retaining plausible fabric volume around the elbows. The shirt body is still a little broad.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "front",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c057-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c057-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c057-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "efafccbf40e56f5f8868bc559c0ce21a660565ea19954b8af59f825c4d77360e",
+          "bytes": 141616
+        },
+        {
+          "view": "face-torso",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c057-gpt6-astra-pro-mcp-colabdev/face-torso-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c057-gpt6-astra-pro-mcp-colabdev/face-torso-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c057-gpt6-astra-pro-mcp-colabdev/face-torso-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "76671e6e352e34268424ff77e5ecbbc3f25e64fc697675805d8e28fb56c1b68a",
+          "bytes": 406283
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 226118,
+        "triangles": 403513,
+        "meshes": 50,
+        "drawCalls": 91,
+        "revision": 27,
+        "designCandidate": 57,
+        "designLabel": "Moderately slimmer rolled sleeves",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4897095710039139,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 7456.199999999721,
+        "totalMs": 7504.199999999721
+      },
+      "stats": {
+        "vertices": 226118,
+        "triangles": 403513,
+        "meshes": 50,
+        "drawCalls": 91,
+        "revision": 27,
+        "designCandidate": 57,
+        "designLabel": "Moderately slimmer rolled sleeves",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4897095710039139,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "8c838319",
+        "positionComponents": 678354
+      },
+      "completedAt": "2026-09-30T14:01:33.646Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T14:05:56.687Z"
+    },
+    {
+      "id": 58,
+      "group": "15-shirt-and-sleeve-proportions",
+      "label": "Closer sleeve fit and narrower shirt",
+      "changes": {
+        "clothingFit": 1,
+        "sleeveScale": 0.85,
+        "sleeveInset": 0.006,
+        "shirtWidth": 0.98
+      },
+      "basedOn": 56,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c058-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "0b3230a3b411f576d29dbdc5a9ae791187471674e069a7dcfa6cf46488c77021",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "clothing-fit.js",
+        "design.js",
+        "ear-sculpt.js",
+        "eye-volume.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "nose-anatomy.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js",
+        "skin-surface.js"
+      ],
+      "sourceCommit": "77aa311a558b56689f3703719ff5a9aebdf23bcc",
+      "designHash": "3e96c64431dc5596968195c63495c7c0159c1513ca32befa87d9c7123b15d75e",
+      "startedAt": "2026-09-30T14:01:33.681Z",
+      "priorAttempts": [],
+      "score": 86,
+      "review": "The closer fit removes puffiness but makes the sleeve-to-cuff transition slightly rigid. The reference shirt is relaxed rather than tightly fitted.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "front",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c058-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c058-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c058-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "f7076891b3a8a4bfdda7a0ab610a729746707b69a12fcd645614f8ad07000972",
+          "bytes": 140964
+        },
+        {
+          "view": "face-torso",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c058-gpt6-astra-pro-mcp-colabdev/face-torso-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c058-gpt6-astra-pro-mcp-colabdev/face-torso-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c058-gpt6-astra-pro-mcp-colabdev/face-torso-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "a61e2eb639744b654a2521cd948b3e788885ca2b98c4023e720fa8a6ee8dce9f",
+          "bytes": 402995
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 226118,
+        "triangles": 403513,
+        "meshes": 50,
+        "drawCalls": 92,
+        "revision": 27,
+        "designCandidate": 58,
+        "designLabel": "Closer sleeve fit and narrower shirt",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4897095710039139,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 7893.699999999721,
+        "totalMs": 7945.5
+      },
+      "stats": {
+        "vertices": 226118,
+        "triangles": 403513,
+        "meshes": 50,
+        "drawCalls": 92,
+        "revision": 27,
+        "designCandidate": 58,
+        "designLabel": "Closer sleeve fit and narrower shirt",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4897095710039139,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "a373b15a",
+        "positionComponents": 678354
+      },
+      "completedAt": "2026-09-30T14:02:25.646Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T14:05:56.688Z"
+    },
+    {
+      "id": 59,
+      "group": "15-shirt-and-sleeve-proportions",
+      "label": "Relaxed shirt with restrained sleeve volume",
+      "changes": {
+        "clothingFit": 1,
+        "sleeveScale": 0.95,
+        "sleeveInset": 0.003,
+        "shirtWidth": 1.025
+      },
+      "basedOn": 56,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c059-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "0b3230a3b411f576d29dbdc5a9ae791187471674e069a7dcfa6cf46488c77021",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "clothing-fit.js",
+        "design.js",
+        "ear-sculpt.js",
+        "eye-volume.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "nose-anatomy.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js",
+        "skin-surface.js"
+      ],
+      "sourceCommit": "77aa311a558b56689f3703719ff5a9aebdf23bcc",
+      "designHash": "4f4083b524482f90ba4221a8256d9e29e00aabf9c7b1f413e429c8945baa2676",
+      "startedAt": "2026-09-30T14:02:25.668Z",
+      "priorAttempts": [],
+      "score": 85.5,
+      "review": "The relaxed shirt setting restores too much width and makes the torso look boxier. It is less balanced against the skirt silhouette.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "front",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c059-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c059-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c059-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "ce5095732c1d47614482c4e84167734874b3178d40247b09a8a69a59493a98c5",
+          "bytes": 142143
+        },
+        {
+          "view": "face-torso",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c059-gpt6-astra-pro-mcp-colabdev/face-torso-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c059-gpt6-astra-pro-mcp-colabdev/face-torso-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c059-gpt6-astra-pro-mcp-colabdev/face-torso-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "d010cf39949c1a3d533bfdcf13d8beccf9afa40a17b29b5ba293f61ed2f018ec",
+          "bytes": 408421
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 226118,
+        "triangles": 403513,
+        "meshes": 50,
+        "drawCalls": 92,
+        "revision": 27,
+        "designCandidate": 59,
+        "designLabel": "Relaxed shirt with restrained sleeve volume",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4897095710039139,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 8877.5,
+        "totalMs": 8941.5
+      },
+      "stats": {
+        "vertices": 226118,
+        "triangles": 403513,
+        "meshes": 50,
+        "drawCalls": 92,
+        "revision": 27,
+        "designCandidate": 59,
+        "designLabel": "Relaxed shirt with restrained sleeve volume",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4897095710039139,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "ce74e9ee",
+        "positionComponents": 678354
+      },
+      "completedAt": "2026-09-30T14:03:19.096Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T14:05:56.688Z"
+    },
+    {
+      "id": 60,
+      "group": "15-shirt-and-sleeve-proportions",
+      "label": "Balanced cotton-shirt and sleeve silhouette",
+      "changes": {
+        "clothingFit": 1,
+        "sleeveScale": 0.9,
+        "sleeveInset": 0.005,
+        "shirtWidth": 0.985
+      },
+      "basedOn": 56,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c060-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "0b3230a3b411f576d29dbdc5a9ae791187471674e069a7dcfa6cf46488c77021",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "clothing-fit.js",
+        "design.js",
+        "ear-sculpt.js",
+        "eye-volume.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "nose-anatomy.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js",
+        "skin-surface.js"
+      ],
+      "sourceCommit": "77aa311a558b56689f3703719ff5a9aebdf23bcc",
+      "designHash": "29cb0dd4a451a841177391b5f34a1e471214217962db13f0ad06916a9a2b050c",
+      "startedAt": "2026-09-30T14:03:19.109Z",
+      "priorAttempts": [],
+      "score": 86.5,
+      "review": "The moderate sleeve fit with a slightly narrower shirt is the best balanced silhouette. Retain this version; the block-like knot and floating collar are now the more obvious garment defects.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "front",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c060-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c060-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c060-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "e0eccb5a2e5bf461a18c8421c2d18f14974d43df396161e010b859de953ab748",
+          "bytes": 141351
+        },
+        {
+          "view": "face-torso",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c060-gpt6-astra-pro-mcp-colabdev/face-torso-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c060-gpt6-astra-pro-mcp-colabdev/face-torso-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c060-gpt6-astra-pro-mcp-colabdev/face-torso-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "9c42bb07f154837c05d48a5b02dba135fddff08c1fd5083937c40c50e0c52b95",
+          "bytes": 405047
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 226118,
+        "triangles": 403513,
+        "meshes": 50,
+        "drawCalls": 92,
+        "revision": 27,
+        "designCandidate": 60,
+        "designLabel": "Balanced cotton-shirt and sleeve silhouette",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4897095710039139,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 8284.600000000093,
+        "totalMs": 8336.899999999907
+      },
+      "stats": {
+        "vertices": 226118,
+        "triangles": 403513,
+        "meshes": 50,
+        "drawCalls": 92,
+        "revision": 27,
+        "designCandidate": 60,
+        "designLabel": "Balanced cotton-shirt and sleeve silhouette",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4897095710039139,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "be275c3b",
+        "positionComponents": 678354
+      },
+      "completedAt": "2026-09-30T14:03:54.632Z",
+      "decision": "selected checkpoint",
+      "reviewedAt": "2026-09-30T14:05:56.688Z"
     }
   ],
   "sheets": [
@@ -5060,12 +5476,24 @@
       "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-14-skin-surface-and-color-gpt6-astra-pro-mcp-colabdev.jpg",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-14-skin-surface-and-color-gpt6-astra-pro-mcp-colabdev.jpg",
       "createdAt": "2026-09-30T13:54:58.141Z"
+    },
+    {
+      "group": "15-shirt-and-sleeve-proportions",
+      "ids": [
+        57,
+        58,
+        59,
+        60
+      ],
+      "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-15-shirt-and-sleeve-proportions-gpt6-astra-pro-mcp-colabdev.jpg",
+      "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-15-shirt-and-sleeve-proportions-gpt6-astra-pro-mcp-colabdev.jpg",
+      "createdAt": "2026-09-30T14:03:55.722Z"
     }
   ],
-  "selected": 56,
+  "selected": 60,
   "description": "Distinct source/parameter edits followed by browser renders and individual human-agent visual review. Numerical solver steps are not counted.",
-  "updatedAt": "2026-09-30T13:57:37.171Z",
-  "rendered": 56,
-  "reviewed": 56,
-  "currentScore": 86
+  "updatedAt": "2026-09-30T14:05:57.414Z",
+  "rendered": 60,
+  "reviewed": 60,
+  "currentScore": 86.5
 }

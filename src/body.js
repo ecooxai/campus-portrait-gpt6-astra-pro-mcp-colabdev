@@ -1,3 +1,5 @@
+import {D} from './design.js';
+import {sculptTieKnot} from './tie-knot.js';
 import {adjustClothing} from './clothing-fit.js';
 import {refreshAnatomy} from './anatomy.js';
 import {applyReviewedCloth} from './cloth-bake.js';
@@ -63,6 +65,7 @@ function makeShirt(p,m){
  // Open neckline and crisply folded collar points.
  const left=[[-.030,1.413,.044],[-.062,1.379,.062],[-.049,1.326,.126],[-.007,1.357,.090],[-.009,1.383,.055]];
  const right=[[.034,1.416,.044],[.066,1.382,.062],[.053,1.329,.126],[.011,1.360,.090],[.013,1.386,.055]];patch(p,'Upper chest within open collar',[[-.055,1.399,.038],[-.045,1.352,.068],[0,1.330,.087],[.045,1.352,.068],[.055,1.399,.038]],m.skin);
+ for(const points of [left,right])for(const point of points){point[0]*=D.collarWidth??1;point[1]=1.38+(point[1]-1.38)*(D.collarLength??1);point[2]=lerp(point[2],shirtZ(point[0],point[1])+.006,D.collarLay||0);}
  curvedClothPatch(p,'Left folded open collar',left,m.shirt,.0016);curvedClothPatch(p,'Right folded open collar',right,m.shirt,.0016);
  for(const pts of [left,right])tube(p,'Collar edge seam',[...pts,pts[0]],.0008,m.seam,45,5);
  const placket=[];for(let j=0;j<=26;j++){const y=lerp(1.034,1.34,j/26);placket.push([-.005,y,shirtZ(-.005,y)+.003]);}
@@ -81,9 +84,9 @@ function makeShirt(p,m){
  }
  // Neck tie is a curved cloth mesh with its own UVs and thickness border.
  ribbon(p,'Loose striped tie neckband',[[-.033,1.390,.050],[-.038,1.357,.073],[-.024,1.327,.112],[-.003,1.300,.128],[.023,1.336,.100],[.033,1.387,.053]],.0075,.0013,m.tie,{segments:54,radial:10});
- const knot=box(p,'Four-in-hand tie knot',[-.006,1.291,.129],[.037,.039,.021],.006,m.tieKnot);knot.rotation.z=-.08;
+ const knot=D.sculptedTie?sculptTieKnot(p,m):box(p,'Four-in-hand tie knot',[-.006,1.291,.129],[.037,.039,.021],.006,m.tieKnot);knot.rotation.z=-.08;
  const tieRows=[[.910,.0004,.151],[.936,.022,.153],[1.06,.027,.134],[1.20,.022,.129],[1.266,.012,.133]];
- surface(p,'Striped navy hanging tie',24,72,(u,v)=>{const y=lerp(.910,1.266,v),[w,z]=smoothProfile(tieRows,y),x=-.004+(u*2-1)*w+.007*Math.sin(v*4);return {p:[x,y,z+.004*Math.sin(u*Math.PI)],uv:[u,v]};},m.tie);
+ surface(p,'Striped navy hanging tie',24,72,(u,v)=>{const y=lerp(.910,1.266,v),[w,z]=smoothProfile(tieRows,y),x=-.004+(u*2-1)*w*(D.tieWidth??1)+.007*Math.sin(v*4),yy=1.266-(1.266-y)*(D.tieLength??1),target=yy>=1.035?shirtZ(x,yy)+.008:.13+.02*(1.035-yy)/.125,zz=lerp(z,target,D.tieLay||0);return {p:[x,yy,zz+.004*Math.sin(u*Math.PI)],uv:[u,v]};},m.tie);
 }
 function makeHand(p,m,s){
  const g=new THREE.Group();g.name='Modeled hand behind back '+s;g.position.set(s*.027,.980+(s<0?-.006:0),-.149+(s<0?-.016:0));g.rotation.set(-.18,0,-s*.72);p.add(g);

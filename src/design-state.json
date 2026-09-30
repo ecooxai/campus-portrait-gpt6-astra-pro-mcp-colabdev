@@ -1,6 +1,6 @@
 {
-  "candidate": 56,
-  "label": "Balanced skin texture and mild natural color variation",
+  "candidate": 60,
+  "label": "Balanced cotton-shirt and sleeve silhouette",
   "headWidth": 1.015,
   "headHeight": 0.96,
   "headDepth": 1,
@@ -92,5 +92,9 @@
   "noseCrossSection": 0.98,
   "noseWing": 0.95,
   "skinPores": 0.4,
-  "skinSpecular": 0.7
+  "skinSpecular": 0.7,
+  "clothingFit": 1,
+  "sleeveScale": 0.9,
+  "sleeveInset": 0.005,
+  "shirtWidth": 0.985
 }
