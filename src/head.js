@@ -43,8 +43,8 @@ export function createHead(parent,m){
 function createHair(head,m){
  refineHairMaterials(m);
  const hair=new THREE.Group();hair.name='Hair / swept fringe and twin ponytails';head.add(hair);
- const cp=(u,v)=>{const a=-u*TAU,front=Math.max(0,Math.cos(a)),boundY=.095*front-.062*(1-front)+(D.earSculpt?(.062+(D.earNotch||0))*Math.pow(Math.abs(Math.sin(a)),14):0),limit=Math.acos(clamp((boundY-.018)/.145,-1,1)),p=v*limit;return [.105*Math.sin(a)*Math.sin(p),.018+.145*Math.cos(p),.096*Math.cos(a)*Math.sin(p)];};
- surface(hair,'Closed sculpted scalp cap',96,44,(u,v)=>({p:cp(u,v)}),m.hairCap);
+ const cp=(u,v)=>{const a=-u*TAU,front=Math.max(0,Math.cos(a)),boundY=.095*front-.062*(1-front)-(D.napeDepth||0)*Math.pow(Math.max(0,-Math.cos(a)),3)+(D.earSculpt?(.062+(D.earNotch||0))*Math.pow(Math.abs(Math.sin(a)),14):0),limit=Math.acos(clamp((boundY-.018)/.145,-1,1)),p=v*limit;return [.105*Math.sin(a)*Math.sin(p),.018+.145*Math.cos(p),.096*Math.cos(a)*Math.sin(p)];};
+ surface(hair,'Closed sculpted scalp cap',96,44,(u,v)=>({p:cp(u,v),uv:[u+(D.hairFlow||0)*.08*Math.sin((u-.5)*TAU)*Math.pow(v,1.5),v]}),m.hairCap);
  const bang=(u,t)=>{const rx=.032+.043*u,ry=.140-.035*u,ex=lerp(-.094,.067,u),ey0=smoothProfile([[-.094,.010],[-.080,.032],[-.056,.040],[-.030,.044],[0,.057],[.025,.076],[.045,.067],[.067,.040]],ex)[0]+.0003*Math.sin(u*39),ey=ey0-D.fringeDrop*Math.exp(-Math.pow((ex+.015)/.070,2))+D.fringeSplit*Math.exp(-Math.pow((ex-.035)/.024,2))+D.fringeEdge*Math.sin(u*43),q=Math.pow(Math.sin(t*Math.PI/2),1.12),x=lerp(rx,ex,q),y=lerp(ry,ey,t),sz=.096*Math.sqrt(Math.max(0,1-(x/.105)**2-((y-.018)/.145)**2)),z=Math.max(sz,faceZ(x,y))+.00065+(.0012+D.fringeLift)*Math.sin(t*Math.PI/2)**2;return [x,y,z];};
  surface(hair,'Continuous side-swept fringe',100,64,(u,v)=>({p:bang(1-u,v),uv:[1-u,v]}),m.hairCap);
  // Subpixel fibers intersected the combed surface. The same strand direction is now baked into original UV texture.

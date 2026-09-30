@@ -16,8 +16,9 @@ function makeStrandTexture(){
 }
 function makeCardMaterial(m){
  if(m.hairGroom)return m.hairGroom;
- const mat=new THREE.MeshPhysicalMaterial({name:'Layered procedural hair strands',color:'#ffffff',map:makeStrandTexture(),roughness:.47,metalness:0,alphaTest:.32,side:THREE.DoubleSide,clearcoat:.025,clearcoatRoughness:.65,specularIntensity:.5,depthWrite:true});
- mat.anisotropy=D.hairAnisotropy??.45;mat.anisotropyRotation=D.hairAnisotropyRotation??Math.PI/2;m.hairGroom=mat;return mat;
+ const options={name:'Layered procedural hair strands',color:'#ffffff',map:makeStrandTexture(),alphaTest:.38,side:THREE.DoubleSide,depthWrite:true};
+ const mat=D.hairCardShading===0?new THREE.MeshBasicMaterial(options):new THREE.MeshPhysicalMaterial({...options,roughness:D.hairCardRoughness??.82,metalness:0,clearcoat:0,specularIntensity:D.hairCardSpecular??.08});
+ if(mat.isMeshPhysicalMaterial){mat.anisotropy=D.hairCardAnisotropy||0;mat.anisotropyRotation=Math.PI/2;}m.hairGroom=mat;return mat;
 }
 /** Multiple curved 3D strand sheets surround the existing volumetric ponytail, not an image billboard. */
 export function addPonytailGroom(hair,m,baseCurve,s){
