@@ -1,20 +1,32 @@
 {
   "project": "campus-portrait-gpt6-astra-pro-mcp-colabdev",
-  "revision": 10,
-  "visualScore": 70,
-  "requestedVisualScore": "greater than 95/100",
-  "requestedIterations": 20000,
-  "completedReviewedRevisions": 10,
-  "implementationCommit": "15dd7eeebe6c5096baff4857caf2711ff7cb5242",
-  "branch": "gpt6-astra-pro-mcp-colabdev/recovery-body-viewer",
+  "revision": 25,
+  "visualScore": 80,
+  "requestedVisualScore": "85/100",
+  "requestedIterations": 1000,
+  "visualTargetMet": false,
+  "numericalRefinement": {
+    "passes": 1000,
+    "continuousSequence": true,
+    "uniqueGeometryHashes": 1000,
+    "uniqueImageHashes": 976,
+    "frameHashesVerified": true,
+    "errors": [],
+    "manualArtisticReviews": false,
+    "scope": "Numerical authored-shirt deformation, rendering and geometry checks; not a visual-likeness score."
+  },
+  "iterationScope": "Numerical deformation/render/test passes are separate from manually reviewed model revisions",
+  "completedReviewedRevisions": 25,
+  "implementationCommit": "bc922b32c370b5192b707b57e116087b693228bb",
+  "branch": "gpt6-astra-pro-mcp-colabdev/likeness85-1000",
   "hosting": {
     "repository": "https://github.com/ecooxai/campus-portrait-gpt6-astra-pro-mcp-colabdev",
     "pages": "https://ecooxai.github.io/campus-portrait-gpt6-astra-pro-mcp-colabdev/",
-    "temporaryTunnel": "https://contrary-commands-usual-earn.trycloudflare.com"
+    "temporaryTunnel": "https://pet-loose-tied-prepare.trycloudflare.com"
   },
   "renderTests": {
-    "revision": 10,
-    "timestamp": "2026-09-29T16:59:01.609Z",
+    "revision": 25,
+    "timestamp": "2026-09-30T00:10:51.875Z",
     "errors": [],
     "warnings": [],
     "views": [
@@ -25,20 +37,20 @@
       "face-gpt6-astra-pro-mcp-colabdev.png"
     ],
     "stats": {
-      "vertices": 149173,
-      "triangles": 281495,
-      "meshes": 40,
-      "drawCalls": 80,
-      "revision": 10,
+      "vertices": 206192,
+      "triangles": 368909,
+      "meshes": 41,
+      "drawCalls": 82,
+      "revision": 25,
       "renderer": "WebKit WebGL",
       "bounds": [
         0.4973181039094925,
-        1.700685833689531,
-        0.46831583976745605
+        1.711554579678609,
+        0.4624403268098831
       ]
     },
     "glb": {
-      "bytes": 6958672,
+      "bytes": 10882848,
       "errors": 0,
       "warnings": 0,
       "infos": 0
@@ -81,8 +93,8 @@
     ]
   },
   "productionAcceptance": {
-    "timestamp": "2026-09-29T17:26:43.134Z",
-    "url": "https://ecooxai.github.io/campus-portrait-gpt6-astra-pro-mcp-colabdev",
+    "timestamp": "2026-09-30T00:18:38.062Z",
+    "url": "http://127.0.0.1:4197",
     "checks": {
       "materialFactorsMatch": true,
       "exportedTriangleCountMatches": true,
@@ -108,7 +120,10 @@
       "touchPreset": true,
       "mobileNoHorizontalOverflow": true,
       "minimum44pxTargets": true,
-      "landscapeNoHorizontalOverflow": true
+      "landscapeNoHorizontalOverflow": true,
+      "thousandNumericalPasses": true,
+      "verifiedFrameLedger": true,
+      "refinementDisclosure": true
     },
     "errors": [],
     "warnings": [],
@@ -129,21 +144,33 @@
             0.08086126165900402,
             0.060016669524544826
           ],
-          "roughness": 0.6,
+          "roughness": 0.56,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": [
+            0.08,
+            0.08
+          ],
           "map": null
         },
         "skin": {
           "color": [
             0.8631572134510892,
-            0.55201140150344,
-            0.41254261347374327
+            0.5271151256969157,
+            0.3813260114221238
           ],
           "sheen": [
             0.15,
             0.09359405875013939,
             0.07906726885453734
           ],
-          "roughness": 0.62,
+          "roughness": 0.56,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": [
+            0.12,
+            0.12
+          ],
           "map": null
         },
         "skinShadow": {
@@ -158,23 +185,12 @@
             0
           ],
           "roughness": 0.67,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": null
         },
-        "eyeWhite": {
-          "color": [
-            0.7912979403281551,
-            0.7454042095350284,
-            0.6866853124288864
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.38,
-          "map": null
-        },
-        "Natural brown iris": {
+        "Conforming eye whites": {
           "color": [
             1,
             1,
@@ -185,20 +201,27 @@
             0,
             0
           ],
-          "roughness": 0.3,
+          "roughness": 0.38,
+          "specularIntensity": 1,
+          "clearcoat": 0.35,
+          "normalScale": null,
           "map": null
         },
-        "glint": {
+        "Brown iris detail": {
           "color": [
             1,
-            0.9559733532482866,
-            0.8713671191959567
+            1,
+            1
           ],
           "sheen": [
             0,
             0,
             0
           ],
+          "roughness": 0.52,
+          "specularIntensity": 0.55,
+          "clearcoat": 0.15,
+          "normalScale": null,
           "map": null
         },
         "lash": {
@@ -213,76 +236,9 @@
             0
           ],
           "roughness": 0.7,
-          "map": null
-        },
-        "lidShadow": {
-          "color": [
-            0.5840784178830671,
-            0.3712376804636741,
-            0.2746773120495699
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.9,
-          "map": null
-        },
-        "brow": {
-          "color": [
-            0.04231141061442144,
-            0.02955683443236377,
-            0.02955683443236377
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.9,
-          "map": null
-        },
-        "nostril": {
-          "color": [
-            0.23455058215026167,
-            0.10224173307914941,
-            0.07421356837213867
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.9,
-          "map": null
-        },
-        "mouth": {
-          "color": [
-            0.13286832154414627,
-            0.033104766565152086,
-            0.033104766565152086
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.9,
-          "map": null
-        },
-        "upperLip": {
-          "color": [
-            0.4793201830913402,
-            0.21952619971859377,
-            0.1844749944900301
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.57,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": null
         },
         "lip": {
@@ -297,6 +253,127 @@
             0
           ],
           "roughness": 0.5,
+          "specularIntensity": 1,
+          "clearcoat": 0.1,
+          "normalScale": null,
+          "map": null
+        },
+        "lidShadow": {
+          "color": [
+            0.5840784178830671,
+            0.3712376804636741,
+            0.2746773120495699
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.9,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
+          "map": null
+        },
+        "glint": {
+          "color": [
+            1,
+            0.9559733532482866,
+            0.8713671191959567
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
+          "map": null
+        },
+        "brow": {
+          "color": [
+            0.04231141061442144,
+            0.02955683443236377,
+            0.02955683443236377
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.9,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
+          "map": null
+        },
+        "nostril": {
+          "color": [
+            0.23455058215026167,
+            0.10224173307914941,
+            0.07421356837213867
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.9,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
+          "map": null
+        },
+        "mouth": {
+          "color": [
+            0.04817182422013895,
+            0.01680737574872402,
+            0.02121901037134225
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.94,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
+          "map": null
+        },
+        "upperLip": {
+          "color": [
+            0.4793201830913402,
+            0.21952619971859377,
+            0.1844749944900301
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.57,
+          "specularIntensity": 1,
+          "clearcoat": 0.05,
+          "normalScale": null,
+          "map": null
+        },
+        "Warm dental arch shadow": {
+          "color": [
+            0.623960391667596,
+            0.5332764040016892,
+            0.4178850708380236
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.39,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": null
         },
         "tooth": {
@@ -311,20 +388,9 @@
             0
           ],
           "roughness": 0.39,
-          "map": null
-        },
-        "toothSeam": {
-          "color": [
-            0.5028864580233624,
-            0.4178850708380236,
-            0.34191442489801843
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.8,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": null
         },
         "hairCap": {
@@ -338,7 +404,13 @@
             0,
             0
           ],
-          "roughness": 0.47,
+          "roughness": 0.44,
+          "specularIntensity": 0.6,
+          "clearcoat": 0.09,
+          "normalScale": [
+            0.11,
+            0.11
+          ],
           "map": {
             "colorSpace": "srgb",
             "anisotropy": 8,
@@ -350,17 +422,30 @@
         },
         "hairDark": {
           "color": [
-            0.0069954101845983935,
-            0.006512090790025684,
-            0.00972121731707524
+            0.7,
+            0.7,
+            0.7
           ],
           "sheen": [
             0,
             0,
             0
           ],
-          "roughness": 0.54,
-          "map": null
+          "roughness": 0.62,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": [
+            0.11,
+            0.11
+          ],
+          "map": {
+            "colorSpace": "srgb",
+            "anisotropy": 8,
+            "repeat": [
+              1,
+              1
+            ]
+          }
         },
         "webbing": {
           "color": [
@@ -374,49 +459,91 @@
             0
           ],
           "roughness": 0.93,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": null
         },
         "hairMid": {
           "color": [
-            0.01764195448412081,
-            0.015996293361446288,
-            0.02121901037134225
+            1,
+            1,
+            1
           ],
           "sheen": [
             0,
             0,
             0
           ],
-          "roughness": 0.48,
-          "map": null
+          "roughness": 0.44,
+          "specularIntensity": 0.6,
+          "clearcoat": 0.09,
+          "normalScale": [
+            0.11,
+            0.11
+          ],
+          "map": {
+            "colorSpace": "srgb",
+            "anisotropy": 8,
+            "repeat": [
+              1,
+              1
+            ]
+          }
         },
         "hair": {
           "color": [
-            0.00972121731707524,
-            0.00972121731707524,
-            0.012983032338510335
+            0.94,
+            0.94,
+            0.94
           ],
           "sheen": [
             0,
             0,
             0
           ],
-          "roughness": 0.48,
-          "map": null
+          "roughness": 0.44,
+          "specularIntensity": 0.6,
+          "clearcoat": 0.09,
+          "normalScale": [
+            0.11,
+            0.11
+          ],
+          "map": {
+            "colorSpace": "srgb",
+            "anisotropy": 8,
+            "repeat": [
+              1,
+              1
+            ]
+          }
         },
         "hairLight": {
           "color": [
-            0.02955683443236377,
-            0.026241221889696346,
-            0.033104766565152086
+            1,
+            1,
+            1
           ],
           "sheen": [
             0,
             0,
             0
           ],
-          "roughness": 0.51,
-          "map": null
+          "roughness": 0.44,
+          "specularIntensity": 0.6,
+          "clearcoat": 0.09,
+          "normalScale": [
+            0.11,
+            0.11
+          ],
+          "map": {
+            "colorSpace": "srgb",
+            "anisotropy": 8,
+            "repeat": [
+              1,
+              1
+            ]
+          }
         },
         "socks": {
           "color": [
@@ -430,6 +557,9 @@
             0
           ],
           "roughness": 0.95,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": {
             "colorSpace": "srgb",
             "anisotropy": 8,
@@ -451,6 +581,9 @@
             0
           ],
           "roughness": 0.76,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": null
         },
         "leather": {
@@ -465,6 +598,9 @@
             0
           ],
           "roughness": 0.26,
+          "specularIntensity": 1,
+          "clearcoat": 0.55,
+          "normalScale": null,
           "map": null
         },
         "stitch": {
@@ -479,6 +615,9 @@
             0
           ],
           "roughness": 0.76,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": null
         },
         "skirt": {
@@ -493,6 +632,9 @@
             0.08465353399520126
           ],
           "roughness": 0.89,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": {
             "colorSpace": "srgb",
             "anisotropy": 8,
@@ -514,6 +656,9 @@
             0
           ],
           "roughness": 1,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": null
         },
         "shirt": {
@@ -528,6 +673,9 @@
             0.17068088802878212
           ],
           "roughness": 0.84,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": {
             "colorSpace": "srgb",
             "anisotropy": 8,
@@ -549,6 +697,9 @@
             0
           ],
           "roughness": 0.9,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": null
         },
         "button": {
@@ -563,6 +714,9 @@
             0
           ],
           "roughness": 0.32,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": null
         },
         "embroidery": {
@@ -577,6 +731,9 @@
             0
           ],
           "roughness": 0.8,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": null
         },
         "tie": {
@@ -591,6 +748,9 @@
             0.18941259845538294
           ],
           "roughness": 0.65,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": {
             "colorSpace": "srgb",
             "anisotropy": 8,
@@ -612,6 +772,9 @@
             0.18941259845538294
           ],
           "roughness": 0.65,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": {
             "colorSpace": "srgb",
             "anisotropy": 8,
@@ -633,6 +796,12 @@
             0.057338420060583636
           ],
           "roughness": 0.95,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": [
+            0.35,
+            0.35
+          ],
           "map": null
         },
         "metal": {
@@ -647,6 +816,9 @@
             0
           ],
           "roughness": 0.26,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": null
         },
         "buckle": {
@@ -661,6 +833,9 @@
             0
           ],
           "roughness": 0.44,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": null
         }
       },
@@ -676,21 +851,33 @@
             0.08086126165900402,
             0.060016669524544826
           ],
-          "roughness": 0.6,
+          "roughness": 0.56,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": [
+            0.08,
+            0.08
+          ],
           "map": null
         },
         "skin": {
           "color": [
             0.8631572134510892,
-            0.55201140150344,
-            0.41254261347374327
+            0.5271151256969157,
+            0.3813260114221238
           ],
           "sheen": [
             0.15,
             0.09359405875013939,
             0.07906726885453734
           ],
-          "roughness": 0.62,
+          "roughness": 0.56,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": [
+            0.12,
+            0.12
+          ],
           "map": null
         },
         "skinShadow": {
@@ -705,23 +892,12 @@
             0
           ],
           "roughness": 0.67,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": null
         },
-        "eyeWhite": {
-          "color": [
-            0.7912979403281551,
-            0.7454042095350284,
-            0.6866853124288864
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.38,
-          "map": null
-        },
-        "Natural brown iris": {
+        "Conforming eye whites": {
           "color": [
             1,
             1,
@@ -732,20 +908,27 @@
             0,
             0
           ],
-          "roughness": 0.3,
+          "roughness": 0.38,
+          "specularIntensity": 1,
+          "clearcoat": 0.35,
+          "normalScale": null,
           "map": null
         },
-        "glint": {
+        "Brown iris detail": {
           "color": [
             1,
-            0.9559733532482866,
-            0.8713671191959567
+            1,
+            1
           ],
           "sheen": [
             0,
             0,
             0
           ],
+          "roughness": 0.52,
+          "specularIntensity": 0.55,
+          "clearcoat": 0.15,
+          "normalScale": null,
           "map": null
         },
         "lash": {
@@ -760,76 +943,9 @@
             0
           ],
           "roughness": 0.7,
-          "map": null
-        },
-        "lidShadow": {
-          "color": [
-            0.5840784178830671,
-            0.3712376804636741,
-            0.2746773120495699
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.9,
-          "map": null
-        },
-        "brow": {
-          "color": [
-            0.04231141061442144,
-            0.02955683443236377,
-            0.02955683443236377
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.9,
-          "map": null
-        },
-        "nostril": {
-          "color": [
-            0.23455058215026167,
-            0.10224173307914941,
-            0.07421356837213867
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.9,
-          "map": null
-        },
-        "mouth": {
-          "color": [
-            0.13286832154414627,
-            0.033104766565152086,
-            0.033104766565152086
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.9,
-          "map": null
-        },
-        "upperLip": {
-          "color": [
-            0.4793201830913402,
-            0.21952619971859377,
-            0.1844749944900301
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.57,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": null
         },
         "lip": {
@@ -844,6 +960,127 @@
             0
           ],
           "roughness": 0.5,
+          "specularIntensity": 1,
+          "clearcoat": 0.1,
+          "normalScale": null,
+          "map": null
+        },
+        "lidShadow": {
+          "color": [
+            0.5840784178830671,
+            0.3712376804636741,
+            0.2746773120495699
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.9,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
+          "map": null
+        },
+        "glint": {
+          "color": [
+            1,
+            0.9559733532482866,
+            0.8713671191959567
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
+          "map": null
+        },
+        "brow": {
+          "color": [
+            0.04231141061442144,
+            0.02955683443236377,
+            0.02955683443236377
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.9,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
+          "map": null
+        },
+        "nostril": {
+          "color": [
+            0.23455058215026167,
+            0.10224173307914941,
+            0.07421356837213867
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.9,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
+          "map": null
+        },
+        "mouth": {
+          "color": [
+            0.04817182422013895,
+            0.01680737574872402,
+            0.02121901037134225
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.94,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
+          "map": null
+        },
+        "upperLip": {
+          "color": [
+            0.4793201830913402,
+            0.21952619971859377,
+            0.1844749944900301
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.57,
+          "specularIntensity": 1,
+          "clearcoat": 0.05,
+          "normalScale": null,
+          "map": null
+        },
+        "Warm dental arch shadow": {
+          "color": [
+            0.623960391667596,
+            0.5332764040016892,
+            0.4178850708380236
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.39,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": null
         },
         "tooth": {
@@ -858,20 +1095,9 @@
             0
           ],
           "roughness": 0.39,
-          "map": null
-        },
-        "toothSeam": {
-          "color": [
-            0.5028864580233624,
-            0.4178850708380236,
-            0.34191442489801843
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.8,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": null
         },
         "hairCap": {
@@ -885,7 +1111,13 @@
             0,
             0
           ],
-          "roughness": 0.47,
+          "roughness": 0.44,
+          "specularIntensity": 0.6,
+          "clearcoat": 0.09,
+          "normalScale": [
+            0.11,
+            0.11
+          ],
           "map": {
             "colorSpace": "srgb",
             "anisotropy": 8,
@@ -897,17 +1129,30 @@
         },
         "hairDark": {
           "color": [
-            0.0069954101845983935,
-            0.006512090790025684,
-            0.00972121731707524
+            0.7,
+            0.7,
+            0.7
           ],
           "sheen": [
             0,
             0,
             0
           ],
-          "roughness": 0.54,
-          "map": null
+          "roughness": 0.62,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": [
+            0.11,
+            0.11
+          ],
+          "map": {
+            "colorSpace": "srgb",
+            "anisotropy": 8,
+            "repeat": [
+              1,
+              1
+            ]
+          }
         },
         "webbing": {
           "color": [
@@ -921,49 +1166,91 @@
             0
           ],
           "roughness": 0.93,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": null
         },
         "hairMid": {
           "color": [
-            0.01764195448412081,
-            0.015996293361446288,
-            0.02121901037134225
+            1,
+            1,
+            1
           ],
           "sheen": [
             0,
             0,
             0
           ],
-          "roughness": 0.48,
-          "map": null
+          "roughness": 0.44,
+          "specularIntensity": 0.6,
+          "clearcoat": 0.09,
+          "normalScale": [
+            0.11,
+            0.11
+          ],
+          "map": {
+            "colorSpace": "srgb",
+            "anisotropy": 8,
+            "repeat": [
+              1,
+              1
+            ]
+          }
         },
         "hair": {
           "color": [
-            0.00972121731707524,
-            0.00972121731707524,
-            0.012983032338510335
+            0.94,
+            0.94,
+            0.94
           ],
           "sheen": [
             0,
             0,
             0
           ],
-          "roughness": 0.48,
-          "map": null
+          "roughness": 0.44,
+          "specularIntensity": 0.6,
+          "clearcoat": 0.09,
+          "normalScale": [
+            0.11,
+            0.11
+          ],
+          "map": {
+            "colorSpace": "srgb",
+            "anisotropy": 8,
+            "repeat": [
+              1,
+              1
+            ]
+          }
         },
         "hairLight": {
           "color": [
-            0.02955683443236377,
-            0.026241221889696346,
-            0.033104766565152086
+            1,
+            1,
+            1
           ],
           "sheen": [
             0,
             0,
             0
           ],
-          "roughness": 0.51,
-          "map": null
+          "roughness": 0.44,
+          "specularIntensity": 0.6,
+          "clearcoat": 0.09,
+          "normalScale": [
+            0.11,
+            0.11
+          ],
+          "map": {
+            "colorSpace": "srgb",
+            "anisotropy": 8,
+            "repeat": [
+              1,
+              1
+            ]
+          }
         },
         "socks": {
           "color": [
@@ -977,6 +1264,9 @@
             0
           ],
           "roughness": 0.95,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": {
             "colorSpace": "srgb",
             "anisotropy": 8,
@@ -998,6 +1288,9 @@
             0
           ],
           "roughness": 0.76,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": null
         },
         "leather": {
@@ -1012,6 +1305,9 @@
             0
           ],
           "roughness": 0.26,
+          "specularIntensity": 1,
+          "clearcoat": 0.55,
+          "normalScale": null,
           "map": null
         },
         "stitch": {
@@ -1026,6 +1322,9 @@
             0
           ],
           "roughness": 0.76,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": null
         },
         "skirt": {
@@ -1040,6 +1339,9 @@
             0.08465353399520126
           ],
           "roughness": 0.89,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": {
             "colorSpace": "srgb",
             "anisotropy": 8,
@@ -1061,6 +1363,9 @@
             0
           ],
           "roughness": 1,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": null
         },
         "shirt": {
@@ -1075,6 +1380,9 @@
             0.17068088802878212
           ],
           "roughness": 0.84,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": {
             "colorSpace": "srgb",
             "anisotropy": 8,
@@ -1096,6 +1404,9 @@
             0
           ],
           "roughness": 0.9,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": null
         },
         "button": {
@@ -1110,6 +1421,9 @@
             0
           ],
           "roughness": 0.32,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": null
         },
         "embroidery": {
@@ -1124,6 +1438,9 @@
             0
           ],
           "roughness": 0.8,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": null
         },
         "tie": {
@@ -1138,6 +1455,9 @@
             0.18941259845538294
           ],
           "roughness": 0.65,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": {
             "colorSpace": "srgb",
             "anisotropy": 8,
@@ -1159,6 +1479,9 @@
             0.18941259845538294
           ],
           "roughness": 0.65,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": {
             "colorSpace": "srgb",
             "anisotropy": 8,
@@ -1180,6 +1503,12 @@
             0.057338420060583636
           ],
           "roughness": 0.95,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": [
+            0.35,
+            0.35
+          ],
           "map": null
         },
         "metal": {
@@ -1194,6 +1523,9 @@
             0
           ],
           "roughness": 0.26,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": null
         },
         "buckle": {
@@ -1208,70 +1540,84 @@
             0
           ],
           "roughness": 0.44,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "normalScale": null,
           "map": null
         }
       }
     },
     "roundtrip": {
       "original": {
-        "vertices": 149173,
-        "triangles": 281495,
-        "meshes": 40,
-        "drawCalls": 80,
-        "revision": 10,
+        "vertices": 206192,
+        "triangles": 368909,
+        "meshes": 41,
+        "drawCalls": 82,
+        "revision": 25,
         "renderer": "WebKit WebGL",
         "bounds": [
           0.4973181039094925,
-          1.700685833689531,
-          0.46831583976745605
+          1.711554579678609,
+          0.4624403268098831
         ]
       },
       "imported": {
-        "vertices": 149173,
-        "triangles": 281495,
-        "meshes": 40,
-        "drawCalls": 80,
-        "revision": 10,
+        "vertices": 206192,
+        "triangles": 368909,
+        "meshes": 41,
+        "drawCalls": 82,
+        "revision": 25,
         "renderer": "WebKit WebGL",
         "bounds": [
           0.4973181039094925,
-          1.700685833689531,
-          0.46831583976745605
+          1.711554579678609,
+          0.4624403268098831
         ]
       }
     },
     "gltf": {
       "version": "2.0",
-      "meshes": 40,
-      "textures": 7,
-      "images": 6,
+      "meshes": 41,
+      "textures": 8,
+      "images": 7,
       "extensionsUsed": [
         "KHR_texture_transform",
         "KHR_materials_sheen",
         "KHR_materials_clearcoat",
+        "KHR_materials_specular",
         "KHR_materials_unlit"
       ]
     },
     "artifactDownloads": [
       {
-        "href": "/campus-portrait-gpt6-astra-pro-mcp-colabdev/exports/campus-portrait-gpt6-astra-pro-mcp-colabdev.glb",
+        "href": "/exports/campus-portrait-gpt6-astra-pro-mcp-colabdev.glb",
         "status": 200
       },
       {
-        "href": "/campus-portrait-gpt6-astra-pro-mcp-colabdev/exports/campus-portrait-source-gpt6-astra-pro-mcp-colabdev.tar.gz",
+        "href": "/exports/campus-portrait-source-gpt6-astra-pro-mcp-colabdev.tar.gz",
         "status": 200
       },
       {
-        "href": "/campus-portrait-gpt6-astra-pro-mcp-colabdev/exports/verification-gpt6-astra-pro-mcp-colabdev.json",
+        "href": "/exports/verification-gpt6-astra-pro-mcp-colabdev.json",
         "status": 200
       }
     ],
+    "numericalRefinement": {
+      "passes": 1000,
+      "continuousSequence": true,
+      "uniqueGeometryHashes": 1000,
+      "uniqueImageHashes": 976,
+      "frameHashesVerified": true,
+      "errors": [],
+      "manualArtisticReviews": false,
+      "scope": "Numerical authored-shirt deformation, rendering and geometry checks; not a visual-likeness score."
+    },
     "passed": true
   },
   "gltfValidation": {
     "mimeType": "model/gltf-binary",
     "validatorVersion": "2.0.0-dev.3.10",
-    "validatedAt": "2026-09-29T16:59:24.296Z",
+    "validatedAt": "2026-09-30T00:11:20.460Z",
     "issues": {
       "numErrors": 0,
       "numWarnings": 0,
@@ -1287,6 +1633,7 @@
         "KHR_texture_transform",
         "KHR_materials_sheen",
         "KHR_materials_clearcoat",
+        "KHR_materials_specular",
         "KHR_materials_unlit"
       ],
       "resources": [
@@ -1294,7 +1641,7 @@
           "pointer": "/buffers/0",
           "mimeType": "application/gltf-buffer",
           "storage": "glb",
-          "byteLength": 6903012
+          "byteLength": 10812444
         },
         {
           "pointer": "/images/0",
@@ -1315,7 +1662,7 @@
           "storage": "buffer-view",
           "image": {
             "width": 512,
-            "height": 512,
+            "height": 1024,
             "format": "rgba",
             "primaries": "srgb",
             "transfer": "srgb",
@@ -1340,8 +1687,8 @@
           "mimeType": "image/png",
           "storage": "buffer-view",
           "image": {
-            "width": 1024,
-            "height": 1024,
+            "width": 256,
+            "height": 256,
             "format": "rgba",
             "primaries": "srgb",
             "transfer": "srgb",
@@ -1353,8 +1700,8 @@
           "mimeType": "image/png",
           "storage": "buffer-view",
           "image": {
-            "width": 512,
-            "height": 512,
+            "width": 1024,
+            "height": 1024,
             "format": "rgba",
             "primaries": "srgb",
             "transfer": "srgb",
@@ -1373,17 +1720,30 @@
             "transfer": "srgb",
             "bits": 8
           }
+        },
+        {
+          "pointer": "/images/6",
+          "mimeType": "image/png",
+          "storage": "buffer-view",
+          "image": {
+            "width": 512,
+            "height": 512,
+            "format": "rgba",
+            "primaries": "srgb",
+            "transfer": "srgb",
+            "bits": 8
+          }
         }
       ],
       "animationCount": 0,
-      "materialCount": 37,
+      "materialCount": 38,
       "hasMorphTargets": false,
       "hasSkins": false,
       "hasTextures": true,
       "hasDefaultScene": true,
-      "drawCallCount": 40,
-      "totalVertexCount": 149173,
-      "totalTriangleCount": 281495,
+      "drawCallCount": 41,
+      "totalVertexCount": 206192,
+      "totalTriangleCount": 368909,
       "maxUVs": 1,
       "maxInfluences": 0,
       "maxAttributes": 5

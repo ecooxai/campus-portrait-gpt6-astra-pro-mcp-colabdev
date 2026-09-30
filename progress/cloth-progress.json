@@ -1,0 +1,32 @@
+{
+  "kind": "numerical-cloth-refinement",
+  "phase": "completed-and-integrated",
+  "started": "2026-09-29T23:23:04.334Z",
+  "updatedAt": "2026-09-29T23:47:31.675Z",
+  "completed": 1000,
+  "requested": 1000,
+  "uniqueGeometryStates": 1000,
+  "uniqueRenderedImages": 976,
+  "metrics": {
+    "iteration": 1000,
+    "vertices": 7372,
+    "constraints": 43369,
+    "meanStrain": 0.0147202202920687,
+    "maxStrain": 0.1909949775686406,
+    "maxMovement": 0.000001262845141646156,
+    "penetrationBeforeProjection": 0.00013380622782106766,
+    "constraintScore": 91.85303929930119,
+    "finite": true,
+    "geometrySHA256": "ba9ebb7224d510be6b7c6dce8b5b5776fc80fa4abc9faf887434e05cce47bd11",
+    "imageSHA256": "4b42e31c54f8ef1e7bbeeb06ed5a78201e79b8074bf6d4114271e063d51e52f9",
+    "elapsedMilliseconds": 834,
+    "framePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/cloth-refinement-gpt6-astra-pro-mcp-colabdev/frames/1000.png"
+  },
+  "visualReviewScore": 80,
+  "visualScoreMeaning": "Current manually reviewed model score; the numerical constraint score is not a likeness score.",
+  "image": "/progress/cloth-latest-gpt6-astra-pro-mcp-colabdev.png",
+  "imagePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/cloth-latest-gpt6-astra-pro-mcp-colabdev.png",
+  "ledgerPath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/cloth-refinement-gpt6-astra-pro-mcp-colabdev.jsonl",
+  "integratedAtRevision": 19,
+  "appliedBlend": 0.9
+}
