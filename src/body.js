@@ -91,8 +91,8 @@ function makeShirt(p,m){
  surface(p,'Striped navy hanging tie',24,72,(u,v)=>{const y=lerp(.910,1.266,v),[w,z]=smoothProfile(tieRows,y),x=-.004+(u*2-1)*w*(D.tieWidth??1)+.007*Math.sin(v*4),yy=1.266-(1.266-y)*(D.tieLength??1),target=yy>=1.035?shirtZ(x,yy)+.008:.13+.02*(1.035-yy)/.125,zz=lerp(z,target,D.tieLay||0);return {p:[x,yy,zz+.004*Math.sin(u*Math.PI)],uv:[u,v]};},m.tie);
 }
 function makeHand(p,m,s){
- const g=new THREE.Group();g.name='Modeled hand behind back '+s;g.position.set(s*.027,.980+(s<0?-.006:0),-.149+(s<0?-.016:0));g.rotation.set(-.18,0,-s*.72);p.add(g);
- sphere(g,'Palm',[0,-.026,0],[.023,.040,.012],m.skin,32);
+ const g=new THREE.Group();g.name='Modeled hand behind back '+s;g.position.set(s*.027,.980+(s<0?-.006:0),-.149+(s<0?-.016:0));g.rotation.set(-.18,0,-s*.72);g.position.z-=D.handClearance||0;p.add(g);
+ sphere(g,'Palm',[0,-.026,0],[.023*(D.palmWidth??1),.040*(D.palmLength??1),.012],m.skin,32);if(D.wristBridge)sphere(g,'Continuous wrist attachment',[0,.003,0],[.0175,.023,.0115],m.skin,32);
  for(let i=0;i<4;i++){let x=(i-1.5)*.011,len=[.037,.045,.043,.033][i];ribbon(g,'Finger '+i,[[x,-.047,0],[x,-.057-len*.35,-.004],[x*.92,-.049-len,-.009]],t=>.0049*(1-.24*t),t=>.0045*(1-.18*t),m.skin,{segments:14,radial:8});sphere(g,'Rounded fingertip',[x*.92,-.049-len,-.009],[.0038,.004,.0038],m.skin,16);}
  ribbon(g,'Bent thumb',[[s*.020,-.008,.001],[s*.032,-.023,-.003],[s*.029,-.046,-.006]],t=>.007*(1-.3*t),.006,m.skin,{segments:18,radial:10});
  addHandDetails(g,m,s);
