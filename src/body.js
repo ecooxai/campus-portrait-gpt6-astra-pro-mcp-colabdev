@@ -46,7 +46,7 @@ function makeLegs(p,m){for(const s of [-1,1]){
  surface(shoe,'Curved penny saddle band',40,10,(u,v)=>{const x=(u*2-1)*.038,z=lerp(.049,.026,v);return {p:[x,roof(x,z)+.0022,z]};},m.leather);
  for(const z of [.049,.026]){const edge=[];for(let i=0;i<=32;i++){const x=lerp(-.038,.038,i/32);edge.push([x,roof(x,z)+.003,z]);}tube(shoe,'Saddle raised seam',edge,.0011,m.leather,34,6);}
  box(shoe,'Penny keeper slot',[0,roof(0,.037)+.0031,.037],[.015,.001,.0035],.0004,m.sole);
- seamEllipse(shoe,'Ankle collar piping',.122,.030,.034,0,-.012,m.leather,.0018);
+ seamEllipse(shoe,'Ankle collar piping',.121,.0290,.0330,0,-.012,m.leather,.0010);
  }}
 function makeSkirt(p,m){
  const rows=[[.713,.232,.169,0,.0],[.733,.231,.166,0,0],[.79,.216,.158,0,0],[.885,.183,.133,-.002,-.003],[.967,.149,.110,-.005,-.004],[1.015,.132,.092,-.005,-.005],[1.035,.130,.090,-.005,-.005]];
@@ -122,6 +122,6 @@ export function createCharacter(options={}){
  refreshAnatomy();
  const root=new THREE.Group();root.name='Campus portrait | GPT-6 Astra Pro | mcp-colabdev';const m=makeMaterials();
  makeLegs(root,m);makeSkirt(root,m);makeShirt(root,m);makeBackpack(root,m);if(!options.clothLab){applyReviewedCloth(root);refineGarmentFit(root);adjustClothing(root);refineAccessories(root);}const head=createHead(root,m);refineStandingPose(root);
- root.userData={...root.userData,description:'Original hand-authored procedural three-dimensional interpretation of the supplied clothing and stance. Unseen views are inferred.',author:'GPT-6 Astra Pro / mcp-colabdev',units:'meters',rigged:false};
+ root.userData={...root.userData,design:{...D},description:'Original hand-authored procedural three-dimensional interpretation of the supplied clothing and stance. Unseen views are inferred.',author:'GPT-6 Astra Pro / mcp-colabdev',units:'meters',rigged:false};
  root.updateMatrixWorld(true);optimizeGroup(head);if(options.clothLab){const shirt=root.getObjectByName('Draped white cotton shirt with open neckline');root.remove(shirt);optimizeGroup(root,head);root.add(shirt);}else optimizeGroup(root,head);return {root,head,materials:m};
 }

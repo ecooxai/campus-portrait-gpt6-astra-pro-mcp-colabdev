@@ -1,6 +1,6 @@
 {
-  "candidate": 89,
-  "label": "Narrower cheek and jaw silhouette",
+  "candidate": 95,
+  "label": "Lower-density character geometry",
   "headWidth": 1.015,
   "headHeight": 0.96,
   "headDepth": 1,
@@ -123,5 +123,6 @@
   "palmWidth": 0.96,
   "poseLean": 0.055,
   "poseRoll": -0.008,
-  "fringeRootBlend": 0.72
+  "fringeRootBlend": 0.72,
+  "geometryScale": 0.72
 }

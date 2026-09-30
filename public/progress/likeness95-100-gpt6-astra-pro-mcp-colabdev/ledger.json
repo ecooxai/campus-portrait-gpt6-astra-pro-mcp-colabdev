@@ -8852,6 +8852,426 @@
       "completedAt": "2026-09-30T14:50:21.013Z",
       "decision": "not selected",
       "reviewedAt": "2026-09-30T14:51:56.251Z"
+    },
+    {
+      "id": 93,
+      "group": "24-mesh-density-and-visual-fidelity",
+      "label": "Conservative geometry reduction",
+      "changes": {
+        "geometryScale": 0.94
+      },
+      "basedOn": 89,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c093-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "2c8189087500124980b94b99af52bde44e8f03d83f2ecbeaa2c8c5cb88c6c4a4",
+      "sourceNames": [
+        "accessory-fit.js",
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "clothing-fit.js",
+        "design.js",
+        "ear-sculpt.js",
+        "eye-volume.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "hand-details.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "nose-anatomy.js",
+        "optimize.js",
+        "pose-refine.js",
+        "refinement-status.js",
+        "revision.js",
+        "skin-surface.js",
+        "tie-knot.js"
+      ],
+      "sourceCommit": "4cd0be859d87ce2ff46b804efe61078a1b98dc7d",
+      "designHash": "5cce23b9c8de5d4c45592a9a2d2999793410ea73c93af28f2b055f1fa6a72ee0",
+      "startedAt": "2026-09-30T14:53:01.871Z",
+      "priorAttempts": [],
+      "score": 88.5,
+      "review": "The conservative reduction preserves the face and silhouette, but saves comparatively little geometry. It is a safe option rather than the most efficient one.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c093-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c093-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c093-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "0e7d5887a4b07f98598b7945e9b638835da54f85716be9601186850dbe5d2357",
+          "bytes": 393731
+        },
+        {
+          "view": "front",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c093-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c093-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c093-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "cd573542d099ae6d878be4b69afe8c4dec9ae24c575ee1c9a378518cd09a5713",
+          "bytes": 139993
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 347638,
+        "triangles": 383875,
+        "meshes": 51,
+        "drawCalls": 92,
+        "revision": 28,
+        "designCandidate": 93,
+        "designLabel": "Conservative geometry reduction",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4769396632909775,
+          1.694130631494293,
+          0.45295633375644684
+        ],
+        "constructionMs": 4898.200000000186,
+        "totalMs": 4952
+      },
+      "stats": {
+        "vertices": 347638,
+        "triangles": 383875,
+        "meshes": 51,
+        "drawCalls": 92,
+        "revision": 28,
+        "designCandidate": 93,
+        "designLabel": "Conservative geometry reduction",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4769396632909775,
+          1.694130631494293,
+          0.45295633375644684
+        ],
+        "finite": true,
+        "geometryFingerprint": "2501d027",
+        "positionComponents": 1042914
+      },
+      "completedAt": "2026-09-30T14:53:21.702Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T14:56:08.669Z"
+    },
+    {
+      "id": 94,
+      "group": "24-mesh-density-and-visual-fidelity",
+      "label": "Balanced geometry density",
+      "changes": {
+        "geometryScale": 0.84
+      },
+      "basedOn": 89,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c094-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "2c8189087500124980b94b99af52bde44e8f03d83f2ecbeaa2c8c5cb88c6c4a4",
+      "sourceNames": [
+        "accessory-fit.js",
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "clothing-fit.js",
+        "design.js",
+        "ear-sculpt.js",
+        "eye-volume.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "hand-details.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "nose-anatomy.js",
+        "optimize.js",
+        "pose-refine.js",
+        "refinement-status.js",
+        "revision.js",
+        "skin-surface.js",
+        "tie-knot.js"
+      ],
+      "sourceCommit": "4cd0be859d87ce2ff46b804efe61078a1b98dc7d",
+      "designHash": "c7120f06ade07dd73ed288282be0e4b8e14fce223caba24c27de7f54b2e7371a",
+      "startedAt": "2026-09-30T14:53:21.715Z",
+      "priorAttempts": [],
+      "score": 88.5,
+      "review": "The balanced density remains visually coherent and reduces the mesh considerably. No large silhouette regressions are apparent at the reviewed scale.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c094-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c094-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c094-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "7158f58585b412131442c8e7dd7361a7548a6925a4edcf72167916b8b324efd7",
+          "bytes": 394261
+        },
+        {
+          "view": "front",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c094-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c094-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c094-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "f3bea0b79aea99df5b104fb8eb93b2dc1d124713e22c9bc1d76259a2611f0135",
+          "bytes": 140565
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 308773,
+        "triangles": 329399,
+        "meshes": 51,
+        "drawCalls": 102,
+        "revision": 28,
+        "designCandidate": 94,
+        "designLabel": "Balanced geometry density",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4770619422197342,
+          1.6941128370884524,
+          0.45295633375644684
+        ],
+        "constructionMs": 3098,
+        "totalMs": 3139.7999999998137
+      },
+      "stats": {
+        "vertices": 308773,
+        "triangles": 329399,
+        "meshes": 51,
+        "drawCalls": 102,
+        "revision": 28,
+        "designCandidate": 94,
+        "designLabel": "Balanced geometry density",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4770619422197342,
+          1.6941128370884524,
+          0.45295633375644684
+        ],
+        "finite": true,
+        "geometryFingerprint": "f5edb734",
+        "positionComponents": 926319
+      },
+      "completedAt": "2026-09-30T14:53:35.486Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T14:56:08.669Z"
+    },
+    {
+      "id": 95,
+      "group": "24-mesh-density-and-visual-fidelity",
+      "label": "Lower-density character geometry",
+      "changes": {
+        "geometryScale": 0.72
+      },
+      "basedOn": 89,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c095-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "2c8189087500124980b94b99af52bde44e8f03d83f2ecbeaa2c8c5cb88c6c4a4",
+      "sourceNames": [
+        "accessory-fit.js",
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "clothing-fit.js",
+        "design.js",
+        "ear-sculpt.js",
+        "eye-volume.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "hand-details.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "nose-anatomy.js",
+        "optimize.js",
+        "pose-refine.js",
+        "refinement-status.js",
+        "revision.js",
+        "skin-surface.js",
+        "tie-knot.js"
+      ],
+      "sourceCommit": "4cd0be859d87ce2ff46b804efe61078a1b98dc7d",
+      "designHash": "d26bc2842e77d36108ac3679cfd300813d34437b3405fc20a67293a587ea2d19",
+      "startedAt": "2026-09-30T14:53:35.498Z",
+      "priorAttempts": [],
+      "score": 88.5,
+      "review": "The lower-density model preserves the key facial and garment forms in both the comparison and a full-resolution face check. Select it for meaningful geometry savings without claiming a visual-score increase.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c095-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c095-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c095-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "1788cd287abe6ae469c0a2be381987886be0d076577aa9fe02dde617cc4cb890",
+          "bytes": 393359
+        },
+        {
+          "view": "front",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c095-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c095-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c095-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "9dec2e6039b5aff8daab4e74d2994ac67d370b714f1ffaef0cdbb5d9aba874c8",
+          "bytes": 139883
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 263179,
+        "triangles": 270499,
+        "meshes": 51,
+        "drawCalls": 102,
+        "revision": 28,
+        "designCandidate": 95,
+        "designLabel": "Lower-density character geometry",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.47680990397930145,
+          1.6941083375104955,
+          0.45295633375644684
+        ],
+        "constructionMs": 2765.0999999996275,
+        "totalMs": 2801.7000000001863
+      },
+      "stats": {
+        "vertices": 263179,
+        "triangles": 270499,
+        "meshes": 51,
+        "drawCalls": 102,
+        "revision": 28,
+        "designCandidate": 95,
+        "designLabel": "Lower-density character geometry",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.47680990397930145,
+          1.6941083375104955,
+          0.45295633375644684
+        ],
+        "finite": true,
+        "geometryFingerprint": "da7512d9",
+        "positionComponents": 789537
+      },
+      "completedAt": "2026-09-30T14:53:47.723Z",
+      "decision": "selected checkpoint",
+      "reviewedAt": "2026-09-30T14:56:08.669Z"
+    },
+    {
+      "id": 96,
+      "group": "24-mesh-density-and-visual-fidelity",
+      "label": "Aggressive geometry reduction for comparison",
+      "changes": {
+        "geometryScale": 0.6
+      },
+      "basedOn": 89,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c096-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "2c8189087500124980b94b99af52bde44e8f03d83f2ecbeaa2c8c5cb88c6c4a4",
+      "sourceNames": [
+        "accessory-fit.js",
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "clothing-fit.js",
+        "design.js",
+        "ear-sculpt.js",
+        "eye-volume.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "hand-details.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "nose-anatomy.js",
+        "optimize.js",
+        "pose-refine.js",
+        "refinement-status.js",
+        "revision.js",
+        "skin-surface.js",
+        "tie-knot.js"
+      ],
+      "sourceCommit": "4cd0be859d87ce2ff46b804efe61078a1b98dc7d",
+      "designHash": "f307f38e5b10c0ab03aa9b3353af53542777a221ea0ecb26b3871da8273d58c9",
+      "startedAt": "2026-09-30T14:53:47.737Z",
+      "priorAttempts": [],
+      "score": 87.5,
+      "review": "The strongest reduction begins to simplify the facial contours and folded fabric more visibly. Keep the intermediate density instead of prioritizing triangle count alone.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c096-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c096-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c096-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "d1c61f692388a307b6f633ef462c2a53df95c4ec27903b44b8159cc86aba3613",
+          "bytes": 393157
+        },
+        {
+          "view": "front",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c096-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c096-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c096-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "7fd4a8733c6de1b821e19b014e4ad018fcd0c83c58f273ce8049d940c1fe7c04",
+          "bytes": 140124
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 221051,
+        "triangles": 218526,
+        "meshes": 51,
+        "drawCalls": 102,
+        "revision": 28,
+        "designCandidate": 96,
+        "designLabel": "Aggressive geometry reduction for comparison",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.47680385410785675,
+          1.694101269057791,
+          0.45295633375644684
+        ],
+        "constructionMs": 2382.800000000745,
+        "totalMs": 2414.2000000001863
+      },
+      "stats": {
+        "vertices": 221051,
+        "triangles": 218526,
+        "meshes": 51,
+        "drawCalls": 102,
+        "revision": 28,
+        "designCandidate": 96,
+        "designLabel": "Aggressive geometry reduction for comparison",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.47680385410785675,
+          1.694101269057791,
+          0.45295633375644684
+        ],
+        "finite": true,
+        "geometryFingerprint": "9383cef4",
+        "positionComponents": 663153
+      },
+      "completedAt": "2026-09-30T14:53:59.172Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T14:56:08.669Z"
     }
   ],
   "sheets": [
@@ -9130,12 +9550,24 @@
       "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-23-face-shape-and-smile-balance-gpt6-astra-pro-mcp-colabdev.jpg",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-23-face-shape-and-smile-balance-gpt6-astra-pro-mcp-colabdev.jpg",
       "createdAt": "2026-09-30T14:50:21.514Z"
+    },
+    {
+      "group": "24-mesh-density-and-visual-fidelity",
+      "ids": [
+        93,
+        94,
+        95,
+        96
+      ],
+      "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-24-mesh-density-and-visual-fidelity-gpt6-astra-pro-mcp-colabdev.jpg",
+      "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-24-mesh-density-and-visual-fidelity-gpt6-astra-pro-mcp-colabdev.jpg",
+      "createdAt": "2026-09-30T14:53:59.677Z"
     }
   ],
-  "selected": 89,
+  "selected": 95,
   "description": "Distinct source/parameter edits followed by browser renders and individual human-agent visual review. Numerical solver steps are not counted.",
-  "updatedAt": "2026-09-30T14:51:56.921Z",
-  "rendered": 92,
-  "reviewed": 92,
+  "updatedAt": "2026-09-30T14:56:09.327Z",
+  "rendered": 96,
+  "reviewed": 96,
   "currentScore": 88.5
 }
