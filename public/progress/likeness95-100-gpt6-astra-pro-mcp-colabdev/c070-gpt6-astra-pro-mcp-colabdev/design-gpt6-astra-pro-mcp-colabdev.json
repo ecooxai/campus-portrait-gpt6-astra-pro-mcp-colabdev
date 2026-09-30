@@ -1,6 +1,6 @@
 {
-  "candidate": 72,
-  "label": "Balanced loafer width and rounded vamp",
+  "candidate": 70,
+  "label": "Broad rounded toe and low loafer profile",
   "headWidth": 1.015,
   "headHeight": 0.96,
   "headDepth": 1,
@@ -112,7 +112,7 @@
   "fabricDetail": 0.12,
   "skirtFlare": 0.96,
   "shoeFit": 1,
-  "toeExponent": 0.68,
-  "shoeWidth": 1.02,
-  "shoeUpperHeight": 0.72
+  "toeExponent": 0.6,
+  "shoeWidth": 1.04,
+  "shoeUpperHeight": 0.67
 }

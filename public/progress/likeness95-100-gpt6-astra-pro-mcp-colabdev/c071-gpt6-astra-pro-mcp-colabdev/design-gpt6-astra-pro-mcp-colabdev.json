@@ -1,6 +1,6 @@
 {
-  "candidate": 72,
-  "label": "Balanced loafer width and rounded vamp",
+  "candidate": 71,
+  "label": "Slimmer toe with a low instep",
   "headWidth": 1.015,
   "headHeight": 0.96,
   "headDepth": 1,
@@ -112,7 +112,7 @@
   "fabricDetail": 0.12,
   "skirtFlare": 0.96,
   "shoeFit": 1,
-  "toeExponent": 0.68,
-  "shoeWidth": 1.02,
-  "shoeUpperHeight": 0.72
+  "toeExponent": 0.82,
+  "shoeWidth": 1,
+  "shoeUpperHeight": 0.65
 }

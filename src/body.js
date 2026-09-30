@@ -1,3 +1,4 @@
+import {addHandDetails} from './hand-details.js';
 import {refineAccessories} from './accessory-fit.js';
 import {D} from './design.js';
 import {sculptTieKnot} from './tie-knot.js';
@@ -94,6 +95,7 @@ function makeHand(p,m,s){
  sphere(g,'Palm',[0,-.026,0],[.023,.040,.012],m.skin,32);
  for(let i=0;i<4;i++){let x=(i-1.5)*.011,len=[.037,.045,.043,.033][i];ribbon(g,'Finger '+i,[[x,-.047,0],[x,-.057-len*.35,-.004],[x*.92,-.049-len,-.009]],t=>.0049*(1-.24*t),t=>.0045*(1-.18*t),m.skin,{segments:14,radial:8});sphere(g,'Rounded fingertip',[x*.92,-.049-len,-.009],[.0038,.004,.0038],m.skin,16);}
  ribbon(g,'Bent thumb',[[s*.020,-.008,.001],[s*.032,-.023,-.003],[s*.029,-.046,-.006]],t=>.007*(1-.3*t),.006,m.skin,{segments:18,radial:10});
+ addHandDetails(g,m,s);
 }
 function makeBackpack(p,m){
  const g=new THREE.Group();g.name='Navy backpack';p.add(g);

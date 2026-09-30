@@ -1,6 +1,6 @@
 {
-  "candidate": 72,
-  "label": "Balanced loafer width and rounded vamp",
+  "candidate": 65,
+  "label": "Quieter plaid contrast and softer pleat relief",
   "headWidth": 1.015,
   "headHeight": 0.96,
   "headDepth": 1,
@@ -106,13 +106,9 @@
   "tieWidth": 1.06,
   "tieLay": 0.48,
   "tieLength": 1,
-  "plaidContrast": 0.9,
-  "plaidScale": 0.78,
-  "pleatDepth": 1.08,
-  "fabricDetail": 0.12,
-  "skirtFlare": 0.96,
-  "shoeFit": 1,
-  "toeExponent": 0.68,
-  "shoeWidth": 1.02,
-  "shoeUpperHeight": 0.72
+  "plaidContrast": 0.75,
+  "plaidScale": 0.92,
+  "pleatDepth": 0.9,
+  "fabricDetail": 0.1,
+  "skirtFlare": 1
 }
