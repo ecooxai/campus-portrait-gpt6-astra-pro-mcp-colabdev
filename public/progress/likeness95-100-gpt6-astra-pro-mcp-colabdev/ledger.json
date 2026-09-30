@@ -3639,6 +3639,430 @@
       "completedAt": "2026-09-30T09:17:31.757Z",
       "decision": "not selected",
       "reviewedAt": "2026-09-30T09:19:24.821Z"
+    },
+    {
+      "id": 45,
+      "group": "12-eye-volume-and-expression",
+      "label": "Gently curved eyes and a more open upper lid",
+      "changes": {
+        "eyeVolume": 1,
+        "eyeRoundness": 0.7,
+        "eyeUpper": 1.16,
+        "eyeLower": 1.02,
+        "irisRadius": 1.1,
+        "irisRoughness": 0.44,
+        "eyeCoating": 0.35,
+        "tearDuct": 1,
+        "lashScale": 1.15
+      },
+      "basedOn": 41,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c045-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "f79b71e1a0575db9b9f5ed9a2eb2af06a2f4e3fa61d463e20eda51cd3013ec05",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "design.js",
+        "ear-sculpt.js",
+        "eye-volume.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js"
+      ],
+      "sourceCommit": "db1d4c9a1e496fde8d590aeb02143d865441bc89",
+      "designHash": "ca3594992490ad4cbc833f7538852df3bd01423c3f34f86ef7ea165380e91591",
+      "startedAt": "2026-09-30T09:21:36.568Z",
+      "score": 85,
+      "review": "The new eye curvature reads more coherently in three-quarter view, but the slightly brighter upper opening does not materially improve the overall likeness.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c045-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c045-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c045-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "3354d97c16ecc12e6b7d06eb1deb339520820ff9bcc4014e6197cb76a3504a32",
+          "bytes": 378710
+        },
+        {
+          "view": "face-three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c045-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c045-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c045-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "2eb6e5c7534072618bf09677b2546c00426fd0cac76a65b590cae56bdefe4bd2",
+          "bytes": 384250
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 225914,
+        "triangles": 403513,
+        "meshes": 50,
+        "drawCalls": 91,
+        "revision": 27,
+        "designCandidate": 45,
+        "designLabel": "Gently curved eyes and a more open upper lid",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 4258.100000000559,
+        "totalMs": 4287.5
+      },
+      "stats": {
+        "vertices": 225914,
+        "triangles": 403513,
+        "meshes": 50,
+        "drawCalls": 91,
+        "revision": 27,
+        "designCandidate": 45,
+        "designLabel": "Gently curved eyes and a more open upper lid",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "2e999da8",
+        "positionComponents": 677742
+      },
+      "completedAt": "2026-09-30T09:21:55.570Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T13:38:55.851Z"
+    },
+    {
+      "id": 46,
+      "group": "12-eye-volume-and-expression",
+      "label": "Brighter open-eyed expression",
+      "changes": {
+        "eyeVolume": 1,
+        "eyeRoundness": 0.85,
+        "eyeUpper": 1.28,
+        "eyeLower": 1.14,
+        "irisRadius": 1.12,
+        "eyeWhite": 0.84,
+        "irisRoughness": 0.4,
+        "eyeCoating": 0.4,
+        "tearDuct": 1,
+        "lashScale": 1.18
+      },
+      "basedOn": 41,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c046-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "f79b71e1a0575db9b9f5ed9a2eb2af06a2f4e3fa61d463e20eda51cd3013ec05",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "design.js",
+        "ear-sculpt.js",
+        "eye-volume.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js"
+      ],
+      "sourceCommit": "db1d4c9a1e496fde8d590aeb02143d865441bc89",
+      "designHash": "e70a3ba800d8b7286a07632300e5982af70f625ac9f57b0a1c8931e48c0f230f",
+      "startedAt": "2026-09-30T09:21:55.579Z",
+      "score": 84.5,
+      "review": "The widest opening makes the expression more startled and exposes too much sclera. Retain a calmer upper-lid opening.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c046-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c046-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c046-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "8b672d8fa298b8f16f2866c476e431c6b0cc71ab892e3afb84a39d1b5a2206e1",
+          "bytes": 379788
+        },
+        {
+          "view": "face-three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c046-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c046-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c046-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "4072c776d0857fd3a0af87a8b78eb3b2b6a77aa1ea89c10a289bbcf17fb43f1b",
+          "bytes": 385184
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 225914,
+        "triangles": 403513,
+        "meshes": 50,
+        "drawCalls": 91,
+        "revision": 27,
+        "designCandidate": 46,
+        "designLabel": "Brighter open-eyed expression",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 3408.800000000745,
+        "totalMs": 3447.9000000003725
+      },
+      "stats": {
+        "vertices": 225914,
+        "triangles": 403513,
+        "meshes": 50,
+        "drawCalls": 91,
+        "revision": 27,
+        "designCandidate": 46,
+        "designLabel": "Brighter open-eyed expression",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "da88299b",
+        "positionComponents": 677742
+      },
+      "completedAt": "2026-09-30T09:22:11.947Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T13:38:55.851Z"
+    },
+    {
+      "id": 47,
+      "group": "12-eye-volume-and-expression",
+      "label": "Soft smiling eye shape with larger iris",
+      "changes": {
+        "eyeVolume": 1,
+        "eyeRoundness": 0.5,
+        "eyeUpper": 1.1,
+        "eyeLower": 0.92,
+        "irisRadius": 1.12,
+        "eyeLid": 1.08,
+        "eyeWhite": 0.85,
+        "irisShade": 0.85,
+        "tearDuct": 1,
+        "lashScale": 1.2
+      },
+      "basedOn": 41,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c047-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "f79b71e1a0575db9b9f5ed9a2eb2af06a2f4e3fa61d463e20eda51cd3013ec05",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "design.js",
+        "ear-sculpt.js",
+        "eye-volume.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js"
+      ],
+      "sourceCommit": "db1d4c9a1e496fde8d590aeb02143d865441bc89",
+      "designHash": "3b8d70757a37dd67c2ef9736ad23c5255371a5d785fcb7918affd04cd6eb62e6",
+      "startedAt": "2026-09-30T09:22:11.955Z",
+      "score": 85,
+      "review": "The larger iris and softer opening are calm, but the flatter expression loses some of the reference's cheerful openness. This is not the strongest integrated option.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c047-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c047-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c047-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "bf0c8c7970933409d9908bf68944804720db89722e5538e509fab3383c449c17",
+          "bytes": 378706
+        },
+        {
+          "view": "face-three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c047-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c047-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c047-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "4c30926b9b4baacac842011c2de957de7c4562e693a54c40981e30cfe595e889",
+          "bytes": 384288
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 225914,
+        "triangles": 403513,
+        "meshes": 50,
+        "drawCalls": 91,
+        "revision": 27,
+        "designCandidate": 47,
+        "designLabel": "Soft smiling eye shape with larger iris",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 3177.2000000001863,
+        "totalMs": 3195.5
+      },
+      "stats": {
+        "vertices": 225914,
+        "triangles": 403513,
+        "meshes": 50,
+        "drawCalls": 91,
+        "revision": 27,
+        "designCandidate": 47,
+        "designLabel": "Soft smiling eye shape with larger iris",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "a87f022a",
+        "positionComponents": 677742
+      },
+      "completedAt": "2026-09-30T09:22:27.877Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T13:38:55.851Z"
+    },
+    {
+      "id": 48,
+      "group": "12-eye-volume-and-expression",
+      "label": "Balanced open lids and darker natural irises",
+      "changes": {
+        "eyeVolume": 1,
+        "eyeRoundness": 0.6,
+        "eyeUpper": 1.2,
+        "eyeLower": 1.04,
+        "irisRadius": 1.09,
+        "eyeWhite": 0.85,
+        "irisShade": 0.85,
+        "irisRoughness": 0.43,
+        "eyeCoating": 0.32,
+        "tearDuct": 1,
+        "lashScale": 1.2
+      },
+      "basedOn": 41,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c048-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "f79b71e1a0575db9b9f5ed9a2eb2af06a2f4e3fa61d463e20eda51cd3013ec05",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "design.js",
+        "ear-sculpt.js",
+        "eye-volume.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js"
+      ],
+      "sourceCommit": "db1d4c9a1e496fde8d590aeb02143d865441bc89",
+      "designHash": "dc19753bf34b256d19548c200061ed54575fc463552d3e79bd95521fdaa8ff5a",
+      "startedAt": "2026-09-30T09:22:27.885Z",
+      "score": 85.5,
+      "review": "The moderately open lids and darker irises give the clearest expression without the wide-eyed effect of C46. Select this refinement; the broad nose shading and uniform skin remain the larger likeness gaps.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c048-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c048-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c048-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "372c3c374dd9591f65c8de3165c46cd7049c91a4e7aa3d36bd29a406cce02ca5",
+          "bytes": 378793
+        },
+        {
+          "view": "face-three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c048-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c048-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c048-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "f66feff2c0de942a4a88eea36f23686bc61b5a21dcccda1cdacb09815f0adaa0",
+          "bytes": 384248
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 225914,
+        "triangles": 403513,
+        "meshes": 50,
+        "drawCalls": 91,
+        "revision": 27,
+        "designCandidate": 48,
+        "designLabel": "Balanced open lids and darker natural irises",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 3153.699999999255,
+        "totalMs": 3176.899999999441
+      },
+      "stats": {
+        "vertices": 225914,
+        "triangles": 403513,
+        "meshes": 50,
+        "drawCalls": 91,
+        "revision": 27,
+        "designCandidate": 48,
+        "designLabel": "Balanced open lids and darker natural irises",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "761b3f76",
+        "positionComponents": 677742
+      },
+      "completedAt": "2026-09-30T09:22:44.866Z",
+      "decision": "selected checkpoint",
+      "reviewedAt": "2026-09-30T13:38:55.851Z"
     }
   ],
   "sheets": [
@@ -3773,12 +4197,24 @@
       "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-11-ponytail-trajectory-and-scale-gpt6-astra-pro-mcp-colabdev.jpg",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-11-ponytail-trajectory-and-scale-gpt6-astra-pro-mcp-colabdev.jpg",
       "createdAt": "2026-09-30T09:17:32.311Z"
+    },
+    {
+      "group": "12-eye-volume-and-expression",
+      "ids": [
+        45,
+        46,
+        47,
+        48
+      ],
+      "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-12-eye-volume-and-expression-gpt6-astra-pro-mcp-colabdev.jpg",
+      "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-12-eye-volume-and-expression-gpt6-astra-pro-mcp-colabdev.jpg",
+      "createdAt": "2026-09-30T09:22:45.522Z"
     }
   ],
-  "selected": 41,
+  "selected": 48,
   "description": "Distinct source/parameter edits followed by browser renders and individual human-agent visual review. Numerical solver steps are not counted.",
-  "updatedAt": "2026-09-30T09:19:25.518Z",
-  "rendered": 44,
-  "reviewed": 44,
-  "currentScore": 85
+  "updatedAt": "2026-09-30T13:38:56.548Z",
+  "rendered": 48,
+  "reviewed": 48,
+  "currentScore": 85.5
 }
