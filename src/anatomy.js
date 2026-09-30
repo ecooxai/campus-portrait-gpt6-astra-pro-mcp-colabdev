@@ -1,3 +1,4 @@
+import {nasalDisplacement} from './nose-anatomy.js';
 import * as THREE from 'three';
 import {D} from './design.js';
 import {clamp,gauss,lerp,smoothProfile} from './geometry.js';
@@ -22,9 +23,7 @@ export function faceDelta(x,y){
  +D.faceFlat*.006*(gauss(x,.063,.033)+gauss(x,-.063,.033))*gauss(y,0,.080)
  -.005*(gauss(x,.037*D.eyeSpacing,.022*D.eyeWidth)+gauss(x,-.037*D.eyeSpacing,.022*D.eyeWidth))*gauss(y,.018+D.eyeY,.014)
  +.0045*D.browRidge*(gauss(x,.040*D.eyeSpacing,.026)+gauss(x,-.040*D.eyeSpacing,.026))*gauss(y,.043+D.browY,.013)
- +.015*D.noseBridge*gauss(x,0,.015*w)*gauss(ny,.006,.041)
- +.0215*D.noseTip*gauss(x,0,.018*w)*gauss(ny,-.021,.015)
- +.006*(gauss(x,.014*w,.010*w)+gauss(x,-.014*w,.010*w))*gauss(ny,-.025,.008)
+ +nasalDisplacement(x,y)
  +.007*gauss(x,0,.039)*gauss(y,-.055+D.mouthY,.025)
  +.0025*(gauss(x,.004,.003)+gauss(x,-.004,.003))*gauss(y,-.039+D.mouthY*.5,.010)
  +.008*D.chinForward*gauss(x,0,.029)*gauss(y,-.091-D.chinLength,.016);
