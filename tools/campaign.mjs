@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {createHash} from 'node:crypto';
+import {execFileSync} from 'node:child_process';
 import {chromium} from 'playwright';
 
 const suffix='gpt6-astra-pro-mcp-colabdev';
@@ -20,7 +21,8 @@ const [action,input]=process.argv.slice(2);
 if(action==='render'){
  const spec=await read(input),prior=await read(stateFile),base=spec.base||prior;
  if(!spec.group||!Array.isArray(spec.candidates)||!spec.candidates.length)throw Error('Expected group and candidate list');
- const sourceNames=['anatomy.js','head.js','face-details.js','body.js','geometry.js','materials.js','hair-materials.js','garment-fit.js','optimize.js'];
+ const sourceNames=(await fs.readdir(path.join(root,'src'))).filter(f=>f.endsWith('.js')).sort();
+ const sourceCommit=execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim();
  const sourceHash=sha(Buffer.concat(await Promise.all(sourceNames.map(f=>fs.readFile(path.join(root,'src',f))))));
  const b=await browser();
  try{
@@ -28,7 +30,7 @@ if(action==='render'){
    if(ledger.candidates.some(c=>c.id===item.id))throw Error('Candidate already exists: '+item.id);
    const state={...base,...item.changes,candidate:item.id,label:item.label,campaign};
    const dir=path.join(work,`c${String(item.id).padStart(3,'0')}-${suffix}`),publicDir=path.join(pub,`c${String(item.id).padStart(3,'0')}-${suffix}`);await fs.mkdir(dir,{recursive:true});await fs.mkdir(publicDir,{recursive:true});
-   const record={id:item.id,group:spec.group,label:item.label,changes:item.changes,basedOn:base.candidate||0,statePath:path.join(dir,'design-state.json'),sourceHash,designHash:sha(JSON.stringify(state)),startedAt:new Date().toISOString(),score:null,review:null,status:'rendering',views:[],errors:[],warnings:[]};
+   const record={id:item.id,group:spec.group,label:item.label,changes:item.changes,basedOn:base.candidate||0,statePath:path.join(dir,'design-state.json'),sourceHash,sourceNames,sourceCommit,designHash:sha(JSON.stringify(state)),startedAt:new Date().toISOString(),score:null,review:null,status:'rendering',views:[],errors:[],warnings:[]};
    await write(record.statePath,state);await write(path.join(publicDir,'design-'+suffix+'.json'),state);await saveState(state);await new Promise(r=>setTimeout(r,450));
    const page=await b.newPage({viewport:{width:600,height:800},deviceScaleFactor:1});
    page.on('pageerror',e=>record.errors.push(e.message));page.on('console',m=>{if(m.type()==='error')record.errors.push(m.text());if(m.type()==='warning')record.warnings.push(m.text());});

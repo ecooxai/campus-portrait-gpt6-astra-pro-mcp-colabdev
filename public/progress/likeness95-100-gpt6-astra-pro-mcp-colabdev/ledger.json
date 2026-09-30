@@ -508,6 +508,496 @@
       "completedAt": "2026-09-30T08:29:49.695Z",
       "decision": "selected checkpoint",
       "reviewedAt": "2026-09-30T08:32:12.853Z"
+    },
+    {
+      "id": 9,
+      "group": "03-mouth-depth-and-expression",
+      "label": "Gentler, narrower smile",
+      "changes": {
+        "mouthWidth": 0.94,
+        "mouthSmile": 1.15,
+        "mouthOpen": 0.82,
+        "lipThickness": 1.1
+      },
+      "basedOn": 8,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c009-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "061714f4cc4cc528c383351f9848b4d809a9421495f957401f50a81ff1ac4705",
+      "designHash": "1142b3a0bdfa9736e4194bff50dcb5604c5c33607e3acaf348d3fbf378282480",
+      "startedAt": "2026-09-30T08:35:23.586Z",
+      "score": 82,
+      "review": "The narrower smile is gentler, but it loses some of the reference's cheerful openness. Profile review reveals the chin remains too recessed relative to the mouth and nose.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c009-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c009-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c009-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "e656f3ee92ae745c05869358cd329b6d3e492379ff2960e39e4a016222605cda",
+          "bytes": 363142
+        },
+        {
+          "view": "face-profile",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c009-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c009-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c009-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "4385fafb639e41c99a93d21b25f5ed8c4348597bde9677e1b1a5686506260e1a",
+          "bytes": 270000
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "stats": {
+        "vertices": 206454,
+        "triangles": 369421,
+        "meshes": 42,
+        "drawCalls": 75,
+        "revision": 26,
+        "designCandidate": 9,
+        "designLabel": "Gentler, narrower smile",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960161470335355,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "e26a1892",
+        "positionComponents": 619362
+      },
+      "completedAt": "2026-09-30T08:35:50.850Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T08:38:43.406Z"
+    },
+    {
+      "id": 10,
+      "group": "03-mouth-depth-and-expression",
+      "label": "Recessed oral cavity and rounded lips",
+      "changes": {
+        "oralDepth": 0.8,
+        "lipProjection": 1.3,
+        "lipThickness": 1.18,
+        "mouthOpen": 0.93,
+        "toothHeight": 0.84
+      },
+      "basedOn": 8,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c010-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "061714f4cc4cc528c383351f9848b4d809a9421495f957401f50a81ff1ac4705",
+      "designHash": "d28b330437516579073aa7f84832139f3f89f9127d809a9111a86dde27df32e8",
+      "startedAt": "2026-09-30T08:35:50.870Z",
+      "score": 81.5,
+      "review": "The oral recess has genuine depth, but the larger lip projection and dark opening make the mouth heavier. The profile still needs a stronger chin rather than more lip volume.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c010-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c010-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c010-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "a8ed24a99d99c0350f7be815bd255a8316d9e138ef99b276f31583db60ca42fb",
+          "bytes": 365311
+        },
+        {
+          "view": "face-profile",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c010-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c010-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c010-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "be79c3c87a16fe20adb43cf90772a347ba432178e0432108b1550daf9bd62fe8",
+          "bytes": 270275
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "stats": {
+        "vertices": 206454,
+        "triangles": 369421,
+        "meshes": 42,
+        "drawCalls": 75,
+        "revision": 26,
+        "designCandidate": 10,
+        "designLabel": "Recessed oral cavity and rounded lips",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960161470335355,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "3680ffa",
+        "positionComponents": 619362
+      },
+      "completedAt": "2026-09-30T08:36:17.681Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T08:38:43.406Z"
+    },
+    {
+      "id": 11,
+      "group": "03-mouth-depth-and-expression",
+      "label": "Lifted smile corners and softened nasal crease",
+      "changes": {
+        "mouthSmile": 1.3,
+        "mouthY": 0.0015,
+        "smileFold": 0.75,
+        "noseGroove": 0.82,
+        "lipBlend": 0.9,
+        "toothHeight": 0.82
+      },
+      "basedOn": 8,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c011-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "061714f4cc4cc528c383351f9848b4d809a9421495f957401f50a81ff1ac4705",
+      "designHash": "a30a4800fb4859a80521149327392d87f78bf20c414c6637f77fdfb562379bb2",
+      "startedAt": "2026-09-30T08:36:17.696Z",
+      "score": 82,
+      "review": "Raised corners make the expression brighter, although the thinner lip transition looks slightly stretched at the ends. The profile limitation remains.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c011-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c011-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c011-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "d54c627fe7574c3b9c7a1af878b824086d082e67be40e54d98ae0a8a85b02705",
+          "bytes": 363558
+        },
+        {
+          "view": "face-profile",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c011-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c011-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c011-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "40739fabc4398038f1faa1eb20b1cf806f37615045b6564bad6fe23d93e31ff3",
+          "bytes": 270167
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "stats": {
+        "vertices": 206454,
+        "triangles": 369421,
+        "meshes": 42,
+        "drawCalls": 75,
+        "revision": 26,
+        "designCandidate": 11,
+        "designLabel": "Lifted smile corners and softened nasal crease",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960161470335355,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "dc3a5bf1",
+        "positionComponents": 619362
+      },
+      "completedAt": "2026-09-30T08:36:45.660Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T08:38:43.406Z"
+    },
+    {
+      "id": 12,
+      "group": "03-mouth-depth-and-expression",
+      "label": "Moderate cavity depth and balanced smile",
+      "changes": {
+        "oralDepth": 0.45,
+        "lipProjection": 1.18,
+        "lipThickness": 1.1,
+        "mouthSmile": 1.15,
+        "mouthWidth": 0.97,
+        "mouthOpen": 0.88,
+        "toothHeight": 0.82,
+        "lipBlend": 0.85
+      },
+      "basedOn": 8,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c012-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "061714f4cc4cc528c383351f9848b4d809a9421495f957401f50a81ff1ac4705",
+      "designHash": "930bd117474e510a2d831b48b0fd7ea51dc50c80b00fa4504659b64d3ebd94fe",
+      "startedAt": "2026-09-30T08:36:45.677Z",
+      "score": 82.5,
+      "review": "The moderate cavity and narrower smile are the most natural combination here. Retain the restrained lip volume; next correct the recessed chin and nasal/profile balance.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c012-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c012-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c012-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "4ef3cc1f4ca89b8770528a4b8db1ab92dd1958c066f2b8ec5f421e6bc616159b",
+          "bytes": 364664
+        },
+        {
+          "view": "face-profile",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c012-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c012-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c012-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "dbdcbf01c91f2c631b97e3161e5c065c89ca0b06b0cae5ff9b58bf47892b9ebf",
+          "bytes": 270094
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "stats": {
+        "vertices": 206454,
+        "triangles": 369421,
+        "meshes": 42,
+        "drawCalls": 75,
+        "revision": 26,
+        "designCandidate": 12,
+        "designLabel": "Moderate cavity depth and balanced smile",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960161470335355,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "8ea68cd",
+        "positionComponents": 619362
+      },
+      "completedAt": "2026-09-30T08:37:13.077Z",
+      "decision": "selected checkpoint",
+      "reviewedAt": "2026-09-30T08:38:43.406Z"
+    },
+    {
+      "id": 13,
+      "group": "04-chin-and-nasal-profile",
+      "label": "Moderate chin projection",
+      "changes": {
+        "chinForward": 1.8,
+        "jawWidth": 1.025,
+        "chinWidth": 1.08
+      },
+      "basedOn": 12,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c013-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "061714f4cc4cc528c383351f9848b4d809a9421495f957401f50a81ff1ac4705",
+      "designHash": "9376355f00ca78ad8081005d20083c3004fa730503a2dafd763ef67b68f47f45",
+      "startedAt": "2026-09-30T08:38:45.170Z",
+      "score": 82.5,
+      "review": "Moderate chin projection improves the side silhouette, but the lower face still tapers backward more than desired. It is a conservative improvement, not a complete correction.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face-three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c013-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c013-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c013-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "4d57aabb46deada1799f934d2f98cda4871b9f14a3febf147c4c1b31c9271262",
+          "bytes": 358597
+        },
+        {
+          "view": "face-profile",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c013-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c013-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c013-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "09184144b88304f7e9c6b1af461ccacda6e45b117349fd0ccf6eba62d2ed4244",
+          "bytes": 269679
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "stats": {
+        "vertices": 206454,
+        "triangles": 369421,
+        "meshes": 42,
+        "drawCalls": 75,
+        "revision": 26,
+        "designCandidate": 13,
+        "designLabel": "Moderate chin projection",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960161470335355,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "2889b7b7",
+        "positionComponents": 619362
+      },
+      "completedAt": "2026-09-30T08:39:11.982Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T08:42:00.569Z"
+    },
+    {
+      "id": 14,
+      "group": "04-chin-and-nasal-profile",
+      "label": "Stronger chin and reduced nasal tip",
+      "changes": {
+        "chinForward": 2.7,
+        "noseTip": 0.88,
+        "noseBridge": 0.75,
+        "chinWidth": 1.08
+      },
+      "basedOn": 12,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c014-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "061714f4cc4cc528c383351f9848b4d809a9421495f957401f50a81ff1ac4705",
+      "designHash": "2063fc419a4cad2ad13270e1411849872f13b7caf0ce38dcd3c8ad83f8eb8f20",
+      "startedAt": "2026-09-30T08:39:11.999Z",
+      "score": 81.5,
+      "review": "The strongest chin setting creates a conspicuous lower-face bulge in three-quarter view. Reject the larger projection despite the less recessed profile.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face-three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c014-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c014-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c014-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "c3b99b2e5eb87949495519251748b4952f95dab1e3820d9e4c9e79739e31315f",
+          "bytes": 358366
+        },
+        {
+          "view": "face-profile",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c014-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c014-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c014-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "fff70a093123a6c89564547ef2143937da0470fd5d3dbbded4058f3dc9d6767d",
+          "bytes": 269122
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "stats": {
+        "vertices": 206454,
+        "triangles": 369421,
+        "meshes": 42,
+        "drawCalls": 75,
+        "revision": 26,
+        "designCandidate": 14,
+        "designLabel": "Stronger chin and reduced nasal tip",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960161470335355,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "65d1d37",
+        "positionComponents": 619362
+      },
+      "completedAt": "2026-09-30T08:39:40.445Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T08:42:00.569Z"
+    },
+    {
+      "id": 15,
+      "group": "04-chin-and-nasal-profile",
+      "label": "Forward chin with softer brow ridge",
+      "changes": {
+        "chinForward": 2.25,
+        "browRidge": 0.72,
+        "noseBridge": 0.65,
+        "noseTip": 0.95,
+        "faceFlat": 0.85
+      },
+      "basedOn": 12,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c015-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "061714f4cc4cc528c383351f9848b4d809a9421495f957401f50a81ff1ac4705",
+      "designHash": "83c9f4bb593aea158b88a083f0c82b827a09f2403c49922b12b64649055ac75e",
+      "startedAt": "2026-09-30T08:39:40.467Z",
+      "score": 82.5,
+      "review": "The softer brow ridge and nasal bridge are helpful, but the broad cheek flattening and chin together make the mouth-to-jaw transition too uniform.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face-three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c015-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c015-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c015-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "61ae58ce4718d339c7d0cf0ec85def8fcbd2aaef06431a8e79a5082f53a9b5ad",
+          "bytes": 357872
+        },
+        {
+          "view": "face-profile",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c015-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c015-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c015-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "1eba3bd1fdd02aa6aabf374fa49de4ee832a8a06ebcd92d254b489fb523ccd31",
+          "bytes": 268635
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "stats": {
+        "vertices": 206454,
+        "triangles": 369421,
+        "meshes": 42,
+        "drawCalls": 75,
+        "revision": 26,
+        "designCandidate": 15,
+        "designLabel": "Forward chin with softer brow ridge",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960161470335355,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "e44175ac",
+        "positionComponents": 619362
+      },
+      "completedAt": "2026-09-30T08:40:13.395Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T08:42:00.569Z"
+    },
+    {
+      "id": 16,
+      "group": "04-chin-and-nasal-profile",
+      "label": "Balanced lower-face and nasal contour",
+      "changes": {
+        "chinForward": 2.2,
+        "noseTip": 0.91,
+        "noseBridge": 0.72,
+        "browRidge": 0.85,
+        "jawWidth": 1.02,
+        "chinWidth": 1.08,
+        "faceFlat": 0.7
+      },
+      "basedOn": 12,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c016-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "061714f4cc4cc528c383351f9848b4d809a9421495f957401f50a81ff1ac4705",
+      "designHash": "d8b610e59bb906b207b5ef2d84f03618f85562a03fbbc06bcf5dfd4a1efeb14f",
+      "startedAt": "2026-09-30T08:40:13.410Z",
+      "score": 83,
+      "review": "This is the best compromise: the chin supports the mouth without a large bulb, and the nose/profile balance is improved. The ear still looks like stacked simple primitives and is the next visible defect.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face-three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c016-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c016-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c016-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "fd09160c07f0d04a6bc40afcd6d3084c837347b617fd7421a0f4a3f264f47a04",
+          "bytes": 357883
+        },
+        {
+          "view": "face-profile",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c016-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c016-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c016-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "2d3101454b41b4241a743aebcd3e4d8cb6a795a3c7abc36a5736d63f79259f56",
+          "bytes": 269082
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "stats": {
+        "vertices": 206454,
+        "triangles": 369421,
+        "meshes": 42,
+        "drawCalls": 75,
+        "revision": 26,
+        "designCandidate": 16,
+        "designLabel": "Balanced lower-face and nasal contour",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960161470335355,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "f0b60a49",
+        "positionComponents": 619362
+      },
+      "completedAt": "2026-09-30T08:40:41.962Z",
+      "decision": "selected checkpoint",
+      "reviewedAt": "2026-09-30T08:42:00.569Z"
     }
   ],
   "sheets": [
@@ -534,12 +1024,36 @@
       "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-02-head-and-neck-gpt6-astra-pro-mcp-colabdev.jpg",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-02-head-and-neck-gpt6-astra-pro-mcp-colabdev.jpg",
       "createdAt": "2026-09-30T08:29:50.257Z"
+    },
+    {
+      "group": "03-mouth-depth-and-expression",
+      "ids": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-03-mouth-depth-and-expression-gpt6-astra-pro-mcp-colabdev.jpg",
+      "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-03-mouth-depth-and-expression-gpt6-astra-pro-mcp-colabdev.jpg",
+      "createdAt": "2026-09-30T08:37:13.597Z"
+    },
+    {
+      "group": "04-chin-and-nasal-profile",
+      "ids": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-04-chin-and-nasal-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+      "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-04-chin-and-nasal-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+      "createdAt": "2026-09-30T08:40:42.506Z"
     }
   ],
-  "selected": 8,
+  "selected": 16,
   "description": "Distinct source/parameter edits followed by browser renders and individual human-agent visual review. Numerical solver steps are not counted.",
-  "updatedAt": "2026-09-30T08:32:13.506Z",
-  "rendered": 8,
-  "reviewed": 8,
-  "currentScore": 82
+  "updatedAt": "2026-09-30T08:42:01.203Z",
+  "rendered": 16,
+  "reviewed": 16,
+  "currentScore": 83
 }

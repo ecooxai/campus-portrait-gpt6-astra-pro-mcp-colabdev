@@ -1,3 +1,4 @@
+import {buildSculptedEar} from './ear-sculpt.js';
 import {D} from './design.js';
 import {profile,faceDelta as delta,faceZ,faceSkinColor,sculptedHeadPoint,mouthTop,mouthBottom} from './anatomy.js';
 export {faceZ,faceSkinColor} from './anatomy.js';
@@ -15,10 +16,12 @@ export function createHead(parent,m){
  return {p:sculptedHeadPoint(x,y,z,front),c:faceSkinColor(x,y,front).toArray()};
  },m.face);
  for(const s of [-1,1]){
+ if(D.earSculpt){buildSculptedEar(head,m,s);}else{
  const ear=sphere(head,`${s} ear pinna`,[s*.091,-.014,-.005],[.017,.028,.013],m.skin,32);ear.rotation.z=-s*.13;
  sphere(head,`${s} concha`,[s*.103,-.012,.003],[.0065,.017,.006],m.skinShadow,28);
  const ep=[];for(let i=0;i<28;i++){const a=TAU*i/27;ep.push([s*(.101+.009*Math.sin(a)),-.012+.022*Math.cos(a),.005+.003*Math.cos(a)]);}tube(head,'Helix',ep,.0023,m.skin,30,7);
  tube(head,'Antihelix',[[s*.102,-.029,.011],[s*.101,-.009,.010],[s*.106,.003,.009]],.0018,m.skin,18,7);
+ }
  buildEye(head,m,s);buildBrow(head,m,s);
  const nostril=[];for(let j=0;j<=12;j++){const t=j/12,x=s*(.0080+.0054*t)*D.noseWidth,y=-.0283+D.noseY-.00045*Math.sin(t*Math.PI);nostril.push([x,y,faceZ(x,y)+.00022]);}tube(head,'Curved nostril detail',nostril,.00032,m.nostril,16,6);
  }
