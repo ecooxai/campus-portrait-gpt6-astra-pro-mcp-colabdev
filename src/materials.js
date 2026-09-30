@@ -1,3 +1,4 @@
+import {refineSkinSurface} from './skin-surface.js';
 import * as THREE from 'three';
 function tex(size,draw){const c=document.createElement('canvas');c.width=c.height=size;draw(c.getContext('2d'),size);const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;t.wrapS=t.wrapT=THREE.RepeatWrapping;t.anisotropy=8;return t;}
 function rng(seed){return()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296;};}
@@ -25,5 +26,5 @@ export function makeMaterials(){
  shirt:P('#ffffff',.84,{map:cloth,sheen:.22,sheenColor:'#eee9e4',side:THREE.DoubleSide}),seam:S('#d7dce2',.9),button:P('#f4f2ed',.32),
  skirt:P('#ffffff',.89,{map:plaid,sheen:.2,sheenColor:'#8d99ae',side:THREE.DoubleSide}),lining:S('#252c3a',1,{side:THREE.DoubleSide}),tie:P('#ffffff',.65,{map:tieMap,sheen:.4,sheenColor:'#8092b7',side:THREE.DoubleSide}),socks:S('#ffffff',.95,{map:rib}),
  leather:P('#141920',.26,{metalness:.07,clearcoat:.55,clearcoatRoughness:.27}),sole:S('#151820',.76),stitch:S('#545b66',.76),backpack:P('#293d57',.95,{sheen:.18,sheenColor:'#6e8299'}),webbing:S('#263747',.93),buckle:S('#161c23',.44),metal:P('#a4a8ae',.26,{metalness:.83}),embroidery:S('#abc5e3',.8)
- };m.tieKnot=m.tie.clone();m.tieKnot.map=m.tie.map.clone();m.tieKnot.map.repeat.set(.38,.13);m.tieKnot.map.needsUpdate=true;m.backpack.normalMap=microNormal;m.backpack.normalScale=new THREE.Vector2(.35,.35);Object.entries(m).forEach(([name,mat])=>{mat.name=name;if(mat.isMeshPhysicalMaterial&&mat.sheen>0){mat.sheenColor.multiplyScalar(mat.sheen);mat.sheen=1;}});return m;
+ };m.tieKnot=m.tie.clone();m.tieKnot.map=m.tie.map.clone();m.tieKnot.map.repeat.set(.38,.13);m.tieKnot.map.needsUpdate=true;m.backpack.normalMap=microNormal;m.backpack.normalScale=new THREE.Vector2(.35,.35);Object.entries(m).forEach(([name,mat])=>{mat.name=name;if(mat.isMeshPhysicalMaterial&&mat.sheen>0){mat.sheenColor.multiplyScalar(mat.sheen);mat.sheen=1;}});refineSkinSurface(m);return m;
 }

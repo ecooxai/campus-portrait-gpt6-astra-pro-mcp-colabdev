@@ -4063,6 +4063,412 @@
       "completedAt": "2026-09-30T09:22:44.866Z",
       "decision": "selected checkpoint",
       "reviewedAt": "2026-09-30T13:38:55.851Z"
+    },
+    {
+      "id": 49,
+      "group": "13-nasal-bridge-and-tip",
+      "label": "Moderate bridge and alar reshaping",
+      "changes": {
+        "noseSculpt": 0.55,
+        "noseCrossSection": 1,
+        "noseWing": 1,
+        "noseGroove": 0.65
+      },
+      "basedOn": 48,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c049-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "7278a33efaccfd8ceb1ac6c6aa2fd8d4d8362cdc7ab076f2f5f9e3ebcab0fd47",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "design.js",
+        "ear-sculpt.js",
+        "eye-volume.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "nose-anatomy.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js"
+      ],
+      "sourceCommit": "3c655eccf23cc77c7ee82f96a9f5e774d2600431",
+      "designHash": "64bb903a7786564f197768d1562b99a9ea8b2d7cde2d568e1e00cc140fc03771",
+      "startedAt": "2026-09-30T13:40:45.531Z",
+      "score": 85.5,
+      "review": "The nasal underside is less of a broad shaded mound and the profile is more defined. The moderate blend is an improvement, but the bridge-to-tip transition remains rather uniform.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c049-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c049-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c049-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "f9bd7ffa1d81a51ccb9c926e0604482b7fd6e9282c5fd5bb804232944603bb09",
+          "bytes": 379536
+        },
+        {
+          "view": "face-profile",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c049-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c049-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c049-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "b23828b73da3da000a43cda62be11ab71908bf67ccf6ec53db80180ba04c5674",
+          "bytes": 290718
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 225914,
+        "triangles": 403513,
+        "meshes": 50,
+        "drawCalls": 91,
+        "revision": 27,
+        "designCandidate": 49,
+        "designLabel": "Moderate bridge and alar reshaping",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 4090,
+        "totalMs": 4118.399999999907
+      },
+      "stats": {
+        "vertices": 225914,
+        "triangles": 403513,
+        "meshes": 50,
+        "drawCalls": 91,
+        "revision": 27,
+        "designCandidate": 49,
+        "designLabel": "Moderate bridge and alar reshaping",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "6488db6f",
+        "positionComponents": 677742
+      },
+      "completedAt": "2026-09-30T13:41:05.182Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T13:45:31.356Z"
+    },
+    {
+      "id": 50,
+      "group": "13-nasal-bridge-and-tip",
+      "label": "Defined narrow bridge and rounded tip",
+      "changes": {
+        "noseSculpt": 0.9,
+        "noseCrossSection": 0.9,
+        "noseWing": 0.9,
+        "noseGroove": 0.6
+      },
+      "basedOn": 48,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c050-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "7278a33efaccfd8ceb1ac6c6aa2fd8d4d8362cdc7ab076f2f5f9e3ebcab0fd47",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "design.js",
+        "ear-sculpt.js",
+        "eye-volume.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "nose-anatomy.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js"
+      ],
+      "sourceCommit": "3c655eccf23cc77c7ee82f96a9f5e774d2600431",
+      "designHash": "f05a9731193dce5d7b5b337eade7c32638a9d2a7acb6d8918f3a0d5802be8133",
+      "startedAt": "2026-09-30T13:41:05.189Z",
+      "score": 85,
+      "review": "The narrower cross-section makes the tip too pointed in profile. The stronger bridge definition is not the best match for the softer reference features.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c050-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c050-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c050-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "a29c6a53e0218594708f0fb6bb546c36ade3e7b8065ab1af0f7b40f41032faf4",
+          "bytes": 379671
+        },
+        {
+          "view": "face-profile",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c050-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c050-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c050-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "87c9c45058cb38ec099793f58e391bbe8a772a31df7b3d3781db9d3da9c0e813",
+          "bytes": 290413
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 225914,
+        "triangles": 403513,
+        "meshes": 50,
+        "drawCalls": 90,
+        "revision": 27,
+        "designCandidate": 50,
+        "designLabel": "Defined narrow bridge and rounded tip",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 3316.70000000007,
+        "totalMs": 3342.70000000007
+      },
+      "stats": {
+        "vertices": 225914,
+        "triangles": 403513,
+        "meshes": 50,
+        "drawCalls": 90,
+        "revision": 27,
+        "designCandidate": 50,
+        "designLabel": "Defined narrow bridge and rounded tip",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "a398fc81",
+        "positionComponents": 677742
+      },
+      "completedAt": "2026-09-30T13:41:22.602Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T13:45:31.356Z"
+    },
+    {
+      "id": 51,
+      "group": "13-nasal-bridge-and-tip",
+      "label": "Softer broad tip with shallow underside",
+      "changes": {
+        "noseSculpt": 0.8,
+        "noseCrossSection": 1.08,
+        "noseWing": 1.08,
+        "noseTip": 0.85,
+        "noseGroove": 0.45
+      },
+      "basedOn": 48,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c051-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "7278a33efaccfd8ceb1ac6c6aa2fd8d4d8362cdc7ab076f2f5f9e3ebcab0fd47",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "design.js",
+        "ear-sculpt.js",
+        "eye-volume.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "nose-anatomy.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js"
+      ],
+      "sourceCommit": "3c655eccf23cc77c7ee82f96a9f5e774d2600431",
+      "designHash": "49f74dca4222af69cf9771f2c17a2a0cc21cd11bdb5f1c4b343b9f657c9a05da",
+      "startedAt": "2026-09-30T13:41:22.609Z",
+      "score": 85.5,
+      "review": "The softer broad tip is plausible, but the broad alar shading returns slightly in front view. The mouth-to-nose area still needs restrained treatment.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c051-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c051-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c051-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "1dad4bc37123c3c2fb968940471d7f39295f15fe3835a01290dcfd740365f5f1",
+          "bytes": 379620
+        },
+        {
+          "view": "face-profile",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c051-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c051-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c051-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "2a52f19fc5bb7842054d3804f333e2ee0eea2dbc7343f408b114615cb191a0da",
+          "bytes": 290493
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 225914,
+        "triangles": 403513,
+        "meshes": 50,
+        "drawCalls": 90,
+        "revision": 27,
+        "designCandidate": 51,
+        "designLabel": "Softer broad tip with shallow underside",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 3348.3000000000466,
+        "totalMs": 3383.5999999999767
+      },
+      "stats": {
+        "vertices": 225914,
+        "triangles": 403513,
+        "meshes": 50,
+        "drawCalls": 90,
+        "revision": 27,
+        "designCandidate": 51,
+        "designLabel": "Softer broad tip with shallow underside",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "9179c5f4",
+        "positionComponents": 677742
+      },
+      "completedAt": "2026-09-30T13:41:38.849Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T13:45:31.356Z"
+    },
+    {
+      "id": 52,
+      "group": "13-nasal-bridge-and-tip",
+      "label": "Balanced nasal planes and subtle nostril crease",
+      "changes": {
+        "noseSculpt": 0.75,
+        "noseCrossSection": 0.98,
+        "noseWing": 0.95,
+        "noseTip": 0.9,
+        "noseGroove": 0.5
+      },
+      "basedOn": 48,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c052-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "7278a33efaccfd8ceb1ac6c6aa2fd8d4d8362cdc7ab076f2f5f9e3ebcab0fd47",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "design.js",
+        "ear-sculpt.js",
+        "eye-volume.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "nose-anatomy.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js"
+      ],
+      "sourceCommit": "3c655eccf23cc77c7ee82f96a9f5e774d2600431",
+      "designHash": "753e193e0bb6b83d69e11617c0950af6c741b6e93f02dc3aac77d10bf81c96ca",
+      "startedAt": "2026-09-30T13:41:38.856Z",
+      "score": 86,
+      "review": "The balanced nasal plane blend improves both the front shading and profile without an overly sharp tip. Select it; the next visible limitation is the nearly uniform skin response.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c052-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c052-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c052-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "624b212a2ed6d482cc8e6c3b9ed5b8b5e2e482b70108a280e58192ce3821467b",
+          "bytes": 379604
+        },
+        {
+          "view": "face-profile",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c052-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c052-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c052-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "63f9775d7f03bb1ee43197e51a895e338a539a6ab80f4d81a7fcb296c62e0fe4",
+          "bytes": 290743
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 225914,
+        "triangles": 403513,
+        "meshes": 50,
+        "drawCalls": 90,
+        "revision": 27,
+        "designCandidate": 52,
+        "designLabel": "Balanced nasal planes and subtle nostril crease",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 3366.8000000000466,
+        "totalMs": 3393.0999999999767
+      },
+      "stats": {
+        "vertices": 225914,
+        "triangles": 403513,
+        "meshes": 50,
+        "drawCalls": 90,
+        "revision": 27,
+        "designCandidate": 52,
+        "designLabel": "Balanced nasal planes and subtle nostril crease",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "de257b1d",
+        "positionComponents": 677742
+      },
+      "completedAt": "2026-09-30T13:42:00.564Z",
+      "decision": "selected checkpoint",
+      "reviewedAt": "2026-09-30T13:45:31.357Z"
     }
   ],
   "sheets": [
@@ -4209,12 +4615,24 @@
       "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-12-eye-volume-and-expression-gpt6-astra-pro-mcp-colabdev.jpg",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-12-eye-volume-and-expression-gpt6-astra-pro-mcp-colabdev.jpg",
       "createdAt": "2026-09-30T09:22:45.522Z"
+    },
+    {
+      "group": "13-nasal-bridge-and-tip",
+      "ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-13-nasal-bridge-and-tip-gpt6-astra-pro-mcp-colabdev.jpg",
+      "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-13-nasal-bridge-and-tip-gpt6-astra-pro-mcp-colabdev.jpg",
+      "createdAt": "2026-09-30T13:42:01.379Z"
     }
   ],
-  "selected": 48,
+  "selected": 52,
   "description": "Distinct source/parameter edits followed by browser renders and individual human-agent visual review. Numerical solver steps are not counted.",
-  "updatedAt": "2026-09-30T13:38:56.548Z",
-  "rendered": 48,
-  "reviewed": 48,
-  "currentScore": 85.5
+  "updatedAt": "2026-09-30T13:45:32.669Z",
+  "rendered": 52,
+  "reviewed": 52,
+  "currentScore": 86
 }

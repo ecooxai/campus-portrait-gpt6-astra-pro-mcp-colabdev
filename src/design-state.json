@@ -1,6 +1,6 @@
 {
-  "candidate": 48,
-  "label": "Balanced open lids and darker natural irises",
+  "candidate": 52,
+  "label": "Balanced nasal planes and subtle nostril crease",
   "headWidth": 1.015,
   "headHeight": 0.96,
   "headDepth": 1,
@@ -16,10 +16,10 @@
   "cheekForward": 1,
   "faceFlat": 0.7,
   "noseBridge": 0.72,
-  "noseTip": 0.91,
+  "noseTip": 0.9,
   "noseWidth": 0.94,
   "noseY": 0,
-  "noseGroove": 1,
+  "noseGroove": 0.5,
   "browRidge": 0.85,
   "chinForward": 2.2,
   "smileFold": 1,
@@ -87,5 +87,8 @@
   "irisRoughness": 0.43,
   "eyeCoating": 0.32,
   "tearDuct": 1,
-  "lashScale": 1.2
+  "lashScale": 1.2,
+  "noseSculpt": 0.75,
+  "noseCrossSection": 0.98,
+  "noseWing": 0.95
 }
