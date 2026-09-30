@@ -4,17 +4,27 @@ A JavaScript / Three.js reconstruction of the clothing, hair and relaxed stance 
 
 ## Current checkpoint
 
-Revision **10**, **70/100** subjective visual score, **10 reviewed model revisions**. The requested 20,000 iterations and greater-than-95 score are **not completed**. Passing automated tests is not a claim that the likeness or artistic target is achieved. The model is static: no skeleton, skinning, facial blendshapes or locomotion animations.
+Revision **25**, **80/100** subjective visual score, **25 reviewed model revisions**. The active target is **85/100** and at least **1,000 iterations**. A completed garment run contains **1000 numerical deformation/render/test passes**, not 1,000 manually reviewed artistic revisions. The visual 85-point target **has not been reached**. Passing automated tests is not a claim that the likeness or artistic target is achieved. The model is static: no skeleton, skinning, facial blendshapes or locomotion animations.
 
 The main remaining limitations are photographic facial likeness, fine hair structure, natural garment drape, hand refinement and unmeasured real-device frame rate. Unseen views are an authored interpretation, not facts recovered from the photograph.
+
+## Numerical refinement evidence
+
+The cloth ledger records 1000 sequential passes, 1000 distinct mesh-state hashes and 976 distinct rendered images. Every saved pass-frame hash was verified. The completed run is applied at 90% strength to the shirt, with attached trim carried by its deformation. The constraint metric is not a likeness score.
+
+Time-lapse: public/exports/cloth-refinement-gpt6-astra-pro-mcp-colabdev.mp4
+
+Full frame archive: public/exports/cloth-evidence-gpt6-astra-pro-mcp-colabdev.tar.gz
+
+Pass ledger: public/exports/cloth-refinement-gpt6-astra-pro-mcp-colabdev.jsonl
 
 ## Hosting
 
 Hosted studio: https://ecooxai.github.io/campus-portrait-gpt6-astra-pro-mcp-colabdev/
 
-Editable source repository: https://github.com/ecooxai/campus-portrait-gpt6-astra-pro-mcp-colabdev
+Editable source repository: https://github.com/ecooxai/campus-portrait-gpt6-astra-pro-mcp-colabdev/tree/gpt6-astra-pro-mcp-colabdev/likeness85-1000
 
-The hosted studio is published from the dedicated gpt6-astra-pro-mcp-colabdev/site branch. It does not depend on the live Colab runtime. The temporary live-instance tunnel remains https://contrary-commands-usual-earn.trycloudflare.com.
+The hosted studio is published from the dedicated gpt6-astra-pro-mcp-colabdev/site branch. It does not depend on the live Colab runtime. The temporary live-instance tunnel remains https://pet-loose-tied-prepare.trycloudflare.com.
 
 ## Run the editable project
 
@@ -41,7 +51,7 @@ The Colab production command is `npm run build`, which writes to `/build/campus-
 Start the development server before the rendering test. Start the production server after building and before acceptance. On another machine, set CHROMIUM_PATH to its installed Chromium or Chrome executable.
 
 ```bash
-npm run qa -- --revision=10
+npm run qa -- --revision=25
 npm run build
 npm run serve
 # In another terminal:
@@ -52,8 +62,8 @@ The current Colab Chromium executable is /home/dev/.local/bin/chromium. Tests us
 
 ## Artifacts
 
-- Model: `public/exports/campus-portrait-gpt6-astra-pro-mcp-colabdev.glb` (6,958,672 bytes).
-- Geometry: 281,495 triangles; 149,173 vertices; 40 material-batched meshes.
+- Model: `public/exports/campus-portrait-gpt6-astra-pro-mcp-colabdev.glb` (10,882,848 bytes).
+- Geometry: 368,909 triangles; 206,192 vertices; 41 material-batched meshes.
 - Five reviewed renders: `public/progress/*-gpt6-astra-pro-mcp-colabdev.png`.
 - Review journal: `public/progress/progress.json`.
 - Combined test report: `public/exports/verification-gpt6-astra-pro-mcp-colabdev.json`.

@@ -1,6 +1,6 @@
 {
   "revision": 25,
-  "updatedAt": "2026-09-30T00:12:53.669Z",
+  "updatedAt": "2026-09-30T00:22:31.773Z",
   "score": 80,
   "status": "The intended hair and eye reflections now use standard exported material factors, and the directional normal strength is baked into the texture. The GLB validates cleanly. The model remains at 80/100; the requested 85 target is not claimed.",
   "iterations": [
@@ -216,7 +216,7 @@
     {
       "kind": "GLB",
       "title": "3D character model",
-      "description": "Static geometry and embedded textures · 6.96 MB",
+      "description": "Static geometry and embedded textures · 10.88 MB",
       "url": "/exports/campus-portrait-gpt6-astra-pro-mcp-colabdev.glb",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/campus-portrait-gpt6-astra-pro-mcp-colabdev.glb"
     },
@@ -230,7 +230,7 @@
     {
       "kind": "QA",
       "title": "Verification report",
-      "description": "25 acceptance checks · validator 0 errors / 0 warnings",
+      "description": "28 acceptance checks · validator 0 errors / 0 warnings",
       "url": "/exports/verification-gpt6-astra-pro-mcp-colabdev.json",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/verification-gpt6-astra-pro-mcp-colabdev.json"
     }

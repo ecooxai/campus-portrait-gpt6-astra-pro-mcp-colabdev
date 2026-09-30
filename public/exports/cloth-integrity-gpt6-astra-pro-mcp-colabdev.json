@@ -1,0 +1,10 @@
+{
+  "passes": 1000,
+  "continuousSequence": true,
+  "uniqueGeometryHashes": 1000,
+  "uniqueImageHashes": 976,
+  "frameHashesVerified": true,
+  "errors": [],
+  "manualArtisticReviews": false,
+  "scope": "Numerical authored-shirt deformation, rendering and geometry checks; not a visual-likeness score."
+}
