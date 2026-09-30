@@ -3,9 +3,9 @@ export function installRefinementStatus(){
  const panel=document.createElement('section');panel.className='refinement-panel';panel.hidden=true;
  const imageLink=document.createElement('a'),image=document.createElement('img');image.alt='Latest rendered numerical cloth-refinement pass';imageLink.append(image);
  const content=document.createElement('div'),label=document.createElement('span'),title=document.createElement('h3'),description=document.createElement('p'),metrics=document.createElement('p'),file=document.createElement('code');
- label.className='eyebrow';label.textContent='LIVE REFINEMENT EVIDENCE';
+ label.className='eyebrow';label.textContent='HISTORICAL NUMERICAL CLOTH EXPERIMENT';
  const links=document.createElement('div');links.className='refinement-links';for(const [text,path] of [['Watch numerical pass history','cloth-refinement-gpt6-astra-pro-mcp-colabdev.mp4'],['Full frame evidence','cloth-evidence-gpt6-astra-pro-mcp-colabdev.tar.gz'],['Pass ledger','cloth-refinement-gpt6-astra-pro-mcp-colabdev.jsonl']]){const a=document.createElement('a');a.href=base+'exports/'+path;a.textContent=text;const item=document.createElement('div'),location=document.createElement('code');location.textContent='/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/'+path;item.append(a,location);links.append(item);}content.append(label,title,description,metrics,file,links);panel.append(imageLink,content);
- document.querySelector('#download-grid')?.after(panel);
+ (document.querySelector('#visual-campaign')||document.querySelector('#file-cards'))?.after(panel);
  const badge=document.createElement('p');badge.className='refinement-badge';document.querySelector('.review')?.append(badge);
  let last='';
  async function refresh(){try{

@@ -2833,6 +2833,413 @@
       "completedAt": "2026-09-30T09:05:11.211Z",
       "decision": "not selected",
       "reviewedAt": "2026-09-30T09:07:41.587Z"
+    },
+    {
+      "id": 37,
+      "group": "10-rear-hair-material-and-nape",
+      "label": "Unlit strand diagnostic with curved nape",
+      "changes": {
+        "hairCards": 0.75,
+        "hairCardShading": 0,
+        "hairTipLength": 1.1,
+        "napeDepth": 0.023,
+        "hairFlow": 0.65
+      },
+      "basedOn": 32,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c037-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "f89f2c635d2d8f7d79a947028c1f46fa86d9f6f92337756df386b4fbb843130e",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "design.js",
+        "ear-sculpt.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js"
+      ],
+      "sourceCommit": "998c732fde0a4d932c39d5ae1654c124ed05a48e",
+      "designHash": "a1d7c10aec7d8a5721039fe3b41158c9242c5d1df57e8599b2b408053509236d",
+      "startedAt": "2026-09-30T09:08:14.389Z",
+      "score": 82.5,
+      "review": "The unlit diagnostic removes the pale rear streaks, confirming the texture itself is dark. It also removes too much dimensional shading, so it is not the production choice.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face-three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c037-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c037-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c037-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "e0b2f0faf243907e17d094fe3be3328306d9e2755daeb4f27c700997c1c47b97",
+          "bytes": 376911
+        },
+        {
+          "view": "face-back",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c037-gpt6-astra-pro-mcp-colabdev/face-back-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c037-gpt6-astra-pro-mcp-colabdev/face-back-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c037-gpt6-astra-pro-mcp-colabdev/face-back-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "565cf3f9cd888fa493d512168b521187bde357ce0a8a9e9fa45c291da067cd5f",
+          "bytes": 293746
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 226924,
+        "triangles": 404929,
+        "meshes": 48,
+        "drawCalls": 87,
+        "revision": 26,
+        "designCandidate": 37,
+        "designLabel": "Unlit strand diagnostic with curved nape",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 3867.2000000001863,
+        "totalMs": 3977.399999999907
+      },
+      "stats": {
+        "vertices": 226924,
+        "triangles": 404929,
+        "meshes": 48,
+        "drawCalls": 87,
+        "revision": 26,
+        "designCandidate": 37,
+        "designLabel": "Unlit strand diagnostic with curved nape",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "3df59bb3",
+        "positionComponents": 680772
+      },
+      "completedAt": "2026-09-30T09:08:33.981Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T09:11:22.644Z"
+    },
+    {
+      "id": 38,
+      "group": "10-rear-hair-material-and-nape",
+      "label": "Low-reflection physical strand layers",
+      "changes": {
+        "hairCards": 0.75,
+        "hairCardShading": 1,
+        "hairCardRoughness": 0.86,
+        "hairCardSpecular": 0.05,
+        "hairTipLength": 1.1,
+        "napeDepth": 0.023,
+        "hairFlow": 0.65
+      },
+      "basedOn": 32,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c038-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "f89f2c635d2d8f7d79a947028c1f46fa86d9f6f92337756df386b4fbb843130e",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "design.js",
+        "ear-sculpt.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js"
+      ],
+      "sourceCommit": "998c732fde0a4d932c39d5ae1654c124ed05a48e",
+      "designHash": "5834698c4f4cddaf106659ff2ee48955e2a41fd8cc45cd4ab6e44266d27a4dce",
+      "startedAt": "2026-09-30T09:08:33.990Z",
+      "score": 84.5,
+      "review": "The physical low-reflection cards fix the bright strips and the curved nape is more natural than the earlier straight cut. Fine detail remains restrained and coherent.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face-three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c038-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c038-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c038-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "9acfb9a4907b172cb2e0c32f9df802b32507b5c5ea74f29cffcbbf1d071f2079",
+          "bytes": 385369
+        },
+        {
+          "view": "face-back",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c038-gpt6-astra-pro-mcp-colabdev/face-back-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c038-gpt6-astra-pro-mcp-colabdev/face-back-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c038-gpt6-astra-pro-mcp-colabdev/face-back-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "681318725cf95722b42b4ecb8b5ed1d8dc171ccd91e63c34ed80dc22a40b86a5",
+          "bytes": 282744
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 226924,
+        "triangles": 404929,
+        "meshes": 48,
+        "drawCalls": 88,
+        "revision": 26,
+        "designCandidate": 38,
+        "designLabel": "Low-reflection physical strand layers",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 3312.2000000001863,
+        "totalMs": 3402.899999999907
+      },
+      "stats": {
+        "vertices": 226924,
+        "triangles": 404929,
+        "meshes": 48,
+        "drawCalls": 88,
+        "revision": 26,
+        "designCandidate": 38,
+        "designLabel": "Low-reflection physical strand layers",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "3df59bb3",
+        "positionComponents": 680772
+      },
+      "completedAt": "2026-09-30T09:08:51.796Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T09:11:22.644Z"
+    },
+    {
+      "id": 39,
+      "group": "10-rear-hair-material-and-nape",
+      "label": "Moderate strand density and gathered flow",
+      "changes": {
+        "hairCards": 1.1,
+        "hairCardShading": 1,
+        "hairCardRoughness": 0.78,
+        "hairCardSpecular": 0.1,
+        "hairTipLength": 1.3,
+        "napeDepth": 0.029,
+        "hairFlow": 1
+      },
+      "basedOn": 32,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c039-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "f89f2c635d2d8f7d79a947028c1f46fa86d9f6f92337756df386b4fbb843130e",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "design.js",
+        "ear-sculpt.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js"
+      ],
+      "sourceCommit": "998c732fde0a4d932c39d5ae1654c124ed05a48e",
+      "designHash": "653cf84c182674cd84d03ed3eb0003298202a60af502be4437fa3fe08304e63e",
+      "startedAt": "2026-09-30T09:08:51.804Z",
+      "score": 84,
+      "review": "The stronger coverage hides too much of the volumetric tress shape, while the deeper nape approaches a heavy bob-like edge. Prefer a lighter layer.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face-three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c039-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c039-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c039-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "655a7a8411301627eeb962571f470e6412382baf9057f0862d5bc52efccad512",
+          "bytes": 385172
+        },
+        {
+          "view": "face-back",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c039-gpt6-astra-pro-mcp-colabdev/face-back-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c039-gpt6-astra-pro-mcp-colabdev/face-back-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c039-gpt6-astra-pro-mcp-colabdev/face-back-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "9d8e86d5ea23dd46f64dacbabff30410aa503a26e7ced3a49ddd203707fafc7b",
+          "bytes": 283920
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 231016,
+        "triangles": 411529,
+        "meshes": 48,
+        "drawCalls": 88,
+        "revision": 26,
+        "designCandidate": 39,
+        "designLabel": "Moderate strand density and gathered flow",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 3535.600000000093,
+        "totalMs": 3568.600000000093
+      },
+      "stats": {
+        "vertices": 231016,
+        "triangles": 411529,
+        "meshes": 48,
+        "drawCalls": 88,
+        "revision": 26,
+        "designCandidate": 39,
+        "designLabel": "Moderate strand density and gathered flow",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "6e1c44eb",
+        "positionComponents": 693048
+      },
+      "completedAt": "2026-09-30T09:09:09.962Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T09:11:22.644Z"
+    },
+    {
+      "id": 40,
+      "group": "10-rear-hair-material-and-nape",
+      "label": "Fine outer strands with restrained nape length",
+      "changes": {
+        "hairCards": 0.6,
+        "hairCardShading": 1,
+        "hairCardRoughness": 0.82,
+        "hairCardSpecular": 0.07,
+        "hairTipLength": 1.45,
+        "napeDepth": 0.02,
+        "hairFlow": 0.75,
+        "ponytailBulk": 0.95
+      },
+      "basedOn": 32,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c040-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "f89f2c635d2d8f7d79a947028c1f46fa86d9f6f92337756df386b4fbb843130e",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "design.js",
+        "ear-sculpt.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js"
+      ],
+      "sourceCommit": "998c732fde0a4d932c39d5ae1654c124ed05a48e",
+      "designHash": "af1c0f391e515468bc9fb951ab2cdad752794554e78081b3e950d43b911343b3",
+      "startedAt": "2026-09-30T09:09:09.972Z",
+      "score": 85,
+      "review": "The lighter strand coverage and shorter curved nape best preserve volume while adding finer edge detail. Select this version; the ponytail trajectory still needs a less rigid diagonal bend.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face-three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c040-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c040-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c040-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "458f7c5c64c286457e8f3f21289562507b31a702ee9e7b8bfcbc6800a53c0729",
+          "bytes": 384315
+        },
+        {
+          "view": "face-back",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c040-gpt6-astra-pro-mcp-colabdev/face-back-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c040-gpt6-astra-pro-mcp-colabdev/face-back-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c040-gpt6-astra-pro-mcp-colabdev/face-back-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "d8f46eaf2ba9afa6264b44500dc95a40272bf84e007c05e5abeb80b252eefd89",
+          "bytes": 285421
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 225062,
+        "triangles": 401929,
+        "meshes": 48,
+        "drawCalls": 88,
+        "revision": 26,
+        "designCandidate": 40,
+        "designLabel": "Fine outer strands with restrained nape length",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 3623.7000000001863,
+        "totalMs": 3645.4000000003725
+      },
+      "stats": {
+        "vertices": 225062,
+        "triangles": 401929,
+        "meshes": 48,
+        "drawCalls": 88,
+        "revision": 26,
+        "designCandidate": 40,
+        "designLabel": "Fine outer strands with restrained nape length",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "f9d8b22f",
+        "positionComponents": 675186
+      },
+      "completedAt": "2026-09-30T09:09:26.908Z",
+      "decision": "selected checkpoint",
+      "reviewedAt": "2026-09-30T09:11:22.644Z"
     }
   ],
   "sheets": [
@@ -2943,12 +3350,24 @@
       "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-09-pony-tail-strand-layers-gpt6-astra-pro-mcp-colabdev.jpg",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-09-pony-tail-strand-layers-gpt6-astra-pro-mcp-colabdev.jpg",
       "createdAt": "2026-09-30T09:05:11.797Z"
+    },
+    {
+      "group": "10-rear-hair-material-and-nape",
+      "ids": [
+        37,
+        38,
+        39,
+        40
+      ],
+      "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-10-rear-hair-material-and-nape-gpt6-astra-pro-mcp-colabdev.jpg",
+      "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-10-rear-hair-material-and-nape-gpt6-astra-pro-mcp-colabdev.jpg",
+      "createdAt": "2026-09-30T09:09:27.432Z"
     }
   ],
-  "selected": 32,
+  "selected": 40,
   "description": "Distinct source/parameter edits followed by browser renders and individual human-agent visual review. Numerical solver steps are not counted.",
-  "updatedAt": "2026-09-30T09:07:41.587Z",
-  "rendered": 36,
-  "reviewed": 36,
-  "currentScore": 84.5
+  "updatedAt": "2026-09-30T09:11:23.312Z",
+  "rendered": 40,
+  "reviewed": 40,
+  "currentScore": 85
 }

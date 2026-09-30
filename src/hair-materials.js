@@ -2,6 +2,7 @@ import {D} from './design.js';
 import * as THREE from 'three';
 function seeded(seed){return()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296;};}
 export function refineHairMaterials(m){
+ m.hairTie=new THREE.MeshStandardMaterial({name:'Dark fabric hair elastic',color:'#151821',roughness:.88});
  const canvas=document.createElement('canvas');canvas.width=512;canvas.height=1024;
  const c=canvas.getContext('2d'),random=seeded(9073);c.fillStyle='#17171c';c.fillRect(0,0,512,1024);
  for(let k=0;k<820;k++){const x=random()*512,brightness=k%5===0?.23:.11;c.strokeStyle=k%3===0?`rgba(5,8,14,${brightness})`:`rgba(93,73,61,${brightness})`;c.lineWidth=.35+random()*.9;c.beginPath();c.moveTo(x,0);c.bezierCurveTo(x+1.5,260,x-2,690,x+1,1024);c.stroke();}

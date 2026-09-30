@@ -49,11 +49,11 @@ function createHair(head,m){
  surface(hair,'Continuous side-swept fringe',100,64,(u,v)=>({p:bang(1-u,v),uv:[1-u,v]}),m.hairCap);
  // Subpixel fibers intersected the combed surface. The same strand direction is now baked into original UV texture.
  for(const s of [-1,1]){
- const base=[[s*.092,-.025,-.056],[s*.115,-.075,-.006],[s*.126,-.14,.062],[s*.117,-.207,.117],[s*.090,s<0?-.230:-.248,.119]].map((p,i)=>[p[0]+s*D.ponytailSpread*i/4,-.025+(p[1]+.025)*D.ponytailLength,p[2]+D.ponytailForward*i/4]);
+ const base=[[s*.092,-.025,-.056],[s*.115,-.075,-.006],[s*.126,-.14,.062],[s*.117,-.207,.117],[s*.090,s<0?-.230:-.248,.119]].map((p,i)=>[p[0]+s*D.ponytailSpread*i/4,-.025+(p[1]+.025)*D.ponytailLength,p[2]+D.ponytailForward*i/4-(D.ponytailBend||0)*Math.exp(-Math.pow((i/4-.52)/.31,2))]);
  const baseCurve=new THREE.CatmullRomCurve3(base.map(p=>V(...p)));
  addPonytailGroom(hair,m,baseCurve,s);
  ribbon(hair,'Ponytail interior '+s,base,t=>.021*Math.pow(Math.sin(Math.PI*(.13+.87*t)),.58),t=>.018*Math.pow(Math.sin(Math.PI*(.13+.87*t)),.60),m.hairDark,{segments:42,radial:18});
- sphere(hair,'Navy elastic tie',[s*.093,-.034,-.055],[.022,.009,.022],m.webbing,22);
+ sphere(hair,'Navy elastic tie',[s*.093,-.034,-.055],[.0185,.0058,.0185],m.hairTie,22);
  for(let k=0;k<36;k++){
  const phase=k*2.399+s*.47,rad=.032*D.ponytailBulk*Math.sqrt((k+.5)/36),pts=[];
  for(let j=0;j<=8;j++){const t=j/8,p=baseCurve.getPoint(t),env=Math.sin(t*Math.PI);p.x+=Math.cos(phase)*rad*env+.0070*D.ponytailWave*Math.sin(t*13+phase)*env+Math.pow(t,4)*Math.sin(k*3)*.011;p.z+=Math.sin(phase)*rad*env+.0065*D.ponytailWave*Math.sin(t*12+k)*env;p.y-=Math.pow(t,2)*((k%5)*.005);pts.push(p.toArray());}

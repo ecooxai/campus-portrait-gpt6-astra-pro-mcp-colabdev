@@ -1,8 +1,8 @@
 {
-  "revision": 26,
-  "updatedAt": "2026-09-30T08:34:48.260Z",
-  "score": 82,
-  "status": "Eight distinct new design candidates were rendered and individually reviewed. C8 combines the better neck exposure, softer nasal bridge, calmer eye whites and lip transition. The new campaign target is at least 100 visual candidates and 95/100; it has not been reached.",
+  "revision": 27,
+  "updatedAt": "2026-09-30T09:15:13.428Z",
+  "score": 85,
+  "status": "The selected C40 restores physical hair shading, adds restrained strand breakup, curves the nape and keeps the improved head, smile and ear geometry. Forty distinct new candidates have been rendered and individually reviewed; the current 100-candidate and 95/100 targets are still unmet.",
   "iterations": [
     {
       "id": 1,
@@ -185,6 +185,13 @@
       "title": "Selected head, eye and lip proportion refinement",
       "notes": "Eight distinct new design candidates were rendered and individually reviewed. C8 combines the better neck exposure, softer nasal bridge, calmer eye whites and lip transition. The new campaign target is at least 100 visual candidates and 95/100; it has not been reached.",
       "reviewedAt": "2026-09-30T08:34:48.260Z"
+    },
+    {
+      "id": 27,
+      "score": 85,
+      "title": "Forty reviewed candidates and repaired layered hair",
+      "notes": "The selected C40 restores physical hair shading, adds restrained strand breakup, curves the nape and keeps the improved head, smile and ear geometry. Forty distinct new candidates have been rendered and individually reviewed; the current 100-candidate and 95/100 targets are still unmet.",
+      "reviewedAt": "2026-09-30T09:15:13.428Z"
     }
   ],
   "files": [
