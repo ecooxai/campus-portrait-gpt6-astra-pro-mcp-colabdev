@@ -4469,6 +4469,427 @@
       "completedAt": "2026-09-30T13:42:00.564Z",
       "decision": "selected checkpoint",
       "reviewedAt": "2026-09-30T13:45:31.357Z"
+    },
+    {
+      "id": 53,
+      "group": "14-skin-surface-and-color",
+      "label": "Subtle pores with restrained skin reflection",
+      "changes": {
+        "skinPores": 0.35,
+        "skinRoughness": 0.9,
+        "skinSpecular": 0.75,
+        "skinBlush": 1.15,
+        "skinVariation": 1
+      },
+      "basedOn": 52,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c053-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "e9119a8441f554ffdbde283767b13487e2a4937880748e8cc1e959f098557bbc",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "design.js",
+        "ear-sculpt.js",
+        "eye-volume.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "nose-anatomy.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js",
+        "skin-surface.js"
+      ],
+      "sourceCommit": "0c94375c58573fd454f13c1c4abe7b110acd96c6",
+      "designHash": "8e9bb8e96ea43f03a9409d49dfc29c7bf5f0a105cd42eb43af30578621a446b8",
+      "startedAt": "2026-09-30T13:47:16.465Z",
+      "score": 86,
+      "review": "The restrained reflection keeps the cheek shading readable. The pore change is subtle at this viewing scale and does not justify a higher overall likeness score.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c053-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c053-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c053-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "03fcd72791313758fd3983a52bcea184a7caa8f43bdb99268762cebb4c70bbcf",
+          "bytes": 377333
+        },
+        {
+          "view": "face-three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c053-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c053-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c053-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "022c1b103599b5e42d2020dca47a214474c7c87b373e60dc5fcae8043ae58f70",
+          "bytes": 384581
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 225914,
+        "triangles": 403513,
+        "meshes": 50,
+        "drawCalls": 91,
+        "revision": 27,
+        "designCandidate": 53,
+        "designLabel": "Subtle pores with restrained skin reflection",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 9044.800000000047,
+        "totalMs": 9550.5
+      },
+      "stats": {
+        "vertices": 225914,
+        "triangles": 403513,
+        "meshes": 50,
+        "drawCalls": 91,
+        "revision": 27,
+        "designCandidate": 53,
+        "designLabel": "Subtle pores with restrained skin reflection",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "de257b1d",
+        "positionComponents": 677742
+      },
+      "completedAt": "2026-09-30T13:48:05.449Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T13:57:36.320Z"
+    },
+    {
+      "id": 54,
+      "group": "14-skin-surface-and-color",
+      "label": "Matte pore detail and softer cheek tint",
+      "changes": {
+        "skinPores": 0.6,
+        "skinRoughness": 1.02,
+        "skinSpecular": 0.7,
+        "skinBlush": 1.1,
+        "skinVariation": 0.8
+      },
+      "basedOn": 52,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c054-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "e9119a8441f554ffdbde283767b13487e2a4937880748e8cc1e959f098557bbc",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "design.js",
+        "ear-sculpt.js",
+        "eye-volume.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "nose-anatomy.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js",
+        "skin-surface.js"
+      ],
+      "sourceCommit": "0c94375c58573fd454f13c1c4abe7b110acd96c6",
+      "designHash": "f74e6ae1ca7eb532b7f7e6272b8648053cc7629c2e75c5c9e30623517d7e7f93",
+      "startedAt": "2026-09-30T13:48:05.481Z",
+      "score": 85.5,
+      "review": "The more matte response reduces shine but makes the face look slightly chalkier. Extra pore strength is not visibly beneficial at normal viewing distance.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c054-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c054-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c054-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "f6cfbe20628e4cea9149c7eccdf358c80ded0f7f2d6c669bc84c260a44ba69ca",
+          "bytes": 386117
+        },
+        {
+          "view": "face-three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c054-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c054-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c054-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "ee19d655bb9e18c2e69495ed2eb6d48bbec26a9c602257c8fabae56f51e9fe8f",
+          "bytes": 393615
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 225914,
+        "triangles": 403513,
+        "meshes": 50,
+        "drawCalls": 91,
+        "revision": 27,
+        "designCandidate": 54,
+        "designLabel": "Matte pore detail and softer cheek tint",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 8126.5,
+        "totalMs": 8150.199999999953
+      },
+      "stats": {
+        "vertices": 225914,
+        "triangles": 403513,
+        "meshes": 50,
+        "drawCalls": 91,
+        "revision": 27,
+        "designCandidate": 54,
+        "designLabel": "Matte pore detail and softer cheek tint",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "de257b1d",
+        "positionComponents": 677742
+      },
+      "completedAt": "2026-09-30T13:48:30.765Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T13:57:36.320Z"
+    },
+    {
+      "id": 55,
+      "group": "14-skin-surface-and-color",
+      "label": "Warmer skin and a more reflective surface",
+      "changes": {
+        "skinPores": 0.45,
+        "skinRoughness": 0.82,
+        "skinSpecular": 0.9,
+        "skinWarmth": 0.08,
+        "skinBlush": 1.1,
+        "skinVariation": 0.8
+      },
+      "basedOn": 52,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c055-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "e9119a8441f554ffdbde283767b13487e2a4937880748e8cc1e959f098557bbc",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "design.js",
+        "ear-sculpt.js",
+        "eye-volume.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "nose-anatomy.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js",
+        "skin-surface.js"
+      ],
+      "sourceCommit": "0c94375c58573fd454f13c1c4abe7b110acd96c6",
+      "designHash": "43a7c2115758421590a666840f8eabceba6554bf767817e381b13b47d53b3533",
+      "startedAt": "2026-09-30T13:48:30.774Z",
+      "score": 85.5,
+      "review": "The warmer, more reflective combination emphasizes smooth highlights and returns some of the plastic-like appearance. Prefer a quieter response.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c055-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c055-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c055-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "ab8593011c4b3fbf070753631bb59467c41f1ffa361d4c1b8453cf6be9fa4be8",
+          "bytes": 383175
+        },
+        {
+          "view": "face-three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c055-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c055-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c055-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "4fb5128885a065cb42c6eefeb4e6ba2c07882bb5d081a2896d89788d881ebd6e",
+          "bytes": 389590
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 225914,
+        "triangles": 403513,
+        "meshes": 50,
+        "drawCalls": 91,
+        "revision": 27,
+        "designCandidate": 55,
+        "designLabel": "Warmer skin and a more reflective surface",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 5900.199999999953,
+        "totalMs": 5934.299999999814
+      },
+      "stats": {
+        "vertices": 225914,
+        "triangles": 403513,
+        "meshes": 50,
+        "drawCalls": 91,
+        "revision": 27,
+        "designCandidate": 55,
+        "designLabel": "Warmer skin and a more reflective surface",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "de257b1d",
+        "positionComponents": 677742
+      },
+      "completedAt": "2026-09-30T13:49:04.200Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T13:57:36.320Z"
+    },
+    {
+      "id": 56,
+      "group": "14-skin-surface-and-color",
+      "label": "Balanced skin texture and mild natural color variation",
+      "changes": {
+        "skinPores": 0.4,
+        "skinRoughness": 0.94,
+        "skinSpecular": 0.7,
+        "skinBlush": 1.1,
+        "skinVariation": 0.65,
+        "skinWarmth": 0.025
+      },
+      "basedOn": 52,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c056-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "e9119a8441f554ffdbde283767b13487e2a4937880748e8cc1e959f098557bbc",
+      "sourceNames": [
+        "anatomy.js",
+        "body.js",
+        "campaign-status.js",
+        "cloth-bake.js",
+        "cloth-constraints.js",
+        "cloth-refine.js",
+        "design.js",
+        "ear-sculpt.js",
+        "eye-volume.js",
+        "face-details.js",
+        "garment-fit.js",
+        "geometry.js",
+        "hair-groom.js",
+        "hair-materials.js",
+        "head.js",
+        "main.js",
+        "materials.js",
+        "nose-anatomy.js",
+        "optimize.js",
+        "refinement-status.js",
+        "revision.js",
+        "skin-surface.js"
+      ],
+      "sourceCommit": "a341ba31a85fe69d4af0206b610eebd9d519627b",
+      "designHash": "d715421968c68dd82eab21736ea4769dd513d2eceacb58be4309781e36cd67a6",
+      "startedAt": "2026-09-30T13:53:38.428Z",
+      "priorAttempts": [
+        {
+          "status": "failed",
+          "failure": "page.screenshot: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n",
+          "startedAt": "2026-09-30T13:49:04.214Z"
+        }
+      ],
+      "score": 86,
+      "review": "The balanced texture and restrained color variation preserve the best previous facial form without introducing conspicuous noise or shine. Select this material but keep the overall score unchanged.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c056-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c056-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c056-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "f48b904a414f0d8f8f514e04eb28d461a89549dcfb46f74c5d8a70040503a1ed",
+          "bytes": 379073
+        },
+        {
+          "view": "face-three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c056-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c056-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c056-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "b40f657e060cfca5a171196e667d745d1e5d90b3ec73ad17062972e2bac25694",
+          "bytes": 385829
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "rebuild": {
+        "vertices": 225914,
+        "triangles": 403513,
+        "meshes": 50,
+        "drawCalls": 91,
+        "revision": 27,
+        "designCandidate": 56,
+        "designLabel": "Balanced skin texture and mild natural color variation",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "constructionMs": 15484.300000000047,
+        "totalMs": 16008.199999999953
+      },
+      "stats": {
+        "vertices": 225914,
+        "triangles": 403513,
+        "meshes": 50,
+        "drawCalls": 91,
+        "revision": 27,
+        "designCandidate": 56,
+        "designLabel": "Balanced skin texture and mild natural color variation",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960133838956233,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "de257b1d",
+        "positionComponents": 677742
+      },
+      "completedAt": "2026-09-30T13:54:56.130Z",
+      "decision": "selected checkpoint",
+      "reviewedAt": "2026-09-30T13:57:36.320Z"
     }
   ],
   "sheets": [
@@ -4627,12 +5048,24 @@
       "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-13-nasal-bridge-and-tip-gpt6-astra-pro-mcp-colabdev.jpg",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-13-nasal-bridge-and-tip-gpt6-astra-pro-mcp-colabdev.jpg",
       "createdAt": "2026-09-30T13:42:01.379Z"
+    },
+    {
+      "group": "14-skin-surface-and-color",
+      "ids": [
+        53,
+        54,
+        55,
+        56
+      ],
+      "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-14-skin-surface-and-color-gpt6-astra-pro-mcp-colabdev.jpg",
+      "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-14-skin-surface-and-color-gpt6-astra-pro-mcp-colabdev.jpg",
+      "createdAt": "2026-09-30T13:54:58.141Z"
     }
   ],
-  "selected": 52,
+  "selected": 56,
   "description": "Distinct source/parameter edits followed by browser renders and individual human-agent visual review. Numerical solver steps are not counted.",
-  "updatedAt": "2026-09-30T13:45:32.669Z",
-  "rendered": 52,
-  "reviewed": 52,
+  "updatedAt": "2026-09-30T13:57:37.171Z",
+  "rendered": 56,
+  "reviewed": 56,
   "currentScore": 86
 }

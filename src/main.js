@@ -24,6 +24,7 @@ let {root,head,materials}=createCharacter({clothLab:params.has('clothlab')});sce
 const camera=new THREE.PerspectiveCamera(24,viewport.clientWidth/viewport.clientHeight,.01,100);const controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=true;controls.dampingFactor=.085;controls.minDistance=.28;controls.maxDistance=6;controls.maxPolarAngle=Math.PI*.56;controls.minPolarAngle=.20;controls.autoRotateSpeed=.6;controls.target.set(0,.85,0);
 let currentView='three-quarter',dirty=true;
 const views={front:{dir:[0,.095,1],distance:4.40,target:[0,.86,0]},'three-quarter':{dir:[.37,.095,.93],distance:4.40,target:[0,.86,0]},side:{dir:[1,.095,.01],distance:4.40,target:[0,.86,0]},back:{dir:[0,.095,-1],distance:4.40,target:[0,.86,0]},face:{dir:[.06,.045,1],distance:.70,target:[.034,1.530,.015]}};
+views['face-torso']={dir:[.12,.025,1],distance:1.4,target:[0,1.175,.02]};
 views['face-bust']={dir:[.06,.025,1],distance:1.16,target:[.020,1.395,.015]};views['face-bust-side']={dir:[1,.025,.025],distance:1.16,target:[.020,1.395,.015]};
 views['face-back']={dir:[.05,.045,-1],distance:.74,target:[.034,1.50,.015]};
 views['face-three-quarter']={dir:[.50,.035,.866],distance:.70,target:[.034,1.530,.015]};views['face-profile']={dir:[1,.025,.025],distance:.70,target:[.034,1.530,.015]};
