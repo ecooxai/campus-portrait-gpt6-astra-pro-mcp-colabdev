@@ -1,8 +1,8 @@
 {
-  "revision": 25,
-  "updatedAt": "2026-09-30T00:22:31.773Z",
-  "score": 80,
-  "status": "The intended hair and eye reflections now use standard exported material factors, and the directional normal strength is baked into the texture. The GLB validates cleanly. The model remains at 80/100; the requested 85 target is not claimed.",
+  "revision": 26,
+  "updatedAt": "2026-09-30T08:34:48.260Z",
+  "score": 82,
+  "status": "Eight distinct new design candidates were rendered and individually reviewed. C8 combines the better neck exposure, softer nasal bridge, calmer eye whites and lip transition. The new campaign target is at least 100 visual candidates and 95/100; it has not been reached.",
   "iterations": [
     {
       "id": 1,
@@ -178,6 +178,13 @@
       "title": "Portable reflections and normal-map export",
       "notes": "The intended hair and eye reflections now use standard exported material factors, and the directional normal strength is baked into the texture. The GLB validates cleanly. The model remains at 80/100; the requested 85 target is not claimed.",
       "reviewedAt": "2026-09-30T00:12:53.669Z"
+    },
+    {
+      "id": 26,
+      "score": 82,
+      "title": "Selected head, eye and lip proportion refinement",
+      "notes": "Eight distinct new design candidates were rendered and individually reviewed. C8 combines the better neck exposure, softer nasal bridge, calmer eye whites and lip transition. The new campaign target is at least 100 visual candidates and 95/100; it has not been reached.",
+      "reviewedAt": "2026-09-30T08:34:48.260Z"
     }
   ],
   "files": [

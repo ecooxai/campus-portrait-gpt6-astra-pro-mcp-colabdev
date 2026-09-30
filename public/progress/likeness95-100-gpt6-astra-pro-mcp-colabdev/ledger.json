@@ -1,0 +1,545 @@
+{
+  "campaign": "likeness95-100-gpt6-astra-pro-mcp-colabdev",
+  "startedAt": "2026-09-30T08:25:13.041Z",
+  "target": {
+    "minimumIterations": 100,
+    "visualScore": 95
+  },
+  "baseline": {
+    "revision": 25,
+    "score": 80
+  },
+  "candidates": [
+    {
+      "id": 1,
+      "group": "01-face-foundation",
+      "label": "Softer lip transition and less exposed teeth",
+      "changes": {
+        "lipBlend": 0.65,
+        "lipThickness": 1.15,
+        "toothHeight": 0.82,
+        "mouthOpen": 0.9
+      },
+      "basedOn": 0,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c001-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "061714f4cc4cc528c383351f9848b4d809a9421495f957401f50a81ff1ac4705",
+      "designHash": "b123c88cbf75010017b7b6c314b8b14c2ec882f85f76bdbfb2d4383ef315644c",
+      "startedAt": "2026-09-30T08:25:13.597Z",
+      "score": 80,
+      "review": "The lip border is less drawn-on and the shorter tooth row is gentler, but the eyes and nasal mound remain generic. No meaningful overall likeness gain yet.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c001-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c001-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c001-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "206b5f1ab7c430e4eeb760fdfa8f6e5bc5da07dca872c00d9f6e76c23fdcb8f4",
+          "bytes": 371518
+        },
+        {
+          "view": "face-three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c001-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c001-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c001-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "d134b7ea81a8250cea82a3f9c980e50b5c843371413a32b05c702387c86c8f2e",
+          "bytes": 364510
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "stats": {
+        "vertices": 206450,
+        "triangles": 369421,
+        "meshes": 42,
+        "drawCalls": 75,
+        "revision": 25,
+        "designCandidate": 1,
+        "designLabel": "Softer lip transition and less exposed teeth",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.711554579678609,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "6e933f1",
+        "positionComponents": 619350
+      },
+      "completedAt": "2026-09-30T08:25:38.879Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T08:28:01.703Z"
+    },
+    {
+      "id": 2,
+      "group": "01-face-foundation",
+      "label": "Flatter cheek plane and narrower nasal mound",
+      "changes": {
+        "faceFlat": 0.75,
+        "noseWidth": 0.88,
+        "noseBridge": 0.95,
+        "noseTip": 0.9,
+        "lipBlend": 0.65,
+        "toothHeight": 0.84
+      },
+      "basedOn": 0,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c002-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "061714f4cc4cc528c383351f9848b4d809a9421495f957401f50a81ff1ac4705",
+      "designHash": "98ee47d7c86fc6a55267a38f4f344f9e31ca32b6e5584c9636f71dbb30630728",
+      "startedAt": "2026-09-30T08:25:38.895Z",
+      "score": 80.5,
+      "review": "The cheek plane is less spherical and the narrower nasal mound improves the three-quarter view. The broad forehead and open white eye shapes still dominate.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c002-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c002-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c002-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "23d22b45225e01e0536837ce28e09ccbd85784455acb6fd24107232fba4a64ca",
+          "bytes": 371137
+        },
+        {
+          "view": "face-three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c002-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c002-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c002-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "6c6f4c11ab94b41ee7f11b67f0794c1f7ffe210364ad231003f4495edb858210",
+          "bytes": 364034
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "stats": {
+        "vertices": 206450,
+        "triangles": 369421,
+        "meshes": 42,
+        "drawCalls": 75,
+        "revision": 25,
+        "designCandidate": 2,
+        "designLabel": "Flatter cheek plane and narrower nasal mound",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.711554579678609,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "5f623f35",
+        "positionComponents": 619350
+      },
+      "completedAt": "2026-09-30T08:26:04.721Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T08:28:01.703Z"
+    },
+    {
+      "id": 3,
+      "group": "01-face-foundation",
+      "label": "Closer-set eyes and fuller lower eyelid",
+      "changes": {
+        "eyeSpacing": 0.94,
+        "eyeWidth": 1.02,
+        "eyeLower": 0.88,
+        "eyeLid": 1.25,
+        "eyeWhite": 0.84,
+        "irisRadius": 1.06,
+        "lipBlend": 0.65,
+        "toothHeight": 0.84
+      },
+      "basedOn": 0,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c003-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "061714f4cc4cc528c383351f9848b4d809a9421495f957401f50a81ff1ac4705",
+      "designHash": "450cc2cf9eac724947e19f641325584f3a968a6045c0b46f7a93fea4a71bdabf",
+      "startedAt": "2026-09-30T08:26:04.740Z",
+      "score": 80.5,
+      "review": "Closer eye spacing and reduced scleral brightness give a calmer expression. The larger lower-lid patch is coherent, but the original nasal silhouette is still too blunt.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c003-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c003-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c003-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "0f961d126edc30babf3cb249e6065cd54d95369372436331474bc8c2b346a45b",
+          "bytes": 371032
+        },
+        {
+          "view": "face-three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c003-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c003-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c003-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "37e07d9f3043f19ff9b630f2184b612eec1dba94f66fb330a72a15f378347cc4",
+          "bytes": 364308
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "stats": {
+        "vertices": 206452,
+        "triangles": 369421,
+        "meshes": 42,
+        "drawCalls": 75,
+        "revision": 25,
+        "designCandidate": 3,
+        "designLabel": "Closer-set eyes and fuller lower eyelid",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.711554579678609,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "b0437903",
+        "positionComponents": 619356
+      },
+      "completedAt": "2026-09-30T08:26:30.696Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T08:28:01.703Z"
+    },
+    {
+      "id": 4,
+      "group": "01-face-foundation",
+      "label": "Integrated anatomy, lips and eye proportions",
+      "changes": {
+        "faceFlat": 0.65,
+        "noseWidth": 0.9,
+        "noseBridge": 0.92,
+        "noseTip": 0.93,
+        "eyeSpacing": 0.95,
+        "eyeLid": 1.2,
+        "eyeWhite": 0.87,
+        "irisRadius": 1.04,
+        "lipBlend": 0.7,
+        "toothHeight": 0.83,
+        "mouthOpen": 0.93
+      },
+      "basedOn": 0,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c004-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "061714f4cc4cc528c383351f9848b4d809a9421495f957401f50a81ff1ac4705",
+      "designHash": "280500c4376dff5d67cf8b100469d40cf562b3c1af58948bdfecc03d57437868",
+      "startedAt": "2026-09-30T08:26:30.707Z",
+      "score": 81,
+      "review": "The combined eye, cheek and lip adjustments are the most balanced of this set in both views. Select as the next design baseline; head length and neck exposure still need correction.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c004-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c004-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c004-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "8cb1d2b1b4fb4aeb7e6e5d974a7916ec6ccd5d8178d8d647027acfb15cf34724",
+          "bytes": 370520
+        },
+        {
+          "view": "face-three-quarter",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c004-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c004-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c004-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "cf97325515c396c18da3c35eacdb135d263c07f84b885058d09f3a215522f08e",
+          "bytes": 363678
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "stats": {
+        "vertices": 206452,
+        "triangles": 369421,
+        "meshes": 42,
+        "drawCalls": 75,
+        "revision": 25,
+        "designCandidate": 4,
+        "designLabel": "Integrated anatomy, lips and eye proportions",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.711554579678609,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "bfc7b53b",
+        "positionComponents": 619356
+      },
+      "completedAt": "2026-09-30T08:26:56.012Z",
+      "decision": "selected checkpoint",
+      "reviewedAt": "2026-09-30T08:28:01.703Z"
+    },
+    {
+      "id": 5,
+      "group": "02-head-and-neck",
+      "label": "Shorter, fuller head proportions",
+      "changes": {
+        "headHeight": 0.945,
+        "headWidth": 1.025,
+        "chinWidth": 1.1,
+        "jawWidth": 1.025
+      },
+      "basedOn": 4,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c005-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "061714f4cc4cc528c383351f9848b4d809a9421495f957401f50a81ff1ac4705",
+      "designHash": "d6527734615c52ef45234f7dda82513454c6cfe7f34940ab2dd5f818c0ea4afa",
+      "startedAt": "2026-09-30T08:28:04.348Z",
+      "score": 80.5,
+      "review": "The shorter head helps the body ratio, but the combined width and chin expansion make the face too broad and flat. Do not select this combination.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "front",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c005-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c005-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c005-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "a16e1ce9971959eeaaeacd495d9de533216c1d35f77e84ab0393b974eeb8ec90",
+          "bytes": 144345
+        },
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c005-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c005-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c005-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "b1bc7268c421a9063e49b6a4512d73c9010a003bec1c89836e776ff5a69ba301",
+          "bytes": 365470
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "stats": {
+        "vertices": 206452,
+        "triangles": 369421,
+        "meshes": 42,
+        "drawCalls": 75,
+        "revision": 25,
+        "designCandidate": 5,
+        "designLabel": "Shorter, fuller head proportions",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.7026381995685018,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "6de1302b",
+        "positionComponents": 619356
+      },
+      "completedAt": "2026-09-30T08:28:32.729Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T08:32:12.853Z"
+    },
+    {
+      "id": 6,
+      "group": "02-head-and-neck",
+      "label": "Reduced neck exposure and raised collar fit",
+      "changes": {
+        "headY": -0.014,
+        "shoulderLift": 0.014,
+        "headRoll": -0.025
+      },
+      "basedOn": 4,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c006-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "061714f4cc4cc528c383351f9848b4d809a9421495f957401f50a81ff1ac4705",
+      "designHash": "69cda4621bffd9cd84b87e589fae965ff70e96d1887234067dbd03e2e9b003a8",
+      "startedAt": "2026-09-30T08:28:32.748Z",
+      "score": 81.5,
+      "review": "Reduced neck exposure and the higher collar improve the full figure. The stronger head roll is plausible, although the original long facial proportions remain.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "front",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c006-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c006-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c006-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "bb34ca26a317c958854ca1b962011b596f8bf7680e984d7ecc42149dfc8f0e9d",
+          "bytes": 144053
+        },
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c006-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c006-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c006-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "3431511509f01562cc9801305f7c0ba6ba1d2265b520371e9141e9dfbbc0910b",
+          "bytes": 365974
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "stats": {
+        "vertices": 206450,
+        "triangles": 369421,
+        "meshes": 42,
+        "drawCalls": 75,
+        "revision": 25,
+        "designCandidate": 6,
+        "designLabel": "Reduced neck exposure and raised collar fit",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6999563738010242,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "39102ffa",
+        "positionComponents": 619350
+      },
+      "completedAt": "2026-09-30T08:28:58.940Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T08:32:12.853Z"
+    },
+    {
+      "id": 7,
+      "group": "02-head-and-neck",
+      "label": "Softer chin and slimmer nasal bridge",
+      "changes": {
+        "chinWidth": 1.14,
+        "chinLength": -0.003,
+        "noseBridge": 0.72,
+        "noseTip": 1,
+        "noseWidth": 0.95,
+        "headHeight": 0.975
+      },
+      "basedOn": 4,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c007-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "061714f4cc4cc528c383351f9848b4d809a9421495f957401f50a81ff1ac4705",
+      "designHash": "4120c7b1626dcb7f69e03bfeb075427a371db704dcb109b99d36d1655eeeb841",
+      "startedAt": "2026-09-30T08:28:58.951Z",
+      "score": 81.5,
+      "review": "The nasal bridge is less blunt and the chin reads softer. The face is more balanced, but the neck still looks stretched above the collar.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "front",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c007-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c007-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c007-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "859a7818562563a611f3330562b70a55212c21f6d2a19cab413040efeadd7a1e",
+          "bytes": 144035
+        },
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c007-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c007-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c007-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "316b79765b86bc52c769e53708105dca3b766f939ceef8c27e794f57f8c028d7",
+          "bytes": 367502
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "stats": {
+        "vertices": 206452,
+        "triangles": 369421,
+        "meshes": 42,
+        "drawCalls": 75,
+        "revision": 25,
+        "designCandidate": 7,
+        "designLabel": "Softer chin and slimmer nasal bridge",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.7073927844930044,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "c763047c",
+        "positionComponents": 619356
+      },
+      "completedAt": "2026-09-30T08:29:24.593Z",
+      "decision": "not selected",
+      "reviewedAt": "2026-09-30T08:32:12.853Z"
+    },
+    {
+      "id": 8,
+      "group": "02-head-and-neck",
+      "label": "Integrated skull, neck and nose correction",
+      "changes": {
+        "headHeight": 0.96,
+        "headWidth": 1.015,
+        "headY": -0.011,
+        "shoulderLift": 0.012,
+        "headRoll": -0.02,
+        "chinWidth": 1.1,
+        "noseBridge": 0.78,
+        "noseTip": 0.99,
+        "noseWidth": 0.94
+      },
+      "basedOn": 4,
+      "statePath": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c008-gpt6-astra-pro-mcp-colabdev/design-state.json",
+      "sourceHash": "061714f4cc4cc528c383351f9848b4d809a9421495f957401f50a81ff1ac4705",
+      "designHash": "43c9a161ff37fb29950a6209373eed12bccfa2c7865462ac0e7e7a2f434609d7",
+      "startedAt": "2026-09-30T08:29:24.605Z",
+      "score": 82,
+      "review": "The moderate skull shortening, neck reduction and nasal change work best together. The face remains generic, but the full-body proportion is less doll-like. Select this integrated version.",
+      "status": "reviewed",
+      "views": [
+        {
+          "view": "front",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c008-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c008-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c008-gpt6-astra-pro-mcp-colabdev/front-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "8717d02041760649e3d938c4088fb1c799e1490b7c3e0b48e4af0d26e25a1a6a",
+          "bytes": 144397
+        },
+        {
+          "view": "face",
+          "png": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.agentwork/likeness95-100-gpt6-astra-pro-mcp-colabdev/c008-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.png",
+          "jpg": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/public/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c008-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c008-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "sha256": "db9d3a9f1652b808933554d77ca0ea9eb42b2cac18bcff5398808743aff41de8",
+          "bytes": 363330
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "stats": {
+        "vertices": 206454,
+        "triangles": 369421,
+        "meshes": 42,
+        "drawCalls": 75,
+        "revision": 25,
+        "designCandidate": 8,
+        "designLabel": "Integrated skull, neck and nose correction",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4973181039094925,
+          1.6960161470335355,
+          0.4624403268098831
+        ],
+        "finite": true,
+        "geometryFingerprint": "5b5318dc",
+        "positionComponents": 619362
+      },
+      "completedAt": "2026-09-30T08:29:49.695Z",
+      "decision": "selected checkpoint",
+      "reviewedAt": "2026-09-30T08:32:12.853Z"
+    }
+  ],
+  "sheets": [
+    {
+      "group": "01-face-foundation",
+      "ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-01-face-foundation-gpt6-astra-pro-mcp-colabdev.jpg",
+      "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-01-face-foundation-gpt6-astra-pro-mcp-colabdev.jpg",
+      "createdAt": "2026-09-30T08:26:56.511Z"
+    },
+    {
+      "group": "02-head-and-neck",
+      "ids": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-02-head-and-neck-gpt6-astra-pro-mcp-colabdev.jpg",
+      "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/likeness95-100-gpt6-astra-pro-mcp-colabdev/sheet-02-head-and-neck-gpt6-astra-pro-mcp-colabdev.jpg",
+      "createdAt": "2026-09-30T08:29:50.257Z"
+    }
+  ],
+  "selected": 8,
+  "description": "Distinct source/parameter edits followed by browser renders and individual human-agent visual review. Numerical solver steps are not counted.",
+  "updatedAt": "2026-09-30T08:32:13.506Z",
+  "rendered": 8,
+  "reviewed": 8,
+  "currentScore": 82
+}
