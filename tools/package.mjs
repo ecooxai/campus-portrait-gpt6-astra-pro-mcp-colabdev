@@ -13,6 +13,7 @@ const progress=await readJSON('public/progress/progress.json');
 const qa=await readJSON(`.output/qa-${suffix}.json`);
 const acceptance=await readJSON(`.output/acceptance-${suffix}.json`);
 const validation=await readJSON(`.output/gltf-validation-${suffix}.json`);
+const numerical=await readJSON(`.output/cloth-integrity-${suffix}.json`);
 if(!acceptance.passed||qa.errors.length||validation.issues.numErrors||validation.issues.numWarnings)throw new Error('Package refused: QA or export validation has not passed.');
 if(qa.revision!==progress.revision)throw new Error('Package refused: latest model revision has not been reviewed.');
 await fs.mkdir(exportsDir,{recursive:true});
@@ -26,7 +27,7 @@ const sourceName=`campus-portrait-source-${suffix}.tar.gz`;
 const reportName=`verification-${suffix}.json`;
 const handoffName=`HANDOFF-${suffix}.md`;
 const modelBytes=(await fs.stat(path.join(out,modelName))).size;
-const report={project:projectName,revision:progress.revision,visualScore:progress.score,requestedVisualScore:'greater than 95/100',requestedIterations:20000,completedReviewedRevisions:progress.iterations.length,implementationCommit,branch,hosting:{repository,pages,temporaryTunnel:preview},renderTests:qa,productionAcceptance:acceptance,gltfValidation:validation};
+const report={project:projectName,revision:progress.revision,visualScore:progress.score,requestedVisualScore:'85/100',requestedIterations:1000,visualTargetMet:progress.score>=85,numericalRefinement:numerical,iterationScope:'Numerical deformation/render/test passes are separate from manually reviewed model revisions',completedReviewedRevisions:progress.iterations.length,implementationCommit,branch,hosting:{repository,pages,temporaryTunnel:preview},renderTests:qa,productionAcceptance:acceptance,gltfValidation:validation};
 await fs.writeFile(path.join(out,reportName),JSON.stringify(report,null,2));
 await fs.copyFile(path.join(out,reportName),path.join(exportsDir,reportName));
 
@@ -36,15 +37,25 @@ A JavaScript / Three.js reconstruction of the clothing, hair and relaxed stance 
 
 ## Current checkpoint
 
-Revision **${progress.revision}**, **${progress.score}/100** subjective visual score, **${progress.iterations.length} reviewed model revisions**. The requested 20,000 iterations and greater-than-95 score are **not completed**. Passing automated tests is not a claim that the likeness or artistic target is achieved. The model is static: no skeleton, skinning, facial blendshapes or locomotion animations.
+Revision **${progress.revision}**, **${progress.score}/100** subjective visual score, **${progress.iterations.length} reviewed model revisions**. The active target is **85/100** and at least **1,000 iterations**. A completed garment run contains **${numerical.passes} numerical deformation/render/test passes**, not 1,000 manually reviewed artistic revisions. The visual 85-point target **${progress.score>=85?"is recorded as reached by the current subjective review":"has not been reached"}**. Passing automated tests is not a claim that the likeness or artistic target is achieved. The model is static: no skeleton, skinning, facial blendshapes or locomotion animations.
 
 The main remaining limitations are photographic facial likeness, fine hair structure, natural garment drape, hand refinement and unmeasured real-device frame rate. Unseen views are an authored interpretation, not facts recovered from the photograph.
+
+## Numerical refinement evidence
+
+The cloth ledger records ${numerical.passes} sequential passes, ${numerical.uniqueGeometryHashes} distinct mesh-state hashes and ${numerical.uniqueImageHashes} distinct rendered images. Every saved pass-frame hash was verified. The completed run is applied at 90% strength to the shirt, with attached trim carried by its deformation. The constraint metric is not a likeness score.
+
+Time-lapse: public/exports/cloth-refinement-${suffix}.mp4
+
+Full frame archive: public/exports/cloth-evidence-${suffix}.tar.gz
+
+Pass ledger: public/exports/cloth-refinement-${suffix}.jsonl
 
 ## Hosting
 
 Hosted studio: ${pages||'Not deployed'}
 
-Editable source repository: ${repository}
+Editable source repository: ${repository}/tree/${branch}
 
 The hosted studio is published from the dedicated gpt6-astra-pro-mcp-colabdev/site branch. It does not depend on the live Colab runtime. The temporary live-instance tunnel remains ${preview}.
 
@@ -118,7 +129,7 @@ const handoff=`# Next-agent handoff — GPT-6 Astra Pro / mcp-colabdev
 
 ## Task and honest status
 
-Build a JS/WebGL 3D model of the supplied uniform photograph. Work in Colab dev, use JavaScript and headless Chrome, do not use Blender or image generation, and do not analyze the source photograph with code. Preserve all viewpoints as real geometry. User target: at least 20,000 edit/review iterations and greater than 95/100. Current checkpoint: **${progress.iterations.length} reviewed model revisions, ${progress.score}/100**, target still unmet. Review history: ${progress.iterations.map(i=>`R${i.id}: ${i.score}`).join(' → ')}. Regression scores were not hidden.
+Build a JS/WebGL 3D model of the supplied uniform photograph. Work in Colab dev, use JavaScript and headless Chrome, do not use Blender or image generation, and do not analyze the source photograph with code. Preserve all viewpoints as real geometry. Latest user target: at least 1,000 iterations and 85/100. The completed numerical garment run has 1,000 deformation/render/test passes; it is not 1,000 manual artistic reviews. Current checkpoint: **${progress.iterations.length} reviewed model revisions, ${progress.score}/100**, target still unmet. Review history: ${progress.iterations.map(i=>`R${i.id}: ${i.score}`).join(' → ')}. Regression scores were not hidden.
 
 Project: ${project}
 Build: /build/${projectName}
@@ -133,15 +144,15 @@ The quick tunnel is temporary and depends on the live instance. The separate Git
 
 ## Live services — do not duplicate or stop unrelated work
 
-- Vite developer preview: port 4186, Webterm terminal 673.
-- Project-only static production preview: port 4196, terminal 684.
-- cloudflared HTTP/2 quick tunnel to port 4196: terminal 685.
+- Vite developer preview: port 4186, Webterm terminal 729.
+- Project-only static production preview: port 4197, terminal 771.
+- cloudflared HTTP/2 quick tunnel to port 4197: terminal 785.
 
 Use the mcp_colabdev Webterm proxy, not mcp_aliwebterm's separate /home/admin host. A running command should be read by terminal ID, not restarted. Colab was healthy throughout development except that the 32 native-session limit was reached. Only this task's finished command terminals were stopped to reclaim slots; the three services above were retained. A webterm run can finish its command while its native shell remains running. Clean up only owned completed terminals.
 
 ## Read and review first
 
-Read README.md, PLAN.md, public/progress/progress.json, the combined verification report and relevant source functions. View the actual latest front, three-quarter, side, back and face PNGs. Older review evidence is retained only in .agentwork/reviews/rNNN-${suffix}/ on the live instance, not in the public gallery or source archive. Do not count an automated assertion as a new visual revision or claim 95 based on engineering tests.
+Read README.md, PLAN.md, public/progress/progress.json, the combined verification report and relevant source functions. View the actual latest front, three-quarter, side, back and face PNGs. Older review evidence is retained only in .agentwork/reviews/rNNN-${suffix}/ on the live instance, not in the public gallery or source archive. Do not count an automated assertion as a new visual revision or claim 85 based on engineering tests.
 
 ## Main visual weaknesses
 
@@ -149,6 +160,18 @@ Read README.md, PLAN.md, public/progress/progress.json, the combined verificatio
 2. Hair still reads as sculpted clumps, especially side and rear. Improve layered volume and strand breakup without reintroducing intersecting micro-fibers.
 3. Collar, tie hang, cotton folds, forearm/hand anatomy and loafer shape can be more natural.
 4. Real-device performance is unmeasured. The current 40 batched meshes and roughly 282k triangles are a reduction, not proof of a production mobile frame-rate target.
+
+## This continuation
+
+The active source branch is the model/tool-named likeness85-1000 branch shown above. The first ten reviews belong to the prior checkpoint; the subsequent reviews belong to this continuation. Facial surface evaluation now matches the head, duplicated seam normals are averaged, eyelids share the exact skin palette, the eye openings are recessed, and the stance and neckline have been refined.
+
+The cloth run is deterministic and independent of reference-image pixels. src/cloth-constraints.js and src/cloth-refine.js define it; tools/cloth-run.mjs saves every pass. src/cloth-state-${suffix}.json preserves the endpoint. src/cloth-bake.js blends it at 0.90 and moves trim before src/garment-fit.js adjusts the shoulders/collar. Do not change shirt topology without updating the saved state and re-reviewing it.
+
+Normal-map pole tangents were repaired to unit orthogonal bases with valid handedness. Unequal normal-map strength was baked into the texture so the scalar glTF normal scale remains faithful. Reflection adjustments use KHR_materials_specular rather than unexported per-material environment intensity.
+
+The initial large candidate captures encountered a resize/render-order bug. The 1,000 small pass frames and their hashes are valid. tools/cloth-review.mjs regenerated the four large raw-endpoint views with explicit render ordering, and the integrated model was independently rendered in all five standard views. The numerical runner now waits after resizing and explicitly renders before capture.
+
+The numerical evidence panel discloses the separate counters. Do not relabel numerical constraint scores as visual scores or mark the 85-point target complete without a justified visual review.
 
 ## Important technical lessons
 
@@ -195,7 +218,7 @@ const sourceFiles=['src','tools','public','index.html','vite.config.js','package
 execFileSync('tar',['--exclude=*.tar.gz','--transform',`s,^,${projectName}/,`,'-czf',path.join(out,sourceName),...sourceFiles],{stdio:'inherit'});
 execFileSync('gzip',['-t',path.join(out,sourceName)]);
 await fs.copyFile(path.join(out,sourceName),path.join(exportsDir,sourceName));
-const names=[modelName,sourceName,reportName,handoffName,...['front','three-quarter','side','back','face'].map(v=>`${v}-${suffix}.png`)];
+const names=[modelName,sourceName,reportName,handoffName,`cloth-refinement-${suffix}.mp4`,`cloth-evidence-${suffix}.tar.gz`,`cloth-refinement-${suffix}.jsonl`,`cloth-integrity-${suffix}.json`,...['front','three-quarter','side','back','face'].map(v=>`${v}-${suffix}.png`)];
 const manifest={project,buildDirectory:`/build/${projectName}`,revision:progress.revision,visualScore:progress.score,reviewedRevisions:progress.iterations.length,implementationCommit,branch,preview,pages,repository,files:[]};
 for(const filename of names){const data=await fs.readFile(path.join(out,filename));manifest.files.push({filename,path:path.join(out,filename),bytes:data.length,sha256:createHash('sha256').update(data).digest('hex')});}
 await fs.writeFile(path.join(out,`manifest-${suffix}.json`),JSON.stringify(manifest,null,2));

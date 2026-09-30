@@ -11,7 +11,7 @@ export function buildEye(head,m,s){
  const eyeZ=(x,y)=>{const a=(x-cx)/hw,t=edge(a,true)[1],b=edge(a,false)[1],v=clamp((y-b)/Math.max(.00001,t-b),0,1);const join=Math.max(0,1-a*a)*Math.sin(Math.PI*v);return lerp(faceZ(x,y)+.0007,faceZ(cx,cy)+.0027,join);};
  const white=m.eyeWhite.clone();white.name='Conforming eye whites';white.color.set('#ffffff');white.vertexColors=true;
  surface(head,'Almond eye surface '+s,64,22,(u,v)=>{const a=u*2-1,t=edge(a,true),b=edge(a,false),x=t[0],y=lerp(b[1],t[1],v),c=new THREE.Color('#e9e3da');c.lerp(new THREE.Color('#c3a5a1'),Math.pow(Math.abs(a),5)*.32);c.lerp(new THREE.Color('#949394'),Math.pow(v,7)*.12);return {p:[x,y,eyeZ(x,y)],c:c.toArray()};},white);
- const iris=m.iris.clone();iris.name='Brown iris detail';iris.color.set('#ffffff');iris.vertexColors=true;iris.roughness=.52;iris.clearcoat=.15;iris.envMapIntensity=.55;
+ const iris=m.iris.clone();iris.name='Brown iris detail';iris.color.set('#ffffff');iris.vertexColors=true;iris.roughness=.52;iris.clearcoat=.15;iris.envMapIntensity=1;iris.specularIntensity=.55;
  const ir=.0064,iy=cy+.0006;
  surface(head,'Eye iris '+s,56,28,(u,v)=>{const x=cx+(u*2-1)*ir,dy=Math.sqrt(Math.max(0,ir*ir-(x-cx)**2)),t=edge((x-cx)/hw,true)[1]-.0001,b=edge((x-cx)/hw,false)[1]+.0001,y=lerp(Math.max(iy-dy,b),Math.min(iy+dy,t),v),dx=x-cx,yy=y-iy,rho=Math.sqrt(dx*dx+yy*yy)/ir,angle=Math.atan2(yy,dx);const c=new THREE.Color('#413027'),fiber=.13*Math.sin(angle*47+rho*16)+.12*Math.sin(angle*71-rho*11);c.lerp(new THREE.Color('#88664d'),Math.max(0,fiber+.10));if(rho>.83)c.lerp(new THREE.Color('#211e1d'),(rho-.83)/.17);if(rho<.48)c.set('#111719');return {p:[x,y,eyeZ(x,y)+.00025+.00012*Math.sqrt(Math.max(0,1-rho*rho))],c:c.toArray()};},iris);
  for(const upper of [true,false]){

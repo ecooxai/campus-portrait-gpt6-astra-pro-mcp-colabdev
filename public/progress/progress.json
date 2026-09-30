@@ -1,8 +1,8 @@
 {
-  "revision": 24,
-  "updatedAt": "2026-09-30T00:02:10.655Z",
+  "revision": 25,
+  "updatedAt": "2026-09-30T00:12:53.669Z",
   "score": 80,
-  "status": "The excessive iris glare is reduced, the smile is more balanced, and the garment, stance and hair corrections remain coherent across the reviewed views. This is an 80/100 stylized model checkpoint, not the requested 85/100 likeness target.",
+  "status": "The intended hair and eye reflections now use standard exported material factors, and the directional normal strength is baked into the texture. The GLB validates cleanly. The model remains at 80/100; the requested 85 target is not claimed.",
   "iterations": [
     {
       "id": 1,
@@ -171,6 +171,13 @@
       "title": "Balanced eye reflections and reviewed cloth checkpoint",
       "notes": "The excessive iris glare is reduced, the smile is more balanced, and the garment, stance and hair corrections remain coherent across the reviewed views. This is an 80/100 stylized model checkpoint, not the requested 85/100 likeness target.",
       "reviewedAt": "2026-09-30T00:02:10.655Z"
+    },
+    {
+      "id": 25,
+      "score": 80,
+      "title": "Portable reflections and normal-map export",
+      "notes": "The intended hair and eye reflections now use standard exported material factors, and the directional normal strength is baked into the texture. The GLB validates cleanly. The model remains at 80/100; the requested 85 target is not claimed.",
+      "reviewedAt": "2026-09-30T00:12:53.669Z"
     }
   ],
   "files": [

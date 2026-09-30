@@ -14,7 +14,7 @@ export function installRefinementStatus(){
   const count=Number(data.completed)||0,total=Number(data.requested)||0;panel.hidden=count===0;
   badge.textContent=`Cloth lab: ${count.toLocaleString()} / ${total.toLocaleString()} numerical passes`;
   title.textContent=`${count.toLocaleString()} rendered cloth-refinement passes`;
-  description.textContent='These are garment deformation/render/test steps, not individually reviewed artistic revisions. The visual score above is assessed separately.';
+  description.textContent='These are garment deformation/render/test steps, not individually reviewed artistic revisions. The visual score above is assessed separately. Frames preserve the model version used during the cloth experiment.';
   metrics.textContent=`${Number(data.uniqueGeometryStates)||0} distinct mesh states · ${Number(data.uniqueRenderedImages)||0} distinct rendered images · ${data.phase||'running'}`;
   image.src=base+data.image.replace(/^\/+/, '')+'?step='+count;imageLink.href=image.src;imageLink.target='_blank';imageLink.rel='noopener';file.textContent=data.imagePath;
  }catch(error){console.warn('Cloth progress:',error.message);}}

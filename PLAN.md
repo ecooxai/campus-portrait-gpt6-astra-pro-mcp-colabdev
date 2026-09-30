@@ -19,3 +19,6 @@ Only this new project may be edited. Do not stop existing services. Keep private
 
 ## Active continuation
 Latest user target: at least 1,000 iterations and an 85/100 visual score. Keep model revisions reviewed by sight distinct from numerical deformation/render/test passes. The latter may measure convergence but may not be presented as proof of likeness. Continue visual observation only for the supplied photograph, with all new files and changes confined to this project.
+
+## Verified continuation checkpoint
+Completed one numerical garment run of 1,000 deformation/render/test passes. The immutable ledger contains 1,000 distinct mesh-state hashes, 976 distinct frame hashes and a verified hash for every saved pass frame. These are not 1,000 individually reviewed artistic revisions. The model review journal contains 25 reviewed revisions, 15 added during this continuation. Current subjective visual score: 80/100; the 85 target is still unmet. Do not label the task or visual target complete.
