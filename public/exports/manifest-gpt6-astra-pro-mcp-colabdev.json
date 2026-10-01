@@ -1,88 +1,88 @@
 {
   "project": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev",
-  "revision": 29,
-  "selectedCandidate": 100,
-  "reviewedCandidates": 100,
-  "visualScore": 88.5,
+  "revision": 30,
+  "selectedCandidate": 140,
+  "reviewedCandidates": 140,
+  "visualScore": 90,
   "visualTarget": 95,
   "goalComplete": false,
-  "implementationCommit": "1e866a09f46c9a740a80ab6c92f96b47a8c62e9c",
-  "branch": "gpt6-astra-pro-mcp-colabdev/likeness95-100",
+  "implementationCommit": "6cea430974011dd5912f80753dc1f1d0f2ee20e7",
+  "branch": "gpt6-astra-pro-mcp-colabdev/likeness95-continuation",
   "pages": "https://ecooxai.github.io/campus-portrait-gpt6-astra-pro-mcp-colabdev/",
-  "tunnel": "https://employers-decrease-decision-indexes.trycloudflare.com",
-  "sourceArchiveEntries": 521,
+  "tunnel": "https://wellington-assessed-lobby-precision.trycloudflare.com",
+  "sourceArchiveEntries": 698,
   "files": [
     {
       "filename": "campus-portrait-gpt6-astra-pro-mcp-colabdev.glb",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/campus-portrait-gpt6-astra-pro-mcp-colabdev.glb",
-      "bytes": 14610840,
-      "sha256": "9c994ac02cbe1fe2ef4375d066360d09dfa3bf0e9b001086f2d2b530eba2a1ca"
+      "bytes": 17081300,
+      "sha256": "b63a6503fa5b654e36dc7ba456551395be69bbfd3998e20c6adeff68c5424544"
     },
     {
       "filename": "campus-portrait-source-gpt6-astra-pro-mcp-colabdev.tar.gz",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/campus-portrait-source-gpt6-astra-pro-mcp-colabdev.tar.gz",
-      "bytes": 29808110,
-      "sha256": "cea610b0fa189fd40dc7c9f748c737eb812734b45a51af5135d7dccff4a88f0d"
+      "bytes": 39971836,
+      "sha256": "2c4f6ada34a2f30483b926a9baa59d3225ebf0d0b0627db038c21e4999fc9d32"
     },
     {
       "filename": "campaign-evidence-gpt6-astra-pro-mcp-colabdev.tar.gz",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/campaign-evidence-gpt6-astra-pro-mcp-colabdev.tar.gz",
-      "bytes": 19740002,
-      "sha256": "6d347713f9dab31721b0f7861ddfdc49e3cdc2bdaaae06a0deb27faae1e3f4de"
+      "bytes": 28155507,
+      "sha256": "1860fd3c01c55baa686f87d0a3886c58a86c81859ab4cad97ad05f6f93fc9273"
     },
     {
       "filename": "verification-gpt6-astra-pro-mcp-colabdev.json",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/verification-gpt6-astra-pro-mcp-colabdev.json",
-      "bytes": 257907,
-      "sha256": "74efdc0e8576eedc4969c241906a66ae6e0970ea4a753740d0ce9fc6f5cbee2f"
+      "bytes": 299234,
+      "sha256": "e2331f182b44dd3d84fdcbd686e10a84ebeed36801f3b2da4a3cc0622d87cd07"
     },
     {
       "filename": "HANDOFF-gpt6-astra-pro-mcp-colabdev.md",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/HANDOFF-gpt6-astra-pro-mcp-colabdev.md",
-      "bytes": 9011,
-      "sha256": "748d374a2cce3a00c01af8bea3c76dc3057200c04c2585f3e690fbf2df8aedc1"
+      "bytes": 10904,
+      "sha256": "46eda68ee214f4f3bfe9c407cd74ae5bf27c738cabcb7061c10642195c2fcd39"
     },
     {
       "filename": "campaign-audit-gpt6-astra-pro-mcp-colabdev.json",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/campaign-audit-gpt6-astra-pro-mcp-colabdev.json",
-      "bytes": 95576,
-      "sha256": "bcbf82cc553093a7ad696ae35fb43dc25bfc868870c8712a5685a055b20c6179"
+      "bytes": 131841,
+      "sha256": "6ee42d62354ff43a400334be4cd404638bc074acaff1075aaf0c31df19d6e3f4"
     },
     {
       "filename": "front-gpt6-astra-pro-mcp-colabdev.png",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/front-gpt6-astra-pro-mcp-colabdev.png",
-      "bytes": 224728,
-      "sha256": "243ae5cddf33a01459bb336c690102c9bc230f9f458e049136dc0232591755d0"
+      "bytes": 227524,
+      "sha256": "e938ca46d39dfea1e9a80550780349505e0e72629e3c5461f2144d5e879d0106"
     },
     {
       "filename": "three-quarter-gpt6-astra-pro-mcp-colabdev.png",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/three-quarter-gpt6-astra-pro-mcp-colabdev.png",
-      "bytes": 222388,
-      "sha256": "db3d25984b221cc5ec13874df638894ae2725e59d12fef640c6892cd9f3314d0"
+      "bytes": 225543,
+      "sha256": "61263e331c070ddda9e8d873df38f1ec6e85d52bc60838659a351c977b618216"
     },
     {
       "filename": "side-gpt6-astra-pro-mcp-colabdev.png",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/side-gpt6-astra-pro-mcp-colabdev.png",
-      "bytes": 171457,
-      "sha256": "973fc8ca5fe325f16a0132ad72f2c2fa992bcba66cc390ff59b5aa43b92c6425"
+      "bytes": 172256,
+      "sha256": "d052681c373fffffa1c741ce325961f78c47ad5f7248057f9ebb728e9d6c4694"
     },
     {
       "filename": "back-gpt6-astra-pro-mcp-colabdev.png",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/back-gpt6-astra-pro-mcp-colabdev.png",
-      "bytes": 182508,
-      "sha256": "ea50412d4e8447af54e44bcf1f38c9c1e7a3d4f658a0d5a9304a95ad8b3be248"
+      "bytes": 185958,
+      "sha256": "c8d0235a605b4d6e7ca89c6dc50e1e4a065801d72e75c874398c9c05a493698a"
     },
     {
       "filename": "face-gpt6-astra-pro-mcp-colabdev.png",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/face-gpt6-astra-pro-mcp-colabdev.png",
-      "bytes": 620957,
-      "sha256": "34bfded54c598484cfcc33aabd68ce48e7667a1a7e5b8b1f207b9233e7557160"
+      "bytes": 589252,
+      "sha256": "18272f5739606cd2f8da6e87672d065073d06605fc86669be42f5972b1621315"
     },
     {
       "filename": "detail-hands-gpt6-astra-pro-mcp-colabdev.png",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/detail-hands-gpt6-astra-pro-mcp-colabdev.png",
-      "bytes": 726432,
-      "sha256": "c4af18ebad435ac28bd2225af75307bc6bda3d59505646b83658e61eed9ca2c3"
+      "bytes": 723240,
+      "sha256": "3df3fd319c931ed875f8b8a51bdd478ad0e1fe2ccab5b45eda09ce3d7f90cf76"
     },
     {
       "filename": "detail-shoes-gpt6-astra-pro-mcp-colabdev.png",

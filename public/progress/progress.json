@@ -1,6 +1,6 @@
 {
   "revision": 30,
-  "updatedAt": "2026-10-01T04:15:26.653Z",
+  "updatedAt": "2026-10-01T04:22:14.745Z",
   "score": 90,
   "status": "The campaign now contains 140 individually reviewed edit-and-render candidates. C140 combines a continuous crown/fringe shell, revised smile relief and skin contrast, face-focused mesh sampling, a recessed dental arch and tapered backpack contact. The main export and seven standard/detail views pass validation. The visual target remains unmet at a subjective 90/100.",
   "iterations": [
@@ -251,29 +251,29 @@
     {
       "kind": "GLB",
       "title": "Current 3D character model",
-      "description": "Static geometry and embedded textures · 14.61 MB",
+      "description": "Static geometry and embedded textures · 17.08 MB",
       "url": "/exports/campus-portrait-gpt6-astra-pro-mcp-colabdev.glb",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/campus-portrait-gpt6-astra-pro-mcp-colabdev.glb"
     },
     {
       "kind": "SRC",
       "title": "Editable project archive",
-      "description": "JavaScript, current model, 100 reviewed states and rendered evidence",
+      "description": "JavaScript, current model, 140 reviewed states and rendered evidence",
       "url": "/exports/campus-portrait-source-gpt6-astra-pro-mcp-colabdev.tar.gz",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/campus-portrait-source-gpt6-astra-pro-mcp-colabdev.tar.gz"
     },
     {
       "kind": "QA",
       "title": "Verification and review audit",
-      "description": "33 acceptance checks · 100 reviewed candidates · visual target still unmet",
+      "description": "39 acceptance checks · 140 reviewed candidates · visual target still unmet",
       "url": "/exports/verification-gpt6-astra-pro-mcp-colabdev.json",
       "path": "/home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/verification-gpt6-astra-pro-mcp-colabdev.json"
     }
   ],
   "campaign": {
-    "reviewed": 100,
-    "selected": 100,
-    "score": 88.5,
+    "reviewed": 140,
+    "selected": 140,
+    "score": 90,
     "goalComplete": false,
     "evidenceURL": "/exports/campaign-evidence-gpt6-astra-pro-mcp-colabdev.tar.gz",
     "auditURL": "/exports/campaign-audit-gpt6-astra-pro-mcp-colabdev.json"

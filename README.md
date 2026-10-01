@@ -4,11 +4,11 @@ A real three-dimensional, procedurally authored interpretation of the supplied p
 
 ## Current checkpoint
 
-Revision **29**, selected candidate **C100**, subjective visual assessment **88.5/100**. The current campaign contains **100 individually reviewed edit-and-render candidates**, **100 distinct numeric parameter states**, **91 geometry fingerprints** and **216 verified rendered JPEGs**. Rejected designs remain in the record. Material-only edits can share a geometry fingerprint.
+Revision **30**, selected candidate **C140**, subjective visual assessment **90/100**. The current campaign contains **140 individually reviewed edit-and-render candidates**, **140 distinct numeric parameter states**, **127 geometry fingerprints** and **296 verified rendered JPEGs**. Rejected designs remain in the record. Material-only edits can share a geometry fingerprint.
 
 The requested minimum of 100 reviewed candidates is complete. The **95/100 visual target is not achieved**. This remains a stylized study, not a photographic reconstruction or a claimed AAA-quality asset. Passing technical checks does not change the subjective visual assessment.
 
-The older 1,000-step numerical cloth experiment is preserved separately and is not counted as 1,000 manual visual reviews. Current accepted model checkpoints and candidate counts are also separate: 29 saved model checkpoints versus 100 campaign candidates.
+The older 1,000-step numerical cloth experiment is preserved separately and is not counted as 1,000 manual visual reviews. Current accepted model checkpoints and candidate counts are also separate: 30 saved model checkpoints versus 140 campaign candidates.
 
 ## Preview and files
 
@@ -16,7 +16,7 @@ Hosted studio: https://ecooxai.github.io/campus-portrait-gpt6-astra-pro-mcp-cola
 
 Editable source repository: https://github.com/ecooxai/campus-portrait-gpt6-astra-pro-mcp-colabdev
 
-Temporary live-instance preview: https://employers-decrease-decision-indexes.trycloudflare.com
+Temporary live-instance preview: https://wellington-assessed-lobby-precision.trycloudflare.com
 
 Model: public/exports/campus-portrait-gpt6-astra-pro-mcp-colabdev.glb
 
@@ -51,7 +51,7 @@ The Colab build command, npm run build, writes to /build/campus-portrait-gpt6-as
 Start the development viewer before the render/export suite. Build and start the static viewer before acceptance. Set CHROMIUM_PATH on machines where Chrome is not /home/dev/.local/bin/chromium.
 
 ```bash
-node tools/qa.mjs --revision=29 --views=front,three-quarter,side,back,face,detail-hands,detail-shoes
+node tools/qa.mjs --revision=30 --views=front,three-quarter,side,back,face,detail-hands,detail-shoes
 node tools/audit-campaign.mjs
 npm run build
 # Start PORT=4197 npm run serve in another terminal.
@@ -79,7 +79,7 @@ Durable JPEGs and design JSONs are included in the archive. Some early scratch P
 
 ## Asset and engineering limits
 
-The current GLB is 14,610,840 bytes, with 286,601 triangles and 51 material-batched meshes. The source generator remains editable; optimized GLB meshes preserve original part names and design metadata. No skeleton, skinning, facial blendshapes or animation is included.
+The current GLB is 17,081,300 bytes, with 354,797 triangles and 52 material-batched meshes. The source generator remains editable; optimized GLB meshes preserve original part names and design metadata. No skeleton, skinning, facial blendshapes or animation is included.
 
 Main remaining visual work: closer facial likeness, finer hair structure/root transitions, more natural hand anatomy, garment micro-drape and backpack contact. Unseen side/rear details and metric scale are authored interpretations, not measurements recovered from the photograph.
 
