@@ -18,3 +18,5 @@ footer{flex-wrap:wrap;row-gap:16px}.artifact-links{display:flex;gap:18px;flex-wr
 .detail-mode .intro{display:none}
 
 .campaign-archive{display:inline-block;font-size:11px;color:#496757;margin:6px 0;text-underline-offset:3px}.campaign-archive-path{display:block;font-size:8px;line-height:1.7;overflow-wrap:anywhere;color:#7b897c}
+
+.checkpoint-history{margin-top:8px}.checkpoint-history summary{cursor:pointer;min-height:44px;display:flex;align-items:center;font-size:11px;color:#536b5a;border-bottom:1px solid var(--line)}.checkpoint-history summary::before{content:"+";margin-right:9px;font-size:16px}.checkpoint-history[open] summary::before{content:"−"}.checkpoint-history summary:focus-visible{outline:2px solid #538483;outline-offset:3px}
