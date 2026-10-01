@@ -1,6 +1,6 @@
 {
-  "candidate": 140,
-  "label": "Balanced rounded silhouette and upper-back clearance",
+  "candidate": 135,
+  "label": "Forward bag fit with moderate shoulder contact",
   "headWidth": 1.015,
   "headHeight": 0.96,
   "headDepth": 1,
@@ -142,10 +142,9 @@
   "faceTopology": 1,
   "dentalInset": 0.0011,
   "packFit": 1,
-  "packContactTaper": 1,
-  "packConform": 0.55,
+  "packConform": 0.85,
   "packClearance": 0.005,
-  "packDrop": 0.008,
-  "packShift": 0.002,
-  "packTilt": 0.015
+  "packDrop": 0.01,
+  "packShift": 0.008,
+  "packTilt": 0.02
 }

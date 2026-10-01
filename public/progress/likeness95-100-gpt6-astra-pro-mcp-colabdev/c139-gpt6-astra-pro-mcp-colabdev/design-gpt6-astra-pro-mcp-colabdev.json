@@ -1,6 +1,6 @@
 {
-  "candidate": 140,
-  "label": "Balanced rounded silhouette and upper-back clearance",
+  "candidate": 139,
+  "label": "Moderate tapered contact and lower bag position",
   "headWidth": 1.015,
   "headHeight": 0.96,
   "headDepth": 1,
@@ -143,9 +143,9 @@
   "dentalInset": 0.0011,
   "packFit": 1,
   "packContactTaper": 1,
-  "packConform": 0.55,
+  "packConform": 0.75,
   "packClearance": 0.005,
-  "packDrop": 0.008,
-  "packShift": 0.002,
-  "packTilt": 0.015
+  "packDrop": 0.014,
+  "packShift": 0.003,
+  "packTilt": 0.02
 }

@@ -1,8 +1,8 @@
 {
-  "revision": 29,
-  "updatedAt": "2026-09-30T15:22:18.929Z",
-  "score": 88.5,
-  "status": "The campaign has 100 individually reviewed edit-and-render candidates with 216 distinct evidence images. C100 retains the improved face proportions, clothing, closed wrists, low loafers and reduced-density geometry. Its subjective visual score is 88.5/100; the requested 95-point target remains unmet.",
+  "revision": 30,
+  "updatedAt": "2026-10-01T04:15:26.653Z",
+  "score": 90,
+  "status": "The campaign now contains 140 individually reviewed edit-and-render candidates. C140 combines a continuous crown/fringe shell, revised smile relief and skin contrast, face-focused mesh sampling, a recessed dental arch and tapered backpack contact. The main export and seven standard/detail views pass validation. The visual target remains unmet at a subjective 90/100.",
   "iterations": [
     {
       "id": 1,
@@ -206,6 +206,13 @@
       "title": "One hundred reviewed candidates and validated C100 checkpoint",
       "notes": "The campaign has 100 individually reviewed edit-and-render candidates with 216 distinct evidence images. C100 retains the improved face proportions, clothing, closed wrists, low loafers and reduced-density geometry. Its subjective visual score is 88.5/100; the requested 95-point target remains unmet.",
       "reviewedAt": "2026-09-30T15:08:49.965Z"
+    },
+    {
+      "id": 30,
+      "score": 90,
+      "title": "Forty additional reviewed candidates and validated C140 continuation",
+      "notes": "The campaign now contains 140 individually reviewed edit-and-render candidates. C140 combines a continuous crown/fringe shell, revised smile relief and skin contrast, face-focused mesh sampling, a recessed dental arch and tapered backpack contact. The main export and seven standard/detail views pass validation. The visual target remains unmet at a subjective 90/100.",
+      "reviewedAt": "2026-10-01T04:15:26.653Z"
     }
   ],
   "files": [

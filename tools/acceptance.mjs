@@ -10,7 +10,14 @@ try{
  await page.goto(base+'/?render=front',{waitUntil:'networkidle',timeout:120000});await page.waitForFunction(()=>window.studio?.ready,null,{timeout:120000});
  const original=await page.evaluate(()=>window.studio.stats());const imported=await page.evaluate(()=>window.studio.setModelSource('exported'));
  report.materialRoundtrip=await compareMaterials(page);report.checks.materialFactorsMatch=report.materialRoundtrip.matched;
- report.roundtrip={original,imported};report.checks.exportedTriangleCountMatches=original.triangles===imported.triangles;report.checks.exportedBoundsMatch=original.bounds.every((n,i)=>Math.abs(n-imported.bounds[i])<.00001);
+ report.roundtrip={original,imported};
+ if(original.backpackContact){
+  const c=original.backpackContact,d=imported.backpackContact;report.backpackContact=c;
+  report.checks.sampledBackpackClearance=c.checkedFrontVertices>0&&Number.isFinite(c.minSampledGap)&&c.minSampledGap>=-0.00001;
+  report.checks.backpackContactMetadataRoundtrip=!!d&&d.checkedFrontVertices===c.checkedFrontVertices&&Math.abs(d.minSampledGap-c.minSampledGap)<1e-8;
+  report.notes.push('Backpack clearance is a pre-posture sampled geometric check, not a full collision or cloth simulation.');
+ }
+report.checks.exportedTriangleCountMatches=original.triangles===imported.triangles;report.checks.exportedBoundsMatch=original.bounds.every((n,i)=>Math.abs(n-imported.bounds[i])<.00001);
  await page.setViewportSize({width:768,height:1024});await page.evaluate(()=>window.studio.setView('three-quarter'));await page.waitForTimeout(400);await page.screenshot({path:`.output/exported-three-quarter-${suffix}.png`});
  const glb=await fs.readFile(`.output/campus-portrait-${suffix}.glb`);const json=JSON.parse(glb.subarray(20,20+glb.readUInt32LE(12)).toString('utf8').trim());report.gltf={version:json.asset.version,meshes:json.meshes.length,textures:json.textures?.length,images:json.images?.length,extensionsUsed:json.extensionsUsed};report.checks.embeddedImages=(json.images||[]).every(i=>Number.isInteger(i.bufferView)&&!i.uri);report.checks.standardNormalMaps=!json.extensionsUsed?.includes('EXT_materials_bump');
  await page.goto(base+'/',{waitUntil:'networkidle',timeout:120000});await page.waitForFunction(()=>window.studio?.ready,null,{timeout:120000});await page.setViewportSize({width:1440,height:1080});await page.waitForTimeout(400);
