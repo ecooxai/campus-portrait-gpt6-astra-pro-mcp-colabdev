@@ -2,15 +2,15 @@
 
 ## Honest task status
 
-Latest campaign target: at least 100 actual edit-and-preview candidates, continuing toward 95/100 visual quality. Current selected candidate: C140; main saved revision: 30; subjective visual score: 90/100. The candidate-count target is complete. The 95-point quality target is not complete. Do not convert passing engineering tests into a 95-point visual score.
+Latest campaign target: at least 100 actual edit-and-preview candidates, continuing toward 95/100 visual quality. Current selected candidate: C160; main saved revision: 31; subjective visual score: 91/100. The candidate-count target is complete. The 95-point quality target is not complete. Do not convert passing engineering tests into a 95-point visual score.
 
-The campaign audit verifies 140 unique reviewed IDs, 140 numeric parameter states, 127 geometry fingerprints and 296 distinct JPEG views. Material-only edits may share a geometry fingerprint. Rejected candidates and failed screenshot attempts were retained; retries were not counted as new iterations.
+The campaign audit verifies 160 unique reviewed IDs, 160 numeric parameter states, 144 geometry fingerprints and 336 distinct JPEG views. Material-only edits may share a geometry fingerprint. Rejected candidates and failed screenshot attempts were retained; retries were not counted as new iterations.
 
 Project: /home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev
 Root preview build: /build/campus-portrait-gpt6-astra-pro-mcp-colabdev
 Pages build: /build/campus-portrait-pages-gpt6-astra-pro-mcp-colabdev
-Source branch: gpt6-astra-pro-mcp-colabdev/likeness95-continuation
-Implementation commit captured at packaging: 6cea430974011dd5912f80753dc1f1d0f2ee20e7
+Source branch: gpt6-astra-pro-mcp-colabdev/portrait-anatomy-c141
+Implementation commit captured at packaging: c785fa169e9865bc9a822e164b3124bcaf3f7a7f
 Repository: https://github.com/ecooxai/campus-portrait-gpt6-astra-pro-mcp-colabdev
 Hosted Pages studio: https://ecooxai.github.io/campus-portrait-gpt6-astra-pro-mcp-colabdev/
 Temporary instance tunnel: https://wellington-assessed-lobby-precision.trycloudflare.com
@@ -31,11 +31,11 @@ A restore removed .agentwork while preserving source, .output and public artifac
 
 Some early full-resolution scratch PNGs no longer exist. The durable JPEGs, state JSONs and annotated comparison sheets are preserved and audited. Older sourceCommit fields are present only where they were recorded; source hashes and rendered proof are also retained. Exact historical replay can require the corresponding code version. Loading old controls into the current generator may include later construction changes.
 
-The former 1,000-step cloth experiment is historical numerical evidence, separate from the 140 visual candidates. Its accepted deformation remains in src/cloth-state-gpt6-astra-pro-mcp-colabdev.json. Do not relabel numerical steps as manual visual reviews. Its large frame archive is an optional separate hosted artifact and is excluded from nested source archives.
+The former 1,000-step cloth experiment is historical numerical evidence, separate from the 160 visual candidates. Its accepted deformation remains in src/cloth-state-gpt6-astra-pro-mcp-colabdev.json. Do not relabel numerical steps as manual visual reviews. Its large frame archive is an optional separate hosted artifact and is excluded from nested source archives.
 
 ## Continuation after C100
 
-The latest user asked why work stopped and requested continuation. The visible chat had ended with a Thinking failed interruption, but the live saved project already contained the completed C100 campaign. The continuation did not re-count those existing candidates. It added 40 further distinct rendered and individually reviewed candidates, starting at C101, on the current source branch.
+The latest user asked why work stopped and requested continuation. The visible chat had ended with a Thinking failed interruption, but the live saved project already contained the completed C100 campaign. The continuation did not re-count those existing candidates. It added 60 further distinct rendered and individually reviewed candidates, starting at C101, on the current source branch.
 
 Accepted changes include continuous cheek/smile relief and controlled facial color, a seamless crown-to-fringe hair shell, a more natural eye-white/iris balance, facially concentrated mesh sampling, a recessed dental arch and tapered backpack contact. These are improvements to a stylized model; they do not establish photographic likeness or the requested 95-point quality target.
 
@@ -47,7 +47,7 @@ face-domain.js concentrates head vertices around the face while leaving the prot
 
 ## Current implementation map
 
-- design-state.json contains the accepted C140 controls. design.js validates replacements and supports explicit reconstruction in a shared renderer.
+- design-state.json contains the accepted C160 controls. design.js validates replacements and supports explicit reconstruction in a shared renderer.
 - anatomy.js owns shared face, eye and mouth boundaries. nose-anatomy.js supplies the continuous bridge, tip and alar displacement. head.js assembles the head, lips, teeth, ears and hair.
 - eye-volume.js conforms eye curvature while preserving aperture boundaries. ear-sculpt.js includes a conchal shell, cartilage and connective root.
 - hair-materials.js uses portable directional reflection controls. hair-groom.js surrounds the volumetric ponytails with original curved strand sheets; strong specular variants were rejected after rear-view inspection.
@@ -64,9 +64,9 @@ Current GLB: /home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.o
 Source archive: /home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/campus-portrait-source-gpt6-astra-pro-mcp-colabdev.tar.gz
 Review evidence archive: /home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/campaign-evidence-gpt6-astra-pro-mcp-colabdev.tar.gz
 Combined verification: /home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/verification-gpt6-astra-pro-mcp-colabdev.json
-Main metrics: 354797 triangles, 311473 vertices, 52 material-batched meshes, 17081300 GLB bytes.
+Main metrics: 359247 triangles, 313860 vertices, 54 material-batched meshes, 17418320 GLB bytes.
 Validator: 0 errors, 0 warnings, 0 informational issues.
-Production checks: 39, passed=true, tested URL=http://127.0.0.1:4197.
+Production checks: 43, passed=true, tested URL=http://127.0.0.1:4197.
 
 Material comparison checks effective sheen, specular intensity, anisotropy, coating, alpha masking, sidedness, texture transforms, normals and roughness maps. Exported design metadata is checked against the selected campaign ID. Browser tests use software WebGL; actual phone frame rate, memory pressure and thermal behavior remain unmeasured.
 
@@ -74,6 +74,41 @@ The remaining visual gap is substantial enough that 95/100 must not be claimed: 
 
 ## Continue and publish
 
-Start new candidate IDs at 141. Make real explicit changes, use tools/campaign.mjs, inspect the resulting images and append individual reviews. Keep the strongest accepted candidate rather than promoting a regression. tools/audit-campaign.mjs checks evidence integrity, not artistic quality. tools/qa.mjs and acceptance.mjs verify the selected asset. tools/package-checkpoint.mjs refuses packaging when technical verification or selected-state alignment is incomplete, but permits an honestly labeled below-target checkpoint.
+Start new candidate IDs at 161. Make real explicit changes, use tools/campaign.mjs, inspect the resulting images and append individual reviews. Keep the strongest accepted candidate rather than promoting a regression. tools/audit-campaign.mjs checks evidence integrity, not artistic quality. tools/qa.mjs and acceptance.mjs verify the selected asset. tools/package-checkpoint.mjs refuses packaging when technical verification or selected-state alignment is incomplete, but permits an honestly labeled below-target checkpoint.
 
 Intermediates belong in .agentwork; important binaries and evidence in .output. Preserve public JPEG/state evidence in Git. Do not publish the reference photograph. Commit significant changes on a model/tool-named branch. The Pages site branch is gpt6-astra-pro-mcp-colabdev/site; preserve its existing history and push normally, never force-replace it. Keep the root-hosted and Pages-subpath builds separate. Verify the deployed commit and run acceptance against the hosted URL after publishing.
+
+
+# Portrait-anatomy continuation: C141–C160
+
+This historical continuation resumed the actual saved C140 checkpoint, not the older C44 state visible in the chat. It added 20 distinct edit-and-render candidates, each individually reviewed in the existing campaign ledger. At the end of this pass the selected design is C160, revision 31, with a subjective working visual score of 91/100. The 100-candidate count requirement is exceeded; the 95-point quality requirement is not achieved. Follow the current live ledger rather than treating this historical note as the latest state in later continuations.
+
+## Accepted changes
+
+C144 reduces duplicated narrow smile creases and the over-pronounced philtrum. C148 replaces the detached lip border with a continuous skin-merging vermilion surface, a warmer recessed cavity and separately rounded teeth. C152 uses original fine-strand pigment and root-sensitive roughness to reduce the broad plastic-like crown highlight. C153 replaces hard nostril strokes with softly blended linings aligned to the sculpted pockets. C160 makes a conservative correction to crown height and temple clearance. More aggressive variants were reviewed and rejected; their scores and images remain in the ledger.
+
+## Editable modules and contracts
+
+- src/mouth-curves.js is the single shared definition for the facial opening, lips and teeth. Do not edit a mouth boundary in only one mesh.
+- src/mouth-sculpt.js builds the skin-merging lip volume, oral lining, enamel and low-contrast recessed tongue. Enamel is shared across teeth for batching.
+- src/hair-strand-atlas.js authors both the strand pigment and root-dependent roughness textures. It reads no photograph or external image.
+- src/soft-nostrils.js conforms the new lining to the same continuous face surface as the sculpted recess.
+- expression-relief.js and anatomy.js now expose separate crease, philtrum and nasal-pocket strengths.
+- hair-shell.js exposes restrained templeTuck and crownLowering controls.
+- main.js adds face-profile-left and side-left audit cameras. The normal UI remains compact.
+
+All code, textures and model geometry remain JavaScript-authored. The reference photograph was reviewed visually and was not analyzed by code or included in the public project. No Blender or image-generation model was used.
+
+## Verification at this checkpoint
+
+The selected model was rendered in 10 views, including both side profiles and detail views of the hands and shoes. The GLB contains 359,247 triangles and 54 batched meshes; its size is 17,418,320 bytes. Validation returned 0 errors and 0 warnings. The production viewer passed 43 acceptance checks, including the new mouth parts, nasal linings, hair maps and both profile cameras. These are headless Chromium/software-WebGL tests, not measurements of physical-phone performance. The model is static, without a skeleton or animation.
+
+## Remaining quality gap
+
+The face and hair remain visibly stylized. Side-view eye and lip anatomy, finer hair-root structure, hand topology and closer photographic likeness still need improvement before a 95/100 assessment would be defensible. Passing the engineering tests does not close that visual gap. Preserve the strongest accepted design rather than increasing its score to satisfy the target.
+
+## Recovery and continuation
+
+Source branch for this pass: gpt6-astra-pro-mcp-colabdev/portrait-anatomy-c141. The reusable command controller is terminal 927; inspect its completion marker and prompt before sending another command. Some completed helper shells reached the global session cap; only known completed shells owned by this continuation were closed. The initial uncommitted audit JSON was preserved in .agentwork/portrait-anatomy-gpt6-astra-pro-mcp-colabdev/preexisting-audit.json before the current audit was regenerated. Combined tool calls occasionally received a platform block; no execution was assumed for them, and supported smaller project-scoped operations were used.
+
+The newest available candidate ID at this checkpoint is 160. Future work must read the current ledger before choosing the next ID. Publish only the selected, verified model; do not expose the reference photograph or private workspace files.
