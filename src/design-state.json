@@ -1,6 +1,6 @@
 {
-  "candidate": 104,
-  "label": "Balanced cheek lift and brighter natural smile",
+  "candidate": 108,
+  "label": "Balanced shell volume and smooth diagonal flow",
   "headWidth": 1.015,
   "headHeight": 0.96,
   "headDepth": 1,
@@ -129,5 +129,10 @@
   "expressionRelief": 1,
   "vascularColor": 0.75,
   "skinValue": 0.93,
-  "lipChroma": 0.34
+  "lipChroma": 0.34,
+  "unifiedHair": 1,
+  "shellSweep": 0.13,
+  "shellVolume": 0.995,
+  "shellRidge": 0.00045,
+  "shellTipDensity": 1
 }

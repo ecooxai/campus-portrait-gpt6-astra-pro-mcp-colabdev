@@ -12,7 +12,7 @@ export function refreshAnatomy(){profile.splice(0,profile.length,...baseProfile.
 ]));}
 refreshAnatomy();
 export function eyeLayout(s){return {cx:s*.035*D.eyeSpacing,cy:.019+D.eyeY,hw:.018*D.eyeWidth,top:.0066*D.eyeUpper,bottom:.0041*D.eyeLower};}
-export function eyeEdgeY(a,upper,s){const l=eyeLayout(s),arch=Math.pow(Math.max(0,1-a*a),.63);return l.cy+(upper?l.top:-l.bottom)*arch+D.eyeSlope*(s*a*.0011+.0008*Math.max(0,s*a)**2);}
+export function eyeEdgeY(a,upper,s){const l=eyeLayout(s),arch=Math.pow(Math.max(0,1-a*a),D.eyeCurvePower??.63);return l.cy+(upper?l.top:-l.bottom)*arch+D.eyeSlope*(s*a*.0011+.0008*Math.max(0,s*a)**2)+(D.eyeOuterLift||0)*s*a;}
 export function mouthTop(a){return -.047+D.mouthY+.003*a*a+.0007*gauss(Math.abs(a),.28,.17)+(D.mouthSmile-1)*.004*a*a;}
 export function mouthBottom(a){const oldTop=-.047+.003*a*a+.0007*gauss(Math.abs(a),.28,.17),oldBottom=-.0615+.0175*a*a;return mouthTop(a)-(oldTop-oldBottom)*D.mouthOpen;}
 export function faceDelta(x,y){
