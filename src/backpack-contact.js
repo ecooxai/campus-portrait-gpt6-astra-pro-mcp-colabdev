@@ -28,7 +28,7 @@ export function fitBackpackContact(root){
   for(let i=0;i<attr.count;i++){
    p.fromBufferAttribute(attr,i).applyMatrix4(matrix);const originalZ=p.z,w=strap?ease((-.015-originalZ)/.115):1,angle=(D.packTilt||0)*w,yy=p.y-1.20,zz=p.z+.176;
    p.y=1.20+yy*Math.cos(angle)-zz*Math.sin(angle)-(D.packDrop||0)*w;p.z=-.176+yy*Math.sin(angle)+zz*Math.cos(angle)+(D.packShift||0)*w;
-   if(shell&&uv){const facing=Math.cos(uv.getX(i)*TAU),front=ease((facing-.15)/.75),body=backZ(p.x,p.y);if(front>0&&body!==null){const limit=body-clearance;p.z=lerp(p.z,limit,(p.z>limit?1:contact)*front);if(front>.99)gaps.push(body-p.z);}}
+   if(shell&&uv){const facing=Math.cos(uv.getX(i)*TAU),front=ease((facing-.15)/.75)*(D.packContactTaper?ease((p.y-1.072)/.055)*ease((1.360-p.y)/.085):1),body=backZ(p.x,p.y);if(front>0&&body!==null){const limit=body-clearance;p.z=lerp(p.z,limit,(p.z>limit?1:contact)*front);if(front>.99)gaps.push(body-p.z);}}
    p.applyMatrix4(inverse);attr.setXYZ(i,p.x,p.y,p.z);
   }
   attr.needsUpdate=true;object.geometry.computeVertexNormals();const grid=object.geometry.userData.grid;if(grid)smoothGridSeamNormals(object.geometry,grid.nu,grid.nv);object.geometry.computeBoundingSphere();
