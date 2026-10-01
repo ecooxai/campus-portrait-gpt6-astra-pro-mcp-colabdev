@@ -111,7 +111,9 @@ src/anatomy.js and src/nose-anatomy.js define the continuous facial profile and 
 
 The source archive excludes dependency installations, Git history, scratch directories and nested archive files. The large historical numerical-cloth frame archive is a separate optional hosted download; its small ledger, baked state and integrity report are retained. No external font file is bundled. See public/THIRD_PARTY_NOTICES-${suffix}.txt for the included Three.js MIT notice.
 `;
-await fs.writeFile('README.md',readme);
+const continuationName='CONTINUATION-portrait-anatomy-'+suffix+'.md';
+const continuation=await fs.readFile(continuationName,'utf8');
+await fs.writeFile('README.md',readme+'\n\n'+continuation);
 const handoffText=`# Continuation handoff — GPT-6 Astra Pro / mcp-colabdev
 
 ## Honest task status
@@ -192,7 +194,7 @@ Start new candidate IDs at ${Math.max(...ledger.candidates.map(c=>c.id))+1}. Mak
 
 Intermediates belong in .agentwork; important binaries and evidence in .output. Preserve public JPEG/state evidence in Git. Do not publish the reference photograph. Commit significant changes on a model/tool-named branch. The Pages site branch is gpt6-astra-pro-mcp-colabdev/site; preserve its existing history and push normally, never force-replace it. Keep the root-hosted and Pages-subpath builds separate. Verify the deployed commit and run acceptance against the hosted URL after publishing.
 `;
-await fs.writeFile(handoff,handoffText);await fs.copyFile(handoff,path.join(out,handoff));await fs.copyFile(handoff,path.join(exportsDir,handoff));
+await fs.writeFile(handoff,handoffText+'\n\n'+continuation);await fs.copyFile(handoff,path.join(out,handoff));await fs.copyFile(handoff,path.join(exportsDir,handoff));
 await fs.writeFile('PLAN.md',`# Current project plan\n\nLatest target: at least 100 individually reviewed edit-and-render candidates and 95/100 visual quality.\n\nCurrent checkpoint: revision ${progress.revision}, C${design.candidate}, ${ledger.currentScore}/100. Candidate count: ${ledger.reviewed}. The count target is complete; the visual target is not.\n\nContinue with real visual refinement, separate subjective review from numerical tests, preserve rejected candidates and verify exported geometry/materials before publishing. See README.md and ${handoff} for the current workflow and remaining defects.\n`);
 progress.downloads=[
  {kind:'GLB',title:'Current 3D character model',description:`Static geometry and embedded textures · ${(modelBytes/1e6).toFixed(2)} MB`,url:'/exports/'+model,path:path.join(out,model)},
@@ -205,12 +207,12 @@ await fs.copyFile('public/progress/progress.json',path.join(out,'progress-'+suff
 await fs.copyFile(path.join(out,'campaign-audit-'+suffix+'.json'),path.join(root,'public/progress',campaign,'audit-'+suffix+'.json'));
 execFileSync('tar',['-C',path.join(root,'public/progress'),'-czf',path.join(out,evidence),campaign]);
 execFileSync('gzip',['-t',path.join(out,evidence)]);await fs.copyFile(path.join(out,evidence),path.join(exportsDir,evidence));
-const sourceFiles=['src','tools','public','index.html','vite.config.js','package.json','package-lock.json','README.md','PLAN.md','PLAN-'+campaign+'.md',handoff,'.gitignore'];
+const sourceFiles=['src','tools','public','index.html','vite.config.js','package.json','package-lock.json','README.md','PLAN.md','PLAN-'+campaign+'.md',handoff,continuationName,'.gitignore'];
 execFileSync('tar',['--exclude=*.tar.gz','--transform',`s,^,${projectName}/,`,'-czf',path.join(out,source),...sourceFiles]);
 execFileSync('gzip',['-t',path.join(out,source)]);await fs.copyFile(path.join(out,source),path.join(exportsDir,source));
 const listing=execFileSync('tar',['-tzf',path.join(out,source)],{encoding:'utf8',maxBuffer:8*1024*1024}).trim().split('\n');
 if(listing.some(file=>file.includes('/node_modules/')||file.includes('/.git/')||file.includes('/.agentwork/')))throw Error('Unexpected private or dependency directory in source archive');
-const filenames=[model,source,evidence,verification,handoff,'campaign-audit-'+suffix+'.json',...['front','three-quarter','side','back','face','detail-hands','detail-shoes'].map(v=>v+'-'+suffix+'.png')];
+const filenames=[model,source,evidence,verification,handoff,'campaign-audit-'+suffix+'.json',...['front','three-quarter','side','side-left','back','face','face-profile','face-profile-left','detail-hands','detail-shoes'].map(v=>v+'-'+suffix+'.png')];
 const manifest={project:root,revision:progress.revision,selectedCandidate:design.candidate,reviewedCandidates:ledger.reviewed,visualScore:ledger.currentScore,visualTarget:95,goalComplete:report.goalComplete,implementationCommit:commit,branch,pages,tunnel,sourceArchiveEntries:listing.length,files:[]};
 for(const filename of filenames){const bytes=await fs.readFile(path.join(out,filename));manifest.files.push({filename,path:path.join(out,filename),bytes:bytes.length,sha256:createHash('sha256').update(bytes).digest('hex')});}
 await fs.writeFile(path.join(out,'manifest-'+suffix+'.json'),JSON.stringify(manifest,null,2));
