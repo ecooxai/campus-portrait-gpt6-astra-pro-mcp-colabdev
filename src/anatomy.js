@@ -1,3 +1,4 @@
+import {expressionRelief,portraitColor} from './expression-relief.js';
 import {nasalDisplacement} from './nose-anatomy.js';
 import * as THREE from 'three';
 import {D} from './design.js';
@@ -17,7 +18,7 @@ export function mouthBottom(a){const oldTop=-.047+.003*a*a+.0007*gauss(Math.abs(
 export function faceDelta(x,y){
  const ny=y-D.noseY,w=D.noseWidth,smileT=clamp((-.025-y)/.028,0,1),smileX=.015+.018*smileT;
  const smileFold=-.0012*D.smileFold*(gauss(x,smileX,.0035)+gauss(x,-smileX,.0035))*gauss(y,-.039+D.mouthY*.5,.018);
- return smileFold
+ return smileFold+expressionRelief(x,y)
  -.0035*D.noseGroove*(gauss(x,.0102*w,.0032*w)+gauss(x,-.0102*w,.0032*w))*gauss(ny,-.0284,.0025)
  +.011*D.cheekForward*(gauss(x,.052,.030)+gauss(x,-.052,.030))*gauss(y,-.028,.025)
  +D.faceFlat*.006*(gauss(x,.063,.033)+gauss(x,-.063,.033))*gauss(y,0,.080)
@@ -37,7 +38,7 @@ export function faceSkinColor(x,y,frontOverride=null){
  c.lerp(new THREE.Color('#df9b87'),.09*gauss(x,0,.020)*gauss(y,-.026,.022)*front);
  if(D.skinWarmth)c.lerp(new THREE.Color(D.skinWarmth>0?'#e0a58e':'#ead0be'),Math.abs(D.skinWarmth));
  if(D.skinVariation){const n=(Math.sin(x*613+y*319)*Math.sin(x*257-y*503)+Math.sin(x*1803+y*2211)*.25)*.008*D.skinVariation;c.multiplyScalar(1+n);}
- return c;
+ return portraitColor(c,x,y,front);
 }
 export function sculptedHeadPoint(x,y,z,front){
  if(front>.6)for(const s of [-1,1]){const l=eyeLayout(s),a=(x-l.cx)/l.hw;if(Math.abs(a)<1){const upper=eyeEdgeY(a,true,s),lower=eyeEdgeY(a,false,s),v=(y-lower)/Math.max(.00001,upper-lower);if(v>0&&v<1)z-=.0045*Math.sin(Math.PI*v)*(1-a*a);}}

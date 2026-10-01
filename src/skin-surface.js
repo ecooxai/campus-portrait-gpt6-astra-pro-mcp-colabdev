@@ -6,6 +6,7 @@ function texture(canvas){const t=new THREE.CanvasTexture(canvas);t.colorSpace=TH
 /** Original pore relief and low-amplitude roughness variation, using portable glTF textures. */
 export function refineSkinSurface(m){
  const detail=D.skinPores||0;
+ m.skin.color.multiplyScalar(D.skinValue??1);
  for(const mat of [m.skin,m.face]){mat.roughness=Math.min(.95,.56*(D.skinRoughness||1));mat.specularIntensity=D.skinSpecular??1;}
  if(D.skinWarmth)m.skin.color.lerp(new THREE.Color(D.skinWarmth>0?'#e0a58e':'#ead0be'),Math.abs(D.skinWarmth));
  if(detail<=0)return;
