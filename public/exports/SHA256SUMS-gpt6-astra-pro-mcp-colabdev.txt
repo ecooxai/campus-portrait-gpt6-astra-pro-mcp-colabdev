@@ -1,8 +1,8 @@
 80db14e03af290a6c8cad4d471f70971b150faaa2a7e9d3b7e97b61eee458fda  campus-portrait-gpt6-astra-pro-mcp-colabdev.glb
-9597896f03f3028a80f651f6d7150c13382e1ab8cdf6b68ef6e0def643391007  campus-portrait-source-gpt6-astra-pro-mcp-colabdev.tar.gz
-f2f8cb65564a63ba50181dc42751839c103ccffaf0904d8d139e76acec6d8a15  campaign-evidence-gpt6-astra-pro-mcp-colabdev.tar.gz
-a5209deeb85bf5988ad88c5557b80883c0735114e72e544108000f1a87bd5f0e  verification-gpt6-astra-pro-mcp-colabdev.json
-4dbc1160f1d0492501f31cacba74d2ff92241f2ba78b720c8ef5e4781afa0453  HANDOFF-gpt6-astra-pro-mcp-colabdev.md
+b9c1dba4eb6b1c68ff3480eea3d0020477537c4dec495aecb1b2bd31599aee1a  campus-portrait-source-gpt6-astra-pro-mcp-colabdev.tar.gz
+10e5caf985db678b2ef9a944923a01867e1686d88a1796410fda9a684c5bb5bc  campaign-evidence-gpt6-astra-pro-mcp-colabdev.tar.gz
+cda012cefcf80245420181e88c1a78fbb12550816d281a243fa7d42cc91b4c93  verification-gpt6-astra-pro-mcp-colabdev.json
+cf76252922295f928d68527c698dc49697554902b15f7a2cc0f443b4add4121e  HANDOFF-gpt6-astra-pro-mcp-colabdev.md
 f4a4685754f51caa07e86e0ed6b874fa9a1add440ad4363398724313897be2e0  campaign-audit-gpt6-astra-pro-mcp-colabdev.json
 8eaf8c605eb41d1723cda0ddee9ccaf5a7e20a68ccbe81d7205c58a7898dbaac  front-gpt6-astra-pro-mcp-colabdev.png
 17bf015a410b658433d3e0926825763835adebb5c2a6fbd8a1431572c9a0776a  three-quarter-gpt6-astra-pro-mcp-colabdev.png

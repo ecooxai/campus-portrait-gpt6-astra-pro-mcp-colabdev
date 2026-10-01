@@ -10,7 +10,7 @@ Project: /home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev
 Root preview build: /build/campus-portrait-gpt6-astra-pro-mcp-colabdev
 Pages build: /build/campus-portrait-pages-gpt6-astra-pro-mcp-colabdev
 Source branch: gpt6-astra-pro-mcp-colabdev/portrait-anatomy-c141
-Implementation commit captured at packaging: c785fa169e9865bc9a822e164b3124bcaf3f7a7f
+Implementation commit captured at packaging: 6d3ceabe34414149e7f4ceecb8440f681aa03094
 Repository: https://github.com/ecooxai/campus-portrait-gpt6-astra-pro-mcp-colabdev
 Hosted Pages studio: https://ecooxai.github.io/campus-portrait-gpt6-astra-pro-mcp-colabdev/
 Temporary instance tunnel: https://wellington-assessed-lobby-precision.trycloudflare.com
@@ -66,7 +66,7 @@ Review evidence archive: /home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp
 Combined verification: /home/dev/project/3d/campus-portrait-gpt6-astra-pro-mcp-colabdev/.output/verification-gpt6-astra-pro-mcp-colabdev.json
 Main metrics: 359247 triangles, 313860 vertices, 54 material-batched meshes, 17418320 GLB bytes.
 Validator: 0 errors, 0 warnings, 0 informational issues.
-Production checks: 43, passed=true, tested URL=http://127.0.0.1:4197.
+Production checks: 43, passed=true, tested URL=https://ecooxai.github.io/campus-portrait-gpt6-astra-pro-mcp-colabdev.
 
 Material comparison checks effective sheen, specular intensity, anisotropy, coating, alpha masking, sidedness, texture transforms, normals and roughness maps. Exported design metadata is checked against the selected campaign ID. Browser tests use software WebGL; actual phone frame rate, memory pressure and thermal behavior remain unmeasured.
 

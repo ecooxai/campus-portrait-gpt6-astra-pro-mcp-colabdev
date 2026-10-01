@@ -8,7 +8,7 @@
   "completedReviewedCandidates": 160,
   "savedModelCheckpoints": 31,
   "goalComplete": false,
-  "implementationCommit": "c785fa169e9865bc9a822e164b3124bcaf3f7a7f",
+  "implementationCommit": "6d3ceabe34414149e7f4ceecb8440f681aa03094",
   "branch": "gpt6-astra-pro-mcp-colabdev/portrait-anatomy-c141",
   "hosting": {
     "repository": "https://github.com/ecooxai/campus-portrait-gpt6-astra-pro-mcp-colabdev",
@@ -101,6 +101,3442 @@
     ]
   },
   "productionAcceptance": {
+    "timestamp": "2026-10-01T05:25:34.213Z",
+    "url": "https://ecooxai.github.io/campus-portrait-gpt6-astra-pro-mcp-colabdev",
+    "checks": {
+      "materialFactorsMatch": true,
+      "sampledBackpackClearance": true,
+      "backpackContactMetadataRoundtrip": true,
+      "exportedTriangleCountMatches": true,
+      "exportedBoundsMatch": true,
+      "embeddedImages": true,
+      "standardNormalMaps": true,
+      "galleryImagesLoaded": true,
+      "olderCheckpointsCollapsed": true,
+      "olderCheckpointsExpandable": true,
+      "progressJournal": true,
+      "absoluteArtifactPaths": true,
+      "exportedSourceControl": true,
+      "pngDownload": true,
+      "view-front": true,
+      "view-three-quarter": true,
+      "view-side": true,
+      "view-back": true,
+      "view-face": true,
+      "resolutionSelector": true,
+      "http-/progress/front-gpt6-astra-pro-mcp-colabdev.png": true,
+      "http-/exports/campus-portrait-gpt6-astra-pro-mcp-colabdev.glb": true,
+      "publishedArtifactCards": true,
+      "privatePathsBlocked": true,
+      "touchOrbit": true,
+      "touchPinchZoom": true,
+      "touchPreset": true,
+      "mobileNoHorizontalOverflow": true,
+      "minimum44pxTargets": true,
+      "mobileGalleryLoads": true,
+      "landscapeNoHorizontalOverflow": true,
+      "thousandNumericalPasses": true,
+      "verifiedFrameLedger": true,
+      "refinementDisclosure": true,
+      "hundredReviewedCandidates": true,
+      "uniqueReviewedCandidateIds": true,
+      "selectedDesignMatchesViewer": true,
+      "embeddedDesignMetadata": true,
+      "campaignPanelPresent": true,
+      "portrait-integratedMouth": true,
+      "portrait-softNasalLining": true,
+      "portrait-strandAtlas": true,
+      "portrait-bothProfileCameras": true
+    },
+    "errors": [],
+    "warnings": [],
+    "notes": [
+      "Browser tests use headless Chromium and SwiftShader software WebGL; they are not measurements of real phone GPU performance.",
+      "Backpack clearance is a pre-posture sampled geometric check, not a full collision or cloth simulation."
+    ],
+    "materialRoundtrip": {
+      "matched": true,
+      "differences": [],
+      "authored": {
+        "face": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0.12902145987857475,
+            0.08086126165900402,
+            0.060016669524544826
+          ],
+          "roughness": 0.5264,
+          "metalness": 0,
+          "specularIntensity": 0.65,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": [
+            1,
+            1
+          ],
+          "map": null,
+          "normalMap": {
+            "colorSpace": "",
+            "repeat": [
+              3,
+              3
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "roughnessMap": {
+            "colorSpace": "",
+            "repeat": [
+              2,
+              2
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          }
+        },
+        "Auricular root skin": {
+          "color": [
+            0.6483818953698383,
+            0.391504561399889,
+            0.2836732170145787
+          ],
+          "sheen": [
+            0.15,
+            0.09359405875013939,
+            0.07906726885453734
+          ],
+          "roughness": 0.62,
+          "metalness": 0,
+          "specularIntensity": 0.65,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": [
+            1,
+            1
+          ],
+          "map": null,
+          "normalMap": {
+            "colorSpace": "",
+            "repeat": [
+              3,
+              3
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "roughnessMap": {
+            "colorSpace": "",
+            "repeat": [
+              2,
+              2
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          }
+        },
+        "Warm auricular skin": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0.12902145987857475,
+            0.08086126165900402,
+            0.060016669524544826
+          ],
+          "roughness": 0.6,
+          "metalness": 0,
+          "specularIntensity": 0.65,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": [
+            1,
+            1
+          ],
+          "map": null,
+          "normalMap": {
+            "colorSpace": "",
+            "repeat": [
+              3,
+              3
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "roughnessMap": {
+            "colorSpace": "",
+            "repeat": [
+              2,
+              2
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          }
+        },
+        "skin": {
+          "color": [
+            0.6582346004056328,
+            0.39999886121592615,
+            0.28932501923885
+          ],
+          "sheen": [
+            0.15,
+            0.09359405875013939,
+            0.07906726885453734
+          ],
+          "roughness": 0.5264,
+          "metalness": 0,
+          "specularIntensity": 0.65,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": [
+            1,
+            1
+          ],
+          "map": null,
+          "normalMap": {
+            "colorSpace": "",
+            "repeat": [
+              3,
+              3
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "roughnessMap": {
+            "colorSpace": "",
+            "repeat": [
+              2,
+              2
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          }
+        },
+        "Conchal shadow": {
+          "color": [
+            0.5803519522724949,
+            0.33038523767183425,
+            0.23890903378145567
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.67,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "Conforming eye whites": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.32,
+          "metalness": 0,
+          "specularIntensity": 0.35,
+          "clearcoat": 0.3,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "Brown iris detail": {
+          "color": [
+            0.72,
+            0.72,
+            0.72
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.43,
+          "metalness": 0,
+          "specularIntensity": 0.45,
+          "clearcoat": 0.32,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "lip": {
+          "color": [
+            0.5583403896257968,
+            0.2663556047920505,
+            0.21952619971859377
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.5,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0.1,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 2,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "lidShadow": {
+          "color": [
+            0.5840784178830671,
+            0.3712376804636741,
+            0.2746773120495699
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.9,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "glint": {
+          "color": [
+            1,
+            0.9559733532482866,
+            0.8713671191959567
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 1,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "lash": {
+          "color": [
+            0.031896033067374104,
+            0.018500220124016652,
+            0.02217388478862708
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.7,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "Soft inner eye tissue": {
+          "color": [
+            0.46778379610254284,
+            0.25818285291079235,
+            0.21586050010324417
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.48,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "brow": {
+          "color": [
+            0.04231141061442144,
+            0.02955683443236377,
+            0.02955683443236377
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.9,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "Soft recessed nasal tissue": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.86,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "Warm recessed oral lining": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.92,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "Integrated upper vermilion": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.55,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0.1,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "Integrated lower vermilion": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.43,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0.1,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 2,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "Recessed warm dental arch": {
+          "color": [
+            0.5711248294565854,
+            0.4452011945063733,
+            0.3277780980458375
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.39,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "Enamel arch": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.36,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "Recessed tongue surface": {
+          "color": [
+            0.174647403645279,
+            0.05612849004241121,
+            0.05612849004241121
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.62,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "hairCap": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.7,
+          "metalness": 0,
+          "specularIntensity": 0.42,
+          "clearcoat": 0.005,
+          "clearcoatRoughness": 0.5,
+          "anisotropy": 0.32,
+          "anisotropyRotation": 1.5707963268,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": [
+            0.11,
+            0.11
+          ],
+          "map": {
+            "colorSpace": "srgb",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "normalMap": {
+            "colorSpace": "",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "roughnessMap": {
+            "colorSpace": "",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          }
+        },
+        "hairMid": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.7,
+          "metalness": 0,
+          "specularIntensity": 0.42,
+          "clearcoat": 0.005,
+          "clearcoatRoughness": 0.5,
+          "anisotropy": 0.32,
+          "anisotropyRotation": 1.5707963268,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": [
+            0.11,
+            0.11
+          ],
+          "map": {
+            "colorSpace": "srgb",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "normalMap": {
+            "colorSpace": "",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "roughnessMap": {
+            "colorSpace": "",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          }
+        },
+        "hair": {
+          "color": [
+            0.94,
+            0.94,
+            0.94
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.7,
+          "metalness": 0,
+          "specularIntensity": 0.42,
+          "clearcoat": 0.005,
+          "clearcoatRoughness": 0.5,
+          "anisotropy": 0.32,
+          "anisotropyRotation": 1.5707963268,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": [
+            0.11,
+            0.11
+          ],
+          "map": {
+            "colorSpace": "srgb",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "normalMap": {
+            "colorSpace": "",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "roughnessMap": {
+            "colorSpace": "",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          }
+        },
+        "Layered procedural hair strands": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.82,
+          "metalness": 0,
+          "specularIntensity": 0.07,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0.38,
+          "side": 2,
+          "opacity": 1,
+          "normalScale": null,
+          "map": {
+            "colorSpace": "srgb",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1001,
+            "wrapT": 1001,
+            "anisotropy": 8
+          },
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "hairDark": {
+          "color": [
+            0.7,
+            0.7,
+            0.7
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.77,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": [
+            0.11,
+            0.11
+          ],
+          "map": {
+            "colorSpace": "srgb",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "normalMap": {
+            "colorSpace": "",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "roughnessMap": {
+            "colorSpace": "",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          }
+        },
+        "Dark fabric hair elastic": {
+          "color": [
+            0.007499032040460618,
+            0.009134058699157796,
+            0.015208514418949472
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.88,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "hairLight": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.7,
+          "metalness": 0,
+          "specularIntensity": 0.42,
+          "clearcoat": 0.005,
+          "clearcoatRoughness": 0.5,
+          "anisotropy": 0.32,
+          "anisotropyRotation": 1.5707963268,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": [
+            0.11,
+            0.11
+          ],
+          "map": {
+            "colorSpace": "srgb",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "normalMap": {
+            "colorSpace": "",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "roughnessMap": {
+            "colorSpace": "",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          }
+        },
+        "socks": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.95,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": {
+            "colorSpace": "srgb",
+            "repeat": [
+              2,
+              2
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "sole": {
+          "color": [
+            0.007499032040460618,
+            0.009134058699157796,
+            0.014443843592229466
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.76,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "leather": {
+          "color": [
+            0.0069954101845983935,
+            0.00972121731707524,
+            0.014443843592229466
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.26,
+          "metalness": 0.07,
+          "specularIntensity": 1,
+          "clearcoat": 0.55,
+          "clearcoatRoughness": 0.27,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "stitch": {
+          "color": [
+            0.08865558627723595,
+            0.10461648408208657,
+            0.13286832154414627
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.76,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "skirt": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0.053271120958410106,
+            0.06370935562287071,
+            0.08465353399520126
+          ],
+          "roughness": 0.89,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 2,
+          "opacity": 1,
+          "normalScale": [
+            0.12,
+            0.12
+          ],
+          "map": {
+            "colorSpace": "srgb",
+            "repeat": [
+              2.34,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "normalMap": {
+            "colorSpace": "",
+            "repeat": [
+              4,
+              4
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "roughnessMap": null
+        },
+        "lining": {
+          "color": [
+            0.018500220124016652,
+            0.025186859622305935,
+            0.04231141061442144
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 1,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 2,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "shirt": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0.18809837378663102,
+            0.17926624588666096,
+            0.17068088802878212
+          ],
+          "roughness": 0.84,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 2,
+          "opacity": 1,
+          "normalScale": [
+            0.12,
+            0.12
+          ],
+          "map": {
+            "colorSpace": "srgb",
+            "repeat": [
+              2,
+              2
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "normalMap": {
+            "colorSpace": "",
+            "repeat": [
+              4,
+              4
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "roughnessMap": null
+        },
+        "seam": {
+          "color": [
+            0.6795424696265424,
+            0.7156935005005721,
+            0.76052450467022
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.9,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "button": {
+          "color": [
+            0.9046611743890203,
+            0.8879231178794776,
+            0.8468732315065057
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.32,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "Natural unpolished nail": {
+          "color": [
+            0.7991027380100881,
+            0.5906188409113381,
+            0.48514994004665124
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.48,
+          "metalness": 0,
+          "specularIntensity": 0.45,
+          "clearcoat": 0.12,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "embroidery": {
+          "color": [
+            0.407240211891531,
+            0.5583403896257968,
+            0.7681511472425809
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.8,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "tie": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0.08634420004129767,
+            0.11497633508644396,
+            0.18941259845538294
+          ],
+          "roughness": 0.65,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 2,
+          "opacity": 1,
+          "normalScale": null,
+          "map": {
+            "colorSpace": "srgb",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "tieKnot": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0.08634420004129767,
+            0.11497633508644396,
+            0.18941259845538294
+          ],
+          "roughness": 0.65,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 2,
+          "opacity": 1,
+          "normalScale": null,
+          "map": {
+            "colorSpace": "srgb",
+            "repeat": [
+              0.38,
+              0.13
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "backpack": {
+          "color": [
+            0.02217388478862708,
+            0.04666508633021928,
+            0.09530746662221588
+          ],
+          "sheen": [
+            0.028066763465597618,
+            0.04018103231510049,
+            0.057338420060583636
+          ],
+          "roughness": 0.95,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": [
+            0.35,
+            0.35
+          ],
+          "map": null,
+          "normalMap": {
+            "colorSpace": "",
+            "repeat": [
+              4,
+              4
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "roughnessMap": null
+        },
+        "webbing": {
+          "color": [
+            0.019382360952473074,
+            0.038204371589236,
+            0.06301001764564068
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.93,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "metal": {
+          "color": [
+            0.3712376804636741,
+            0.3915724777393922,
+            0.4232676699760063
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.26,
+          "metalness": 0.83,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "buckle": {
+          "color": [
+            0.008023192982520563,
+            0.011612245176281512,
+            0.01680737574872402
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.44,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        }
+      },
+      "exported": {
+        "face": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0.12902145987857475,
+            0.08086126165900402,
+            0.060016669524544826
+          ],
+          "roughness": 0.5264,
+          "metalness": 0,
+          "specularIntensity": 0.65,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": [
+            1,
+            1
+          ],
+          "map": null,
+          "normalMap": {
+            "colorSpace": "",
+            "repeat": [
+              3,
+              3
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "roughnessMap": {
+            "colorSpace": "",
+            "repeat": [
+              2,
+              2
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          }
+        },
+        "Auricular root skin": {
+          "color": [
+            0.6483818953698383,
+            0.391504561399889,
+            0.2836732170145787
+          ],
+          "sheen": [
+            0.15,
+            0.09359405875013939,
+            0.07906726885453734
+          ],
+          "roughness": 0.62,
+          "metalness": 0,
+          "specularIntensity": 0.65,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": [
+            1,
+            1
+          ],
+          "map": null,
+          "normalMap": {
+            "colorSpace": "",
+            "repeat": [
+              3,
+              3
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "roughnessMap": {
+            "colorSpace": "",
+            "repeat": [
+              2,
+              2
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          }
+        },
+        "Warm auricular skin": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0.12902145987857475,
+            0.08086126165900402,
+            0.060016669524544826
+          ],
+          "roughness": 0.6,
+          "metalness": 0,
+          "specularIntensity": 0.65,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": [
+            1,
+            1
+          ],
+          "map": null,
+          "normalMap": {
+            "colorSpace": "",
+            "repeat": [
+              3,
+              3
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "roughnessMap": {
+            "colorSpace": "",
+            "repeat": [
+              2,
+              2
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          }
+        },
+        "skin": {
+          "color": [
+            0.6582346004056328,
+            0.39999886121592615,
+            0.28932501923885
+          ],
+          "sheen": [
+            0.15,
+            0.09359405875013939,
+            0.07906726885453734
+          ],
+          "roughness": 0.5264,
+          "metalness": 0,
+          "specularIntensity": 0.65,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": [
+            1,
+            1
+          ],
+          "map": null,
+          "normalMap": {
+            "colorSpace": "",
+            "repeat": [
+              3,
+              3
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "roughnessMap": {
+            "colorSpace": "",
+            "repeat": [
+              2,
+              2
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          }
+        },
+        "Conchal shadow": {
+          "color": [
+            0.5803519522724949,
+            0.33038523767183425,
+            0.23890903378145567
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.67,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "Conforming eye whites": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.32,
+          "metalness": 0,
+          "specularIntensity": 0.35,
+          "clearcoat": 0.3,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "Brown iris detail": {
+          "color": [
+            0.72,
+            0.72,
+            0.72
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.43,
+          "metalness": 0,
+          "specularIntensity": 0.45,
+          "clearcoat": 0.32,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "lip": {
+          "color": [
+            0.5583403896257968,
+            0.2663556047920505,
+            0.21952619971859377
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.5,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0.1,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 2,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "lidShadow": {
+          "color": [
+            0.5840784178830671,
+            0.3712376804636741,
+            0.2746773120495699
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.9,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "glint": {
+          "color": [
+            1,
+            0.9559733532482866,
+            0.8713671191959567
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 1,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "lash": {
+          "color": [
+            0.031896033067374104,
+            0.018500220124016652,
+            0.02217388478862708
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.7,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "Soft inner eye tissue": {
+          "color": [
+            0.46778379610254284,
+            0.25818285291079235,
+            0.21586050010324417
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.48,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "brow": {
+          "color": [
+            0.04231141061442144,
+            0.02955683443236377,
+            0.02955683443236377
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.9,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "Soft recessed nasal tissue": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.86,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "Warm recessed oral lining": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.92,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "Integrated upper vermilion": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.55,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0.1,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "Integrated lower vermilion": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.43,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0.1,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 2,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "Recessed warm dental arch": {
+          "color": [
+            0.5711248294565854,
+            0.4452011945063733,
+            0.3277780980458375
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.39,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "Enamel arch": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.36,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "Recessed tongue surface": {
+          "color": [
+            0.174647403645279,
+            0.05612849004241121,
+            0.05612849004241121
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.62,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "hairCap": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.7,
+          "metalness": 0,
+          "specularIntensity": 0.42,
+          "clearcoat": 0.005,
+          "clearcoatRoughness": 0.5,
+          "anisotropy": 0.32,
+          "anisotropyRotation": 1.5707963268,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": [
+            0.11,
+            0.11
+          ],
+          "map": {
+            "colorSpace": "srgb",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "normalMap": {
+            "colorSpace": "",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "roughnessMap": {
+            "colorSpace": "",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          }
+        },
+        "hairMid": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.7,
+          "metalness": 0,
+          "specularIntensity": 0.42,
+          "clearcoat": 0.005,
+          "clearcoatRoughness": 0.5,
+          "anisotropy": 0.32,
+          "anisotropyRotation": 1.5707963268,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": [
+            0.11,
+            0.11
+          ],
+          "map": {
+            "colorSpace": "srgb",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "normalMap": {
+            "colorSpace": "",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "roughnessMap": {
+            "colorSpace": "",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          }
+        },
+        "hair": {
+          "color": [
+            0.94,
+            0.94,
+            0.94
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.7,
+          "metalness": 0,
+          "specularIntensity": 0.42,
+          "clearcoat": 0.005,
+          "clearcoatRoughness": 0.5,
+          "anisotropy": 0.32,
+          "anisotropyRotation": 1.5707963268,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": [
+            0.11,
+            0.11
+          ],
+          "map": {
+            "colorSpace": "srgb",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "normalMap": {
+            "colorSpace": "",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "roughnessMap": {
+            "colorSpace": "",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          }
+        },
+        "Layered procedural hair strands": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.82,
+          "metalness": 0,
+          "specularIntensity": 0.07,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0.38,
+          "side": 2,
+          "opacity": 1,
+          "normalScale": null,
+          "map": {
+            "colorSpace": "srgb",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1001,
+            "wrapT": 1001,
+            "anisotropy": 8
+          },
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "hairDark": {
+          "color": [
+            0.7,
+            0.7,
+            0.7
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.77,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": [
+            0.11,
+            0.11
+          ],
+          "map": {
+            "colorSpace": "srgb",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "normalMap": {
+            "colorSpace": "",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "roughnessMap": {
+            "colorSpace": "",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          }
+        },
+        "Dark fabric hair elastic": {
+          "color": [
+            0.007499032040460618,
+            0.009134058699157796,
+            0.015208514418949472
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.88,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "hairLight": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.7,
+          "metalness": 0,
+          "specularIntensity": 0.42,
+          "clearcoat": 0.005,
+          "clearcoatRoughness": 0.5,
+          "anisotropy": 0.32,
+          "anisotropyRotation": 1.5707963268,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": [
+            0.11,
+            0.11
+          ],
+          "map": {
+            "colorSpace": "srgb",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "normalMap": {
+            "colorSpace": "",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "roughnessMap": {
+            "colorSpace": "",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          }
+        },
+        "socks": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.95,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": {
+            "colorSpace": "srgb",
+            "repeat": [
+              2,
+              2
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "sole": {
+          "color": [
+            0.007499032040460618,
+            0.009134058699157796,
+            0.014443843592229466
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.76,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "leather": {
+          "color": [
+            0.0069954101845983935,
+            0.00972121731707524,
+            0.014443843592229466
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.26,
+          "metalness": 0.07,
+          "specularIntensity": 1,
+          "clearcoat": 0.55,
+          "clearcoatRoughness": 0.27,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "stitch": {
+          "color": [
+            0.08865558627723595,
+            0.10461648408208657,
+            0.13286832154414627
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.76,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "skirt": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0.053271120958410106,
+            0.06370935562287071,
+            0.08465353399520126
+          ],
+          "roughness": 0.89,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 2,
+          "opacity": 1,
+          "normalScale": [
+            0.12,
+            0.12
+          ],
+          "map": {
+            "colorSpace": "srgb",
+            "repeat": [
+              2.34,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "normalMap": {
+            "colorSpace": "",
+            "repeat": [
+              4,
+              4
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "roughnessMap": null
+        },
+        "lining": {
+          "color": [
+            0.018500220124016652,
+            0.025186859622305935,
+            0.04231141061442144
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 1,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 2,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "shirt": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0.18809837378663102,
+            0.17926624588666096,
+            0.17068088802878212
+          ],
+          "roughness": 0.84,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 2,
+          "opacity": 1,
+          "normalScale": [
+            0.12,
+            0.12
+          ],
+          "map": {
+            "colorSpace": "srgb",
+            "repeat": [
+              2,
+              2
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "normalMap": {
+            "colorSpace": "",
+            "repeat": [
+              4,
+              4
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "roughnessMap": null
+        },
+        "seam": {
+          "color": [
+            0.6795424696265424,
+            0.7156935005005721,
+            0.76052450467022
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.9,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "button": {
+          "color": [
+            0.9046611743890203,
+            0.8879231178794776,
+            0.8468732315065057
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.32,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "Natural unpolished nail": {
+          "color": [
+            0.7991027380100881,
+            0.5906188409113381,
+            0.48514994004665124
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.48,
+          "metalness": 0,
+          "specularIntensity": 0.45,
+          "clearcoat": 0.12,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "embroidery": {
+          "color": [
+            0.407240211891531,
+            0.5583403896257968,
+            0.7681511472425809
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.8,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "tie": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0.08634420004129767,
+            0.11497633508644396,
+            0.18941259845538294
+          ],
+          "roughness": 0.65,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 2,
+          "opacity": 1,
+          "normalScale": null,
+          "map": {
+            "colorSpace": "srgb",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "tieKnot": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0.08634420004129767,
+            0.11497633508644396,
+            0.18941259845538294
+          ],
+          "roughness": 0.65,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 2,
+          "opacity": 1,
+          "normalScale": null,
+          "map": {
+            "colorSpace": "srgb",
+            "repeat": [
+              0.38,
+              0.13
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "backpack": {
+          "color": [
+            0.02217388478862708,
+            0.04666508633021928,
+            0.09530746662221588
+          ],
+          "sheen": [
+            0.028066763465597618,
+            0.04018103231510049,
+            0.057338420060583636
+          ],
+          "roughness": 0.95,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": [
+            0.35,
+            0.35
+          ],
+          "map": null,
+          "normalMap": {
+            "colorSpace": "",
+            "repeat": [
+              4,
+              4
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "roughnessMap": null
+        },
+        "webbing": {
+          "color": [
+            0.019382360952473074,
+            0.038204371589236,
+            0.06301001764564068
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.93,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "metal": {
+          "color": [
+            0.3712376804636741,
+            0.3915724777393922,
+            0.4232676699760063
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.26,
+          "metalness": 0.83,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        },
+        "buckle": {
+          "color": [
+            0.008023192982520563,
+            0.011612245176281512,
+            0.01680737574872402
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.44,
+          "metalness": 0,
+          "specularIntensity": 1,
+          "clearcoat": 0,
+          "clearcoatRoughness": 0,
+          "anisotropy": 0,
+          "anisotropyRotation": 0,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": null,
+          "map": null,
+          "normalMap": null,
+          "roughnessMap": null
+        }
+      }
+    },
+    "roundtrip": {
+      "original": {
+        "vertices": 313860,
+        "triangles": 359247,
+        "meshes": 54,
+        "backpackContact": {
+          "method": "Posterior shirt ray samples before the shared posture transform",
+          "fieldSamples": 241,
+          "checkedFrontVertices": 160,
+          "minSampledGap": 0.0049996105095275745,
+          "maxSampledGap": 0.014142083776417555,
+          "meanSampledGap": 0.005643119109706522,
+          "clearanceTarget": 0.005,
+          "notFullCollisionSimulation": true
+        },
+        "drawCalls": 107,
+        "revision": 31,
+        "designCandidate": 160,
+        "designLabel": "Balanced temple clearance and crown silhouette",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4769474267959595,
+          1.6899110279864897,
+          0.45209746062755585
+        ]
+      },
+      "imported": {
+        "vertices": 313860,
+        "triangles": 359247,
+        "meshes": 54,
+        "backpackContact": {
+          "method": "Posterior shirt ray samples before the shared posture transform",
+          "fieldSamples": 241,
+          "checkedFrontVertices": 160,
+          "minSampledGap": 0.0049996105095275745,
+          "maxSampledGap": 0.014142083776417555,
+          "meanSampledGap": 0.005643119109706522,
+          "clearanceTarget": 0.005,
+          "notFullCollisionSimulation": true
+        },
+        "drawCalls": 107,
+        "revision": 31,
+        "designCandidate": 160,
+        "designLabel": "Balanced temple clearance and crown silhouette",
+        "renderer": "WebKit WebGL",
+        "bounds": [
+          0.4769474267959595,
+          1.6899110279864897,
+          0.45209746062755585
+        ]
+      }
+    },
+    "backpackContact": {
+      "method": "Posterior shirt ray samples before the shared posture transform",
+      "fieldSamples": 241,
+      "checkedFrontVertices": 160,
+      "minSampledGap": 0.0049996105095275745,
+      "maxSampledGap": 0.014142083776417555,
+      "meanSampledGap": 0.005643119109706522,
+      "clearanceTarget": 0.005,
+      "notFullCollisionSimulation": true
+    },
+    "gltf": {
+      "version": "2.0",
+      "meshes": 54,
+      "textures": 12,
+      "images": 11,
+      "extensionsUsed": [
+        "KHR_texture_transform",
+        "KHR_materials_specular",
+        "KHR_materials_sheen",
+        "KHR_materials_clearcoat",
+        "KHR_materials_unlit",
+        "KHR_materials_anisotropy"
+      ]
+    },
+    "artifactDownloads": [
+      {
+        "href": "/campus-portrait-gpt6-astra-pro-mcp-colabdev/exports/campus-portrait-gpt6-astra-pro-mcp-colabdev.glb",
+        "status": 200
+      },
+      {
+        "href": "/campus-portrait-gpt6-astra-pro-mcp-colabdev/exports/campus-portrait-source-gpt6-astra-pro-mcp-colabdev.tar.gz",
+        "status": 200
+      },
+      {
+        "href": "/campus-portrait-gpt6-astra-pro-mcp-colabdev/exports/verification-gpt6-astra-pro-mcp-colabdev.json",
+        "status": 200
+      }
+    ],
+    "numericalRefinement": {
+      "passes": 1000,
+      "continuousSequence": true,
+      "uniqueGeometryHashes": 1000,
+      "uniqueImageHashes": 976,
+      "frameHashesVerified": true,
+      "errors": [],
+      "manualArtisticReviews": false,
+      "scope": "Numerical authored-shirt deformation, rendering and geometry checks; not a visual-likeness score."
+    },
+    "campaign": {
+      "rendered": 160,
+      "reviewed": 160,
+      "selected": 160,
+      "score": 91,
+      "target": {
+        "minimumIterations": 100,
+        "visualScore": 95
+      }
+    },
+    "portraitFeatures": {
+      "integratedMouth": true,
+      "softNasalLining": true,
+      "strandAtlas": true,
+      "bothProfileCameras": true
+    },
+    "passed": true
+  },
+  "rootAcceptance": {
     "timestamp": "2026-10-01T05:17:40.146Z",
     "url": "http://127.0.0.1:4197",
     "checks": {
@@ -3533,3240 +6969,6 @@
       "softNasalLining": true,
       "strandAtlas": true,
       "bothProfileCameras": true
-    },
-    "passed": true
-  },
-  "rootAcceptance": {
-    "timestamp": "2026-10-01T04:19:38.874Z",
-    "url": "http://127.0.0.1:4197",
-    "checks": {
-      "materialFactorsMatch": true,
-      "sampledBackpackClearance": true,
-      "backpackContactMetadataRoundtrip": true,
-      "exportedTriangleCountMatches": true,
-      "exportedBoundsMatch": true,
-      "embeddedImages": true,
-      "standardNormalMaps": true,
-      "galleryImagesLoaded": true,
-      "olderCheckpointsCollapsed": true,
-      "olderCheckpointsExpandable": true,
-      "progressJournal": true,
-      "absoluteArtifactPaths": true,
-      "exportedSourceControl": true,
-      "pngDownload": true,
-      "view-front": true,
-      "view-three-quarter": true,
-      "view-side": true,
-      "view-back": true,
-      "view-face": true,
-      "resolutionSelector": true,
-      "http-/progress/front-gpt6-astra-pro-mcp-colabdev.png": true,
-      "http-/exports/campus-portrait-gpt6-astra-pro-mcp-colabdev.glb": true,
-      "publishedArtifactCards": true,
-      "privatePathsBlocked": true,
-      "touchOrbit": true,
-      "touchPinchZoom": true,
-      "touchPreset": true,
-      "mobileNoHorizontalOverflow": true,
-      "minimum44pxTargets": true,
-      "mobileGalleryLoads": true,
-      "landscapeNoHorizontalOverflow": true,
-      "thousandNumericalPasses": true,
-      "verifiedFrameLedger": true,
-      "refinementDisclosure": true,
-      "hundredReviewedCandidates": true,
-      "uniqueReviewedCandidateIds": true,
-      "selectedDesignMatchesViewer": true,
-      "embeddedDesignMetadata": true,
-      "campaignPanelPresent": true
-    },
-    "errors": [],
-    "warnings": [],
-    "notes": [
-      "Browser tests use headless Chromium and SwiftShader software WebGL; they are not measurements of real phone GPU performance.",
-      "Backpack clearance is a pre-posture sampled geometric check, not a full collision or cloth simulation."
-    ],
-    "materialRoundtrip": {
-      "matched": true,
-      "differences": [],
-      "authored": {
-        "face": {
-          "color": [
-            1,
-            1,
-            1
-          ],
-          "sheen": [
-            0.12902145987857475,
-            0.08086126165900402,
-            0.060016669524544826
-          ],
-          "roughness": 0.5264,
-          "metalness": 0,
-          "specularIntensity": 0.65,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": [
-            1,
-            1
-          ],
-          "map": null,
-          "normalMap": {
-            "colorSpace": "",
-            "repeat": [
-              3,
-              3
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "roughnessMap": {
-            "colorSpace": "",
-            "repeat": [
-              2,
-              2
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          }
-        },
-        "Auricular root skin": {
-          "color": [
-            0.6483818953698383,
-            0.391504561399889,
-            0.2836732170145787
-          ],
-          "sheen": [
-            0.15,
-            0.09359405875013939,
-            0.07906726885453734
-          ],
-          "roughness": 0.62,
-          "metalness": 0,
-          "specularIntensity": 0.65,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": [
-            1,
-            1
-          ],
-          "map": null,
-          "normalMap": {
-            "colorSpace": "",
-            "repeat": [
-              3,
-              3
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "roughnessMap": {
-            "colorSpace": "",
-            "repeat": [
-              2,
-              2
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          }
-        },
-        "Warm auricular skin": {
-          "color": [
-            1,
-            1,
-            1
-          ],
-          "sheen": [
-            0.12902145987857475,
-            0.08086126165900402,
-            0.060016669524544826
-          ],
-          "roughness": 0.6,
-          "metalness": 0,
-          "specularIntensity": 0.65,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": [
-            1,
-            1
-          ],
-          "map": null,
-          "normalMap": {
-            "colorSpace": "",
-            "repeat": [
-              3,
-              3
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "roughnessMap": {
-            "colorSpace": "",
-            "repeat": [
-              2,
-              2
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          }
-        },
-        "skin": {
-          "color": [
-            0.6582346004056328,
-            0.39999886121592615,
-            0.28932501923885
-          ],
-          "sheen": [
-            0.15,
-            0.09359405875013939,
-            0.07906726885453734
-          ],
-          "roughness": 0.5264,
-          "metalness": 0,
-          "specularIntensity": 0.65,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": [
-            1,
-            1
-          ],
-          "map": null,
-          "normalMap": {
-            "colorSpace": "",
-            "repeat": [
-              3,
-              3
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "roughnessMap": {
-            "colorSpace": "",
-            "repeat": [
-              2,
-              2
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          }
-        },
-        "Conchal shadow": {
-          "color": [
-            0.5803519522724949,
-            0.33038523767183425,
-            0.23890903378145567
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.67,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "Conforming eye whites": {
-          "color": [
-            1,
-            1,
-            1
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.32,
-          "metalness": 0,
-          "specularIntensity": 0.35,
-          "clearcoat": 0.3,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "Brown iris detail": {
-          "color": [
-            0.72,
-            0.72,
-            0.72
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.43,
-          "metalness": 0,
-          "specularIntensity": 0.45,
-          "clearcoat": 0.32,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "lip": {
-          "color": [
-            0.5583403896257968,
-            0.2663556047920505,
-            0.21952619971859377
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.5,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0.1,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 2,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "lidShadow": {
-          "color": [
-            0.5840784178830671,
-            0.3712376804636741,
-            0.2746773120495699
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.9,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "glint": {
-          "color": [
-            1,
-            0.9559733532482866,
-            0.8713671191959567
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 1,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "lash": {
-          "color": [
-            0.031896033067374104,
-            0.018500220124016652,
-            0.02217388478862708
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.7,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "Soft inner eye tissue": {
-          "color": [
-            0.46778379610254284,
-            0.25818285291079235,
-            0.21586050010324417
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.48,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "brow": {
-          "color": [
-            0.04231141061442144,
-            0.02955683443236377,
-            0.02955683443236377
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.9,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "nostril": {
-          "color": [
-            0.23455058215026167,
-            0.10224173307914941,
-            0.07421356837213867
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.9,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "mouth": {
-          "color": [
-            0.04817182422013895,
-            0.01680737574872402,
-            0.02121901037134225
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.94,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "Natural upper lip": {
-          "color": [
-            1,
-            1,
-            1
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.57,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0.05,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "Natural lower lip": {
-          "color": [
-            1,
-            1,
-            1
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.5,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0.1,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 2,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "Warm dental arch shadow": {
-          "color": [
-            0.623960391667596,
-            0.5332764040016892,
-            0.4178850708380236
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.39,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "tooth": {
-          "color": [
-            0.9046611743890203,
-            0.8387990117372213,
-            0.7156935005005721
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.39,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "hairCap": {
-          "color": [
-            1,
-            1,
-            1
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.44,
-          "metalness": 0,
-          "specularIntensity": 0.57,
-          "clearcoat": 0.015,
-          "clearcoatRoughness": 0.5,
-          "anisotropy": 0.45,
-          "anisotropyRotation": 1.5707963268,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": [
-            0.11,
-            0.11
-          ],
-          "map": {
-            "colorSpace": "srgb",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "normalMap": {
-            "colorSpace": "",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "roughnessMap": null
-        },
-        "hairMid": {
-          "color": [
-            1,
-            1,
-            1
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.44,
-          "metalness": 0,
-          "specularIntensity": 0.57,
-          "clearcoat": 0.015,
-          "clearcoatRoughness": 0.5,
-          "anisotropy": 0.45,
-          "anisotropyRotation": 1.5707963268,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": [
-            0.11,
-            0.11
-          ],
-          "map": {
-            "colorSpace": "srgb",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "normalMap": {
-            "colorSpace": "",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "roughnessMap": null
-        },
-        "hair": {
-          "color": [
-            0.94,
-            0.94,
-            0.94
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.44,
-          "metalness": 0,
-          "specularIntensity": 0.57,
-          "clearcoat": 0.015,
-          "clearcoatRoughness": 0.5,
-          "anisotropy": 0.45,
-          "anisotropyRotation": 1.5707963268,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": [
-            0.11,
-            0.11
-          ],
-          "map": {
-            "colorSpace": "srgb",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "normalMap": {
-            "colorSpace": "",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "roughnessMap": null
-        },
-        "Layered procedural hair strands": {
-          "color": [
-            1,
-            1,
-            1
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.82,
-          "metalness": 0,
-          "specularIntensity": 0.07,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0.38,
-          "side": 2,
-          "opacity": 1,
-          "normalScale": null,
-          "map": {
-            "colorSpace": "srgb",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1001,
-            "wrapT": 1001,
-            "anisotropy": 8
-          },
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "hairDark": {
-          "color": [
-            0.7,
-            0.7,
-            0.7
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.62,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": [
-            0.11,
-            0.11
-          ],
-          "map": {
-            "colorSpace": "srgb",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "normalMap": {
-            "colorSpace": "",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "roughnessMap": null
-        },
-        "Dark fabric hair elastic": {
-          "color": [
-            0.007499032040460618,
-            0.009134058699157796,
-            0.015208514418949472
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.88,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "hairLight": {
-          "color": [
-            1,
-            1,
-            1
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.44,
-          "metalness": 0,
-          "specularIntensity": 0.57,
-          "clearcoat": 0.015,
-          "clearcoatRoughness": 0.5,
-          "anisotropy": 0.45,
-          "anisotropyRotation": 1.5707963268,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": [
-            0.11,
-            0.11
-          ],
-          "map": {
-            "colorSpace": "srgb",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "normalMap": {
-            "colorSpace": "",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "roughnessMap": null
-        },
-        "socks": {
-          "color": [
-            1,
-            1,
-            1
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.95,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": {
-            "colorSpace": "srgb",
-            "repeat": [
-              2,
-              2
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "sole": {
-          "color": [
-            0.007499032040460618,
-            0.009134058699157796,
-            0.014443843592229466
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.76,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "leather": {
-          "color": [
-            0.0069954101845983935,
-            0.00972121731707524,
-            0.014443843592229466
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.26,
-          "metalness": 0.07,
-          "specularIntensity": 1,
-          "clearcoat": 0.55,
-          "clearcoatRoughness": 0.27,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "stitch": {
-          "color": [
-            0.08865558627723595,
-            0.10461648408208657,
-            0.13286832154414627
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.76,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "skirt": {
-          "color": [
-            1,
-            1,
-            1
-          ],
-          "sheen": [
-            0.053271120958410106,
-            0.06370935562287071,
-            0.08465353399520126
-          ],
-          "roughness": 0.89,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 2,
-          "opacity": 1,
-          "normalScale": [
-            0.12,
-            0.12
-          ],
-          "map": {
-            "colorSpace": "srgb",
-            "repeat": [
-              2.34,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "normalMap": {
-            "colorSpace": "",
-            "repeat": [
-              4,
-              4
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "roughnessMap": null
-        },
-        "lining": {
-          "color": [
-            0.018500220124016652,
-            0.025186859622305935,
-            0.04231141061442144
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 1,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 2,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "shirt": {
-          "color": [
-            1,
-            1,
-            1
-          ],
-          "sheen": [
-            0.18809837378663102,
-            0.17926624588666096,
-            0.17068088802878212
-          ],
-          "roughness": 0.84,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 2,
-          "opacity": 1,
-          "normalScale": [
-            0.12,
-            0.12
-          ],
-          "map": {
-            "colorSpace": "srgb",
-            "repeat": [
-              2,
-              2
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "normalMap": {
-            "colorSpace": "",
-            "repeat": [
-              4,
-              4
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "roughnessMap": null
-        },
-        "seam": {
-          "color": [
-            0.6795424696265424,
-            0.7156935005005721,
-            0.76052450467022
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.9,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "button": {
-          "color": [
-            0.9046611743890203,
-            0.8879231178794776,
-            0.8468732315065057
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.32,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "Natural unpolished nail": {
-          "color": [
-            0.7991027380100881,
-            0.5906188409113381,
-            0.48514994004665124
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.48,
-          "metalness": 0,
-          "specularIntensity": 0.45,
-          "clearcoat": 0.12,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "embroidery": {
-          "color": [
-            0.407240211891531,
-            0.5583403896257968,
-            0.7681511472425809
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.8,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "tie": {
-          "color": [
-            1,
-            1,
-            1
-          ],
-          "sheen": [
-            0.08634420004129767,
-            0.11497633508644396,
-            0.18941259845538294
-          ],
-          "roughness": 0.65,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 2,
-          "opacity": 1,
-          "normalScale": null,
-          "map": {
-            "colorSpace": "srgb",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "tieKnot": {
-          "color": [
-            1,
-            1,
-            1
-          ],
-          "sheen": [
-            0.08634420004129767,
-            0.11497633508644396,
-            0.18941259845538294
-          ],
-          "roughness": 0.65,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 2,
-          "opacity": 1,
-          "normalScale": null,
-          "map": {
-            "colorSpace": "srgb",
-            "repeat": [
-              0.38,
-              0.13
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "backpack": {
-          "color": [
-            0.02217388478862708,
-            0.04666508633021928,
-            0.09530746662221588
-          ],
-          "sheen": [
-            0.028066763465597618,
-            0.04018103231510049,
-            0.057338420060583636
-          ],
-          "roughness": 0.95,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": [
-            0.35,
-            0.35
-          ],
-          "map": null,
-          "normalMap": {
-            "colorSpace": "",
-            "repeat": [
-              4,
-              4
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "roughnessMap": null
-        },
-        "webbing": {
-          "color": [
-            0.019382360952473074,
-            0.038204371589236,
-            0.06301001764564068
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.93,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "metal": {
-          "color": [
-            0.3712376804636741,
-            0.3915724777393922,
-            0.4232676699760063
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.26,
-          "metalness": 0.83,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "buckle": {
-          "color": [
-            0.008023192982520563,
-            0.011612245176281512,
-            0.01680737574872402
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.44,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        }
-      },
-      "exported": {
-        "face": {
-          "color": [
-            1,
-            1,
-            1
-          ],
-          "sheen": [
-            0.12902145987857475,
-            0.08086126165900402,
-            0.060016669524544826
-          ],
-          "roughness": 0.5264,
-          "metalness": 0,
-          "specularIntensity": 0.65,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": [
-            1,
-            1
-          ],
-          "map": null,
-          "normalMap": {
-            "colorSpace": "",
-            "repeat": [
-              3,
-              3
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "roughnessMap": {
-            "colorSpace": "",
-            "repeat": [
-              2,
-              2
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          }
-        },
-        "Auricular root skin": {
-          "color": [
-            0.6483818953698383,
-            0.391504561399889,
-            0.2836732170145787
-          ],
-          "sheen": [
-            0.15,
-            0.09359405875013939,
-            0.07906726885453734
-          ],
-          "roughness": 0.62,
-          "metalness": 0,
-          "specularIntensity": 0.65,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": [
-            1,
-            1
-          ],
-          "map": null,
-          "normalMap": {
-            "colorSpace": "",
-            "repeat": [
-              3,
-              3
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "roughnessMap": {
-            "colorSpace": "",
-            "repeat": [
-              2,
-              2
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          }
-        },
-        "Warm auricular skin": {
-          "color": [
-            1,
-            1,
-            1
-          ],
-          "sheen": [
-            0.12902145987857475,
-            0.08086126165900402,
-            0.060016669524544826
-          ],
-          "roughness": 0.6,
-          "metalness": 0,
-          "specularIntensity": 0.65,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": [
-            1,
-            1
-          ],
-          "map": null,
-          "normalMap": {
-            "colorSpace": "",
-            "repeat": [
-              3,
-              3
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "roughnessMap": {
-            "colorSpace": "",
-            "repeat": [
-              2,
-              2
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          }
-        },
-        "skin": {
-          "color": [
-            0.6582346004056328,
-            0.39999886121592615,
-            0.28932501923885
-          ],
-          "sheen": [
-            0.15,
-            0.09359405875013939,
-            0.07906726885453734
-          ],
-          "roughness": 0.5264,
-          "metalness": 0,
-          "specularIntensity": 0.65,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": [
-            1,
-            1
-          ],
-          "map": null,
-          "normalMap": {
-            "colorSpace": "",
-            "repeat": [
-              3,
-              3
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "roughnessMap": {
-            "colorSpace": "",
-            "repeat": [
-              2,
-              2
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          }
-        },
-        "Conchal shadow": {
-          "color": [
-            0.5803519522724949,
-            0.33038523767183425,
-            0.23890903378145567
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.67,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "Conforming eye whites": {
-          "color": [
-            1,
-            1,
-            1
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.32,
-          "metalness": 0,
-          "specularIntensity": 0.35,
-          "clearcoat": 0.3,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "Brown iris detail": {
-          "color": [
-            0.72,
-            0.72,
-            0.72
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.43,
-          "metalness": 0,
-          "specularIntensity": 0.45,
-          "clearcoat": 0.32,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "lip": {
-          "color": [
-            0.5583403896257968,
-            0.2663556047920505,
-            0.21952619971859377
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.5,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0.1,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 2,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "lidShadow": {
-          "color": [
-            0.5840784178830671,
-            0.3712376804636741,
-            0.2746773120495699
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.9,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "glint": {
-          "color": [
-            1,
-            0.9559733532482866,
-            0.8713671191959567
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 1,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "lash": {
-          "color": [
-            0.031896033067374104,
-            0.018500220124016652,
-            0.02217388478862708
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.7,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "Soft inner eye tissue": {
-          "color": [
-            0.46778379610254284,
-            0.25818285291079235,
-            0.21586050010324417
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.48,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "brow": {
-          "color": [
-            0.04231141061442144,
-            0.02955683443236377,
-            0.02955683443236377
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.9,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "nostril": {
-          "color": [
-            0.23455058215026167,
-            0.10224173307914941,
-            0.07421356837213867
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.9,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "mouth": {
-          "color": [
-            0.04817182422013895,
-            0.01680737574872402,
-            0.02121901037134225
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.94,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "Natural upper lip": {
-          "color": [
-            1,
-            1,
-            1
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.57,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0.05,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "Natural lower lip": {
-          "color": [
-            1,
-            1,
-            1
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.5,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0.1,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 2,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "Warm dental arch shadow": {
-          "color": [
-            0.623960391667596,
-            0.5332764040016892,
-            0.4178850708380236
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.39,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "tooth": {
-          "color": [
-            0.9046611743890203,
-            0.8387990117372213,
-            0.7156935005005721
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.39,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "hairCap": {
-          "color": [
-            1,
-            1,
-            1
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.44,
-          "metalness": 0,
-          "specularIntensity": 0.57,
-          "clearcoat": 0.015,
-          "clearcoatRoughness": 0.5,
-          "anisotropy": 0.45,
-          "anisotropyRotation": 1.5707963268,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": [
-            0.11,
-            0.11
-          ],
-          "map": {
-            "colorSpace": "srgb",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "normalMap": {
-            "colorSpace": "",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "roughnessMap": null
-        },
-        "hairMid": {
-          "color": [
-            1,
-            1,
-            1
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.44,
-          "metalness": 0,
-          "specularIntensity": 0.57,
-          "clearcoat": 0.015,
-          "clearcoatRoughness": 0.5,
-          "anisotropy": 0.45,
-          "anisotropyRotation": 1.5707963268,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": [
-            0.11,
-            0.11
-          ],
-          "map": {
-            "colorSpace": "srgb",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "normalMap": {
-            "colorSpace": "",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "roughnessMap": null
-        },
-        "hair": {
-          "color": [
-            0.94,
-            0.94,
-            0.94
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.44,
-          "metalness": 0,
-          "specularIntensity": 0.57,
-          "clearcoat": 0.015,
-          "clearcoatRoughness": 0.5,
-          "anisotropy": 0.45,
-          "anisotropyRotation": 1.5707963268,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": [
-            0.11,
-            0.11
-          ],
-          "map": {
-            "colorSpace": "srgb",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "normalMap": {
-            "colorSpace": "",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "roughnessMap": null
-        },
-        "Layered procedural hair strands": {
-          "color": [
-            1,
-            1,
-            1
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.82,
-          "metalness": 0,
-          "specularIntensity": 0.07,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0.38,
-          "side": 2,
-          "opacity": 1,
-          "normalScale": null,
-          "map": {
-            "colorSpace": "srgb",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1001,
-            "wrapT": 1001,
-            "anisotropy": 8
-          },
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "hairDark": {
-          "color": [
-            0.7,
-            0.7,
-            0.7
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.62,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": [
-            0.11,
-            0.11
-          ],
-          "map": {
-            "colorSpace": "srgb",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "normalMap": {
-            "colorSpace": "",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "roughnessMap": null
-        },
-        "Dark fabric hair elastic": {
-          "color": [
-            0.007499032040460618,
-            0.009134058699157796,
-            0.015208514418949472
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.88,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "hairLight": {
-          "color": [
-            1,
-            1,
-            1
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.44,
-          "metalness": 0,
-          "specularIntensity": 0.57,
-          "clearcoat": 0.015,
-          "clearcoatRoughness": 0.5,
-          "anisotropy": 0.45,
-          "anisotropyRotation": 1.5707963268,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": [
-            0.11,
-            0.11
-          ],
-          "map": {
-            "colorSpace": "srgb",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "normalMap": {
-            "colorSpace": "",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "roughnessMap": null
-        },
-        "socks": {
-          "color": [
-            1,
-            1,
-            1
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.95,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": {
-            "colorSpace": "srgb",
-            "repeat": [
-              2,
-              2
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "sole": {
-          "color": [
-            0.007499032040460618,
-            0.009134058699157796,
-            0.014443843592229466
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.76,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "leather": {
-          "color": [
-            0.0069954101845983935,
-            0.00972121731707524,
-            0.014443843592229466
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.26,
-          "metalness": 0.07,
-          "specularIntensity": 1,
-          "clearcoat": 0.55,
-          "clearcoatRoughness": 0.27,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "stitch": {
-          "color": [
-            0.08865558627723595,
-            0.10461648408208657,
-            0.13286832154414627
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.76,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "skirt": {
-          "color": [
-            1,
-            1,
-            1
-          ],
-          "sheen": [
-            0.053271120958410106,
-            0.06370935562287071,
-            0.08465353399520126
-          ],
-          "roughness": 0.89,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 2,
-          "opacity": 1,
-          "normalScale": [
-            0.12,
-            0.12
-          ],
-          "map": {
-            "colorSpace": "srgb",
-            "repeat": [
-              2.34,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "normalMap": {
-            "colorSpace": "",
-            "repeat": [
-              4,
-              4
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "roughnessMap": null
-        },
-        "lining": {
-          "color": [
-            0.018500220124016652,
-            0.025186859622305935,
-            0.04231141061442144
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 1,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 2,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "shirt": {
-          "color": [
-            1,
-            1,
-            1
-          ],
-          "sheen": [
-            0.18809837378663102,
-            0.17926624588666096,
-            0.17068088802878212
-          ],
-          "roughness": 0.84,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 2,
-          "opacity": 1,
-          "normalScale": [
-            0.12,
-            0.12
-          ],
-          "map": {
-            "colorSpace": "srgb",
-            "repeat": [
-              2,
-              2
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "normalMap": {
-            "colorSpace": "",
-            "repeat": [
-              4,
-              4
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "roughnessMap": null
-        },
-        "seam": {
-          "color": [
-            0.6795424696265424,
-            0.7156935005005721,
-            0.76052450467022
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.9,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "button": {
-          "color": [
-            0.9046611743890203,
-            0.8879231178794776,
-            0.8468732315065057
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.32,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "Natural unpolished nail": {
-          "color": [
-            0.7991027380100881,
-            0.5906188409113381,
-            0.48514994004665124
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.48,
-          "metalness": 0,
-          "specularIntensity": 0.45,
-          "clearcoat": 0.12,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "embroidery": {
-          "color": [
-            0.407240211891531,
-            0.5583403896257968,
-            0.7681511472425809
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.8,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "tie": {
-          "color": [
-            1,
-            1,
-            1
-          ],
-          "sheen": [
-            0.08634420004129767,
-            0.11497633508644396,
-            0.18941259845538294
-          ],
-          "roughness": 0.65,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 2,
-          "opacity": 1,
-          "normalScale": null,
-          "map": {
-            "colorSpace": "srgb",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "tieKnot": {
-          "color": [
-            1,
-            1,
-            1
-          ],
-          "sheen": [
-            0.08634420004129767,
-            0.11497633508644396,
-            0.18941259845538294
-          ],
-          "roughness": 0.65,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 2,
-          "opacity": 1,
-          "normalScale": null,
-          "map": {
-            "colorSpace": "srgb",
-            "repeat": [
-              0.38,
-              0.13
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "backpack": {
-          "color": [
-            0.02217388478862708,
-            0.04666508633021928,
-            0.09530746662221588
-          ],
-          "sheen": [
-            0.028066763465597618,
-            0.04018103231510049,
-            0.057338420060583636
-          ],
-          "roughness": 0.95,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": [
-            0.35,
-            0.35
-          ],
-          "map": null,
-          "normalMap": {
-            "colorSpace": "",
-            "repeat": [
-              4,
-              4
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "roughnessMap": null
-        },
-        "webbing": {
-          "color": [
-            0.019382360952473074,
-            0.038204371589236,
-            0.06301001764564068
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.93,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "metal": {
-          "color": [
-            0.3712376804636741,
-            0.3915724777393922,
-            0.4232676699760063
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.26,
-          "metalness": 0.83,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        },
-        "buckle": {
-          "color": [
-            0.008023192982520563,
-            0.011612245176281512,
-            0.01680737574872402
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.44,
-          "metalness": 0,
-          "specularIntensity": 1,
-          "clearcoat": 0,
-          "clearcoatRoughness": 0,
-          "anisotropy": 0,
-          "anisotropyRotation": 0,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": null,
-          "map": null,
-          "normalMap": null,
-          "roughnessMap": null
-        }
-      }
-    },
-    "roundtrip": {
-      "original": {
-        "vertices": 311473,
-        "triangles": 354797,
-        "meshes": 52,
-        "backpackContact": {
-          "method": "Posterior shirt ray samples before the shared posture transform",
-          "fieldSamples": 241,
-          "checkedFrontVertices": 160,
-          "minSampledGap": 0.0049996105095275745,
-          "maxSampledGap": 0.014142083776417555,
-          "meanSampledGap": 0.005643119109706522,
-          "clearanceTarget": 0.005,
-          "notFullCollisionSimulation": true
-        },
-        "drawCalls": 103,
-        "revision": 30,
-        "designCandidate": 140,
-        "designLabel": "Balanced rounded silhouette and upper-back clearance",
-        "renderer": "WebKit WebGL",
-        "bounds": [
-          0.4769474267959595,
-          1.694358913981693,
-          0.45209746062755585
-        ]
-      },
-      "imported": {
-        "vertices": 311473,
-        "triangles": 354797,
-        "meshes": 52,
-        "backpackContact": {
-          "method": "Posterior shirt ray samples before the shared posture transform",
-          "fieldSamples": 241,
-          "checkedFrontVertices": 160,
-          "minSampledGap": 0.0049996105095275745,
-          "maxSampledGap": 0.014142083776417555,
-          "meanSampledGap": 0.005643119109706522,
-          "clearanceTarget": 0.005,
-          "notFullCollisionSimulation": true
-        },
-        "drawCalls": 103,
-        "revision": 30,
-        "designCandidate": 140,
-        "designLabel": "Balanced rounded silhouette and upper-back clearance",
-        "renderer": "WebKit WebGL",
-        "bounds": [
-          0.4769474267959595,
-          1.694358913981693,
-          0.45209746062755585
-        ]
-      }
-    },
-    "backpackContact": {
-      "method": "Posterior shirt ray samples before the shared posture transform",
-      "fieldSamples": 241,
-      "checkedFrontVertices": 160,
-      "minSampledGap": 0.0049996105095275745,
-      "maxSampledGap": 0.014142083776417555,
-      "meanSampledGap": 0.005643119109706522,
-      "clearanceTarget": 0.005,
-      "notFullCollisionSimulation": true
-    },
-    "gltf": {
-      "version": "2.0",
-      "meshes": 52,
-      "textures": 11,
-      "images": 10,
-      "extensionsUsed": [
-        "KHR_texture_transform",
-        "KHR_materials_specular",
-        "KHR_materials_sheen",
-        "KHR_materials_clearcoat",
-        "KHR_materials_unlit",
-        "KHR_materials_anisotropy"
-      ]
-    },
-    "artifactDownloads": [
-      {
-        "href": "/exports/campus-portrait-gpt6-astra-pro-mcp-colabdev.glb",
-        "status": 200
-      },
-      {
-        "href": "/exports/campus-portrait-source-gpt6-astra-pro-mcp-colabdev.tar.gz",
-        "status": 200
-      },
-      {
-        "href": "/exports/verification-gpt6-astra-pro-mcp-colabdev.json",
-        "status": 200
-      }
-    ],
-    "numericalRefinement": {
-      "passes": 1000,
-      "continuousSequence": true,
-      "uniqueGeometryHashes": 1000,
-      "uniqueImageHashes": 976,
-      "frameHashesVerified": true,
-      "errors": [],
-      "manualArtisticReviews": false,
-      "scope": "Numerical authored-shirt deformation, rendering and geometry checks; not a visual-likeness score."
-    },
-    "campaign": {
-      "rendered": 140,
-      "reviewed": 140,
-      "selected": 140,
-      "score": 90,
-      "target": {
-        "minimumIterations": 100,
-        "visualScore": 95
-      }
     },
     "passed": true
   },
