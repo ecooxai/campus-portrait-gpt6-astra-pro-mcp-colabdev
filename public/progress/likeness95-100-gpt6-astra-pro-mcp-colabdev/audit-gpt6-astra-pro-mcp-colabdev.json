@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-10-01T04:16:36.080Z",
+  "generatedAt": "2026-10-01T05:17:38.657Z",
   "campaign": "likeness95-100-gpt6-astra-pro-mcp-colabdev",
   "minimumRequired": 100,
-  "rendered": 140,
-  "reviewed": 140,
-  "uniqueCandidateIds": 140,
-  "distinctDesignStates": 140,
-  "distinctNumericParameterStates": 140,
-  "distinctGeometryFingerprints": 127,
-  "evidenceImageCount": 296,
-  "distinctEvidenceImages": 296,
-  "selected": 140,
-  "visualScore": 90,
+  "rendered": 160,
+  "reviewed": 160,
+  "uniqueCandidateIds": 160,
+  "distinctDesignStates": 160,
+  "distinctNumericParameterStates": 160,
+  "distinctGeometryFingerprints": 144,
+  "evidenceImageCount": 336,
+  "distinctEvidenceImages": 336,
+  "selected": 160,
+  "visualScore": 91,
   "visualTarget": 95,
   "visualTargetReached": false,
   "problems": [],
@@ -3050,6 +3050,426 @@
           "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c140-gpt6-astra-pro-mcp-colabdev/detail-backpack-gpt6-astra-pro-mcp-colabdev.jpg",
           "bytes": 52771,
           "sha256": "7a302a3d84abaf2ee4fc38e7ffad399f0bdf26a8532ee3a37d18a168360ac6fc"
+        }
+      ]
+    },
+    {
+      "id": 141,
+      "score": 90.5,
+      "designHash": "dc2dd5e941c7e8c2237d4758360ee85a45a4aada17b4fbbdd6bd7e0837b2e100",
+      "sourceCommit": "7bad7cc54dedb0c683e7bc98c794c972479d1c4f",
+      "geometryFingerprint": "8b4e6e5a",
+      "evidence": [
+        {
+          "view": "face",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c141-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 69912,
+          "sha256": "bb2c36c60a044f4219d7f625c4f9f640174242aa389117b5ece0bd418b8a2171"
+        },
+        {
+          "view": "face-three-quarter",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c141-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 71679,
+          "sha256": "09a7f6c448d41bc37293e64654beb05900c2d1b149af3f3b08ae45aa9d090312"
+        }
+      ]
+    },
+    {
+      "id": 142,
+      "score": 90,
+      "designHash": "a28ab8b2a195cd38ad81748aeab73596097a23d54acc87a4b422b56b2f6da497",
+      "sourceCommit": "7bad7cc54dedb0c683e7bc98c794c972479d1c4f",
+      "geometryFingerprint": "9c974b2f",
+      "evidence": [
+        {
+          "view": "face",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c142-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 69886,
+          "sha256": "7717d216f605ae1521f71af5dbd5ca40ec687c9ac6c9d8932de54d75b33fcc83"
+        },
+        {
+          "view": "face-three-quarter",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c142-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 71663,
+          "sha256": "0ea8af580f850a3327ea000ca342713dc8e7d5e7637d971416bd8e215cffacbe"
+        }
+      ]
+    },
+    {
+      "id": 143,
+      "score": 90,
+      "designHash": "218f8343471da76df21c0e9c879d6d7f1784b40a17f84a7935cec3cbcde1c522",
+      "sourceCommit": "7bad7cc54dedb0c683e7bc98c794c972479d1c4f",
+      "geometryFingerprint": "370b5e51",
+      "evidence": [
+        {
+          "view": "face",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c143-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 69925,
+          "sha256": "06a6b10c4b6d42d687c8d0ac8dea099d7423106a3da24ee97798fe511fc9c024"
+        },
+        {
+          "view": "face-three-quarter",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c143-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 71679,
+          "sha256": "4912c6acf2536773054c79b45117491fd82343a22d91d10933d8d241adc3c9ba"
+        }
+      ]
+    },
+    {
+      "id": 144,
+      "score": 90.5,
+      "designHash": "408b22e6f04abbcaec7c82caf5d857afdd64a35608018458cacae952420652f1",
+      "sourceCommit": "7bad7cc54dedb0c683e7bc98c794c972479d1c4f",
+      "geometryFingerprint": "b3f33da9",
+      "evidence": [
+        {
+          "view": "face",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c144-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 69900,
+          "sha256": "e912de12a02c2cca70058c97d1c57032a01f874696374e827c47534bfa7d1337"
+        },
+        {
+          "view": "face-three-quarter",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c144-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 71671,
+          "sha256": "bf9454c51851130f57ec7c1ff124f22feaf6ec87c40194f4ec66b0f07ff57ec4"
+        }
+      ]
+    },
+    {
+      "id": 145,
+      "score": 90.5,
+      "designHash": "7e03895b2b2cd2db526984ce2d57df63172eef9e0be68cddba8c8f9f1ff6d329",
+      "sourceCommit": "882b090e9e0a2c9d3afe53fd67eeb682e6c9b82f",
+      "geometryFingerprint": "a5dea235",
+      "evidence": [
+        {
+          "view": "face",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c145-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 70128,
+          "sha256": "369b163ddeca7cf15875168baf91f03f5bf4709358cf77bbb50f4a8725442fd1"
+        },
+        {
+          "view": "face-three-quarter",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c145-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 71893,
+          "sha256": "bbd8b042e5f9c508b1f36a07873898f3ac161387c56de4e1d660108bc9801124"
+        }
+      ]
+    },
+    {
+      "id": 146,
+      "score": 90.5,
+      "designHash": "40f4331e52a1e77ed9440e79643ae019c7bd18c13a2e58a27f49bf48aff3d380",
+      "sourceCommit": "882b090e9e0a2c9d3afe53fd67eeb682e6c9b82f",
+      "geometryFingerprint": "eecb283a",
+      "evidence": [
+        {
+          "view": "face",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c146-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 69949,
+          "sha256": "b9657d3ec37f8d19db610b6a26c57f96f0487d790b0d3e08db5bd5f397a38c51"
+        },
+        {
+          "view": "face-three-quarter",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c146-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 71690,
+          "sha256": "14e9b61bec655b86665859444fe2663c80eb3883460526d1fd50912caaa11344"
+        }
+      ]
+    },
+    {
+      "id": 147,
+      "score": 90,
+      "designHash": "27ccb01b5f99ad50dbe6389b9d4e8a9bc34ecb3ec52aefe0614fa61bd4038474",
+      "sourceCommit": "882b090e9e0a2c9d3afe53fd67eeb682e6c9b82f",
+      "geometryFingerprint": "fedf7a98",
+      "evidence": [
+        {
+          "view": "face",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c147-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 70253,
+          "sha256": "f6c32a009733cd4f882fa26d90c3c81d3baba7f98ef78ff5eab3d40cc0ad220c"
+        },
+        {
+          "view": "face-three-quarter",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c147-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 71973,
+          "sha256": "d7b3344f586b122252fe6431c5f4606dc0e05d3960ac35dda44a6e343986caf4"
+        }
+      ]
+    },
+    {
+      "id": 148,
+      "score": 91,
+      "designHash": "ce1065d81727de6611c6b9b775081cb9dabba78adecc1e5b3703d122062863bb",
+      "sourceCommit": "882b090e9e0a2c9d3afe53fd67eeb682e6c9b82f",
+      "geometryFingerprint": "619bbcfb",
+      "evidence": [
+        {
+          "view": "face",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c148-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 70097,
+          "sha256": "ab4bc7c503df7f81c4dffb7271c220c797d3749be51ae6d5b987189f0588cecb"
+        },
+        {
+          "view": "face-three-quarter",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c148-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 71761,
+          "sha256": "85e64f3e7ff0c373cdf4696c882dc2951e94726111b2884ef3e45ac755f8e2af"
+        }
+      ]
+    },
+    {
+      "id": 149,
+      "score": 91,
+      "designHash": "067bb20a4d42add87d2d87557c742edfbf2d4c97d1bf5580f17f295b25576089",
+      "sourceCommit": "73acba1337e09e688f96c4c0c4b1cf54bbc457db",
+      "geometryFingerprint": "a9f20154",
+      "evidence": [
+        {
+          "view": "face",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c149-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 68548,
+          "sha256": "dfd9e2c83b6cf07799bc6719759a24380886738f9d445bed9da4f0498720a333"
+        },
+        {
+          "view": "face-back",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c149-gpt6-astra-pro-mcp-colabdev/face-back-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 55074,
+          "sha256": "c345173e06328a2569b138df0586ce5625e61e8dc3b136771bd6b8fc7992d003"
+        }
+      ]
+    },
+    {
+      "id": 150,
+      "score": 90.5,
+      "designHash": "0374da9c4b90755255c812e88438e93125fc3c39ea5fcd920c736024621e56af",
+      "sourceCommit": "73acba1337e09e688f96c4c0c4b1cf54bbc457db",
+      "geometryFingerprint": "a9f20154",
+      "evidence": [
+        {
+          "view": "face",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c150-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 68479,
+          "sha256": "d1cadc8bcd4229033b69d1e6a7870c7b387319475ec4b5b11cf2add8af322522"
+        },
+        {
+          "view": "face-back",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c150-gpt6-astra-pro-mcp-colabdev/face-back-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 54851,
+          "sha256": "3fa4ffad1cb898155b4b1fe41901f295114a2fa2e67321dae37f12e9b6fde0f5"
+        }
+      ]
+    },
+    {
+      "id": 151,
+      "score": 91,
+      "designHash": "cde3606008a1557441ce9f35fbd71550c39691c37622e5dee465429208a3b1a6",
+      "sourceCommit": "73acba1337e09e688f96c4c0c4b1cf54bbc457db",
+      "geometryFingerprint": "a9f20154",
+      "evidence": [
+        {
+          "view": "face",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c151-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 69554,
+          "sha256": "dd39656dc0048181bf62fd175f87464f516621aa7c0f70464e3708732d3ac046"
+        },
+        {
+          "view": "face-back",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c151-gpt6-astra-pro-mcp-colabdev/face-back-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 55802,
+          "sha256": "10ff300741dd4760644e1618e85cb7ea765c120b5e5a08501ff540c82cb5e2e4"
+        }
+      ]
+    },
+    {
+      "id": 152,
+      "score": 91,
+      "designHash": "89cb910cbda50d42b4066d1dd1cafa350f4aec43bf3361750ff97150654c8f25",
+      "sourceCommit": "73acba1337e09e688f96c4c0c4b1cf54bbc457db",
+      "geometryFingerprint": "a9f20154",
+      "evidence": [
+        {
+          "view": "face",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c152-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 68825,
+          "sha256": "e1d094549e7ec4fbece4ca1824fee00d897dbe54ce631f82c658011bd56f8a50"
+        },
+        {
+          "view": "face-back",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c152-gpt6-astra-pro-mcp-colabdev/face-back-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 55154,
+          "sha256": "65505cf7e298796afd115dd7a404bce7da52c4167429183f7daba27a64a5af35"
+        }
+      ]
+    },
+    {
+      "id": 153,
+      "score": 91,
+      "designHash": "eb5d077a3784e72ab5db39bb9bb04cddbe227e7e0f83b44ae940835ffc279fb0",
+      "sourceCommit": "38045fd829cbf0fb91eb041f11ee8f306e78fa55",
+      "geometryFingerprint": "75a4f99",
+      "evidence": [
+        {
+          "view": "face",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c153-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 68800,
+          "sha256": "f202b13ad6af7f1094ba0c64cf931eedcbe3abf44bf404b86fee72e0e4172148"
+        },
+        {
+          "view": "face-profile",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c153-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 61362,
+          "sha256": "170d406f3eb23c2c10f75bae101e45a50871d7a88a9a61150691f9abfb34eeb1"
+        }
+      ]
+    },
+    {
+      "id": 154,
+      "score": 90.5,
+      "designHash": "f4ed77469958ed4960baa9cb69806d07347147957f2e7fd94c233e84f41576d6",
+      "sourceCommit": "38045fd829cbf0fb91eb041f11ee8f306e78fa55",
+      "geometryFingerprint": "a4959352",
+      "evidence": [
+        {
+          "view": "face",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c154-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 68787,
+          "sha256": "68afd0d40990daa3e7f5bec957f86c7c49603674c3ea3c30e7b747091a0f70d9"
+        },
+        {
+          "view": "face-profile",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c154-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 61359,
+          "sha256": "eda0f7bf22a127aa49060990ac6297beadb9c41649431ac35b4e2cab5204d77e"
+        }
+      ]
+    },
+    {
+      "id": 155,
+      "score": 90.5,
+      "designHash": "e0da40580189f44bb14bbb62ce4fa573d405282fb70c7d6a9b55884c2d201265",
+      "sourceCommit": "38045fd829cbf0fb91eb041f11ee8f306e78fa55",
+      "geometryFingerprint": "99535ac0",
+      "evidence": [
+        {
+          "view": "face",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c155-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 68738,
+          "sha256": "ae0ae0593d9c0d5a83fbab14ffbb6569f095804cdf0306349baedf59af1712ae"
+        },
+        {
+          "view": "face-profile",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c155-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 61392,
+          "sha256": "f1e5adb3b2666a4dd6869444216f52cf1af08fd0768fc96e897183b23a57d7cc"
+        }
+      ]
+    },
+    {
+      "id": 156,
+      "score": 91,
+      "designHash": "4ecf623a33801d197d2091e52e9a7080c4cb9fe67a357f6a1d6c74c22a4e1e58",
+      "sourceCommit": "38045fd829cbf0fb91eb041f11ee8f306e78fa55",
+      "geometryFingerprint": "50b2ad06",
+      "evidence": [
+        {
+          "view": "face",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c156-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 68818,
+          "sha256": "1a3228e2390038d96a16c4e9739f83ccc289389bd0c91b70c06f675244c6f934"
+        },
+        {
+          "view": "face-profile",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c156-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 61367,
+          "sha256": "f8bec1654d45064ef9966a89c297afcb02f3e987766e205c629d1ea095966087"
+        }
+      ]
+    },
+    {
+      "id": 157,
+      "score": 91,
+      "designHash": "3d33c0f51f53b23948f2779fbb590ca25c5f14825c558d7fe1f05636b0cbedf1",
+      "sourceCommit": "5f353f1db5e48e483cbb8740837648304912a053",
+      "geometryFingerprint": "72dde114",
+      "evidence": [
+        {
+          "view": "face-three-quarter",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c157-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 70020,
+          "sha256": "85fd6d4b955056888f8a95faec418be5f7137ac616c5f70eb609124675926080"
+        },
+        {
+          "view": "face-profile",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c157-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 61060,
+          "sha256": "1fde736dcddbfd1134e9ae50c3c0a65f7c264c1ebddd7f17bb83000a3600cf3e"
+        }
+      ]
+    },
+    {
+      "id": 158,
+      "score": 91,
+      "designHash": "a452b7414f1694b6ae8d08343284f40d4254f7cd6206d16699b4840252e5350d",
+      "sourceCommit": "5f353f1db5e48e483cbb8740837648304912a053",
+      "geometryFingerprint": "4ce1b2eb",
+      "evidence": [
+        {
+          "view": "face-three-quarter",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c158-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 69483,
+          "sha256": "2d69c629df762e3a82ff28940fb74d097aff2a442751c2c66621fd6e4e4df92d"
+        },
+        {
+          "view": "face-profile",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c158-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 60709,
+          "sha256": "37313bce884702b32f43da331c5fbe794ee4c859c3308e8675193be971e879a5"
+        }
+      ]
+    },
+    {
+      "id": 159,
+      "score": 90.5,
+      "designHash": "16d8b749b5495944222c84b62b759b8a3699df3098ca0c3a4dcc27758dd56fde",
+      "sourceCommit": "5f353f1db5e48e483cbb8740837648304912a053",
+      "geometryFingerprint": "cace335a",
+      "evidence": [
+        {
+          "view": "face-three-quarter",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c159-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 69414,
+          "sha256": "93f8f22f3fd5cccd84dd1275d468db15270d446de9d75e1811e273728f8af4a2"
+        },
+        {
+          "view": "face-profile",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c159-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 60691,
+          "sha256": "18195e9c9e770470f2f62f6339961656d8c55340b0518184500663321f8c610f"
+        }
+      ]
+    },
+    {
+      "id": 160,
+      "score": 91,
+      "designHash": "420b6d20be76c7123c1df4f4619639f81289955d64cc1be4bfabe2585e3b4379",
+      "sourceCommit": "5f353f1db5e48e483cbb8740837648304912a053",
+      "geometryFingerprint": "fedc8d8f",
+      "evidence": [
+        {
+          "view": "face-three-quarter",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c160-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 69801,
+          "sha256": "9a9719408214cb0c9919deb5bacfd14cab29e4e81061e1c5ddaedefd0245cf25"
+        },
+        {
+          "view": "face-profile",
+          "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c160-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+          "bytes": 60926,
+          "sha256": "5d41b8cfadb3335f103a2b59eb496bbedd9365e6fa4b0dadbaff1131a762ff85"
         }
       ]
     }
