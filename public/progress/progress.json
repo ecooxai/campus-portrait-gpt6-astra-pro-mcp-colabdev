@@ -1,8 +1,8 @@
 {
-  "revision": 30,
-  "updatedAt": "2026-10-01T04:22:14.745Z",
-  "score": 90,
-  "status": "The campaign now contains 140 individually reviewed edit-and-render candidates. C140 combines a continuous crown/fringe shell, revised smile relief and skin contrast, face-focused mesh sampling, a recessed dental arch and tapered backpack contact. The main export and seven standard/detail views pass validation. The visual target remains unmet at a subjective 90/100.",
+  "revision": 31,
+  "updatedAt": "2026-10-01T05:17:35.007Z",
+  "score": 91,
+  "status": "Twenty new candidates, C141–C160, were rendered and individually reviewed. C160 combines softer smile relief, lips that merge into the skin, rounded dental surfaces, subtle nasal linings, strand-varying hair roughness and a closer temple/crown fit. Ten selected-model views were rendered. The campaign now has 160 reviewed candidates; the 95-point visual target is not yet met.",
   "iterations": [
     {
       "id": 1,
@@ -213,6 +213,13 @@
       "title": "Forty additional reviewed candidates and validated C140 continuation",
       "notes": "The campaign now contains 140 individually reviewed edit-and-render candidates. C140 combines a continuous crown/fringe shell, revised smile relief and skin contrast, face-focused mesh sampling, a recessed dental arch and tapered backpack contact. The main export and seven standard/detail views pass validation. The visual target remains unmet at a subjective 90/100.",
       "reviewedAt": "2026-10-01T04:15:26.653Z"
+    },
+    {
+      "id": 31,
+      "score": 91,
+      "title": "Integrated facial surfaces and finer crown shading",
+      "notes": "Twenty new candidates, C141–C160, were rendered and individually reviewed. C160 combines softer smile relief, lips that merge into the skin, rounded dental surfaces, subtle nasal linings, strand-varying hair roughness and a closer temple/crown fit. Ten selected-model views were rendered. The campaign now has 160 reviewed candidates; the 95-point visual target is not yet met.",
+      "reviewedAt": "2026-10-01T05:17:35.007Z"
     }
   ],
   "files": [

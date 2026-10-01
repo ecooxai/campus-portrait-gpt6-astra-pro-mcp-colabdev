@@ -1,6 +1,6 @@
 {
-  "candidate": 160,
-  "label": "Balanced temple clearance and crown silhouette",
+  "candidate": 159,
+  "label": "Stronger temporal sweep with smaller crown",
   "headWidth": 1.015,
   "headHeight": 0.96,
   "headDepth": 1,
@@ -132,7 +132,7 @@
   "lipChroma": 0.3,
   "unifiedHair": 1,
   "shellSweep": 0.13,
-  "shellVolume": 0.99,
+  "shellVolume": 0.975,
   "shellRidge": 0.00045,
   "shellTipDensity": 1,
   "eyeCurvePower": 0.68,
@@ -168,6 +168,6 @@
   "nostrilDrop": 0.0022,
   "nostrilPocketStrength": 0.55,
   "nostrilScale": 0.94,
-  "templeTuck": 0.1,
-  "crownLowering": 0.0045
+  "templeTuck": 0.17,
+  "crownLowering": 0.007
 }

@@ -1,6 +1,6 @@
 {
-  "candidate": 160,
-  "label": "Balanced temple clearance and crown silhouette",
+  "candidate": 155,
+  "label": "Softer nasal pockets with a rounded tip",
   "headWidth": 1.015,
   "headHeight": 0.96,
   "headDepth": 1,
@@ -16,7 +16,7 @@
   "cheekForward": 1,
   "faceFlat": 0.7,
   "noseBridge": 0.72,
-  "noseTip": 0.9,
+  "noseTip": 0.95,
   "noseWidth": 0.94,
   "noseY": 0,
   "noseGroove": 0.5,
@@ -89,7 +89,7 @@
   "tearDuct": 1,
   "lashScale": 1.2,
   "noseSculpt": 0.75,
-  "noseCrossSection": 0.98,
+  "noseCrossSection": 1.02,
   "noseWing": 0.95,
   "skinPores": 0.4,
   "skinSpecular": 0.65,
@@ -132,7 +132,7 @@
   "lipChroma": 0.3,
   "unifiedHair": 1,
   "shellSweep": 0.13,
-  "shellVolume": 0.99,
+  "shellVolume": 0.995,
   "shellRidge": 0.00045,
   "shellTipDensity": 1,
   "eyeCurvePower": 0.68,
@@ -165,9 +165,7 @@
   "strandSpecular": 0.42,
   "strandAnisotropy": 0.32,
   "softNostrils": 1,
-  "nostrilDrop": 0.0022,
-  "nostrilPocketStrength": 0.55,
-  "nostrilScale": 0.94,
-  "templeTuck": 0.1,
-  "crownLowering": 0.0045
+  "nostrilDrop": 0.0028,
+  "nostrilPocketStrength": 0.5,
+  "nostrilScale": 0.92
 }

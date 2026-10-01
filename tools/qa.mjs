@@ -5,7 +5,7 @@ import {validateBytes} from 'gltf-validator';
 const root=process.cwd(),suffix='gpt6-astra-pro-mcp-colabdev';
 const out=path.join(root,'.output'),pub=path.join(root,'public/progress');await fs.mkdir(out,{recursive:true});
 const args=process.argv.slice(2),rev=Number(args.find(a=>a.startsWith('--revision='))?.split('=')[1]||1);
-const views=(args.find(a=>a.startsWith('--views='))?.split('=')[1]||'front,three-quarter,side,back,face').split(',');
+const views=(args.find(a=>a.startsWith('--views='))?.split('=')[1]||'front,three-quarter,side,side-left,back,face,face-profile,face-profile-left,detail-hands,detail-shoes').split(',');
 const archive=path.join(root,'.agentwork','reviews',`r${String(rev).padStart(3,'0')}-${suffix}`);await fs.mkdir(archive,{recursive:true});
 const report={revision:rev,timestamp:new Date().toISOString(),errors:[],warnings:[],views:[]};
 const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/home/dev/.local/bin/chromium',headless:true,args:['--no-sandbox','--disable-dev-shm-usage','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
