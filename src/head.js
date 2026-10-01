@@ -1,3 +1,4 @@
+import {buildSoftNostrils} from './soft-nostrils.js';
 import {buildPortraitMouth} from './mouth-sculpt.js';
 import {addNostrilLinings} from './nasal-refinement.js';
 import {faceDomain} from './face-domain.js';
@@ -29,9 +30,10 @@ export function createHead(parent,m){
  tube(head,'Antihelix',[[s*.102,-.029,.011],[s*.101,-.009,.010],[s*.106,.003,.009]],.0018,m.skin,18,7);
  }
  buildEye(head,m,s);refineEyeVolume(head,m,s);buildBrow(head,m,s);
- if(!D.noseReconstruction){ const nostril=[];for(let j=0;j<=12;j++){const t=j/12,x=s*(.0080+.0054*t)*D.noseWidth,y=-.0283+D.noseY-(D.noseSculpt||0)*.0022-.00045*Math.sin(t*Math.PI);nostril.push([x,y,faceZ(x,y)+.00022]);}tube(head,'Curved nostril detail',nostril,.00032,m.nostril,16,6); }
+ if(!D.noseReconstruction&&!D.softNostrils){ const nostril=[];for(let j=0;j<=12;j++){const t=j/12,x=s*(.0080+.0054*t)*D.noseWidth,y=-.0283+D.noseY-(D.noseSculpt||0)*.0022-.00045*Math.sin(t*Math.PI);nostril.push([x,y,faceZ(x,y)+.00022]);}tube(head,'Curved nostril detail',nostril,.00032,m.nostril,16,6); }
  }
  addNostrilLinings(head,m,faceZ,faceSkinColor);
+ buildSoftNostrils(head,m);
  if(D.mouthSculpt){buildPortraitMouth(head,m);}else{
  const top=mouthTop,bottom=mouthBottom;
  surface(head,'Recessed smiling mouth',60,18,(u,v)=>{const a=u*2-1,x=.0315*D.mouthWidth*a,y=lerp(bottom(a),top(a),v);return {p:[x,y,faceZ(x,y)+.0013-D.oralDepth*.006*Math.sin(Math.PI*v)*Math.sqrt(Math.max(0,1-a*a))]};},m.mouth);
