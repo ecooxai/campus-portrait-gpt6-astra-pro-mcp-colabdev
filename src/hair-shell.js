@@ -16,9 +16,10 @@ export function buildUnifiedHairShell(hair,m){
   const limit=Math.acos(clamp((bound-.018)/.145,-1,1)),polar=t*limit;
   const flow=u-sweep*front*Math.pow(t,1.65),envelope=Math.sin(polar);
   const ripple=ridge*Math.sin(flow*TAU*27+Math.sin(t*3))*Math.sin(Math.PI*Math.min(t,1))**2;
-  const x=(.105*volume+ripple)*Math.sin(a)*envelope,y=.018+.145*Math.cos(polar);
+  let x=(.105*volume+ripple)*Math.sin(a)*envelope,y=.018+.145*Math.cos(polar)-(D.crownLowering||0)*Math.exp(-Math.pow(t/.42,2));
   let z=(.096*volume+ripple)*Math.cos(a)*envelope;
   if(front>.3&&y<.12)z=Math.max(z,faceZ(x,y)+.0035*front);
+  const wrapped=Math.atan2(Math.sin(a),Math.cos(a)),tuck=(D.templeTuck||0)*Math.exp(-Math.pow((Math.abs(wrapped)-1.18)/.34,2))*Math.pow(t,3);if(tuck){const angle=Math.sign(wrapped)*tuck,oldX=x;x=x*Math.cos(angle)+z*Math.sin(angle);z=z*Math.cos(angle)-oldX*Math.sin(angle);}
   return {p:[x,y,z],uv:[flow,t]};
  }
  const shell=surface(hair,'Unified swept crown and fringe',160,104,(u,t)=>point(u,t),m.hairCap);

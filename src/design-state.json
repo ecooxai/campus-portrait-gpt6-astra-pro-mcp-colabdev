@@ -1,6 +1,6 @@
 {
-  "candidate": 152,
-  "label": "Balanced strand definition and crown roughness",
+  "candidate": 153,
+  "label": "Subtle lowered nasal openings",
   "headWidth": 1.015,
   "headHeight": 0.96,
   "headDepth": 1,
@@ -163,5 +163,9 @@
   "rootRoughness": 0.27,
   "strandRoughnessVariation": 0.26,
   "strandSpecular": 0.42,
-  "strandAnisotropy": 0.32
+  "strandAnisotropy": 0.32,
+  "softNostrils": 1,
+  "nostrilDrop": 0.0022,
+  "nostrilPocketStrength": 0.55,
+  "nostrilScale": 0.94
 }
