@@ -32,5 +32,18 @@ export function buildUnifiedHairShell(hair,m){
   },k%3===0?m.hairMid:m.hair);
   tip.castShadow=false;tip.receiveShadow=false;
  }
+ const count=Math.round(320*(D.shellFibers||0));
+ if(count>0){
+  const material=m.hair.clone();material.name='Fine geometric crown strands';material.normalMap=null;material.normalScale.set(1,1);material.roughness=D.fiberRoughness??.40;material.specularIntensity=.60;material.clearcoat=0;material.vertexColors=true;material.color.set('#ffffff');
+  for(let k=0;k<count;k++){
+   const flow=(k+.37)/count,start=.045+.025*(.5+.5*Math.sin(k*2.73)),end=.975+.026*(.5+.5*Math.sin(k*1.91)),width=(D.fiberWidth??.00021)*(.75+.5*(.5+.5*Math.sin(k*2.21)));
+   const path=v=>{const t=lerp(start,end,v);let u=flow;for(let j=0;j<8;j++)u=flow+sweep*Math.max(0,Math.cos(-u*TAU))*Math.pow(t,1.65);u=((u%1)+1)%1;const result=point(u,t),p=V(...result.p),n=V(p.x/(.105*.105),(p.y-.018)/(.145*.145),p.z/(.096*.096)).normalize();p.addScaledVector(n,D.fiberLift??.00040);return {p,n,t};};
+   const strand=surface(hair,'Swept crown filament '+k,2,32,(u,v)=>{
+    const a=path(v),before=path(Math.max(0,v-.001)).p,after=path(Math.min(1,v+.001)).p,tangent=after.sub(before).normalize(),side=tangent.clone().cross(a.n).normalize(),envelope=Math.pow(Math.sin(Math.PI*(.025+.95*v)),.42);
+    a.p.addScaledVector(side,(u-.5)*width*envelope).addScaledVector(a.n,Math.sin(u*Math.PI)*width*.20);
+    const value=.82+.30*(.5+.5*Math.sin(k*2.37));return {p:a.p.toArray(),uv:[u,v],c:[value,value*.98,value*.96]};
+   },material);strand.castShadow=false;strand.receiveShadow=false;
+  }
+ }
  return shell;
 }

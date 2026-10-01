@@ -1,6 +1,6 @@
 {
-  "candidate": 113,
-  "label": "Adaptive face-focused sampling at balanced density",
+  "candidate": 124,
+  "label": "Balanced arch setback and natural lip projection",
   "headWidth": 1.015,
   "headHeight": 0.96,
   "headDepth": 1,
@@ -42,10 +42,10 @@
   "mouthY": 0,
   "mouthSmile": 1.15,
   "lipThickness": 1.1,
-  "lipProjection": 1.18,
+  "lipProjection": 1.25,
   "lipBlend": 0.85,
-  "toothHeight": 0.93,
-  "oralDepth": 0.45,
+  "toothHeight": 1.02,
+  "oralDepth": 0.85,
   "fringeDrop": 0.011,
   "fringeSplit": -0.005,
   "fringeEdge": 0.00055,
@@ -139,5 +139,6 @@
   "eyeOuterLift": 0.0004,
   "earYaw": 0.36,
   "adaptiveFace": 1,
-  "faceTopology": 1
+  "faceTopology": 1,
+  "dentalInset": 0.0011
 }
