@@ -1,6 +1,6 @@
 {
-  "candidate": 100,
-  "label": "Balanced final pose, eyes and face framing",
+  "candidate": 104,
+  "label": "Balanced cheek lift and brighter natural smile",
   "headWidth": 1.015,
   "headHeight": 0.96,
   "headDepth": 1,
@@ -37,14 +37,14 @@
   "browY": 0,
   "browWidth": 1,
   "browDensity": 1,
-  "mouthWidth": 0.97,
-  "mouthOpen": 0.88,
+  "mouthWidth": 1.03,
+  "mouthOpen": 1.04,
   "mouthY": 0,
   "mouthSmile": 1.15,
   "lipThickness": 1.1,
   "lipProjection": 1.18,
   "lipBlend": 0.85,
-  "toothHeight": 0.82,
+  "toothHeight": 0.93,
   "oralDepth": 0.45,
   "fringeDrop": 0.011,
   "fringeSplit": -0.005,
@@ -125,5 +125,9 @@
   "poseRoll": -0.008,
   "fringeRootBlend": 0.72,
   "geometryScale": 0.75,
-  "portraitElevation": 0.17
+  "portraitElevation": 0.17,
+  "expressionRelief": 1,
+  "vascularColor": 0.75,
+  "skinValue": 0.93,
+  "lipChroma": 0.34
 }
