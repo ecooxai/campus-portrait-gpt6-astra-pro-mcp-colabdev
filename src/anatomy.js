@@ -19,7 +19,7 @@ export function faceDelta(x,y){
  const ny=y-D.noseY,w=D.noseWidth,smileT=clamp((-.025-y)/.028,0,1),smileX=.015+.018*smileT;
  const smileFold=-.0012*D.smileFold*(gauss(x,smileX,.0035)+gauss(x,-smileX,.0035))*gauss(y,-.039+D.mouthY*.5,.018);
  return smileFold+expressionRelief(x,y)
- -.0035*D.noseGroove*(gauss(x,.0102*w,.0032*w)+gauss(x,-.0102*w,.0032*w))*gauss(ny,-.0284,.0025)
+ -.0035*D.noseGroove*(1-(D.noseReconstruction||0))*(gauss(x,.0102*w,.0032*w)+gauss(x,-.0102*w,.0032*w))*gauss(ny,-.0284,.0025)
  +.011*D.cheekForward*(gauss(x,.052,.030)+gauss(x,-.052,.030))*gauss(y,-.028,.025)
  +D.faceFlat*.006*(gauss(x,.063,.033)+gauss(x,-.063,.033))*gauss(y,0,.080)
  -.005*(gauss(x,.037*D.eyeSpacing,.022*D.eyeWidth)+gauss(x,-.037*D.eyeSpacing,.022*D.eyeWidth))*gauss(y,.018+D.eyeY,.014)

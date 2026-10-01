@@ -1,6 +1,6 @@
 {
-  "candidate": 111,
-  "label": "Open natural gaze with softer eye-white contrast",
+  "candidate": 113,
+  "label": "Adaptive face-focused sampling at balanced density",
   "headWidth": 1.015,
   "headHeight": 0.96,
   "headDepth": 1,
@@ -137,5 +137,7 @@
   "shellTipDensity": 1,
   "eyeCurvePower": 0.68,
   "eyeOuterLift": 0.0004,
-  "earYaw": 0.36
+  "earYaw": 0.36,
+  "adaptiveFace": 1,
+  "faceTopology": 1
 }

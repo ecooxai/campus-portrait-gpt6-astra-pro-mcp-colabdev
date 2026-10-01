@@ -1,3 +1,4 @@
+import {reconstructedNose} from './nasal-refinement.js';
 import {D} from './design.js';
 import {gauss,lerp,smoothProfile} from './geometry.js';
 
@@ -14,5 +15,5 @@ export function nasalDisplacement(x,y){
  const root=height*scale*gauss(x,0,width*w*(D.noseCrossSection||1));
  const wings=.0055*(D.noseWing||1)*(gauss(x,.0130*w,.0068*w)+gauss(x,-.0130*w,.0068*w))*gauss(ny,-.028,.0055);
  const columella=.0020*gauss(x,0,.0045*w)*gauss(ny,-.032,.004);
- return lerp(legacy,root+wings+columella,blend);
+ return lerp(lerp(legacy,root+wings+columella,blend),reconstructedNose(x,y),D.noseReconstruction||0);
 }
