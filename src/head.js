@@ -1,3 +1,4 @@
+import {buildPortraitMouth} from './mouth-sculpt.js';
 import {addNostrilLinings} from './nasal-refinement.js';
 import {faceDomain} from './face-domain.js';
 import {buildUnifiedHairShell} from './hair-shell.js';
@@ -31,6 +32,7 @@ export function createHead(parent,m){
  if(!D.noseReconstruction){ const nostril=[];for(let j=0;j<=12;j++){const t=j/12,x=s*(.0080+.0054*t)*D.noseWidth,y=-.0283+D.noseY-(D.noseSculpt||0)*.0022-.00045*Math.sin(t*Math.PI);nostril.push([x,y,faceZ(x,y)+.00022]);}tube(head,'Curved nostril detail',nostril,.00032,m.nostril,16,6); }
  }
  addNostrilLinings(head,m,faceZ,faceSkinColor);
+ if(D.mouthSculpt){buildPortraitMouth(head,m);}else{
  const top=mouthTop,bottom=mouthBottom;
  surface(head,'Recessed smiling mouth',60,18,(u,v)=>{const a=u*2-1,x=.0315*D.mouthWidth*a,y=lerp(bottom(a),top(a),v);return {p:[x,y,faceZ(x,y)+.0013-D.oralDepth*.006*Math.sin(Math.PI*v)*Math.sqrt(Math.max(0,1-a*a))]};},m.mouth);
  for(const upper of [true,false]){const material=(upper?m.upperLip:m.lip).clone();material.name=upper?'Natural upper lip':'Natural lower lip';const tint=material.color.clone().lerp(new THREE.Color(upper?'#a95e5c':'#cb7875'),D.lipChroma||0);material.color.set('#ffffff');material.vertexColors=true;
@@ -42,6 +44,7 @@ export function createHead(parent,m){
 
 
 
+ }
  batch(head,'Iris fiber');batch(head,'Brow fiber');
  createHair(head,m);head.traverse(o=>{if(o.isMesh&&(o.name.startsWith('Fiber')||o.name.startsWith('Fine tapered'))){o.castShadow=false;o.receiveShadow=false;}});return head;
 }

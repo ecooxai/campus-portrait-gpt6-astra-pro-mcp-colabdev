@@ -1,6 +1,6 @@
 {
-  "candidate": 140,
-  "label": "Balanced rounded silhouette and upper-back clearance",
+  "candidate": 144,
+  "label": "Balanced smile relief and rounded philtrum",
   "headWidth": 1.015,
   "headHeight": 0.96,
   "headDepth": 1,
@@ -22,7 +22,7 @@
   "noseGroove": 0.5,
   "browRidge": 0.85,
   "chinForward": 1.85,
-  "smileFold": 1,
+  "smileFold": 0.32,
   "eyeSpacing": 0.95,
   "eyeWidth": 1,
   "eyeUpper": 1.22,
@@ -147,5 +147,11 @@
   "packClearance": 0.005,
   "packDrop": 0.008,
   "packShift": 0.002,
-  "packTilt": 0.015
+  "packTilt": 0.015,
+  "softCreaseStrength": 0.4,
+  "softCreaseSpread": 1.75,
+  "dimpleRelief": 0.6,
+  "philtrumRelief": 0.43,
+  "philtrumWidth": 1.25,
+  "chinSulcusRelief": 0.8
 }
