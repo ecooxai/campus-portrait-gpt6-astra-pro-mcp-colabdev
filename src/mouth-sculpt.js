@@ -30,8 +30,9 @@ export function buildPortraitMouth(head,m){
  const toothZ=(x,y)=>faceZ(x,y)+.00155-D.oralDepth*.0022-(D.dentalInset||0);
  surface(head,'Continuous dental backing',80,16,(u,v)=>{const x=(1-u*2)*width*.93,a=x/width,y=mouthTop(a)+.00010-v*.0091*D.toothHeight*(1-.45*Math.abs(a));return {p:[x,y,toothZ(x,y)-.00016]};},backing);
  const teeth=[[-.0253,.0049,.0062],[-.0195,.0061,.0075],[-.0129,.0068,.0086],[-.0047,.0088,.0090],[.0043,.0088,.0090],[.0126,.0069,.0087],[.0193,.0062,.0076],[.0252,.0050,.0062]];
+ const enamel=m.tooth.clone();enamel.name='Enamel arch';enamel.color.set('#ffffff');enamel.vertexColors=true;enamel.roughness=.36;
  for(let k=0;k<teeth.length;k++){
-  const [center,w,h]=teeth[k],mat=m.tooth.clone();mat.name='Enamel arch';mat.color.set('#ffffff');mat.vertexColors=true;mat.roughness=.36;
+  const [center,w,h]=teeth[k],mat=enamel;
   surface(head,'Rounded incisor and lateral '+k,18,18,(u,v)=>{
    const a=u*2-1,x=(center-a*w*.497)*D.mouthWidth,t=x/width,corner=Math.pow(Math.abs(a),4);
    const y=mouthTop(t)+.00015-v*(h-.00065*corner)*D.toothHeight;

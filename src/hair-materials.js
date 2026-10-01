@@ -1,3 +1,4 @@
+import {applyStrandAtlas} from './hair-strand-atlas.js';
 import {D} from './design.js';
 import * as THREE from 'three';
 function seeded(seed){return()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296;};}
@@ -13,4 +14,5 @@ export function refineHairMaterials(m){
  for(const [name,value] of [['hairCap',1],['hair',.94],['hairMid',1.12],['hairLight',1.28],['hairDark',.70]]){
   const mat=m[name];mat.color.setRGB(Math.min(1,value),Math.min(1,value),Math.min(1,value));mat.map=map;mat.normalMap=normal;mat.normalScale=new THREE.Vector2(.11,.11);mat.roughness=Math.min(.95,(name==='hairDark'?.62:.44)*D.hairRoughness);mat.metalness=0;mat.envMapIntensity=1;if(mat.isMeshPhysicalMaterial){mat.specularIntensity=.60*D.hairHighlight;mat.clearcoat=D.hairCoating??.09;mat.clearcoatRoughness=.5;mat.anisotropy=D.hairAnisotropy||0;mat.anisotropyRotation=D.hairAnisotropyRotation??Math.PI/2;}mat.needsUpdate=true;
  }
+ applyStrandAtlas(m);
 }
