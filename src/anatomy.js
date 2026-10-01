@@ -26,7 +26,7 @@ export function faceDelta(x,y){
  +.0045*D.browRidge*(gauss(x,.040*D.eyeSpacing,.026)+gauss(x,-.040*D.eyeSpacing,.026))*gauss(y,.043+D.browY,.013)
  +nasalDisplacement(x,y)
  +.007*gauss(x,0,.039)*gauss(y,-.055+D.mouthY,.025)
- +.0025*(gauss(x,.004,.003)+gauss(x,-.004,.003))*gauss(y,-.039+D.mouthY*.5,.010)
+ +.0025*(D.philtrumRelief??1)*(gauss(x,.004,.003*(D.philtrumWidth??1))+gauss(x,-.004,.003*(D.philtrumWidth??1)))*gauss(y,-.039+D.mouthY*.5,.010)
  +.008*D.chinForward*gauss(x,0,.029)*gauss(y,-.091-D.chinLength,.016);
 }
 export function faceZ(x,y){const [rx,rz]=smoothProfile(profile,y),front=Math.sqrt(Math.max(.0001,1-(x/Math.max(.001,rx))**2));return rz*front+faceDelta(x,y)*front**3;}

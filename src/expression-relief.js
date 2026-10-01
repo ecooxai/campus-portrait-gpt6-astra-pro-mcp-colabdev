@@ -6,12 +6,12 @@ import {clamp,gauss} from './geometry.js';
 export function expressionRelief(x,y){
  const strength=D.expressionRelief||0;if(strength===0)return 0;
  const mouthWidth=.0315*D.mouthWidth,cornerY=-.044+D.mouthY;
- const cheekLift=.0031*(gauss(x,.043,.023)+gauss(x,-.043,.023))*gauss(y,-.012,.014);
- const lowerLid=.0015*(gauss(x,.033*D.eyeSpacing,.020)+gauss(x,-.033*D.eyeSpacing,.020))*gauss(y,.008+D.eyeY,.0045);
+ const cheekLift=.0031*(D.cheekLiftRelief??1)*(gauss(x,.043,.023)+gauss(x,-.043,.023))*gauss(y,-.012,.014);
+ const lowerLid=.0015*(D.lowerLidRelief??1)*(gauss(x,.033*D.eyeSpacing,.020)+gauss(x,-.033*D.eyeSpacing,.020))*gauss(y,.008+D.eyeY,.0045);
  const t=clamp((-.022+D.mouthY*.35-y)/.030,0,1),creaseX=.018+(mouthWidth-.016)*t;
- const crease=-.0015*(gauss(x,creaseX,.0027)+gauss(x,-creaseX,.0027))*gauss(y,-.037+D.mouthY*.6,.016);
- const dimple=-.0014*(gauss(x,mouthWidth+.002,.0047)+gauss(x,-mouthWidth-.002,.0047))*gauss(y,cornerY-.003,.006);
- const chinSulcus=-.0016*gauss(x,0,.024)*gauss(y,-.072+D.mouthY,.0055);
+ const crease=-.0015*(D.softCreaseStrength??1)*(gauss(x,creaseX,.0027*(D.softCreaseSpread??1))+gauss(x,-creaseX,.0027*(D.softCreaseSpread??1)))*gauss(y,-.037+D.mouthY*.6,.016);
+ const dimple=-.0014*(D.dimpleRelief??1)*(gauss(x,mouthWidth+.002,.0047)+gauss(x,-mouthWidth-.002,.0047))*gauss(y,cornerY-.003,.006);
+ const chinSulcus=-.0016*(D.chinSulcusRelief??1)*gauss(x,0,.024)*gauss(y,-.072+D.mouthY,.0055);
  return strength*(cheekLift+lowerLid+crease+dimple+chinSulcus);
 }
 
