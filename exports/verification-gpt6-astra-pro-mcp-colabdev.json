@@ -1,23 +1,23 @@
 {
   "project": "campus-portrait-gpt6-astra-pro-mcp-colabdev",
-  "revision": 29,
-  "selectedCandidate": 100,
-  "visualScore": 88.5,
+  "revision": 30,
+  "selectedCandidate": 140,
+  "visualScore": 90,
   "requestedVisualScore": 95,
   "requestedReviewedCandidates": 100,
-  "completedReviewedCandidates": 100,
-  "savedModelCheckpoints": 29,
+  "completedReviewedCandidates": 140,
+  "savedModelCheckpoints": 30,
   "goalComplete": false,
-  "implementationCommit": "1e866a09f46c9a740a80ab6c92f96b47a8c62e9c",
-  "branch": "gpt6-astra-pro-mcp-colabdev/likeness95-100",
+  "implementationCommit": "6cea430974011dd5912f80753dc1f1d0f2ee20e7",
+  "branch": "gpt6-astra-pro-mcp-colabdev/likeness95-continuation",
   "hosting": {
     "repository": "https://github.com/ecooxai/campus-portrait-gpt6-astra-pro-mcp-colabdev",
     "pages": "https://ecooxai.github.io/campus-portrait-gpt6-astra-pro-mcp-colabdev/",
-    "temporaryTunnel": "https://employers-decrease-decision-indexes.trycloudflare.com"
+    "temporaryTunnel": "https://wellington-assessed-lobby-precision.trycloudflare.com"
   },
   "renderTests": {
-    "revision": 29,
-    "timestamp": "2026-09-30T15:02:15.314Z",
+    "revision": 30,
+    "timestamp": "2026-10-01T04:11:46.397Z",
     "errors": [],
     "warnings": [],
     "views": [
@@ -30,22 +30,32 @@
       "detail-shoes-gpt6-astra-pro-mcp-colabdev.png"
     ],
     "stats": {
-      "vertices": 276506,
-      "triangles": 286601,
-      "meshes": 51,
-      "drawCalls": 102,
-      "revision": 29,
-      "designCandidate": 100,
-      "designLabel": "Balanced final pose, eyes and face framing",
+      "vertices": 311473,
+      "triangles": 354797,
+      "meshes": 52,
+      "backpackContact": {
+        "method": "Posterior shirt ray samples before the shared posture transform",
+        "fieldSamples": 241,
+        "checkedFrontVertices": 160,
+        "minSampledGap": 0.0049996105095275745,
+        "maxSampledGap": 0.014142083776417555,
+        "meanSampledGap": 0.005643119109706522,
+        "clearanceTarget": 0.005,
+        "notFullCollisionSimulation": true
+      },
+      "drawCalls": 103,
+      "revision": 30,
+      "designCandidate": 140,
+      "designLabel": "Balanced rounded silhouette and upper-back clearance",
       "renderer": "WebKit WebGL",
       "bounds": [
         0.4769474267959595,
-        1.694318685278142,
-        0.45385195314884186
+        1.694358913981693,
+        0.45209746062755585
       ]
     },
     "glb": {
-      "bytes": 14610840,
+      "bytes": 17081300,
       "errors": 0,
       "warnings": 0,
       "infos": 0
@@ -88,14 +98,19 @@
     ]
   },
   "productionAcceptance": {
-    "timestamp": "2026-09-30T15:09:09.242Z",
+    "timestamp": "2026-10-01T04:19:38.874Z",
     "url": "http://127.0.0.1:4197",
     "checks": {
       "materialFactorsMatch": true,
+      "sampledBackpackClearance": true,
+      "backpackContactMetadataRoundtrip": true,
       "exportedTriangleCountMatches": true,
       "exportedBoundsMatch": true,
       "embeddedImages": true,
       "standardNormalMaps": true,
+      "galleryImagesLoaded": true,
+      "olderCheckpointsCollapsed": true,
+      "olderCheckpointsExpandable": true,
       "progressJournal": true,
       "absoluteArtifactPaths": true,
       "exportedSourceControl": true,
@@ -115,6 +130,7 @@
       "touchPreset": true,
       "mobileNoHorizontalOverflow": true,
       "minimum44pxTargets": true,
+      "mobileGalleryLoads": true,
       "landscapeNoHorizontalOverflow": true,
       "thousandNumericalPasses": true,
       "verifiedFrameLedger": true,
@@ -128,7 +144,8 @@
     "errors": [],
     "warnings": [],
     "notes": [
-      "Browser tests use headless Chromium and SwiftShader software WebGL; they are not measurements of real phone GPU performance."
+      "Browser tests use headless Chromium and SwiftShader software WebGL; they are not measurements of real phone GPU performance.",
+      "Backpack clearance is a pre-posture sampled geometric check, not a full collision or cloth simulation."
     ],
     "materialRoundtrip": {
       "matched": true,
@@ -147,7 +164,7 @@
           ],
           "roughness": 0.5264,
           "metalness": 0,
-          "specularIntensity": 0.7,
+          "specularIntensity": 0.65,
           "clearcoat": 0,
           "clearcoatRoughness": 0,
           "anisotropy": 0,
@@ -193,9 +210,9 @@
         },
         "Auricular root skin": {
           "color": [
-            0.8539542018305645,
-            0.5161851988162242,
-            0.3739170161044823
+            0.6483818953698383,
+            0.391504561399889,
+            0.2836732170145787
           ],
           "sheen": [
             0.15,
@@ -204,7 +221,7 @@
           ],
           "roughness": 0.62,
           "metalness": 0,
-          "specularIntensity": 0.7,
+          "specularIntensity": 0.65,
           "clearcoat": 0,
           "clearcoatRoughness": 0,
           "anisotropy": 0,
@@ -261,7 +278,7 @@
           ],
           "roughness": 0.6,
           "metalness": 0,
-          "specularIntensity": 0.7,
+          "specularIntensity": 0.65,
           "clearcoat": 0,
           "clearcoatRoughness": 0,
           "anisotropy": 0,
@@ -307,9 +324,9 @@
         },
         "skin": {
           "color": [
-            0.8602133883531877,
-            0.5233438006290044,
-            0.378555305911627
+            0.6582346004056328,
+            0.39999886121592615,
+            0.28932501923885
           ],
           "sheen": [
             0.15,
@@ -318,7 +335,7 @@
           ],
           "roughness": 0.5264,
           "metalness": 0,
-          "specularIntensity": 0.7,
+          "specularIntensity": 0.65,
           "clearcoat": 0,
           "clearcoatRoughness": 0,
           "anisotropy": 0,
@@ -364,9 +381,9 @@
         },
         "Conchal shadow": {
           "color": [
-            0.7345311821180396,
-            0.4238957157340857,
-            0.30659188309888336
+            0.5803519522724949,
+            0.33038523767183425,
+            0.23890903378145567
           ],
           "sheen": [
             0,
@@ -416,9 +433,9 @@
         },
         "Brown iris detail": {
           "color": [
-            0.78,
-            0.78,
-            0.78
+            0.72,
+            0.72,
+            0.72
           ],
           "sheen": [
             0,
@@ -763,9 +780,123 @@
             0,
             0
           ],
-          "roughness": 0.5104,
+          "roughness": 0.44,
           "metalness": 0,
-          "specularIntensity": 0.44999999999999996,
+          "specularIntensity": 0.57,
+          "clearcoat": 0.015,
+          "clearcoatRoughness": 0.5,
+          "anisotropy": 0.45,
+          "anisotropyRotation": 1.5707963268,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": [
+            0.11,
+            0.11
+          ],
+          "map": {
+            "colorSpace": "srgb",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "normalMap": {
+            "colorSpace": "",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "roughnessMap": null
+        },
+        "hairMid": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.44,
+          "metalness": 0,
+          "specularIntensity": 0.57,
+          "clearcoat": 0.015,
+          "clearcoatRoughness": 0.5,
+          "anisotropy": 0.45,
+          "anisotropyRotation": 1.5707963268,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": [
+            0.11,
+            0.11
+          ],
+          "map": {
+            "colorSpace": "srgb",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "normalMap": {
+            "colorSpace": "",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "roughnessMap": null
+        },
+        "hair": {
+          "color": [
+            0.94,
+            0.94,
+            0.94
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.44,
+          "metalness": 0,
+          "specularIntensity": 0.57,
           "clearcoat": 0.015,
           "clearcoatRoughness": 0.5,
           "anisotropy": 0.45,
@@ -860,7 +991,7 @@
             0,
             0
           ],
-          "roughness": 0.7192,
+          "roughness": 0.62,
           "metalness": 0,
           "specularIntensity": 1,
           "clearcoat": 0,
@@ -932,120 +1063,6 @@
           "normalMap": null,
           "roughnessMap": null
         },
-        "hairMid": {
-          "color": [
-            1,
-            1,
-            1
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.5104,
-          "metalness": 0,
-          "specularIntensity": 0.44999999999999996,
-          "clearcoat": 0.015,
-          "clearcoatRoughness": 0.5,
-          "anisotropy": 0.45,
-          "anisotropyRotation": 1.5707963268,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": [
-            0.11,
-            0.11
-          ],
-          "map": {
-            "colorSpace": "srgb",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "normalMap": {
-            "colorSpace": "",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "roughnessMap": null
-        },
-        "hair": {
-          "color": [
-            0.94,
-            0.94,
-            0.94
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.5104,
-          "metalness": 0,
-          "specularIntensity": 0.44999999999999996,
-          "clearcoat": 0.015,
-          "clearcoatRoughness": 0.5,
-          "anisotropy": 0.45,
-          "anisotropyRotation": 1.5707963268,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": [
-            0.11,
-            0.11
-          ],
-          "map": {
-            "colorSpace": "srgb",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "normalMap": {
-            "colorSpace": "",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "roughnessMap": null
-        },
         "hairLight": {
           "color": [
             1,
@@ -1057,9 +1074,9 @@
             0,
             0
           ],
-          "roughness": 0.5104,
+          "roughness": 0.44,
           "metalness": 0,
-          "specularIntensity": 0.44999999999999996,
+          "specularIntensity": 0.57,
           "clearcoat": 0.015,
           "clearcoatRoughness": 0.5,
           "anisotropy": 0.45,
@@ -1681,7 +1698,7 @@
           ],
           "roughness": 0.5264,
           "metalness": 0,
-          "specularIntensity": 0.7,
+          "specularIntensity": 0.65,
           "clearcoat": 0,
           "clearcoatRoughness": 0,
           "anisotropy": 0,
@@ -1727,9 +1744,9 @@
         },
         "Auricular root skin": {
           "color": [
-            0.8539542018305645,
-            0.5161851988162242,
-            0.3739170161044823
+            0.6483818953698383,
+            0.391504561399889,
+            0.2836732170145787
           ],
           "sheen": [
             0.15,
@@ -1738,7 +1755,7 @@
           ],
           "roughness": 0.62,
           "metalness": 0,
-          "specularIntensity": 0.7,
+          "specularIntensity": 0.65,
           "clearcoat": 0,
           "clearcoatRoughness": 0,
           "anisotropy": 0,
@@ -1795,7 +1812,7 @@
           ],
           "roughness": 0.6,
           "metalness": 0,
-          "specularIntensity": 0.7,
+          "specularIntensity": 0.65,
           "clearcoat": 0,
           "clearcoatRoughness": 0,
           "anisotropy": 0,
@@ -1841,9 +1858,9 @@
         },
         "skin": {
           "color": [
-            0.8602133883531877,
-            0.5233438006290044,
-            0.378555305911627
+            0.6582346004056328,
+            0.39999886121592615,
+            0.28932501923885
           ],
           "sheen": [
             0.15,
@@ -1852,7 +1869,7 @@
           ],
           "roughness": 0.5264,
           "metalness": 0,
-          "specularIntensity": 0.7,
+          "specularIntensity": 0.65,
           "clearcoat": 0,
           "clearcoatRoughness": 0,
           "anisotropy": 0,
@@ -1898,9 +1915,9 @@
         },
         "Conchal shadow": {
           "color": [
-            0.7345311821180396,
-            0.4238957157340857,
-            0.30659188309888336
+            0.5803519522724949,
+            0.33038523767183425,
+            0.23890903378145567
           ],
           "sheen": [
             0,
@@ -1950,9 +1967,9 @@
         },
         "Brown iris detail": {
           "color": [
-            0.78,
-            0.78,
-            0.78
+            0.72,
+            0.72,
+            0.72
           ],
           "sheen": [
             0,
@@ -2297,9 +2314,123 @@
             0,
             0
           ],
-          "roughness": 0.5104,
+          "roughness": 0.44,
           "metalness": 0,
-          "specularIntensity": 0.44999999999999996,
+          "specularIntensity": 0.57,
+          "clearcoat": 0.015,
+          "clearcoatRoughness": 0.5,
+          "anisotropy": 0.45,
+          "anisotropyRotation": 1.5707963268,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": [
+            0.11,
+            0.11
+          ],
+          "map": {
+            "colorSpace": "srgb",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "normalMap": {
+            "colorSpace": "",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "roughnessMap": null
+        },
+        "hairMid": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.44,
+          "metalness": 0,
+          "specularIntensity": 0.57,
+          "clearcoat": 0.015,
+          "clearcoatRoughness": 0.5,
+          "anisotropy": 0.45,
+          "anisotropyRotation": 1.5707963268,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": [
+            0.11,
+            0.11
+          ],
+          "map": {
+            "colorSpace": "srgb",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "normalMap": {
+            "colorSpace": "",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "roughnessMap": null
+        },
+        "hair": {
+          "color": [
+            0.94,
+            0.94,
+            0.94
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.44,
+          "metalness": 0,
+          "specularIntensity": 0.57,
           "clearcoat": 0.015,
           "clearcoatRoughness": 0.5,
           "anisotropy": 0.45,
@@ -2394,7 +2525,7 @@
             0,
             0
           ],
-          "roughness": 0.7192,
+          "roughness": 0.62,
           "metalness": 0,
           "specularIntensity": 1,
           "clearcoat": 0,
@@ -2466,120 +2597,6 @@
           "normalMap": null,
           "roughnessMap": null
         },
-        "hairMid": {
-          "color": [
-            1,
-            1,
-            1
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.5104,
-          "metalness": 0,
-          "specularIntensity": 0.44999999999999996,
-          "clearcoat": 0.015,
-          "clearcoatRoughness": 0.5,
-          "anisotropy": 0.45,
-          "anisotropyRotation": 1.5707963268,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": [
-            0.11,
-            0.11
-          ],
-          "map": {
-            "colorSpace": "srgb",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "normalMap": {
-            "colorSpace": "",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "roughnessMap": null
-        },
-        "hair": {
-          "color": [
-            0.94,
-            0.94,
-            0.94
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.5104,
-          "metalness": 0,
-          "specularIntensity": 0.44999999999999996,
-          "clearcoat": 0.015,
-          "clearcoatRoughness": 0.5,
-          "anisotropy": 0.45,
-          "anisotropyRotation": 1.5707963268,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": [
-            0.11,
-            0.11
-          ],
-          "map": {
-            "colorSpace": "srgb",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "normalMap": {
-            "colorSpace": "",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "roughnessMap": null
-        },
         "hairLight": {
           "color": [
             1,
@@ -2591,9 +2608,9 @@
             0,
             0
           ],
-          "roughness": 0.5104,
+          "roughness": 0.44,
           "metalness": 0,
-          "specularIntensity": 0.44999999999999996,
+          "specularIntensity": 0.57,
           "clearcoat": 0.015,
           "clearcoatRoughness": 0.5,
           "anisotropy": 0.45,
@@ -3204,39 +3221,69 @@
     },
     "roundtrip": {
       "original": {
-        "vertices": 276506,
-        "triangles": 286601,
-        "meshes": 51,
-        "drawCalls": 102,
-        "revision": 29,
-        "designCandidate": 100,
-        "designLabel": "Balanced final pose, eyes and face framing",
+        "vertices": 311473,
+        "triangles": 354797,
+        "meshes": 52,
+        "backpackContact": {
+          "method": "Posterior shirt ray samples before the shared posture transform",
+          "fieldSamples": 241,
+          "checkedFrontVertices": 160,
+          "minSampledGap": 0.0049996105095275745,
+          "maxSampledGap": 0.014142083776417555,
+          "meanSampledGap": 0.005643119109706522,
+          "clearanceTarget": 0.005,
+          "notFullCollisionSimulation": true
+        },
+        "drawCalls": 103,
+        "revision": 30,
+        "designCandidate": 140,
+        "designLabel": "Balanced rounded silhouette and upper-back clearance",
         "renderer": "WebKit WebGL",
         "bounds": [
           0.4769474267959595,
-          1.694318685278142,
-          0.45385195314884186
+          1.694358913981693,
+          0.45209746062755585
         ]
       },
       "imported": {
-        "vertices": 276506,
-        "triangles": 286601,
-        "meshes": 51,
-        "drawCalls": 102,
-        "revision": 29,
-        "designCandidate": 100,
-        "designLabel": "Balanced final pose, eyes and face framing",
+        "vertices": 311473,
+        "triangles": 354797,
+        "meshes": 52,
+        "backpackContact": {
+          "method": "Posterior shirt ray samples before the shared posture transform",
+          "fieldSamples": 241,
+          "checkedFrontVertices": 160,
+          "minSampledGap": 0.0049996105095275745,
+          "maxSampledGap": 0.014142083776417555,
+          "meanSampledGap": 0.005643119109706522,
+          "clearanceTarget": 0.005,
+          "notFullCollisionSimulation": true
+        },
+        "drawCalls": 103,
+        "revision": 30,
+        "designCandidate": 140,
+        "designLabel": "Balanced rounded silhouette and upper-back clearance",
         "renderer": "WebKit WebGL",
         "bounds": [
           0.4769474267959595,
-          1.694318685278142,
-          0.45385195314884186
+          1.694358913981693,
+          0.45209746062755585
         ]
       }
     },
+    "backpackContact": {
+      "method": "Posterior shirt ray samples before the shared posture transform",
+      "fieldSamples": 241,
+      "checkedFrontVertices": 160,
+      "minSampledGap": 0.0049996105095275745,
+      "maxSampledGap": 0.014142083776417555,
+      "meanSampledGap": 0.005643119109706522,
+      "clearanceTarget": 0.005,
+      "notFullCollisionSimulation": true
+    },
     "gltf": {
       "version": "2.0",
-      "meshes": 51,
+      "meshes": 52,
       "textures": 11,
       "images": 10,
       "extensionsUsed": [
@@ -3273,10 +3320,10 @@
       "scope": "Numerical authored-shirt deformation, rendering and geometry checks; not a visual-likeness score."
     },
     "campaign": {
-      "rendered": 100,
-      "reviewed": 100,
-      "selected": 100,
-      "score": 88.5,
+      "rendered": 140,
+      "reviewed": 140,
+      "selected": 140,
+      "score": 90,
       "target": {
         "minimumIterations": 100,
         "visualScore": 95
@@ -3285,14 +3332,19 @@
     "passed": true
   },
   "rootAcceptance": {
-    "timestamp": "2026-09-30T15:09:09.242Z",
+    "timestamp": "2026-10-01T04:19:38.874Z",
     "url": "http://127.0.0.1:4197",
     "checks": {
       "materialFactorsMatch": true,
+      "sampledBackpackClearance": true,
+      "backpackContactMetadataRoundtrip": true,
       "exportedTriangleCountMatches": true,
       "exportedBoundsMatch": true,
       "embeddedImages": true,
       "standardNormalMaps": true,
+      "galleryImagesLoaded": true,
+      "olderCheckpointsCollapsed": true,
+      "olderCheckpointsExpandable": true,
       "progressJournal": true,
       "absoluteArtifactPaths": true,
       "exportedSourceControl": true,
@@ -3312,6 +3364,7 @@
       "touchPreset": true,
       "mobileNoHorizontalOverflow": true,
       "minimum44pxTargets": true,
+      "mobileGalleryLoads": true,
       "landscapeNoHorizontalOverflow": true,
       "thousandNumericalPasses": true,
       "verifiedFrameLedger": true,
@@ -3325,7 +3378,8 @@
     "errors": [],
     "warnings": [],
     "notes": [
-      "Browser tests use headless Chromium and SwiftShader software WebGL; they are not measurements of real phone GPU performance."
+      "Browser tests use headless Chromium and SwiftShader software WebGL; they are not measurements of real phone GPU performance.",
+      "Backpack clearance is a pre-posture sampled geometric check, not a full collision or cloth simulation."
     ],
     "materialRoundtrip": {
       "matched": true,
@@ -3344,7 +3398,7 @@
           ],
           "roughness": 0.5264,
           "metalness": 0,
-          "specularIntensity": 0.7,
+          "specularIntensity": 0.65,
           "clearcoat": 0,
           "clearcoatRoughness": 0,
           "anisotropy": 0,
@@ -3390,9 +3444,9 @@
         },
         "Auricular root skin": {
           "color": [
-            0.8539542018305645,
-            0.5161851988162242,
-            0.3739170161044823
+            0.6483818953698383,
+            0.391504561399889,
+            0.2836732170145787
           ],
           "sheen": [
             0.15,
@@ -3401,7 +3455,7 @@
           ],
           "roughness": 0.62,
           "metalness": 0,
-          "specularIntensity": 0.7,
+          "specularIntensity": 0.65,
           "clearcoat": 0,
           "clearcoatRoughness": 0,
           "anisotropy": 0,
@@ -3458,7 +3512,7 @@
           ],
           "roughness": 0.6,
           "metalness": 0,
-          "specularIntensity": 0.7,
+          "specularIntensity": 0.65,
           "clearcoat": 0,
           "clearcoatRoughness": 0,
           "anisotropy": 0,
@@ -3504,9 +3558,9 @@
         },
         "skin": {
           "color": [
-            0.8602133883531877,
-            0.5233438006290044,
-            0.378555305911627
+            0.6582346004056328,
+            0.39999886121592615,
+            0.28932501923885
           ],
           "sheen": [
             0.15,
@@ -3515,7 +3569,7 @@
           ],
           "roughness": 0.5264,
           "metalness": 0,
-          "specularIntensity": 0.7,
+          "specularIntensity": 0.65,
           "clearcoat": 0,
           "clearcoatRoughness": 0,
           "anisotropy": 0,
@@ -3561,9 +3615,9 @@
         },
         "Conchal shadow": {
           "color": [
-            0.7345311821180396,
-            0.4238957157340857,
-            0.30659188309888336
+            0.5803519522724949,
+            0.33038523767183425,
+            0.23890903378145567
           ],
           "sheen": [
             0,
@@ -3613,9 +3667,9 @@
         },
         "Brown iris detail": {
           "color": [
-            0.78,
-            0.78,
-            0.78
+            0.72,
+            0.72,
+            0.72
           ],
           "sheen": [
             0,
@@ -3960,9 +4014,123 @@
             0,
             0
           ],
-          "roughness": 0.5104,
+          "roughness": 0.44,
           "metalness": 0,
-          "specularIntensity": 0.44999999999999996,
+          "specularIntensity": 0.57,
+          "clearcoat": 0.015,
+          "clearcoatRoughness": 0.5,
+          "anisotropy": 0.45,
+          "anisotropyRotation": 1.5707963268,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": [
+            0.11,
+            0.11
+          ],
+          "map": {
+            "colorSpace": "srgb",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "normalMap": {
+            "colorSpace": "",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "roughnessMap": null
+        },
+        "hairMid": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.44,
+          "metalness": 0,
+          "specularIntensity": 0.57,
+          "clearcoat": 0.015,
+          "clearcoatRoughness": 0.5,
+          "anisotropy": 0.45,
+          "anisotropyRotation": 1.5707963268,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": [
+            0.11,
+            0.11
+          ],
+          "map": {
+            "colorSpace": "srgb",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "normalMap": {
+            "colorSpace": "",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "roughnessMap": null
+        },
+        "hair": {
+          "color": [
+            0.94,
+            0.94,
+            0.94
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.44,
+          "metalness": 0,
+          "specularIntensity": 0.57,
           "clearcoat": 0.015,
           "clearcoatRoughness": 0.5,
           "anisotropy": 0.45,
@@ -4057,7 +4225,7 @@
             0,
             0
           ],
-          "roughness": 0.7192,
+          "roughness": 0.62,
           "metalness": 0,
           "specularIntensity": 1,
           "clearcoat": 0,
@@ -4129,120 +4297,6 @@
           "normalMap": null,
           "roughnessMap": null
         },
-        "hairMid": {
-          "color": [
-            1,
-            1,
-            1
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.5104,
-          "metalness": 0,
-          "specularIntensity": 0.44999999999999996,
-          "clearcoat": 0.015,
-          "clearcoatRoughness": 0.5,
-          "anisotropy": 0.45,
-          "anisotropyRotation": 1.5707963268,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": [
-            0.11,
-            0.11
-          ],
-          "map": {
-            "colorSpace": "srgb",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "normalMap": {
-            "colorSpace": "",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "roughnessMap": null
-        },
-        "hair": {
-          "color": [
-            0.94,
-            0.94,
-            0.94
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.5104,
-          "metalness": 0,
-          "specularIntensity": 0.44999999999999996,
-          "clearcoat": 0.015,
-          "clearcoatRoughness": 0.5,
-          "anisotropy": 0.45,
-          "anisotropyRotation": 1.5707963268,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": [
-            0.11,
-            0.11
-          ],
-          "map": {
-            "colorSpace": "srgb",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "normalMap": {
-            "colorSpace": "",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "roughnessMap": null
-        },
         "hairLight": {
           "color": [
             1,
@@ -4254,9 +4308,9 @@
             0,
             0
           ],
-          "roughness": 0.5104,
+          "roughness": 0.44,
           "metalness": 0,
-          "specularIntensity": 0.44999999999999996,
+          "specularIntensity": 0.57,
           "clearcoat": 0.015,
           "clearcoatRoughness": 0.5,
           "anisotropy": 0.45,
@@ -4878,7 +4932,7 @@
           ],
           "roughness": 0.5264,
           "metalness": 0,
-          "specularIntensity": 0.7,
+          "specularIntensity": 0.65,
           "clearcoat": 0,
           "clearcoatRoughness": 0,
           "anisotropy": 0,
@@ -4924,9 +4978,9 @@
         },
         "Auricular root skin": {
           "color": [
-            0.8539542018305645,
-            0.5161851988162242,
-            0.3739170161044823
+            0.6483818953698383,
+            0.391504561399889,
+            0.2836732170145787
           ],
           "sheen": [
             0.15,
@@ -4935,7 +4989,7 @@
           ],
           "roughness": 0.62,
           "metalness": 0,
-          "specularIntensity": 0.7,
+          "specularIntensity": 0.65,
           "clearcoat": 0,
           "clearcoatRoughness": 0,
           "anisotropy": 0,
@@ -4992,7 +5046,7 @@
           ],
           "roughness": 0.6,
           "metalness": 0,
-          "specularIntensity": 0.7,
+          "specularIntensity": 0.65,
           "clearcoat": 0,
           "clearcoatRoughness": 0,
           "anisotropy": 0,
@@ -5038,9 +5092,9 @@
         },
         "skin": {
           "color": [
-            0.8602133883531877,
-            0.5233438006290044,
-            0.378555305911627
+            0.6582346004056328,
+            0.39999886121592615,
+            0.28932501923885
           ],
           "sheen": [
             0.15,
@@ -5049,7 +5103,7 @@
           ],
           "roughness": 0.5264,
           "metalness": 0,
-          "specularIntensity": 0.7,
+          "specularIntensity": 0.65,
           "clearcoat": 0,
           "clearcoatRoughness": 0,
           "anisotropy": 0,
@@ -5095,9 +5149,9 @@
         },
         "Conchal shadow": {
           "color": [
-            0.7345311821180396,
-            0.4238957157340857,
-            0.30659188309888336
+            0.5803519522724949,
+            0.33038523767183425,
+            0.23890903378145567
           ],
           "sheen": [
             0,
@@ -5147,9 +5201,9 @@
         },
         "Brown iris detail": {
           "color": [
-            0.78,
-            0.78,
-            0.78
+            0.72,
+            0.72,
+            0.72
           ],
           "sheen": [
             0,
@@ -5494,9 +5548,123 @@
             0,
             0
           ],
-          "roughness": 0.5104,
+          "roughness": 0.44,
           "metalness": 0,
-          "specularIntensity": 0.44999999999999996,
+          "specularIntensity": 0.57,
+          "clearcoat": 0.015,
+          "clearcoatRoughness": 0.5,
+          "anisotropy": 0.45,
+          "anisotropyRotation": 1.5707963268,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": [
+            0.11,
+            0.11
+          ],
+          "map": {
+            "colorSpace": "srgb",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "normalMap": {
+            "colorSpace": "",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "roughnessMap": null
+        },
+        "hairMid": {
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.44,
+          "metalness": 0,
+          "specularIntensity": 0.57,
+          "clearcoat": 0.015,
+          "clearcoatRoughness": 0.5,
+          "anisotropy": 0.45,
+          "anisotropyRotation": 1.5707963268,
+          "alphaTest": 0,
+          "side": 0,
+          "opacity": 1,
+          "normalScale": [
+            0.11,
+            0.11
+          ],
+          "map": {
+            "colorSpace": "srgb",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "normalMap": {
+            "colorSpace": "",
+            "repeat": [
+              1,
+              1
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "wrapS": 1000,
+            "wrapT": 1000,
+            "anisotropy": 8
+          },
+          "roughnessMap": null
+        },
+        "hair": {
+          "color": [
+            0.94,
+            0.94,
+            0.94
+          ],
+          "sheen": [
+            0,
+            0,
+            0
+          ],
+          "roughness": 0.44,
+          "metalness": 0,
+          "specularIntensity": 0.57,
           "clearcoat": 0.015,
           "clearcoatRoughness": 0.5,
           "anisotropy": 0.45,
@@ -5591,7 +5759,7 @@
             0,
             0
           ],
-          "roughness": 0.7192,
+          "roughness": 0.62,
           "metalness": 0,
           "specularIntensity": 1,
           "clearcoat": 0,
@@ -5663,120 +5831,6 @@
           "normalMap": null,
           "roughnessMap": null
         },
-        "hairMid": {
-          "color": [
-            1,
-            1,
-            1
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.5104,
-          "metalness": 0,
-          "specularIntensity": 0.44999999999999996,
-          "clearcoat": 0.015,
-          "clearcoatRoughness": 0.5,
-          "anisotropy": 0.45,
-          "anisotropyRotation": 1.5707963268,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": [
-            0.11,
-            0.11
-          ],
-          "map": {
-            "colorSpace": "srgb",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "normalMap": {
-            "colorSpace": "",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "roughnessMap": null
-        },
-        "hair": {
-          "color": [
-            0.94,
-            0.94,
-            0.94
-          ],
-          "sheen": [
-            0,
-            0,
-            0
-          ],
-          "roughness": 0.5104,
-          "metalness": 0,
-          "specularIntensity": 0.44999999999999996,
-          "clearcoat": 0.015,
-          "clearcoatRoughness": 0.5,
-          "anisotropy": 0.45,
-          "anisotropyRotation": 1.5707963268,
-          "alphaTest": 0,
-          "side": 0,
-          "opacity": 1,
-          "normalScale": [
-            0.11,
-            0.11
-          ],
-          "map": {
-            "colorSpace": "srgb",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "normalMap": {
-            "colorSpace": "",
-            "repeat": [
-              1,
-              1
-            ],
-            "offset": [
-              0,
-              0
-            ],
-            "rotation": 0,
-            "wrapS": 1000,
-            "wrapT": 1000,
-            "anisotropy": 8
-          },
-          "roughnessMap": null
-        },
         "hairLight": {
           "color": [
             1,
@@ -5788,9 +5842,9 @@
             0,
             0
           ],
-          "roughness": 0.5104,
+          "roughness": 0.44,
           "metalness": 0,
-          "specularIntensity": 0.44999999999999996,
+          "specularIntensity": 0.57,
           "clearcoat": 0.015,
           "clearcoatRoughness": 0.5,
           "anisotropy": 0.45,
@@ -6401,39 +6455,69 @@
     },
     "roundtrip": {
       "original": {
-        "vertices": 276506,
-        "triangles": 286601,
-        "meshes": 51,
-        "drawCalls": 102,
-        "revision": 29,
-        "designCandidate": 100,
-        "designLabel": "Balanced final pose, eyes and face framing",
+        "vertices": 311473,
+        "triangles": 354797,
+        "meshes": 52,
+        "backpackContact": {
+          "method": "Posterior shirt ray samples before the shared posture transform",
+          "fieldSamples": 241,
+          "checkedFrontVertices": 160,
+          "minSampledGap": 0.0049996105095275745,
+          "maxSampledGap": 0.014142083776417555,
+          "meanSampledGap": 0.005643119109706522,
+          "clearanceTarget": 0.005,
+          "notFullCollisionSimulation": true
+        },
+        "drawCalls": 103,
+        "revision": 30,
+        "designCandidate": 140,
+        "designLabel": "Balanced rounded silhouette and upper-back clearance",
         "renderer": "WebKit WebGL",
         "bounds": [
           0.4769474267959595,
-          1.694318685278142,
-          0.45385195314884186
+          1.694358913981693,
+          0.45209746062755585
         ]
       },
       "imported": {
-        "vertices": 276506,
-        "triangles": 286601,
-        "meshes": 51,
-        "drawCalls": 102,
-        "revision": 29,
-        "designCandidate": 100,
-        "designLabel": "Balanced final pose, eyes and face framing",
+        "vertices": 311473,
+        "triangles": 354797,
+        "meshes": 52,
+        "backpackContact": {
+          "method": "Posterior shirt ray samples before the shared posture transform",
+          "fieldSamples": 241,
+          "checkedFrontVertices": 160,
+          "minSampledGap": 0.0049996105095275745,
+          "maxSampledGap": 0.014142083776417555,
+          "meanSampledGap": 0.005643119109706522,
+          "clearanceTarget": 0.005,
+          "notFullCollisionSimulation": true
+        },
+        "drawCalls": 103,
+        "revision": 30,
+        "designCandidate": 140,
+        "designLabel": "Balanced rounded silhouette and upper-back clearance",
         "renderer": "WebKit WebGL",
         "bounds": [
           0.4769474267959595,
-          1.694318685278142,
-          0.45385195314884186
+          1.694358913981693,
+          0.45209746062755585
         ]
       }
     },
+    "backpackContact": {
+      "method": "Posterior shirt ray samples before the shared posture transform",
+      "fieldSamples": 241,
+      "checkedFrontVertices": 160,
+      "minSampledGap": 0.0049996105095275745,
+      "maxSampledGap": 0.014142083776417555,
+      "meanSampledGap": 0.005643119109706522,
+      "clearanceTarget": 0.005,
+      "notFullCollisionSimulation": true
+    },
     "gltf": {
       "version": "2.0",
-      "meshes": 51,
+      "meshes": 52,
       "textures": 11,
       "images": 10,
       "extensionsUsed": [
@@ -6470,10 +6554,10 @@
       "scope": "Numerical authored-shirt deformation, rendering and geometry checks; not a visual-likeness score."
     },
     "campaign": {
-      "rendered": 100,
-      "reviewed": 100,
-      "selected": 100,
-      "score": 88.5,
+      "rendered": 140,
+      "reviewed": 140,
+      "selected": 140,
+      "score": 90,
       "target": {
         "minimumIterations": 100,
         "visualScore": 95
@@ -6482,19 +6566,19 @@
     "passed": true
   },
   "campaignAudit": {
-    "generatedAt": "2026-09-30T15:03:12.095Z",
+    "generatedAt": "2026-10-01T04:16:36.080Z",
     "campaign": "likeness95-100-gpt6-astra-pro-mcp-colabdev",
     "minimumRequired": 100,
-    "rendered": 100,
-    "reviewed": 100,
-    "uniqueCandidateIds": 100,
-    "distinctDesignStates": 100,
-    "distinctNumericParameterStates": 100,
-    "distinctGeometryFingerprints": 91,
-    "evidenceImageCount": 216,
-    "distinctEvidenceImages": 216,
-    "selected": 100,
-    "visualScore": 88.5,
+    "rendered": 140,
+    "reviewed": 140,
+    "uniqueCandidateIds": 140,
+    "distinctDesignStates": 140,
+    "distinctNumericParameterStates": 140,
+    "distinctGeometryFingerprints": 127,
+    "evidenceImageCount": 296,
+    "distinctEvidenceImages": 296,
+    "selected": 140,
+    "visualScore": 90,
     "visualTarget": 95,
     "visualTargetReached": false,
     "problems": [],
@@ -8695,6 +8779,846 @@
             "sha256": "9b2cd4ccc58047bca2c55748ed04451a517be91ff4b26dc11643526f6839a0d5"
           }
         ]
+      },
+      {
+        "id": 101,
+        "score": 88.5,
+        "designHash": "7293c1270a5479c905e4ff58bf420830c7c701e363a29cd024c082ee0dfd29d9",
+        "sourceCommit": "783e2b9c11586cc3609db61da67673bda34eac92",
+        "geometryFingerprint": "95d48c97",
+        "evidence": [
+          {
+            "view": "face",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c101-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 70465,
+            "sha256": "b2f59be97bc648853ef788e671c335355a1b4ac2144dce27f8ec323d2386cb55"
+          },
+          {
+            "view": "face-three-quarter",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c101-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 71530,
+            "sha256": "51df01479e64dbfbfbf1e342f58961993ec732a395ca432c00f62c2fb13e34eb"
+          }
+        ]
+      },
+      {
+        "id": 102,
+        "score": 88.5,
+        "designHash": "181799cdb9c6cf101cd2736450a0f5a8d19386aa2535ba1954e8145802786be8",
+        "sourceCommit": "783e2b9c11586cc3609db61da67673bda34eac92",
+        "geometryFingerprint": "f5d48481",
+        "evidence": [
+          {
+            "view": "face",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c102-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 70907,
+            "sha256": "d84898a0184c77ea38c8f4ac8b2587569f2dfc0e3acc25911aaa06b28f6e91cd"
+          },
+          {
+            "view": "face-three-quarter",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c102-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 72020,
+            "sha256": "fec18c0b56d52a8bc924a406d9df6e4037621890ec2905d6aa48c856e6264936"
+          }
+        ]
+      },
+      {
+        "id": 103,
+        "score": 88.5,
+        "designHash": "a587cbcca492354fb9bf296e9b022ec4a4730a074632b3a842fc4a2c299aed19",
+        "sourceCommit": "783e2b9c11586cc3609db61da67673bda34eac92",
+        "geometryFingerprint": "648be030",
+        "evidence": [
+          {
+            "view": "face",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c103-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 70707,
+            "sha256": "c0c126cc844de1ae04b59eac79eac842745d8f0463eb801eb35dd0cb142b6af7"
+          },
+          {
+            "view": "face-three-quarter",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c103-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 71807,
+            "sha256": "444323a850b444685ddfb9ba4cf8dca9c9ce3d48d0aa63fdc3daf1c934ebe111"
+          }
+        ]
+      },
+      {
+        "id": 104,
+        "score": 89,
+        "designHash": "eece2eab5ed69ccb6c514d5168a5ece66dc337ec3abdb74f6aa790ea4613fbad",
+        "sourceCommit": "783e2b9c11586cc3609db61da67673bda34eac92",
+        "geometryFingerprint": "bc6f1e7a",
+        "evidence": [
+          {
+            "view": "face",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c104-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 70726,
+            "sha256": "93fab7507c790c3601f1e9155ab10a461124c8bd4bc8431b770c3eff3005d4a0"
+          },
+          {
+            "view": "face-three-quarter",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c104-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 71866,
+            "sha256": "25d6a2db654c1f1b7cd42a887ca5e266edfcb56332741e191e575578ad525233"
+          }
+        ]
+      },
+      {
+        "id": 105,
+        "score": 89,
+        "designHash": "3a9d97fc1d9151d7118acd7fe92939b1f114f30b4da042d5d086beaa5c2659c7",
+        "sourceCommit": "3440a1010c4fd81684f33df74b92f9436f02b79f",
+        "geometryFingerprint": "dd6d66d0",
+        "evidence": [
+          {
+            "view": "face",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c105-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 68475,
+            "sha256": "dd8f18307d0ed1f544ab13b54f7df1551b3367836ec45125d4869779752056ca"
+          },
+          {
+            "view": "face-three-quarter",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c105-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 69229,
+            "sha256": "b23f24d2d53f488118f01ab25bf62409a97d8d111776dba058a94af45a303a5e"
+          }
+        ]
+      },
+      {
+        "id": 106,
+        "score": 88.5,
+        "designHash": "0e0a56c3c6ce5e240a8ac55f0dfe0499b4a892704298f81e8c140fb2a42a029a",
+        "sourceCommit": "3440a1010c4fd81684f33df74b92f9436f02b79f",
+        "geometryFingerprint": "623c57b2",
+        "evidence": [
+          {
+            "view": "face",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c106-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 68506,
+            "sha256": "f801955157de89ec261e32b1e1d672cc7434e295deacd79d70091b4bae3f9cb2"
+          },
+          {
+            "view": "face-three-quarter",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c106-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 69379,
+            "sha256": "51daedcd177b61fedf8a89cec9343cf1183be241c59694f7fabaf8ea5bab484a"
+          }
+        ]
+      },
+      {
+        "id": 107,
+        "score": 88.5,
+        "designHash": "1e92bc9b5dafc3004b4cf43d5690e787d51f0f5b53ed6cf7afa3c8506946c6bf",
+        "sourceCommit": "3440a1010c4fd81684f33df74b92f9436f02b79f",
+        "geometryFingerprint": "a3848ab5",
+        "evidence": [
+          {
+            "view": "face",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c107-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 68986,
+            "sha256": "5542c21c837f9ed8484ea03451a69488fdee862a2c61ff8958c0b00fb6ee4d77"
+          },
+          {
+            "view": "face-three-quarter",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c107-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 69924,
+            "sha256": "cc0cf1a709077ad8521aa21472ec5a5186ddb510e1055d8ce2ebe0014748b7bd"
+          }
+        ]
+      },
+      {
+        "id": 108,
+        "score": 89.5,
+        "designHash": "f4292ea29955177f5cd588a920b06daa6c46c87c8e7a6331890b31a5195870d6",
+        "sourceCommit": "3440a1010c4fd81684f33df74b92f9436f02b79f",
+        "geometryFingerprint": "5e15266e",
+        "evidence": [
+          {
+            "view": "face",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c108-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 68612,
+            "sha256": "3241b243c50900b5ded5a36763eb34805bb999ca76bac7c0647b3bfc16fe5d80"
+          },
+          {
+            "view": "face-three-quarter",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c108-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 69310,
+            "sha256": "cc0f50be7a0dd70360925149938c9a015962c78a855e0984eff6319c5b073d3c"
+          }
+        ]
+      },
+      {
+        "id": 109,
+        "score": 89.5,
+        "designHash": "81eb31dd4f79fd2b704b4cbfccf0380426c5b7b11de6adf4113641b02385ae39",
+        "sourceCommit": "3ae121704e31cf90865432c1493c3a1e05711f8b",
+        "geometryFingerprint": "cf904d63",
+        "evidence": [
+          {
+            "view": "face",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c109-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 68509,
+            "sha256": "cda91d345578816009545e3633790ea410c238bad0edbdbeb2794bf36a195895"
+          },
+          {
+            "view": "face-three-quarter",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c109-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 69331,
+            "sha256": "27804cefb33c39da00e1ecc2701fbae3e8b2d2e50027411c85a9ed81571bf9a6"
+          }
+        ]
+      },
+      {
+        "id": 110,
+        "score": 89,
+        "designHash": "f4f4a2145ec3523bb98707688644a172b5aa633177c62e0d039b6cd887c5348d",
+        "sourceCommit": "3ae121704e31cf90865432c1493c3a1e05711f8b",
+        "geometryFingerprint": "796632e4",
+        "evidence": [
+          {
+            "view": "face",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c110-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 68412,
+            "sha256": "a8702ebf414da5b4454a1518ff9145a8be818332bd08f9dd4f4d7c48a84ff7b5"
+          },
+          {
+            "view": "face-three-quarter",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c110-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 69231,
+            "sha256": "325c7daaea9077091b5cee1b6df2e4316326a57cf1b93cfec353dcef0b7430b4"
+          }
+        ]
+      },
+      {
+        "id": 111,
+        "score": 89.5,
+        "designHash": "cb0c86d64af15a2d2b6ddbcf995ec9927a080a2dcd41b63a40bc730980e49c28",
+        "sourceCommit": "3ae121704e31cf90865432c1493c3a1e05711f8b",
+        "geometryFingerprint": "96e2edc7",
+        "evidence": [
+          {
+            "view": "face",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c111-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 68628,
+            "sha256": "a39df57bcc9b8dae93781d43ea5588b634dd580a15fe4c63e98a74f869dcc522"
+          },
+          {
+            "view": "face-three-quarter",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c111-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 69327,
+            "sha256": "edd7c8b7a880a3da34bd122583c6c299c936f777dd3ae10dffdb4e23231dc190"
+          }
+        ]
+      },
+      {
+        "id": 112,
+        "score": 89.5,
+        "designHash": "1446c11ea82ff5c823d56a6cfa58926345fb8f334d672b37a9cef398c5edd1cc",
+        "sourceCommit": "3ae121704e31cf90865432c1493c3a1e05711f8b",
+        "geometryFingerprint": "65380225",
+        "evidence": [
+          {
+            "view": "face",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c112-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 68544,
+            "sha256": "6889f5e9a1824547064e3c69c36243930355ec97ae45ae60cb76509df5ac3485"
+          },
+          {
+            "view": "face-three-quarter",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c112-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 69338,
+            "sha256": "892a85c259b6a06e31cdf84f8b4a7069c74b4483fd9fef7a687645f4c2842295"
+          }
+        ]
+      },
+      {
+        "id": 113,
+        "score": 89.5,
+        "designHash": "13b80b6fc1ca6c802915aac5f9029fb2f390401c49fce4bb67fc610cb1298ea1",
+        "sourceCommit": "0ce22bf1438c2b698be0e7cf7bafe53cc4bbaa29",
+        "geometryFingerprint": "f41acfa3",
+        "evidence": [
+          {
+            "view": "face",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c113-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 68352,
+            "sha256": "83341d8b0933a4fa0caf170b5c4e86a64a3b63311b1571014e6478ca10c7e8d1"
+          },
+          {
+            "view": "face-profile",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c113-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 60962,
+            "sha256": "4298b7462154bc9c0476f8a5d53aad49a015373e9df57d0b4332834921d2bede"
+          }
+        ]
+      },
+      {
+        "id": 114,
+        "score": 89.5,
+        "designHash": "c89b241c6e580787c3052bee824a23725ad648c302a23b7645ee2a1a03bab85a",
+        "sourceCommit": "0ce22bf1438c2b698be0e7cf7bafe53cc4bbaa29",
+        "geometryFingerprint": "36f1c6b0",
+        "evidence": [
+          {
+            "view": "face",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c114-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 68400,
+            "sha256": "fb38a9915eb19b4095cf305e53ed5b5598df9d429afc9474ac57194c79ea4d3b"
+          },
+          {
+            "view": "face-profile",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c114-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 61007,
+            "sha256": "4461dc882c231c4ee43b4c2c9b311e442b37b035bd16035caea5d4b0551e870f"
+          }
+        ]
+      },
+      {
+        "id": 115,
+        "score": 89,
+        "designHash": "3e234595885b094fadecbbead179c136e583969b422d8e64a4b4935a5146b1b0",
+        "sourceCommit": "0ce22bf1438c2b698be0e7cf7bafe53cc4bbaa29",
+        "geometryFingerprint": "98aaa570",
+        "evidence": [
+          {
+            "view": "face",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c115-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 68348,
+            "sha256": "71b77e74026ebd9f99149d9f430903e4898f91cce3027edc494bdddae62a2e0f"
+          },
+          {
+            "view": "face-profile",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c115-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 61025,
+            "sha256": "40adbf9298fbfcf8a5c0abdc00e1fceaafc257396be47df730a41b20983ebc61"
+          }
+        ]
+      },
+      {
+        "id": 116,
+        "score": 89.5,
+        "designHash": "604aede3fa048cfa78749a24025506fe1564fddf24876c0bec8d5b979fd0a6cb",
+        "sourceCommit": "0ce22bf1438c2b698be0e7cf7bafe53cc4bbaa29",
+        "geometryFingerprint": "16d220bc",
+        "evidence": [
+          {
+            "view": "face",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c116-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 68687,
+            "sha256": "20ffbb39d6ad9111520836204b03975837d000a68da699c00ee1f50ed69e782d"
+          },
+          {
+            "view": "face-profile",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c116-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 61020,
+            "sha256": "98bc669e9f8173a926dca1d4f8ffbfbe6e811b8eb24c924e74aba9174a27b0b6"
+          }
+        ]
+      },
+      {
+        "id": 117,
+        "score": 88.5,
+        "designHash": "15eaf7cf04e12fced180cb4519fbbb3ecbd95846958bb35a4d089ec1b978207a",
+        "sourceCommit": "200afcf1ae1521a24fa9837bf2cfa2939a77ae2a",
+        "geometryFingerprint": "2bfffc20",
+        "evidence": [
+          {
+            "view": "face",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c117-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 68476,
+            "sha256": "58226c66d39f839d05c76742c298c9e80346f33df0e27209dd590d608dc1dac8"
+          },
+          {
+            "view": "face-profile",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c117-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 60921,
+            "sha256": "6ef714b8fd86eff137bf28c7bf48dd279be08f6f2610a7068c2d783f992282e3"
+          }
+        ]
+      },
+      {
+        "id": 118,
+        "score": 89,
+        "designHash": "7c72d020dcf164dad4add89aece68853cbbca544bf79a0a80f95661b071f6ea6",
+        "sourceCommit": "200afcf1ae1521a24fa9837bf2cfa2939a77ae2a",
+        "geometryFingerprint": "c289637a",
+        "evidence": [
+          {
+            "view": "face",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c118-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 68366,
+            "sha256": "117545b95aa00ee59784a98e55da5128608ca6d01042d428c8420deadd76a4a6"
+          },
+          {
+            "view": "face-profile",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c118-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 60942,
+            "sha256": "3bc85e03b3ffc7d985557811cfa8c4eaa8e7830cb08b529141bf36be4a73253f"
+          }
+        ]
+      },
+      {
+        "id": 119,
+        "score": 88.5,
+        "designHash": "11d213489874f8ff9b3b2743dcd1437d749a50eb9d1c70aa9a4f28604cdad87b",
+        "sourceCommit": "200afcf1ae1521a24fa9837bf2cfa2939a77ae2a",
+        "geometryFingerprint": "e1823e93",
+        "evidence": [
+          {
+            "view": "face",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c119-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 68463,
+            "sha256": "2f28dcd4007e8c0aa2607a0f6049d9a018adaa79bcce99d818a2deec0ea60a49"
+          },
+          {
+            "view": "face-profile",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c119-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 60931,
+            "sha256": "23574dc35a0d1f97b6e57c5b6b599e4221070f8476a5cf90898242b822e7009c"
+          }
+        ]
+      },
+      {
+        "id": 120,
+        "score": 89,
+        "designHash": "38d8b6b92ae92dd02e4a70884cf5dd6e8870348c6ed6487a303aeeea75198ff2",
+        "sourceCommit": "200afcf1ae1521a24fa9837bf2cfa2939a77ae2a",
+        "geometryFingerprint": "76292ec2",
+        "evidence": [
+          {
+            "view": "face",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c120-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 68456,
+            "sha256": "a59b0bd151d40509168641197c3c839ee2657ea89cd618cfecf04da5060de47f"
+          },
+          {
+            "view": "face-profile",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c120-gpt6-astra-pro-mcp-colabdev/face-profile-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 60931,
+            "sha256": "b0e2d1d51a79494f0de3f4453c383626e69a5131cb0b3ec8b2e869690ff2fd24"
+          }
+        ]
+      },
+      {
+        "id": 121,
+        "score": 89.5,
+        "designHash": "d1965ec07b79260e4001aabf883f4a0c80df16f0860ae18cee2cfe39238cf60c",
+        "sourceCommit": "01d39d94b4ee83bee74bd34cffccbc436087a815",
+        "geometryFingerprint": "a443f966",
+        "evidence": [
+          {
+            "view": "face",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c121-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 68419,
+            "sha256": "98b06ce582d6964c9b3d98888b8aafeebcd4e8c5bb39acbeb5deeeea38a3bb49"
+          },
+          {
+            "view": "face-three-quarter",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c121-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 69072,
+            "sha256": "70ed98b2889e577537d0421c25585eb65cf78e70817d74b6d715c8b082223949"
+          }
+        ]
+      },
+      {
+        "id": 122,
+        "score": 89,
+        "designHash": "f1d460cfc7051b42ada2097087b8c6facd84ecbc38252e3576eae102b5b2f432",
+        "sourceCommit": "01d39d94b4ee83bee74bd34cffccbc436087a815",
+        "geometryFingerprint": "57d9c5bb",
+        "evidence": [
+          {
+            "view": "face",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c122-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 68370,
+            "sha256": "ec727819585ab1f5dfab3a70f2134bec8994d99203dc1826430e8647c59a54f3"
+          },
+          {
+            "view": "face-three-quarter",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c122-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 69088,
+            "sha256": "2e4ea9ff7c590c8352d7e24e69880372d6680f2cd5b9285a7be8b5ad2977ddf4"
+          }
+        ]
+      },
+      {
+        "id": 123,
+        "score": 88.5,
+        "designHash": "135e9ccec1f40953e26b54f0d99331caa45f61c8448405a5c621881010cec557",
+        "sourceCommit": "01d39d94b4ee83bee74bd34cffccbc436087a815",
+        "geometryFingerprint": "33f2737c",
+        "evidence": [
+          {
+            "view": "face",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c123-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 68460,
+            "sha256": "3c87d61ae368baf16514dba57e142af228dbe757cb7277dd29d5e1bcb3779002"
+          },
+          {
+            "view": "face-three-quarter",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c123-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 69122,
+            "sha256": "8aa60feb559ea608d8a00b66a9dce764394da5c4b464d3f6cf0c3ceb0cb80250"
+          }
+        ]
+      },
+      {
+        "id": 124,
+        "score": 89.5,
+        "designHash": "3f181afe6f5470665274913d3bfe499f0e32c4778c94ad2136416fe0502906ec",
+        "sourceCommit": "01d39d94b4ee83bee74bd34cffccbc436087a815",
+        "geometryFingerprint": "b3d2826c",
+        "evidence": [
+          {
+            "view": "face",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c124-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 68435,
+            "sha256": "0d15a968bd4cf7fb33479a7a07004f124fd616723b165e621893acfa83b4ea48"
+          },
+          {
+            "view": "face-three-quarter",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c124-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 69075,
+            "sha256": "1d63f0befcc2b74a858dd60c8e2eb8c70cece33874b9090117773d6af879a2bc"
+          }
+        ]
+      },
+      {
+        "id": 125,
+        "score": 89,
+        "designHash": "939935540783cc741bee0315ee8aca5dc9fa4bc709244e0f5ecfef1d5097029f",
+        "sourceCommit": "fc82e82f20e597326ea2592ee44e4809762fa78a",
+        "geometryFingerprint": "b71a0f4a",
+        "evidence": [
+          {
+            "view": "face",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c125-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 77488,
+            "sha256": "e255cb7178c41e182b01cd3b3fb9e614e2b1b2ca487a7bfe9db0e9ad8196f574"
+          },
+          {
+            "view": "face-three-quarter",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c125-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 78358,
+            "sha256": "36ac339f0a6e2da4db7afd43f50eb7e14892b89f73daf260b21cc1f52acc76f0"
+          }
+        ]
+      },
+      {
+        "id": 126,
+        "score": 88.5,
+        "designHash": "3df80566ec2ee863afba053c93bd776bd50434fa1d88fd644d771fd3bee02395",
+        "sourceCommit": "fc82e82f20e597326ea2592ee44e4809762fa78a",
+        "geometryFingerprint": "9dfbc9ea",
+        "evidence": [
+          {
+            "view": "face",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c126-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 81903,
+            "sha256": "4f7b59cc67158001200fad026df313eedca6749e9ba4cbd55fb648c0f27a365e"
+          },
+          {
+            "view": "face-three-quarter",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c126-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 82485,
+            "sha256": "64a86d9cb40d28ee46929946043262400e0faebae332badd13e827a4c1772a88"
+          }
+        ]
+      },
+      {
+        "id": 127,
+        "score": 88.5,
+        "designHash": "bb7b0113ef05de306a3ae7f829974e8084db592bfb0398ea7fe225b2f97c5e98",
+        "sourceCommit": "fc82e82f20e597326ea2592ee44e4809762fa78a",
+        "geometryFingerprint": "5c3ca803",
+        "evidence": [
+          {
+            "view": "face",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c127-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 83485,
+            "sha256": "fe2be8cc1c1b49f47c40a223b51d254d2ef7aafa65d92465f7a9d3bff86615f4"
+          },
+          {
+            "view": "face-three-quarter",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c127-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 84093,
+            "sha256": "91ecabec5c22094e358069dccfda175eb16846a236071a6e25e33dd495a8c608"
+          }
+        ]
+      },
+      {
+        "id": 128,
+        "score": 89,
+        "designHash": "9718d2aafda4a4c5d65f07d793dfd5a671fed09e05a3321bfee69fa31be28f11",
+        "sourceCommit": "fc82e82f20e597326ea2592ee44e4809762fa78a",
+        "geometryFingerprint": "f87ac778",
+        "evidence": [
+          {
+            "view": "face",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c128-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 81699,
+            "sha256": "2359b9e426031df63f0a010272a04f29875ae381f54c9272631eb49060e93b36"
+          },
+          {
+            "view": "face-three-quarter",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c128-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 82568,
+            "sha256": "2f2925e94e1089feaceb31e1615807768d87d22f840d7058f7925ca68f7f82bc"
+          }
+        ]
+      },
+      {
+        "id": 129,
+        "score": 89.5,
+        "designHash": "23d884d30854f5433c21e578776432afde2179bcc386af9a88d4aea5bd60466e",
+        "sourceCommit": "bc8667ec1822a7ce5f2249e9b2a60387ff155f94",
+        "geometryFingerprint": "b3d2826c",
+        "evidence": [
+          {
+            "view": "face",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c129-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 70787,
+            "sha256": "51966cded76381be142fb2835da65490af77ba3ae4a18c15303a9557e1d6d245"
+          },
+          {
+            "view": "face-three-quarter",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c129-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 72372,
+            "sha256": "f83db7b8f9d2c476dbf395652994de9589f6d5edb0419dc7bb1e01374a534098"
+          }
+        ]
+      },
+      {
+        "id": 130,
+        "score": 89,
+        "designHash": "074d0a30993b362af8723ac6b6bf5a43bcc18e305f8ede76c7445c36d702dc0b",
+        "sourceCommit": "bc8667ec1822a7ce5f2249e9b2a60387ff155f94",
+        "geometryFingerprint": "b3d2826c",
+        "evidence": [
+          {
+            "view": "face",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c130-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 71562,
+            "sha256": "c4bd450b4f2e41f886aed61ac44220efe45aeb564715ecf136946e712ee4df73"
+          },
+          {
+            "view": "face-three-quarter",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c130-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 73427,
+            "sha256": "6e04e6eaf6a431f16e3fb07565711b69c8397842d0d1041ecb029ffe9d739c38"
+          }
+        ]
+      },
+      {
+        "id": 131,
+        "score": 89.5,
+        "designHash": "de68f707883998d8d142cc048c133f82a063183593fe57f326da410c744598da",
+        "sourceCommit": "bc8667ec1822a7ce5f2249e9b2a60387ff155f94",
+        "geometryFingerprint": "b3d2826c",
+        "evidence": [
+          {
+            "view": "face",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c131-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 69798,
+            "sha256": "1bc62e3f88a613f2bf1a0e2fd467991102ab8e2e99d3f1fa7702a0eb15ceb4f8"
+          },
+          {
+            "view": "face-three-quarter",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c131-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 71027,
+            "sha256": "32aae1bf7e4805e9012b34eab67e0f2fa789941e6d6129ea7cb9d20e30e74e17"
+          }
+        ]
+      },
+      {
+        "id": 132,
+        "score": 90,
+        "designHash": "99781c50b8a9425a065e8a808b2c658af3168d20205f40af1c4557a495e9b080",
+        "sourceCommit": "bc8667ec1822a7ce5f2249e9b2a60387ff155f94",
+        "geometryFingerprint": "b3d2826c",
+        "evidence": [
+          {
+            "view": "face",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c132-gpt6-astra-pro-mcp-colabdev/face-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 70244,
+            "sha256": "b01395e5f79704aed9e5cb91a32c25464f32931ca132df71445ba0f8758eab5c"
+          },
+          {
+            "view": "face-three-quarter",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c132-gpt6-astra-pro-mcp-colabdev/face-three-quarter-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 71598,
+            "sha256": "2f08393d8767b810b258e134fcc38f5530299649511e9589b9da5eea8c9a9382"
+          }
+        ]
+      },
+      {
+        "id": 133,
+        "score": 89.5,
+        "designHash": "2990e877534fdbb292a1eb3aa2808f830f280c61c2ad0aa1921616cd7e800455",
+        "sourceCommit": "299b9af9c5db240cd5789bd7a9964a51c53e1a4c",
+        "geometryFingerprint": "b0cf8613",
+        "evidence": [
+          {
+            "view": "face-bust-side",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c133-gpt6-astra-pro-mcp-colabdev/face-bust-side-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 54546,
+            "sha256": "257335dd2835470153e47b42a6d5802c48e269807d4c150fbae70b70f0d99d69"
+          },
+          {
+            "view": "detail-backpack",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c133-gpt6-astra-pro-mcp-colabdev/detail-backpack-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 52845,
+            "sha256": "a45c0b72142604b809005d17730735c4c2b3001c9c59d8d320d9a670b5f7f9e2"
+          }
+        ]
+      },
+      {
+        "id": 134,
+        "score": 88.5,
+        "designHash": "e27d9c0eb83a0dc5cdab5314162b9d3ed78a0304933ccc97d8b155a025bed1d1",
+        "sourceCommit": "299b9af9c5db240cd5789bd7a9964a51c53e1a4c",
+        "geometryFingerprint": "5623560f",
+        "evidence": [
+          {
+            "view": "face-bust-side",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c134-gpt6-astra-pro-mcp-colabdev/face-bust-side-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 54554,
+            "sha256": "f60f6b0307d86503897ce2f40e4dd463ca433fb55e0b2b0029a8459e40b83d59"
+          },
+          {
+            "view": "detail-backpack",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c134-gpt6-astra-pro-mcp-colabdev/detail-backpack-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 52857,
+            "sha256": "3139e58fd682bbb771e730dbc280a83cc6442e028726285f2c9f8fd341eb86c4"
+          }
+        ]
+      },
+      {
+        "id": 135,
+        "score": 89,
+        "designHash": "f3b696d48e4d3f2c55489f997d4e94893b99a3f8d24e2262bfc249413e36a744",
+        "sourceCommit": "299b9af9c5db240cd5789bd7a9964a51c53e1a4c",
+        "geometryFingerprint": "360b6b6b",
+        "evidence": [
+          {
+            "view": "face-bust-side",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c135-gpt6-astra-pro-mcp-colabdev/face-bust-side-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 55011,
+            "sha256": "d03b88fcdefb38757a43678846887c5c84b1e696bef88a1b777656f2d0373931"
+          },
+          {
+            "view": "detail-backpack",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c135-gpt6-astra-pro-mcp-colabdev/detail-backpack-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 52869,
+            "sha256": "20be7bcb48c6ade03a6526f186a20e4e5e8c6855ea9d81576d65f2cca9c75b2e"
+          }
+        ]
+      },
+      {
+        "id": 136,
+        "score": 89.5,
+        "designHash": "099622a69676401f2edf32511d9a208cb84612af6b8c541bd3d7cb57c29bd541",
+        "sourceCommit": "299b9af9c5db240cd5789bd7a9964a51c53e1a4c",
+        "geometryFingerprint": "28666104",
+        "evidence": [
+          {
+            "view": "face-bust-side",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c136-gpt6-astra-pro-mcp-colabdev/face-bust-side-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 54832,
+            "sha256": "4fde025d65cb01d428c7fa743a6fd997dee6cc32d3d515a95c144520f2893616"
+          },
+          {
+            "view": "detail-backpack",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c136-gpt6-astra-pro-mcp-colabdev/detail-backpack-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 52944,
+            "sha256": "7ee67a664f4fb8aae373f033798d2d5fd421a4d085cff39a9675405b3960cc14"
+          }
+        ]
+      },
+      {
+        "id": 137,
+        "score": 90,
+        "designHash": "8a6b61c83e4dcd11a836cd39323756b73f1dc657249a993537abbb379202f80f",
+        "sourceCommit": "ba986729860f22cea30d2b61e07005b80327dc63",
+        "geometryFingerprint": "e277f33c",
+        "evidence": [
+          {
+            "view": "face-bust-side",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c137-gpt6-astra-pro-mcp-colabdev/face-bust-side-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 54812,
+            "sha256": "73c90d8cb79386cf3912c13cea146e18639fa0a6d3766fca40f9e4491fdd0354"
+          },
+          {
+            "view": "detail-backpack",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c137-gpt6-astra-pro-mcp-colabdev/detail-backpack-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 52845,
+            "sha256": "45a59aa10cd14ac133b736f34d049f0d8ff9bf88a6b626605cbf36bb6e21d85c"
+          }
+        ]
+      },
+      {
+        "id": 138,
+        "score": 90,
+        "designHash": "a014d8d69026a7efc0ab6f2c74b1f1bf6a36a0b049c4db0baed3efcca2696d70",
+        "sourceCommit": "ba986729860f22cea30d2b61e07005b80327dc63",
+        "geometryFingerprint": "68f56bf9",
+        "evidence": [
+          {
+            "view": "face-bust-side",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c138-gpt6-astra-pro-mcp-colabdev/face-bust-side-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 55039,
+            "sha256": "06a28b4cfae42796605d06fb79e669ad74183521b654031762de0386ca3d3b19"
+          },
+          {
+            "view": "detail-backpack",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c138-gpt6-astra-pro-mcp-colabdev/detail-backpack-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 52777,
+            "sha256": "69059aec699cc5d487fbde2ce4d5e88126c56c08bf8063102d7c51c3e598b164"
+          }
+        ]
+      },
+      {
+        "id": 139,
+        "score": 89.5,
+        "designHash": "367b82dec87a5e3291af65caaf028c8182d0dfc68d89fe9d0e37ccbb41092195",
+        "sourceCommit": "ba986729860f22cea30d2b61e07005b80327dc63",
+        "geometryFingerprint": "edf0c417",
+        "evidence": [
+          {
+            "view": "face-bust-side",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c139-gpt6-astra-pro-mcp-colabdev/face-bust-side-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 54719,
+            "sha256": "a7ff9265c6c349327156748974a07c1e749a83a6cee5b8a6fe78fb7938d1482b"
+          },
+          {
+            "view": "detail-backpack",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c139-gpt6-astra-pro-mcp-colabdev/detail-backpack-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 53009,
+            "sha256": "7ac35d82bbe98d91833e47f0a36048b02601541e25d28b53090065f57a101bec"
+          }
+        ]
+      },
+      {
+        "id": 140,
+        "score": 90,
+        "designHash": "029c2cb15e4de43c6beae4449b40c6ef40a88d2797d4b1267841cdf513ff7893",
+        "sourceCommit": "ba986729860f22cea30d2b61e07005b80327dc63",
+        "geometryFingerprint": "8d26e3c9",
+        "evidence": [
+          {
+            "view": "face-bust-side",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c140-gpt6-astra-pro-mcp-colabdev/face-bust-side-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 54924,
+            "sha256": "2a5b1e34cd6ea6d9cfd5473decae62d60aba54f25d6861b003de21f2040ff6a8"
+          },
+          {
+            "view": "detail-backpack",
+            "url": "/progress/likeness95-100-gpt6-astra-pro-mcp-colabdev/c140-gpt6-astra-pro-mcp-colabdev/detail-backpack-gpt6-astra-pro-mcp-colabdev.jpg",
+            "bytes": 52771,
+            "sha256": "7a302a3d84abaf2ee4fc38e7ffad399f0bdf26a8532ee3a37d18a168360ac6fc"
+          }
+        ]
       }
     ],
     "notes": [
@@ -8707,7 +9631,7 @@
   "gltfValidation": {
     "mimeType": "model/gltf-binary",
     "validatorVersion": "2.0.0-dev.3.10",
-    "validatedAt": "2026-09-30T15:03:01.210Z",
+    "validatedAt": "2026-10-01T04:12:39.171Z",
     "issues": {
       "numErrors": 0,
       "numWarnings": 0,
@@ -8732,7 +9656,7 @@
           "pointer": "/buffers/0",
           "mimeType": "application/gltf-buffer",
           "storage": "glb",
-          "byteLength": 14515700
+          "byteLength": 16983020
         },
         {
           "pointer": "/images/0",
@@ -8871,9 +9795,9 @@
       "hasSkins": false,
       "hasTextures": true,
       "hasDefaultScene": true,
-      "drawCallCount": 51,
-      "totalVertexCount": 276506,
-      "totalTriangleCount": 286601,
+      "drawCallCount": 52,
+      "totalVertexCount": 311473,
+      "totalTriangleCount": 354797,
       "maxUVs": 1,
       "maxInfluences": 0,
       "maxAttributes": 5
