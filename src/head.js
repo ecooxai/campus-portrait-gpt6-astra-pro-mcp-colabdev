@@ -1,3 +1,4 @@
+import {faceDomain} from './face-domain.js';
 import {buildUnifiedHairShell} from './hair-shell.js';
 import {refineEyeVolume} from './eye-volume.js';
 import {addPonytailGroom} from './hair-groom.js';
@@ -15,7 +16,7 @@ function batch(group,prefix){const buckets=new Map();group.children.slice().forE
 export function createHead(parent,m){
  const head=new THREE.Group();head.name='Head / sculpted face';head.position.set(.036+D.headX,1.536+D.headY,.011+D.headZ);head.rotation.set(D.headPitch,-.025,-.085+D.headRoll);head.scale.set(1.075*D.headWidth,1.025*D.headHeight,1.045*D.headDepth);parent.add(head);
  surface(head,'Continuous anatomical head',192,192,(u,v)=>{
- const y=lerp(profile[0][0],.143,v),a=u*TAU,[rx,rz]=smoothProfile(profile,y),x=rx*Math.sin(a),front=Math.max(0,Math.cos(a)),z=rz*Math.cos(a)+delta(x,y)*front**3;
+ const {angle:a,y}=faceDomain(u,v,profile[0][0]),[rx,rz]=smoothProfile(profile,y),x=rx*Math.sin(a),front=Math.max(0,Math.cos(a)),z=rz*Math.cos(a)+delta(x,y)*front**3;
  return {p:sculptedHeadPoint(x,y,z,front),c:faceSkinColor(x,y,front).toArray()};
  },m.face);
  for(const s of [-1,1]){

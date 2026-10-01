@@ -17,6 +17,7 @@ export function sphere(parent,name,pos,scale,mat,segments=40){const m=mesh(paren
 export function surface(parent,name,nu,nv,fn,material){
  if(nu>64)nu=Math.ceil(nu*.75);if(nv>36)nv=Math.ceil(nv*.75);
  const density=THREE.MathUtils.clamp(D.geometryScale??1,.4,1);if(name!=='Draped white cotton shirt with open neckline'){if(nu>20)nu=Math.max(16,Math.round(nu*density));if(nv>20)nv=Math.max(16,Math.round(nv*density));}
+ if(name==='Continuous anatomical head'&&D.faceTopology){nu=Math.round(192*D.faceTopology);nv=Math.round(224*D.faceTopology);}
  const p=[],uv=[],idx=[],cols=[];
  for(let j=0;j<=nv;j++)for(let i=0;i<=nu;i++){const a=fn(i/nu,j/nv);p.push(...a.p);uv.push(...(a.uv||[i/nu,j/nv]));if(a.c)cols.push(...a.c);}
  for(let j=0;j<nv;j++)for(let i=0;i<nu;i++){const a=j*(nu+1)+i,b=a+1,c=a+nu+1,d=c+1;idx.push(a,b,c,b,d,c);}
